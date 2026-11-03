@@ -9,7 +9,7 @@ How to move a KDIGI CMS install to a newer version, how database migrations work
 ## How schema changes work
 
 - The database schema is **never synchronised automatically** (`push: false` in `src/payload.config.ts`). Every schema change ships as a timestamped migration in [`src/migrations/`](https://github.com/kdigivn/kdigi-cms-open/tree/main/src/migrations), registered in `src/migrations/index.ts`.
-- Version 1.0.0 starts from a single baseline migration (`20261103_042158_initial`) that creates the whole schema on an empty database. Later releases add new files after it; you never edit applied migrations.
+- Version 1.0.0 starts from a single baseline migration (`20261103_042515_initial`) that creates the whole schema on an empty database. Later releases add new files after it; you never edit applied migrations.
 - Applied migrations are recorded in the `payload_migrations` table, so running the command again is a no-op when nothing is pending.
 - Versions follow [SemVer](https://semver.org/). The [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) lists schema changes, new environment variables and breaking API changes for each release.
 
