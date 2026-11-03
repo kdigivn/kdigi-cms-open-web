@@ -12,8 +12,8 @@ KDIGI CMS is one Next.js server (admin + API on port 3000) and a PostgreSQL data
 
 | Piece | Details |
 | --- | --- |
-| Image | [`Dockerfile`](https://github.com/kdigivn/kdigi-cms-open/tree/main/Dockerfile): Node 22 Alpine, multi-stage build, runs `next start` on port 3000 as the unprivileged `node` user. The image keeps `src/` and `node_modules` because the entrypoint runs `payload migrate` and the optional demo seed. |
-| Entrypoint | [`docker/entrypoint.sh`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker/entrypoint.sh): (1) generate/persist `PAYLOAD_SECRET` in `DATA_DIR` if unset, (2) `payload migrate` unless `SKIP_MIGRATIONS=true`, (3) demo seed if `SEED_DEMO=true`, (4) start the server. |
+| Image | [`Dockerfile`](../Dockerfile): Node 22 Alpine, multi-stage build, runs `next start` on port 3000 as the unprivileged `node` user. The image keeps `src/` and `node_modules` because the entrypoint runs `payload migrate` and the optional demo seed. |
+| Entrypoint | [`docker/entrypoint.sh`](../docker/entrypoint.sh): (1) generate/persist `PAYLOAD_SECRET` in `DATA_DIR` if unset, (2) `payload migrate` unless `SKIP_MIGRATIONS=true`, (3) demo seed if `SEED_DEMO=true`, (4) start the server. |
 | Database | PostgreSQL (the compose files use `postgres:16-alpine`). Use the bundled `db` service or any managed PostgreSQL via `DATABASE_URI`. |
 | Volumes | `postgres_data` (database), `media_data` → `/app/media` (uploads), `app_data` → `/app/data` (generated secret). |
 | Health | `GET /api/health` is a liveness probe only: it answers while the process serves HTTP and does **not** query the database. Both compose files use it for the container healthcheck (start period 90 s). |
@@ -22,7 +22,7 @@ Minimum production settings: `PAYLOAD_SECRET` (≥ 32 chars), `PAYLOAD_PUBLIC_SE
 
 ## Option 1 — Coolify
 
-[`docker-compose.coolify.yml`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker-compose.coolify.yml) is written for Coolify's "Docker Compose" resource type.
+[`docker-compose.coolify.yml`](../docker-compose.coolify.yml) is written for Coolify's "Docker Compose" resource type.
 
 1. In Coolify: **New Resource → Docker Compose**, pick this repository (or your fork), set **Docker Compose Location** to `/docker-compose.coolify.yml`.
 2. Add the environment variable `PAYLOAD_SECRET` (`openssl rand -hex 32`). It is the only required one; Coolify generates the domain, TLS certificate and the database password (`SERVICE_URL_APP_3000`, `SERVICE_PASSWORD_POSTGRES`).
@@ -50,7 +50,7 @@ EOF
 docker compose up -d --build
 ```
 
-[`docker-compose.yml`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker-compose.yml) reads that `.env` (`POSTGRES_PASSWORD`, `PAYLOAD_SECRET`, `PAYLOAD_PUBLIC_SERVER_URL`, `ENABLE_JOBS_AUTORUN` and the other optional variables from [configuration](/en/tham-khao/configuration/)). Use `PAYLOAD_SECRET` explicitly in production so you control and back it up.
+[`docker-compose.yml`](../docker-compose.yml) reads that `.env` (`POSTGRES_PASSWORD`, `PAYLOAD_SECRET`, `PAYLOAD_PUBLIC_SERVER_URL`, `ENABLE_JOBS_AUTORUN` and the other optional variables from [configuration](/en/tham-khao/configuration/)). Use `PAYLOAD_SECRET` explicitly in production so you control and back it up.
 
 The app listens on host port `APP_PORT` (default 3000) on all interfaces. Put a TLS-terminating reverse proxy in front and firewall the port, e.g. with Caddy:
 

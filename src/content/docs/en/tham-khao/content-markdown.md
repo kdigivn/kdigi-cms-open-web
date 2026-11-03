@@ -132,7 +132,7 @@ The Snippets list is fetched once per editor mount from `/api/shortcodes` (up to
 
 ### Internal link picker (`@`)
 
-Typing `@` at the start of a word (not inside an email address) searches `posts`, `pages`, `products` and `landings` **of the same site** by title or slug (diacritic-insensitive, 150 ms debounce, 8 results per collection). Enter inserts `[Title](https://github.com/kdigivn/kdigi-cms-open/tree/main/docs/path)`; Escape closes the picker and keeps the typed `@query` text.
+Typing `@` at the start of a word (not inside an email address) searches `posts`, `pages`, `products` and `landings` **of the same site** by title or slug (diacritic-insensitive, 150 ms debounce, 8 results per collection). Enter inserts `[Title](/path)`; Escape closes the picker and keeps the typed `@query` text.
 
 - Paths are site-relative and come from `publicPathFor()` (`src/lib/frontend-public-path.ts`): `products` become `/product/{slug}`, `posts`, `pages` and `landings` become `/{slug}`. If your frontend uses different routes, change that one function.
 - By default only **live** documents are listed (`status = published` and `publishedAt` empty or in the past). A "drafts/scheduled" toggle includes the rest, and inserting such a link asks for confirmation because it reveals the title and slug once the edited page goes live.
@@ -140,7 +140,7 @@ Typing `@` at the start of a word (not inside an email address) searches `posts`
 
 ### Images and paste
 
-- Pasted or dropped image files are uploaded to `/api/media` and inserted as `![alt](https://github.com/kdigivn/kdigi-cms-open/tree/main/docs/url)`. The multipart helper (`upload-to-payload-media.ts`) sends `alt` (required by Media), `folder` and optional `tenant` inside a `_payload` JSON part, because Payload 3 ignores loose form fields and rejects the request with 400. Your own upload clients must do the same. See [media-storage.md](/en/tham-khao/media-storage/).
+- Pasted or dropped image files are uploaded to `/api/media` and inserted as `![alt](url)`. The multipart helper (`upload-to-payload-media.ts`) sends `alt` (required by Media), `folder` and optional `tenant` inside a `_payload` JSON part, because Payload 3 ignores loose form fields and rejects the request with 400. Your own upload clients must do the same. See [media-storage.md](/en/tham-khao/media-storage/).
 - Rich paste (Google Docs, Word, web pages): HTML on the clipboard is converted to GFM (`src/lib/html-to-gfm.ts`), embedded `data:` images are uploaded, and the result is inserted as a single undo step. Plain text and Markdown paste natively.
 - The `/image` command opens a media modal with Upload, Library and URL tabs, scoped to the document's own site. The URL tab re-hosts the remote image through `POST /api/media/from-url` (SSRF-guarded, see [media-storage.md](/en/tham-khao/media-storage/#import-from-url)).
 

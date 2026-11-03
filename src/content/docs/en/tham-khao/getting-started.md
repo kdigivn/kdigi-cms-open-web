@@ -23,10 +23,10 @@ SEED_DEMO=true docker compose up --build
 
 Open <http://localhost:3000/admin>. On a fresh database the admin shows a **"Create first user"** form; the first user you create becomes the `super-admin`. Drop `SEED_DEMO=true` if you want an empty install.
 
-What the stack does ([`docker-compose.yml`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker-compose.yml)):
+What the stack does ([`docker-compose.yml`](../docker-compose.yml)):
 
 - starts PostgreSQL 16 (`db` service) and builds/starts the app (`app` service);
-- on every app start the entrypoint ([`docker/entrypoint.sh`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker/entrypoint.sh)) generates a `PAYLOAD_SECRET` on first start if you did not set one (kept in the `app_data` volume), applies database migrations (`payload migrate`), optionally loads the demo content (`SEED_DEMO=true`), then runs `next start`;
+- on every app start the entrypoint ([`docker/entrypoint.sh`](../docker/entrypoint.sh)) generates a `PAYLOAD_SECRET` on first start if you did not set one (kept in the `app_data` volume), applies database migrations (`payload migrate`), optionally loads the demo content (`SEED_DEMO=true`), then runs `next start`;
 - keeps data in named volumes: `postgres_data` (database), `media_data` (uploads, served by the app), `app_data` (generated secret). `docker compose down` keeps them; `docker compose down -v` deletes everything.
 
 Useful switches (set in your shell or in a `.env` file next to the compose file):
