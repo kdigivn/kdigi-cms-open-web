@@ -103,32 +103,36 @@ export function getSiteNav(): SiteNav {
   }
 }
 
-export type FooterColumn = { title: string; links: NavLink[] }
+export type FooterColumn = { title: string; href: string | null; links: NavLink[] }
+export type FooterData = { columns: FooterColumn[]; legal: NavLink[] }
 
-export function getFooterColumns(): FooterColumn[] {
-  const cols: FooterColumn[] = []
+/** Footer: one column per section (heading links to the hub) + "Tài nguyên"; legal pages go in the bottom bar. */
+export function getFooter(): FooterData {
+  const columns: FooterColumn[] = []
   for (const section of SECTIONS) {
     const group = sectionGroup(section)
     if (!group) continue
-    const links = [...(group.href ? [{ label: `Tất cả ${section.label.toLowerCase()}`, href: section.route }] : []), ...group.items]
-    cols.push({ title: section.label, links })
+    columns.push({ title: section.label, href: group.href, links: group.items })
   }
+  columns.push({
+    title: "Tài nguyên",
+    href: null,
+    links: [
+      ...singles(["/chuyen-tu-wordpress", "/tu-host", "/demo", "/ma-nguon-mo", "/phat-hanh"]),
+      { label: "Blog", href: "/blog" },
+      { label: "Tài liệu", href: DOCS_URL, external: true },
+    ],
+  })
   const legalLabels: Record<string, string> = {
     "/gioi-thieu": "Giới thiệu",
     "/lien-he": "Liên hệ",
-    "/dieu-khoan": "Điều khoản sử dụng",
-    "/quyen-rieng-tu": "Chính sách quyền riêng tư",
+    "/dieu-khoan": "Điều khoản",
+    "/quyen-rieng-tu": "Quyền riêng tư",
   }
-  const project: NavLink[] = [
-    ...singles(["/chuyen-tu-wordpress", "/tu-host", "/demo", "/ma-nguon-mo", "/phat-hanh"]),
-    { label: "Blog", href: "/blog" },
-    { label: "Tài liệu", href: DOCS_URL, external: true },
-    ...Object.entries(legalLabels)
-      .filter(([route]) => routeExists(route))
-      .map(([route, label]) => ({ label, href: route })),
-  ]
-  cols.push({ title: "Dự án", links: project })
-  return cols
+  const legal = Object.entries(legalLabels)
+    .filter(([route]) => routeExists(route))
+    .map(([route, label]) => ({ label, href: route }))
+  return { columns, legal }
 }
 
 export type Crumb = { name: string; path: string }
