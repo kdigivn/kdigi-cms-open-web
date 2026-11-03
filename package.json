@@ -1,35 +1,21 @@
 {
   "name": "kdigi-cms-open-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "license": "MIT",
-  "type": "module",
-  "description": "Intro + docs website for KDIGI CMS (https://opencms.kdigi.vn), built with Astro Starlight",
+  "description": "Marketing homepage (apps/web) and documentation (apps/docs) for KDIGI CMS: https://opencms.kdigi.vn and https://docs.opencms.kdigi.vn",
   "packageManager": "pnpm@10.32.0",
   "scripts": {
-    "predev": "node scripts/copy-mermaid.mjs",
-    "dev": "astro dev",
-    "prebuild": "node scripts/copy-mermaid.mjs",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0",
-    "astro": "astro",
-    "typecheck": "astro check",
-    "sync:docs": "node scripts/sync-docs.mjs",
-    "docs:check": "node scripts/check-docs.mjs && node scripts/check-mermaid.mjs && node scripts/check-links.mjs && node scripts/check-readability.mjs",
-    "docs:check:links": "node scripts/check-links.mjs --orphans",
-    "docs:check:dist": "node scripts/check-dist.mjs"
-  },
-  "dependencies": {
-    "@astrojs/sitemap": "3.7.4",
-    "@astrojs/starlight": "0.38.5",
-    "astro": "6.4.8",
-    "mermaid": "11.17.2",
-    "sharp": "0.33.5",
-    "starlight-sidebar-topics": "0.8.0"
-  },
-  "devDependencies": {
-    "@astrojs/check": "0.9.11",
-    "typescript": "5.9.3"
+    "dev:web": "pnpm --filter web dev",
+    "dev:docs": "pnpm --filter docs dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter web build",
+    "build:docs": "pnpm --filter docs build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r --if-present lint",
+    "test": "pnpm -r --if-present test",
+    "docs:check": "pnpm --filter docs docs:check",
+    "sync:docs": "pnpm --filter docs sync:docs"
   },
   "engines": {
     "node": ">=22.12.0"

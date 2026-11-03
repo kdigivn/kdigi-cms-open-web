@@ -1,0 +1,592 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * KDIGI CMS homepage: design system "Tech Blue · Liquid Glass" (khoi-system-design).
+ * Layer 1 neutral + layer 2 brand = :root / .dark. Layer 3 glass = .glass / .glass-strong driven by the --glass-* knobs.
+ */
+
+/* ---------- Ferry VN (self-hosted, SIL OFL 1.1; Display has no 600) ---------- */
+@font-face {
+    font-family: "Ferry VN Text";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-text-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Text";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-text-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Text";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-text-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Text";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-text-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Display";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-display-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Mono";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-mono-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Ferry VN Mono";
+    src: url("/fonts/ferry-vn/1.0.0/fonts/ferry-vn-mono-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme inline {
+    --font-sans: "Ferry VN Text", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-display: "Ferry VN Display", "Ferry VN Text", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "Ferry VN Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary-hover: var(--primary-hover);
+    --color-primary-strong: var(--primary-strong);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-brand: var(--brand);
+    --color-cyan-text: var(--cyan-text);
+    --color-ink: var(--ink);
+    --color-ink-foreground: var(--ink-foreground);
+    --color-ink-muted: var(--ink-muted);
+    --color-code-comment: var(--code-comment);
+    --color-code-cyan: var(--code-cyan);
+    --color-code-blue: var(--code-blue);
+    --color-success: var(--success);
+    --color-success-bg: var(--success-bg);
+    --color-warning: var(--warning);
+    --color-warning-bg: var(--warning-bg);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --radius-sm: 8px;
+    --radius-md: 10px;
+    --radius-lg: var(--radius);
+    --radius-xl: 18px;
+    --radius-2xl: 20px;
+    --radius-3xl: 28px;
+    --radius-4xl: 32px;
+
+    --shadow-sm: var(--elev-sm);
+    --shadow-md: var(--elev-md);
+    --shadow-lg: var(--elev-lg);
+}
+
+/* ---------- layer 1 + 2: light ---------- */
+:root {
+    --background: #f2f6ff;
+    --foreground: #0b1220;
+    --card: #ffffff;
+    --card-foreground: #0b1220;
+    --popover: #ffffff;
+    --secondary: #eaf0fc;
+    --secondary-foreground: #2b3a55;
+    --muted: #eaf0fc;
+    --muted-foreground: #4b5a74;
+    --border: #d5def0; /* decorative only; control borders use --input */
+    --input: #7c8ba8;
+
+    --primary: #1e5af0;
+    --primary-foreground: #ffffff;
+    --primary-hover: #1745c4;
+    --primary-strong: #1642b8; /* link / text on glass */
+    --accent: #e8efff;
+    --accent-foreground: #1642b8;
+    --ring: #1e5af0;
+    --brand: #06b6d4; /* cyan: fill/gradient/highlight only, never text on light */
+    --cyan-text: #0e7490;
+
+    --ink: #0a1020; /* navy: code, dark bands */
+    --ink-foreground: #e8eefb;
+    --ink-muted: #afc0de;
+    --code-comment: #8c9cbf;
+    --code-cyan: #67e8f9;
+    --code-blue: #a5c8ff;
+
+    --success: #137536;
+    --success-bg: #e6f4ea;
+    --warning: #92400e;
+    --warning-bg: #fef3c7;
+
+    --radius: 14px;
+
+    --elev-sm: 0 1px 2px rgba(11, 18, 32, 0.06);
+    --elev-md: 0 1px 1px rgba(11, 18, 32, 0.04), 0 8px 24px rgba(30, 90, 240, 0.1);
+    --elev-lg: 0 2px 4px rgba(11, 18, 32, 0.06), 0 16px 40px rgba(30, 90, 240, 0.16), 0 40px 80px rgba(11, 18, 32, 0.12);
+
+    /* layer 3: liquid glass knobs. Any fill carrying text keeps >= .72 (light) / .60 (dark) alpha. */
+    --glass-fill: rgba(255, 255, 255, 0.72);
+    --glass-fill-strong: rgba(255, 255, 255, 0.86);
+    --glass-blur: 24px;
+    --glass-saturate: 180%;
+    --glass-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    --glass-highlight: rgba(255, 255, 255, 0.95);
+    --glass-edge-a: rgba(255, 255, 255, 0.95);
+    --glass-edge-b: rgba(255, 255, 255, 0.12);
+    --glass-edge-c: rgba(96, 150, 255, 0.45);
+    --glass-shadow: 0 1px 1px rgba(11, 18, 32, 0.04), 0 10px 30px rgba(30, 90, 240, 0.1), 0 30px 60px rgba(11, 18, 32, 0.06);
+    --mesh-1: rgba(30, 90, 240, 0.2);
+    --mesh-2: rgba(6, 182, 212, 0.2);
+    --mesh-3: rgba(99, 102, 241, 0.12);
+
+    --header-h: 64px;
+}
+
+/* ---------- dark: lighter tints of the same hues, not an inversion ---------- */
+.dark {
+    --background: #070c1a;
+    --foreground: #e8eefb;
+    --card: #0f1a30;
+    --card-foreground: #e8eefb;
+    --popover: #131f38;
+    --secondary: #18253f;
+    --secondary-foreground: #e8eefb;
+    --muted: #18253f;
+    --muted-foreground: #9fb0ce;
+    --border: rgba(255, 255, 255, 0.1);
+    --input: rgba(255, 255, 255, 0.38);
+
+    --primary: #6fa8ff;
+    --primary-foreground: #06101f;
+    --primary-hover: #8fbcff;
+    --primary-strong: #a9cbff;
+    --accent: rgba(111, 168, 255, 0.16);
+    --accent-foreground: #a9cbff;
+    --ring: #6fa8ff;
+    --brand: #22d3ee;
+    --cyan-text: #22d3ee;
+
+    --ink: #060b18;
+
+    --success: #4ade80;
+    --success-bg: rgba(74, 222, 128, 0.14);
+    --warning: #fbbf24;
+    --warning-bg: rgba(251, 191, 36, 0.14);
+
+    --elev-sm: none;
+    --elev-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+    --elev-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+
+    --glass-fill: rgba(15, 26, 48, 0.6);
+    --glass-fill-strong: rgba(15, 26, 48, 0.8);
+    --glass-highlight: rgba(255, 255, 255, 0.22);
+    --glass-edge-a: rgba(255, 255, 255, 0.32);
+    --glass-edge-b: rgba(255, 255, 255, 0.04);
+    --glass-edge-c: rgba(111, 168, 255, 0.4);
+    --glass-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 12px 36px rgba(0, 0, 0, 0.5);
+    --mesh-1: rgba(37, 99, 235, 0.42);
+    --mesh-2: rgba(6, 182, 212, 0.24);
+    --mesh-3: rgba(99, 102, 241, 0.26);
+}
+
+/* ---------- layer 3: liquid glass surfaces (frame only: header, floating panels; never data) ---------- */
+@layer components {
+    :where(.glass, .glass-strong) {
+        position: relative;
+    }
+    .glass,
+    .glass-strong {
+        isolation: isolate;
+        -webkit-backdrop-filter: var(--glass-filter);
+        backdrop-filter: var(--glass-filter);
+        box-shadow:
+            inset 0 1px 0 var(--glass-highlight),
+            var(--glass-shadow);
+    }
+    .glass {
+        background-color: var(--glass-fill);
+    }
+    .glass-strong {
+        background-color: var(--glass-fill-strong);
+    }
+    .glass::before,
+    .glass-strong::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        pointer-events: none;
+        z-index: -1;
+        background: linear-gradient(140deg, var(--glass-edge-a), var(--glass-edge-b) 38%, var(--glass-edge-c) 100%);
+        -webkit-mask:
+            linear-gradient(#000 0 0) content-box,
+            linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    /* the one glossy primary action per screen */
+    .btn-brand {
+        background: linear-gradient(180deg, #2a63f2 0%, #1e5af0 48%, #1745c4 100%);
+        color: #fff;
+        font-weight: 600;
+        border-color: rgba(10, 16, 32, 0.18);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.45),
+            0 1px 2px rgba(11, 18, 32, 0.2),
+            0 6px 16px rgba(30, 90, 240, 0.3);
+        text-shadow: 0 1px 0 rgba(10, 16, 32, 0.25);
+    }
+    .btn-brand:hover {
+        filter: brightness(1.06) saturate(1.05);
+    }
+    .dark .btn-brand {
+        background: linear-gradient(180deg, #8fbcff 0%, #6fa8ff 50%, #4d8df5 100%);
+        color: #06101f;
+        text-shadow: none;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* fixed scene glass refracts; body stays transparent */
+@utility app-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(52% 46% at 4% 0%, var(--mesh-1), transparent 72%),
+        radial-gradient(42% 40% at 100% 4%, var(--mesh-2), transparent 70%),
+        radial-gradient(64% 52% at 62% 108%, var(--mesh-3), transparent 72%);
+}
+
+/* ---------- accessibility fallbacks ---------- */
+@media (prefers-reduced-transparency: reduce) {
+    :root,
+    .dark {
+        --glass-fill: var(--card);
+        --glass-fill-strong: var(--popover);
+        --glass-filter: none;
+        --mesh-1: transparent;
+        --mesh-2: transparent;
+        --mesh-3: transparent;
+    }
+}
+@media (prefers-contrast: more) {
+    :root,
+    .dark {
+        --glass-fill: var(--card);
+        --glass-fill-strong: var(--popover);
+        --glass-filter: none;
+        --glass-edge-a: var(--input);
+        --glass-edge-b: var(--input);
+        --glass-edge-c: var(--input);
+        --mesh-1: transparent;
+        --mesh-2: transparent;
+        --mesh-3: transparent;
+        --border: var(--input);
+    }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    :root,
+    .dark {
+        --glass-fill: var(--card);
+        --glass-fill-strong: var(--popover);
+        --glass-filter: none;
+    }
+}
+[data-transparency="reduced"] {
+    --glass-fill: var(--card);
+    --glass-fill-strong: var(--popover);
+    --glass-filter: none;
+    --mesh-1: transparent;
+    --mesh-2: transparent;
+    --mesh-3: transparent;
+}
+@media (forced-colors: active) {
+    .glass,
+    .glass-strong {
+        background-color: Canvas;
+        color: CanvasText;
+        border: 1px solid CanvasText;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+    .glass::before,
+    .glass-strong::before,
+    .app-backdrop {
+        display: none;
+    }
+    .btn-brand {
+        background: ButtonFace;
+        color: ButtonText;
+        border: 1px solid ButtonText;
+        text-shadow: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ---------- base ---------- */
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        @apply bg-background font-sans;
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+        overflow-x: clip;
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--header-h) + 16px);
+        /* reserve the scrollbar track so opening the mobile menu never shifts the page */
+        scrollbar-gutter: stable;
+    }
+    body {
+        @apply text-foreground;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: clip;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    /* a one-column grid sizes its track to min-content by default, so one wide child (an image, a code line) pushes the page wider
+       than the phone; base layer = any `grid-cols-*` utility still wins */
+    .grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-wrap: balance;
+    }
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+    ::selection {
+        background: rgba(6, 182, 212, 0.35);
+        color: inherit;
+    }
+    /* Mono: ligatures OFF so `->` in commands never becomes an arrow */
+    code,
+    kbd,
+    pre,
+    samp,
+    .font-mono {
+        font-variant-ligatures: none;
+        font-feature-settings: "calt" 0, "liga" 0;
+    }
+}
+
+/* focus: 2px --ring, offset 2px on every interactive element */
+:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+main#main:focus-visible {
+    outline: none;
+}
+
+.skip-link {
+    position: fixed;
+    left: 8px;
+    top: -56px;
+    z-index: 300;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--foreground);
+    color: var(--background);
+}
+.skip-link:focus {
+    top: 8px;
+}
+
+/* display type roles */
+@utility t-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(34px, 5.2vw, 60px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+@utility t-h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(26px, 3.2vw, 36px);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+}
+/* section eyebrow: cyan-text label with an 18×3 --brand bar (cyan never as text on light, so --cyan-text) */
+@utility eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--cyan-text);
+    &::before {
+        content: "";
+        flex: none;
+        width: 18px;
+        height: 3px;
+        border-radius: 999px;
+        background: var(--brand);
+    }
+}
+
+/* slow idle float for hero art (transform only; off for reduced motion) */
+@keyframes float-idle {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+@utility float-idle {
+    animation: float-idle 6s ease-in-out infinite;
+    @media (prefers-reduced-motion: reduce) {
+        animation: none;
+    }
+}
+
+/* article body: CMS HTML (sanitised by the CMS, only markdown elements occur) */
+@utility blog-prose {
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--foreground);
+    overflow-wrap: anywhere;
+    & > * + * {
+        margin-top: 1.1em;
+    }
+    & h2 {
+        margin-top: 2em;
+        font-family: var(--font-display);
+        font-size: clamp(22px, 2.4vw, 28px);
+        line-height: 1.3;
+        font-weight: 700;
+        scroll-margin-top: 6rem;
+    }
+    & h3 {
+        margin-top: 1.6em;
+        font-size: 19px;
+        line-height: 1.4;
+        font-weight: 600;
+        scroll-margin-top: 6rem;
+    }
+    & a {
+        color: var(--primary-strong);
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    & strong {
+        font-weight: 600;
+    }
+    & ul,
+    & ol {
+        padding-left: 1.4em;
+    }
+    & ul {
+        list-style: disc;
+    }
+    & ol {
+        list-style: decimal;
+    }
+    & li + li {
+        margin-top: 0.4em;
+    }
+    & li::marker {
+        color: var(--muted-foreground);
+    }
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+    & blockquote {
+        border-left: 4px solid var(--primary);
+        padding: 0.25em 0 0.25em 1em;
+        color: var(--muted-foreground);
+    }
+    & code {
+        border-radius: 6px;
+        background: var(--muted);
+        padding: 0.1em 0.35em;
+        font-family: var(--font-mono);
+        font-size: 0.9em;
+    }
+    & pre {
+        overflow-x: auto;
+        border-radius: 16px;
+        background: var(--ink);
+        color: var(--ink-foreground);
+        padding: 1em 1.2em;
+        font-size: 14.5px;
+        line-height: 1.6;
+    }
+    & pre code {
+        background: none;
+        padding: 0;
+    }
+    & table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        font-size: 15.5px;
+        line-height: 1.5;
+    }
+    & th,
+    & td {
+        border: 1px solid var(--border);
+        padding: 0.6em 0.8em;
+        text-align: left;
+        vertical-align: top;
+        min-width: 8.5rem;
+    }
+    & th {
+        background: var(--muted);
+        font-weight: 600;
+    }
+}

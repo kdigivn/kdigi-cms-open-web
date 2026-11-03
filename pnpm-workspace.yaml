@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+
+# pnpm 10 only runs lifecycle scripts of allow-listed packages.
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - unrs-resolver

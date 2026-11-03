@@ -1,0 +1,46 @@
+---
+title: KDIGI CMS documentation
+description: "KDIGI CMS documentation, the open-source (MIT) headless multi-site CMS: quick start, self-host with Docker or Coolify, Markdown editor, SEO and JSON-LD, roles, WordPress migration, REST/GraphQL."
+template: splash
+heroEyebrow: Documentation · KDIGI CMS
+heroCommand: SEED_DEMO=true docker compose up --build
+hero:
+  title: KDIGI CMS documentation
+  tagline: Guides for installing, running and integrating KDIGI CMS, the open-source headless CMS that runs many websites from a single admin panel. Start with the quick start, or jump to the part you need.
+  actions:
+    - text: Quick start
+      link: /en/huong-dan/bat-dau-nhanh/
+      variant: primary
+    - text: KDIGI CMS homepage
+      link: https://opencms.kdigi.vn
+      variant: secondary
+heroChips:
+  - label: Migrate from WordPress
+    href: /en/wordpress/di-chuyen-tu-wordpress/
+  - label: REST and GraphQL
+    href: /en/api/rest-graphql/
+  - label: Deploy on Coolify
+    href: /en/huong-dan/trien-khai-coolify/
+tableOfContents: false
+editUrl: false
+prev: false
+next: false
+---
+
+import HomeFeatures from '../../../components/HomeFeatures.astro';
+import HomeSteps from '../../../components/HomeSteps.astro';
+import HomeBanners from '../../../components/HomeBanners.astro';
+
+<div class="hd-home-section"></div>
+
+## Guides
+
+<HomeFeatures />
+
+## Try it in four steps
+
+<HomeSteps />
+
+## What's next
+
+<HomeBanners />

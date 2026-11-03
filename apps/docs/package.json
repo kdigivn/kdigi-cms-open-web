@@ -1,0 +1,36 @@
+{
+  "name": "docs",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Documentation website for KDIGI CMS (https://docs.opencms.kdigi.vn), built with Astro Starlight",
+  "scripts": {
+    "predev": "node scripts/copy-mermaid.mjs",
+    "dev": "astro dev",
+    "prebuild": "node scripts/copy-mermaid.mjs",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "astro": "astro",
+    "typecheck": "astro check",
+    "sync:docs": "node scripts/sync-docs.mjs",
+    "docs:check": "node scripts/check-docs.mjs && node scripts/check-mermaid.mjs && node scripts/check-links.mjs && node scripts/check-readability.mjs",
+    "docs:check:links": "node scripts/check-links.mjs --orphans",
+    "docs:check:dist": "node scripts/check-dist.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@astrojs/starlight": "0.38.5",
+    "astro": "6.4.8",
+    "mermaid": "11.17.2",
+    "sharp": "0.33.5",
+    "starlight-sidebar-topics": "0.8.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.11",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

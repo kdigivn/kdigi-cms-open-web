@@ -1,0 +1,38 @@
+{
+  "hero-scene": {
+    "w": 1440,
+    "h": 960,
+    "alt": "Một khối trung tâm xanh nối với ba cửa sổ website kính mờ trên đế đất sét",
+    "bytes": 51264
+  },
+  "scene-migrate": {
+    "w": 1200,
+    "h": 800,
+    "alt": "Tài liệu kính mờ chuyển qua băng chuyền sang khối xanh KDIGI CMS",
+    "bytes": 48590
+  },
+  "scene-selfhost": {
+    "w": 1200,
+    "h": 800,
+    "alt": "Khối container và cơ sở dữ liệu kính mờ, đại diện cho tự host bằng Docker",
+    "bytes": 40780
+  },
+  "scene-opensource": {
+    "w": 1200,
+    "h": 800,
+    "alt": "Cây nhánh mã nguồn mở và ổ khoá mở bằng kính mờ trên đế đất sét",
+    "bytes": 40682
+  },
+  "icon-demo": {
+    "w": 320,
+    "h": 320,
+    "alt": "Laptop kính mờ với nút phát xanh cho bản demo trực tuyến",
+    "bytes": 14182
+  },
+  "icon-key": {
+    "w": 320,
+    "h": 320,
+    "alt": "Chiếc chìa khoá xanh bằng đất sét và kính mờ",
+    "bytes": 8638
+  }
+}

@@ -1,12 +1,15 @@
 # KDIGI CMS Open Web
 
-Website giới thiệu và tài liệu của [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open), chạy tại **https://opencms.kdigi.vn**.
+Hai website công khai của [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open), CMS headless đa website mã nguồn mở (MIT), trong một pnpm workspace.
 
-The intro and documentation website for KDIGI CMS, an open-source (MIT) headless multi-site CMS.
+The two public websites of KDIGI CMS, an open-source (MIT) headless multi-site CMS, in one pnpm workspace.
 
-- Astro 6 + [Starlight](https://starlight.astro.build): tiếng Việt (`/`) và tiếng Anh (`/en/`), sáng/tối, tìm kiếm không dấu (Pagefind), `llms.txt`, nút sao chép/xem markdown.
-- Trang chủ là landing; hướng dẫn, "Di chuyển từ WordPress" và API viết trong `src/content/docs/`.
-- Khu "Tham khảo kỹ thuật" (`/en/tham-khao/…`) là bản sao thư mục `docs/` của repo CMS (tiếng Anh).
+| App | URL | Công nghệ |
+| --- | --- | --- |
+| [`apps/web`](apps/web) | https://opencms.kdigi.vn | Next.js 16 (ISR), Tailwind 4: trang giới thiệu, demo trực tuyến, blog. FAQ, bài viết và trang pháp lý đọc từ chính KDIGI CMS |
+| [`apps/docs`](apps/docs) | https://docs.opencms.kdigi.vn | Astro 6 + [Starlight](https://starlight.astro.build): hướng dẫn, di chuyển WordPress, API, tài liệu kỹ thuật (vi, en) |
+
+CMS chạy ở https://app.opencms.kdigi.vn (repo riêng, [`kdigi-cms-open`](https://github.com/kdigivn/kdigi-cms-open)). Quyết định thiết kế và ngoại lệ so với chuẩn chung: [`MINDSET.md`](MINDSET.md).
 
 ## Chạy local
 
@@ -14,49 +17,54 @@ Cần Node.js 22.12+ và pnpm (qua `corepack enable`).
 
 ```bash
 pnpm install
-pnpm dev            # http://localhost:4321
-pnpm build          # ra thư mục dist/
-pnpm preview
+pnpm dev:web     # http://localhost:3000  (cần CMS_URL, xem apps/web/.env.example)
+pnpm dev:docs    # http://localhost:4321
+pnpm build       # build cả hai app
 ```
 
 ## Kiểm tra
 
 ```bash
-pnpm docs:check         # cấu trúc, sidebar, bản dịch, mermaid, liên kết, độ dễ đọc
-pnpm build && pnpm docs:check:dist   # tệp bắt buộc, sitemap, llms.txt, markdown thô, tìm kiếm
+pnpm typecheck && pnpm lint && pnpm test     # web: tsc, eslint, vitest (logic thuần); docs: astro check
+pnpm docs:check                              # docs: cấu trúc, sidebar, bản dịch, liên kết, độ dễ đọc
+pnpm --filter docs build && pnpm --filter docs docs:check:dist   # docs: tệp bắt buộc, sitemap, llms.txt, tìm kiếm
 ```
 
-## Cập nhật tài liệu kỹ thuật từ repo CMS
+## `apps/web`
 
-Trang trong `src/content/docs/en/tham-khao/` và `src/reference.json` do script sinh ra; không sửa tay.
+- Nội dung CMS đọc ở server (REST công khai) và render theo ISR: làm mới tối đa mỗi giờ, và ngay khi CMS gọi `POST /api/cms/revalidate` với header `x-revalidate-secret` (so với biến `REVALIDATE_SECRET`; thiếu biến thì route trả 503).
+- Biến môi trường: xem [`apps/web/.env.example`](apps/web/.env.example). `CMS_URL` phải truy cập được lúc build, vì trang được render sẵn.
+- Ảnh minh hoạ tạo bằng Codex (`apps/web/illustrations-src`: `gen.sh`, `process.py`), ảnh chụp trang quản trị thật xuất bằng `scripts/optimize-shots.py`, ảnh OG ghép bằng `scripts/gen-og.py`.
+- Đường dẫn tài liệu cũ trên `opencms.kdigi.vn` chuyển 301 sang `docs.opencms.kdigi.vn` (`next.config.ts`).
+
+## `apps/docs`
+
+- Trang chủ `/` là trang chủ tài liệu; hướng dẫn, "Di chuyển từ WordPress" và API viết trong `apps/docs/src/content/docs/`.
+- Khu "Tham khảo kỹ thuật" (`/en/tham-khao/…`) là bản sao thư mục `docs/` của repo CMS, sinh bằng script, không sửa tay:
 
 ```bash
-pnpm sync:docs                              # nguồn mặc định: ../kdigi-cms-open/docs
-node scripts/sync-docs.mjs /đường/dẫn/tới/kdigi-cms-open/docs
+pnpm sync:docs                                   # nguồn mặc định: ../kdigi-cms-open/docs
+pnpm --filter docs exec node scripts/sync-docs.mjs /đường/dẫn/tới/kdigi-cms-open/docs
 ```
 
-Script đổi link giữa các file docs thành đường dẫn của site, link tới mã nguồn thành URL GitHub. Sau khi sync, chạy `pnpm docs:check` rồi commit.
-
-## Cấu trúc
-
-| Đường dẫn | Nội dung |
-| --- | --- |
-| `src/content/docs/` | Trang tiếng Việt; `en/` là bản tiếng Anh cùng đường dẫn |
-| `src/sidebar.mjs` | Cây tài liệu và các khu vực (tab trên header) |
-| `src/components/` | Hero, khối trang chủ, header, footer, breadcrumb |
-| `src/styles/` | Token và giao diện (không dùng Tailwind), xem [`DESIGN.md`](DESIGN.md) |
-| `scripts/` | `sync-docs` và các script kiểm tra |
-| `MINDSET.md` | Quyết định thiết kế và ngoại lệ so với chuẩn chung |
+Sau khi sync chạy `pnpm docs:check` rồi commit. Cấu trúc và giao diện: [`apps/docs/DESIGN.md`](apps/docs/DESIGN.md).
 
 ## Triển khai
 
-`Dockerfile` build tĩnh (`pnpm build`) rồi phục vụ bằng nginx ở cổng 80, healthcheck tại `/version.txt` (chứa commit đang chạy, lấy từ build arg `SOURCE_COMMIT`). Trên Coolify: build pack Dockerfile, cổng 80, tên miền `opencms.kdigi.vn`, bật "Include Source Commit in Build".
+Hai app cùng repo, Coolify build pack Dockerfile, build context là gốc repo:
+
+| App | Dockerfile | Cổng | Tên miền | Theo dõi đường dẫn |
+| --- | --- | --- | --- | --- |
+| docs | `apps/docs/Dockerfile` | 80 (nginx, healthcheck `/version.txt`) | `docs.opencms.kdigi.vn` | `apps/docs/**` + tệp workspace ở gốc |
+| web | `apps/web/Dockerfile` | 3000 (healthcheck `/api/health`) | `opencms.kdigi.vn` | `apps/web/**` + tệp workspace ở gốc |
+
+Bật "Include Source Commit in Build" để `SOURCE_COMMIT` đi vào `/version.txt` (docs) và `/api/health` (web).
 
 ```bash
-docker build -t kdigi-cms-open-web --build-arg SOURCE_COMMIT=$(git rev-parse --short HEAD) .
-docker run --rm -p 8080:80 kdigi-cms-open-web
+docker build -f apps/docs/Dockerfile -t kdigi-docs --build-arg SOURCE_COMMIT=$(git rev-parse --short HEAD) .
+docker build -f apps/web/Dockerfile  -t kdigi-web  --build-arg CMS_URL=https://app.opencms.kdigi.vn .
 ```
 
 ## Giấy phép
 
-[MIT](LICENSE). Font Ferry VN theo giấy phép OFL (`public/fonts/ferry-vn/OFL.txt`).
+[MIT](LICENSE). Font Ferry VN theo giấy phép OFL (`apps/*/public/fonts/ferry-vn/OFL.txt`). Logo KDIGI là tài sản thương hiệu của KDIGI.

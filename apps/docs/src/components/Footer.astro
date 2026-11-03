@@ -1,0 +1,39 @@
+---
+/**
+ * Chân trang mọi trang: giữ phần mặc định của Starlight (liên kết sửa trang, trang trước/sau)
+ * rồi thêm dải thông tin dự án: KDIGI duy trì, giấy phép MIT, GitHub.
+ */
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const lang = Astro.locals.starlightRoute.locale === 'en' ? 'en' : 'vi';
+const copy = {
+  vi: {
+    home: 'Trang chủ KDIGI CMS',
+    maintained: 'Do KDIGI duy trì',
+    built: 'Xây trên Payload, Next.js và PostgreSQL',
+    license: 'Giấy phép MIT',
+    source: 'Mã nguồn trên GitHub',
+  },
+  en: {
+    home: 'KDIGI CMS homepage',
+    maintained: 'Maintained by KDIGI',
+    built: 'Built on Payload, Next.js and PostgreSQL',
+    license: 'MIT license',
+    source: 'Source on GitHub',
+  },
+}[lang];
+---
+
+<Default><slot /></Default>
+
+<div class="hd-sitefooter" data-pagefind-ignore>
+  <p>
+    <strong>KDIGI CMS</strong> · {copy.built}
+  </p>
+  <nav aria-label="KDIGI CMS">
+    <a href="https://opencms.kdigi.vn">{copy.home}</a>
+    <a href="https://kdigi.vn" rel="noopener">{copy.maintained} (kdigi.vn)</a>
+    <a href="https://github.com/kdigivn/kdigi-cms-open" rel="noopener">{copy.source}</a>
+    <a href="https://github.com/kdigivn/kdigi-cms-open/blob/main/LICENSE" rel="noopener">{copy.license}</a>
+  </nav>
+</div>

@@ -1,8 +1,12 @@
 node_modules/
 dist/
 .astro/
-public/mermaid.min.js
+.next/
+next-env.d.ts
+*.tsbuildinfo
+apps/docs/public/mermaid.min.js
 .env
 .env.*
+!.env.example
 *.log
 .DS_Store
