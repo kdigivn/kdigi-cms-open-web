@@ -18,7 +18,7 @@ faq:
   - q: "Người dùng có thể tự nâng quyền không?"
     a: "Không. Trường `role` và mảng `tenants` chỉ super-admin được sửa. Người dùng thường chỉ sửa được hồ sơ của mình, như mật khẩu và API key."
   - q: "API key có quyền gì?"
-    a: "API key xác thực như chính người sở hữu và chịu cùng quy tắc vai trò, cùng phạm vi site. Key của author vẫn không đăng được bài."
+    a: "API key xác thực như chính người sở hữu và chịu cùng quy tắc vai trò, cùng phạm vi site. Từ 1.2.0, phiên API key còn bị giới hạn thêm: không tạo người dùng, không đổi email, mật khẩu, API key, vai trò hay site, không xoá vĩnh viễn (chỉ chuyển vào thùng rác). Key của author vẫn không đăng được bài."
 related:
   - /tinh-nang/quan-ly-nhieu-website
   - /tinh-nang/quy-trinh-bien-tap
@@ -49,7 +49,7 @@ Vai trò xếp cộng dồn: `super-admin` > `admin` > `editor` > `author`. Ngo�
 | Xuất bản | ✓ | ✓ | ✓ | ✗ |
 | Kiểm duyệt bình luận | ✓ | ✓ | ✓ | ✗ |
 | Sửa cài đặt site | ✓ | ✓ | ✗ | ✗ |
-| Xóa vĩnh viễn | ✓ | ✓ | ✗ | ✗ |
+| Xóa vĩnh viễn (phiên đăng nhập, không qua API key) | ✓ | ✓ | ✗ | ✗ |
 | Tạo người dùng, site, cấu hình R2 | ✓ | ✗ | ✗ | ✗ |
 
 Author chỉ sửa và chuyển vào thùng rác **bài của chính mình**.
@@ -88,7 +88,7 @@ Người dùng chỉ thấy các site trong `tenants[]`. Bộ chọn site của 
 - **Tạo người dùng** Super-admin chọn `role`, mặc định `editor`.
 - **Gán website** Thêm mỗi site thành một dòng trong `tenants`.
 - **Người dùng đăng nhập** Chỉ thấy các site được gán; phiên kéo dài 180 ngày.
-- **Dùng API key (tùy chọn)** Key kế thừa vai trò và phạm vi site của chủ sở hữu.
+- **Dùng API key (tùy chọn)** Kế thừa vai trò, site của chủ sở hữu; không đổi tài khoản, không xoá vĩnh viễn. Dùng cho [AI agent qua MCP](/tinh-nang/ai-agent-mcp).
 :::
 
 > **Mẹo** Khi ghi qua REST, thân request phải mang `tenant` của site được gán.
