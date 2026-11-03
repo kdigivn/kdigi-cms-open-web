@@ -119,10 +119,10 @@ for (const rel of files) {
   const slug = slugByFile.get(rel);
   const title = (h1 ? h1[1] : slug).replace(/`/g, '').trim();
   let body = h1 ? raw.replace(h1[0], '').replace(/^\s+/, '') : raw;
-  // Chỉ viết lại link ngoài code rào và ngoài `code inline` (ví dụ `[Title](path)` là mẫu chèn, không phải link).
+  // Không viết lại link ngoài code rào, và bỏ qua code inline là mẫu link (ví dụ `[Title](path)`), không phải link thật.
   body = outsideFences(body, (line) =>
     line
-      .split(/(`[^`]*`)/)
+      .split(/(`!?\[[^\]`]*\]\([^)`]*\)`)/)
       .map((part, i) =>
         i % 2 === 1
           ? part

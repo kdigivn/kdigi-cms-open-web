@@ -4,7 +4,7 @@ description: "Every environment variable KDIGI CMS reads, what it does, and wher
 editUrl: https://github.com/kdigivn/kdigi-cms-open/edit/main/docs/configuration.md
 ---
 
-Every environment variable KDIGI CMS reads, what it does, and where it is used. Copy [`.env.example`](../.env.example) to `.env` for local development; in Docker/Coolify set variables on the container ([deploy](/en/tham-khao/deploy/)). Never commit a real `.env`.
+Every environment variable KDIGI CMS reads, what it does, and where it is used. Copy [`.env.example`](https://github.com/kdigivn/kdigi-cms-open/blob/main/.env.example) to `.env` for local development; in Docker/Coolify set variables on the container ([deploy](/en/tham-khao/deploy/)). Never commit a real `.env`.
 
 Only three values are required: `DATABASE_URI`, `PAYLOAD_SECRET`, `PAYLOAD_PUBLIC_SERVER_URL`. With `docker compose up` you need none of them (the stack wires the database and generates a secret).
 
@@ -60,7 +60,7 @@ R2 credentials are **not** environment variables: they are configured per site i
 
 ## Docker entrypoint and compose
 
-Read by [`docker/entrypoint.sh`](../docker/entrypoint.sh) and [`docker-compose.yml`](../docker-compose.yml) / [`docker-compose.coolify.yml`](../docker-compose.coolify.yml) only:
+Read by [`docker/entrypoint.sh`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker/entrypoint.sh) and [`docker-compose.yml`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker-compose.yml) / [`docker-compose.coolify.yml`](https://github.com/kdigivn/kdigi-cms-open/blob/main/docker-compose.coolify.yml) only:
 
 | Variable | Default | Description |
 | --- | --- | --- |
