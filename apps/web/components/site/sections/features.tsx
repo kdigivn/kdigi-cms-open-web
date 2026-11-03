@@ -1,6 +1,7 @@
 import { ArrowRight, Check } from "lucide-react"
 
 import { ButtonLink } from "@/components/ui/button"
+import { getContentPage } from "@/lib/content"
 import { docsLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
@@ -112,6 +113,16 @@ const FEATURES: Feature[] = [
   },
 ]
 
+/** Feature block -> the project page that covers it (linked only when that page is published). */
+const FEATURE_PAGES: Record<string, string> = {
+  "nhieu-website": "/tinh-nang/quan-ly-nhieu-website",
+  "soan-thao": "/tinh-nang/trinh-soan-thao-markdown",
+  seo: "/tinh-nang/seo-json-ld",
+  media: "/tinh-nang/thu-vien-media",
+  "phan-quyen": "/tinh-nang/phan-quyen-nguoi-dung",
+  api: "/tinh-nang/headless-api",
+}
+
 /** One block per feature: copy beside a real screenshot of the admin, alternating sides on desktop. */
 export function Features() {
   return (
@@ -142,6 +153,12 @@ export function Features() {
                     </li>
                   ))}
                 </ul>
+                {FEATURE_PAGES[feature.id] && getContentPage(FEATURE_PAGES[feature.id]) ? (
+                  <ButtonLink href={FEATURE_PAGES[feature.id]} variant="ghost" className="mt-5 -ml-3 text-primary-strong">
+                    Chi tiết tính năng
+                    <ArrowRight aria-hidden="true" />
+                  </ButtonLink>
+                ) : null}
                 <ButtonLink href={feature.docs.href} variant="ghost" className="mt-5 -ml-3 text-primary-strong">
                   {feature.docs.label}
                   <ArrowRight aria-hidden="true" />
@@ -153,6 +170,14 @@ export function Features() {
             </article>
           ))}
         </div>
+        {getContentPage("/tinh-nang") ? (
+          <p className="mt-14 text-center">
+            <ButtonLink href="/tinh-nang" variant="outline">
+              Xem tất cả tính năng
+              <ArrowRight aria-hidden="true" />
+            </ButtonLink>
+          </p>
+        ) : null}
       </Container>
     </section>
   )
