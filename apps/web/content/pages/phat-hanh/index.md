@@ -12,13 +12,13 @@ heroAlt: "Hộp phát hành kính mờ với dải xanh và mũi tên đi lên, 
 schema: CollectionPage
 faq:
   - q: "Phiên bản mới nhất của KDIGI CMS là gì?"
-    a: "1.1.0, phát hành 2026-11-03. Bản này thêm bảo vệ tài khoản demo công khai, lệnh pnpm demo:reset và header x-revalidate-secret cho ping revalidate. Mục Unreleased đang trống."
+    a: "1.2.0, phát hành 2026-11-03: bản AI-native với máy chủ MCP tại /api/mcp, CLI kcms và giới hạn mới cho phiên API key. Bản này không có migration mới."
   - q: "KDIGI CMS đánh số phiên bản theo quy tắc nào?"
     a: "Semantic Versioning, CHANGELOG theo định dạng Keep a Changelog. Bản vá bảo mật phát hành cho minor mới nhất của dòng 1.x. Hãy đọc CHANGELOG trước mỗi lần nâng cấp."
-  - q: "Nâng cấp từ 1.0.0 lên 1.1.0 có cần migration không?"
-    a: "Theo CHANGELOG, 1.0.1 thêm migration 20261103_052647_media_source_media_id; 1.1.0 không ghi migration mới. Migration chưa áp dụng tự chạy khi container khởi động. Luôn sao lưu trước."
+  - q: "Nâng cấp từ 1.1.0 lên 1.2.0 có cần migration không?"
+    a: "Không. 1.2.0 không thêm migration. Lưu ý thay đổi hành vi: phiên API key không còn đổi được tài khoản, vai trò, site và không xoá vĩnh viễn. Luôn sao lưu trước khi nâng cấp."
   - q: "Tôi theo dõi bản phát hành mới ở đâu?"
-    a: "File CHANGELOG.md và các tag phiên bản (v1.0.0, v1.0.1, v1.1.0) trong repo kdigivn/kdigi-cms-open trên GitHub. Bạn có thể Watch repo để nhận thông báo."
+    a: "File CHANGELOG.md và các tag phiên bản (v1.0.0 đến v1.2.0) trong repo kdigivn/kdigi-cms-open trên GitHub. Bạn có thể Watch repo để nhận thông báo."
 related:
   - /tu-host
   - /thuc-hanh-tot/sao-luu-va-nang-cap
@@ -29,22 +29,34 @@ docs: https://docs.opencms.kdigi.vn/
 order: 4
 ---
 
-Phiên bản mới nhất là **1.1.0** (2026-11-03). Trang này tóm tắt 1.0.0, 1.0.1 và 1.1.0 từ CHANGELOG của dự án; mục Unreleased đang trống.
+Phiên bản mới nhất là **1.2.0** (2026-11-03), bản AI-native. Trang này tóm tắt các bản 1.0.0 đến 1.2.0 từ CHANGELOG của dự án.
 
 > **Tóm tắt nhanh**
 >
-> - Bản mới nhất: **1.1.0**; trước đó 1.0.1 và 1.0.0.
+> - Bản mới nhất: **1.2.0**; trước đó 1.1.0, 1.0.1 và 1.0.0.
 > - Semantic Versioning; CHANGELOG theo Keep a Changelog.
 > - Schema chỉ đổi bằng migration; 1.0.1 thêm một migration.
 > - Sao lưu database và media trước khi nâng cấp.
 
 :::stats
-- **1.1.0** bản mới nhất
-- **3** bản phát hành
-- **1** migration thêm ở 1.0.1
+- **1.2.0** bản mới nhất
+- **4** bản phát hành
+- **23** công cụ MCP cho AI agent
 :::
 
-## :rocket: Bản mới nhất: 1.1.0
+## :bot: Bản mới nhất: 1.2.0, KDIGI CMS AI-native
+
+AI agent làm việc trực tiếp trên CMS, với đúng quyền của người dùng sở hữu API key. Không có migration mới.
+
+:::cards 3
+- :bot: **Máy chủ MCP** `POST /api/mcp`, 23 công cụ cho AI agent; bật sẵn, tắt bằng `MCP_ENABLED=false`. [AI agent và MCP](/tinh-nang/ai-agent-mcp).
+- :terminal: **CLI kcms** `@kdigi/kcms-cli`: sửa bài như tệp Markdown, `kcms setup` cho Claude Code, Codex, Cursor, VS Code, OMP.
+- :key-round: **Siết phiên API key** Trên mọi route REST/GraphQL: không đổi tài khoản, vai trò, site; không xoá vĩnh viễn.
+:::
+
+> **Lưu ý** Đây là thay đổi hành vi: script dùng API key để xoá vĩnh viễn hoặc sửa tài khoản sẽ bị từ chối (`403`). Sửa thêm: cập nhật một phần qua REST/GraphQL không còn ghi đè `excerpt` hay xoá `seo.breadcrumbs`.
+
+## :rocket: 1.1.0: tài khoản demo và revalidate có xác thực
 
 Tập trung vào chạy demo công khai an toàn và xác thực lời gọi revalidate.
 
@@ -60,6 +72,7 @@ Hai file compose chuyển tiếp thêm `REVALIDATE_SECRET`, `DEMO_ACCOUNT_EMAILS
 
 | Phiên bản | Ngày | Điểm chính | Chuyển schema |
 | --- | --- | --- | --- |
+| [1.2.0](https://github.com/kdigivn/kdigi-cms-open/releases/tag/v1.2.0) | 2026-11-03 | AI-native: máy chủ MCP, CLI `kcms`, siết phiên API key | Không |
 | [1.1.0](https://github.com/kdigivn/kdigi-cms-open/compare/v1.0.1...v1.1.0) | 2026-11-03 | Bảo vệ tài khoản demo, `pnpm demo:reset`, `REVALIDATE_SECRET` | Không ghi trong CHANGELOG |
 | [1.0.1](https://github.com/kdigivn/kdigi-cms-open/compare/v1.0.0...v1.0.1) | 2026-11-03 | Sửa lỗi pipeline chuyển WordPress | Có: `20261103_052647_media_source_media_id` |
 | [1.0.0](https://github.com/kdigivn/kdigi-cms-open/releases/tag/v1.0.0) | 2026-11-03 | Bản công khai đầu tiên (MIT) | Migration nền `20261103_042515_initial` |
@@ -99,7 +112,7 @@ CMS headless nhiều website (MIT) trên Payload 3.90, Next.js 15 và PostgreSQL
 :::
 
 ```bash
-git fetch --tags && git checkout v1.1.0
+git fetch --tags && git checkout v1.2.0
 docker compose up -d --build   # entrypoint chạy payload migrate trước khi khởi động
 ```
 

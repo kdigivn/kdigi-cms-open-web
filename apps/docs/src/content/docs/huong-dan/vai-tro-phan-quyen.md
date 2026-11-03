@@ -26,4 +26,6 @@ Mỗi tài khoản có một **vai trò** và được gán vào một hoặc nh
 
 Super admin tạo người dùng, chọn vai trò rồi thêm các site mà người đó được làm việc. Tài khoản có nhiều site sẽ có bộ chọn site trong trang quản trị.
 
+AI agent và CLI `kcms` dùng API key của một người dùng nên có đúng vai trò và site của người đó, kèm giới hạn riêng cho phiên API key. Xem [AI agent và MCP](/huong-dan/ai-agent-mcp/).
+
 Bảng phân quyền chi tiết theo từng collection ở [Roles and permissions reference](/en/tham-khao/roles-and-permissions/) (tiếng Anh).

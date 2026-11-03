@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 
 import { JsonLdScript } from "@/components/site/json-ld-script"
 import { Container } from "@/components/site/section"
+import { AiAgents } from "@/components/site/sections/ai-agents"
 import { Demo } from "@/components/site/sections/demo"
 import { Faq } from "@/components/site/sections/faq"
 import { FinalCta } from "@/components/site/sections/final-cta"
@@ -51,6 +52,7 @@ export default async function HomePage() {
     <main id="main" tabIndex={-1}>
       <Hero />
       <ValueProps />
+      <AiAgents />
       <Features />
       {content ? (
         <section id="kdigi-cms-la-gi" aria-label="KDIGI CMS là gì" className="py-16 md:py-24">

@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!cms) return { title: "Không tìm thấy trang", robots: { index: false } }
   return buildMetadata({
     title: `${cms.title} | KDIGI CMS`,
-    description: cms.seoDescription ?? `${cms.title} của KDIGI CMS, CMS headless mã nguồn mở quản lý nhiều website trong một trang quản trị.`,
+    description: cms.seoDescription ?? `${cms.title} của KDIGI CMS, CMS headless AI-native mã nguồn mở quản lý nhiều website trong một trang quản trị.`,
     route,
   })
 }

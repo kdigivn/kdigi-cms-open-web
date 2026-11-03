@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cover = postCover(post)
   return buildMetadata({
     title: post.seoTitle ?? post.title,
-    description: fitDescription(post.seoDescription, post.excerpt, "Bài viết trên blog KDIGI CMS, CMS headless mã nguồn mở quản lý nhiều website."),
+    description: fitDescription(post.seoDescription, post.excerpt, "Bài viết trên blog KDIGI CMS, CMS headless AI-native mã nguồn mở quản lý nhiều website."),
     route: postPath(post.slug),
     type: "article",
     publishedTime: post.publishedAt,

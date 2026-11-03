@@ -60,6 +60,8 @@ Mỗi khách là một document trong collection Sites; nội dung, media, menu 
 
 > **Cảnh báo** Thiếu bộ lọc `tenant`, truy vấn ẩn danh trả nội dung đã xuất bản của mọi site. Hãy kiểm tra điều này khi review code.
 
+> **Mẹo** Mỗi khách có thể có một tài khoản riêng cho AI agent, chỉ gán đúng site của khách đó. Agent kết nối qua MCP bằng API key của tài khoản ấy nên không thấy site khác. Xem [AI agent và MCP](/tinh-nang/ai-agent-mcp).
+
 ## :shield-check: Phân quyền theo site
 
 | Vai trò | Phạm vi | Dùng cho |

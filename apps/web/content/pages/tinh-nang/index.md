@@ -1,11 +1,11 @@
 ---
-title: "Tính năng KDIGI CMS: đa website, Markdown, SEO, API"
-description: "Toàn bộ tính năng KDIGI CMS: quản lý nhiều website, trình soạn Markdown, SEO và JSON-LD, thư viện media, phân quyền, headless API, quy trình biên tập."
+title: "Tính năng KDIGI CMS: AI agent, đa website, SEO, API"
+description: "Toàn bộ tính năng KDIGI CMS: AI agent qua MCP, quản lý nhiều website, trình soạn Markdown, SEO và JSON-LD, thư viện media, phân quyền, headless API, biên tập."
 h1: "Tính năng của KDIGI CMS"
 navTitle: "Tính năng"
 primaryKeyword: "tính năng kdigi cms"
 icon: sparkles
-lead: "Tám nhóm tính năng cho một CMS headless: nhiều website, Markdown, SEO, media, phân quyền, API, nội dung và biên tập."
+lead: "Chín nhóm tính năng cho một CMS headless AI-native: AI agent, nhiều website, Markdown, SEO, media, phân quyền, API, nội dung và biên tập."
 updated: 2026-11-03
 heroImage: /images/art/tinh-nang-hero.webp
 heroAlt: "Lưới các ô kính mờ quanh một ô xanh trung tâm, tượng trưng cho bản đồ tính năng KDIGI CMS"
@@ -17,7 +17,10 @@ faq:
     a: "Có. Nội dung có hai ngôn ngữ `vi` (mặc định) và `en` kèm fallback; giao diện quản trị cũng có tiếng Việt và tiếng Anh. Trình tạo slug tự bỏ dấu."
   - q: "Tính năng AI SEO có bắt buộc không?"
     a: "Không. AI SEO chỉ chạy khi bạn đặt `DEEPSEEK_API_KEY` và `DEEPSEEK_MODEL`. Mẫu tiêu đề, JSON-LD và kiểm tra SEO đều chạy mà không cần AI."
+  - q: "AI agent và AI SEO khác nhau thế nào?"
+    a: "AI SEO là nút gợi ý tiêu đề, mô tả trong trang quản trị, dùng khóa DeepSeek của bạn. AI agent là công cụ AI bên ngoài (Claude Code, Codex, Cursor…) làm việc trên CMS qua [máy chủ MCP](/tinh-nang/ai-agent-mcp), không cần khóa DeepSeek."
 related:
+  - /tinh-nang/ai-agent-mcp
   - /tinh-nang/quan-ly-nhieu-website
   - /tinh-nang/trinh-soan-thao-markdown
   - /tinh-nang/seo-json-ld
@@ -26,19 +29,21 @@ related:
 docs: https://docs.opencms.kdigi.vn/
 ---
 
-KDIGI CMS là CMS headless mã nguồn mở (MIT): một trang quản trị và API cho nhiều website. Mỗi nhóm tính năng dưới đây có trang riêng, mô tả đúng theo tài liệu mã nguồn.
+KDIGI CMS là CMS headless AI-native, mã nguồn mở (MIT): một trang quản trị, API và máy chủ MCP cho nhiều website. Mỗi nhóm tính năng dưới đây có trang riêng, mô tả đúng theo tài liệu mã nguồn.
 
 > **Tóm tắt nhanh**
 >
+> - AI agent làm việc qua MCP, đúng quyền người dùng.
 > - Một bản cài phục vụ nhiều website.
 > - Soạn Markdown; API trả HTML đã làm sạch.
 > - SEO và JSON-LD tạo sẵn khi lưu.
 > - Bốn vai trò, gán theo từng website.
 > - Docker Compose chạy bằng một lệnh.
 
-## :layers: Tám nhóm tính năng
+## :layers: Chín nhóm tính năng
 
 :::cards
+- :bot: **AI agent và MCP** Claude Code, Codex, Cursor viết, đăng bài, kiểm tra SEO. [Xem chi tiết](/tinh-nang/ai-agent-mcp)
 - :layers: **Nhiều website** Mỗi site có thương hiệu, SEO và menu riêng. [Xem chi tiết](/tinh-nang/quan-ly-nhieu-website)
 - :pen-line: **Soạn Markdown** Milkdown, slash menu, dán từ Docs hoặc Word. [Xem chi tiết](/tinh-nang/trinh-soan-thao-markdown)
 - :search: **SEO và JSON-LD** Mẫu tiêu đề, đồ thị `@graph`, kiểm tra SEO. [Xem chi tiết](/tinh-nang/seo-json-ld)
@@ -72,6 +77,7 @@ KDIGI CMS là CMS headless mã nguồn mở (MIT): một trang quản trị và 
 :::pros-cons
 **Ưu điểm**
 
+- AI agent làm việc trực tiếp qua MCP
 - Gộp nhiều website vào một hệ thống
 - SEO có cấu trúc, JSON-LD tự sinh
 - Tự host, kiểm soát dữ liệu

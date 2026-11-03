@@ -1,11 +1,11 @@
-import { Boxes, DatabaseZap, FileSearch, Repeat2 } from "lucide-react"
+import { Bot, Boxes, DatabaseZap, FileSearch } from "lucide-react"
 
 import { Container } from "../section"
 
 const ITEMS = [
+  { icon: Bot, title: "AI agent làm cùng bạn", text: "Claude Code, Codex, Cursor viết và đăng bài qua MCP, đúng vai trò và site của người dùng." },
   { icon: Boxes, title: "Nhiều website, một nơi", text: "Nội dung, người dùng và cấu hình tách theo site, chung một trang quản trị." },
   { icon: FileSearch, title: "SEO có sẵn", text: "Tiêu đề, mô tả, Open Graph và JSON-LD tự sinh, kèm công cụ kiểm tra SEO." },
-  { icon: Repeat2, title: "Chuyển từ WordPress", text: "Nhập bài, ảnh, SEO, menu và redirect, có bước duyệt trước khi ghi." },
   { icon: DatabaseZap, title: "API cho mọi frontend", text: "REST và GraphQL công khai, Markdown trả về HTML sạch." },
 ]
 

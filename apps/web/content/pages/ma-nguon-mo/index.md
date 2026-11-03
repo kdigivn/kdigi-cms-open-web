@@ -20,7 +20,7 @@ faq:
   - q: "Phát hiện lỗ hổng bảo mật thì báo ở đâu?"
     a: "Không mở issue công khai. Dùng báo cáo riêng tư của GitHub (Security Advisories) của repo kdigivn/kdigi-cms-open. Dự án cam kết phản hồi trong 3 ngày làm việc và nhắm tới vá trong 90 ngày."
   - q: "Dự án có lộ trình (roadmap) công khai không?"
-    a: "Hiện chưa có tài liệu roadmap riêng. Những gì đã phát hành nằm trong CHANGELOG, mục Unreleased đang trống. Đề xuất tính năng gửi qua GitHub Issues bằng mẫu feature request."
+    a: "Hiện chưa có tài liệu roadmap riêng. Những gì đã phát hành nằm trong CHANGELOG; mục Unreleased chứa thay đổi chưa phát hành. Đề xuất tính năng gửi qua GitHub Issues bằng mẫu feature request."
 related:
   - /phat-hanh
   - /tu-host
@@ -35,7 +35,7 @@ KDIGI CMS là CMS headless nhiều website, phát hành theo giấy phép MIT (b
 > **Tóm tắt nhanh**
 >
 > - Giấy phép **MIT**, file `LICENSE` ở gốc repo.
-> - Repo `kdigivn/kdigi-cms-open`, phiên bản hiện tại 1.1.0.
+> - Repo `kdigivn/kdigi-cms-open`, phiên bản hiện tại 1.2.0.
 > - Có Contributing, Code of Conduct, Security policy, mẫu issue/PR.
 > - CI chạy typecheck, unit test, lint, integration test.
 > - Báo lỗ hổng bảo mật riêng tư, không mở issue công khai.
@@ -121,4 +121,4 @@ Dự án áp dụng Contributor Covenant 2.1. Kênh chính thức là [GitHub Is
 
 ## :map: Lộ trình
 
-Repo chưa có tài liệu roadmap riêng và mục **Unreleased** đang trống. Lịch sử thay đổi ở trang [phát hành](/phat-hanh); website chỉ nêu những gì đã có trong phiên bản phát hành.
+Repo chưa có tài liệu roadmap riêng. Lịch sử thay đổi ở trang [phát hành](/phat-hanh); website chỉ nêu những gì đã có trong phiên bản phát hành.

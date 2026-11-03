@@ -1,8 +1,8 @@
 # KDIGI CMS Open Web
 
-Hai website công khai của [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open), CMS headless đa website mã nguồn mở (MIT), trong một pnpm workspace.
+Hai website công khai của [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open), CMS headless AI-native, đa website, mã nguồn mở (MIT), trong một pnpm workspace.
 
-The two public websites of KDIGI CMS, an open-source (MIT) headless multi-site CMS, in one pnpm workspace.
+The two public websites of KDIGI CMS, an AI-native, open-source (MIT) headless multi-site CMS, in one pnpm workspace.
 
 | App | URL | Công nghệ |
 | --- | --- | --- |

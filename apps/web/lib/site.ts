@@ -10,9 +10,9 @@ export const GITHUB_URL = "https://github.com/kdigivn/kdigi-cms-open"
 export const KDIGI_URL = "https://kdigi.vn"
 
 export const SITE_NAME = "KDIGI CMS"
-export const SITE_TITLE = "KDIGI CMS: CMS headless đa website mã nguồn mở"
+export const SITE_TITLE = "KDIGI CMS: CMS headless AI-native mã nguồn mở"
 export const SITE_DESCRIPTION =
-  "KDIGI CMS là CMS headless mã nguồn mở (MIT) quản lý nhiều website trong một trang quản trị: soạn thảo Markdown, SEO và JSON-LD sẵn, thư viện media, phân quyền theo website, chuyển từ WordPress và tự host bằng Docker."
+  "KDIGI CMS là CMS headless AI-native, mã nguồn mở (MIT): nhiều website trong một trang quản trị, AI agent viết và đăng bài qua MCP với đúng quyền người dùng, soạn Markdown, SEO và JSON-LD sẵn, chuyển từ WordPress, tự host bằng Docker."
 
 /** Public demo account (role editor, can only touch the `demo` site; content is reset nightly). */
 export const DEMO = {
@@ -33,6 +33,7 @@ export const docsLinks = {
   seo: `${DOCS_URL}/huong-dan/seo-json-ld/`,
   media: `${DOCS_URL}/huong-dan/thu-vien-media/`,
   roles: `${DOCS_URL}/huong-dan/vai-tro-phan-quyen/`,
+  aiAgents: `${DOCS_URL}/huong-dan/ai-agent-mcp/`,
 } as const
 
 export const absoluteUrl = (path: string): string => (/^https?:\/\//.test(path) ? path : `${SITE_URL}${path === "/" ? "" : path}`)

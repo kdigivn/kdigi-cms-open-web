@@ -19,6 +19,8 @@ faq:
     a: "Hiện tài liệu ghim payload và các gói @payloadcms/* cùng phiên bản 3.90.2. Nâng cấp theo CHANGELOG của KDIGI CMS: tạo migration nếu cần, sao lưu rồi chạy pnpm migrate. Nếu fork, bạn tự quyết lịch nâng cấp."
   - q: "Payload thuần có đa website không?"
     a: "Có plugin multi-tenant chính thức (@payloadcms/plugin-multi-tenant); KDIGI CMS dùng chính plugin này với collection sites. Phần thêm vào là access predicate tường minh, cài đặt từng site và quy trình tạo site không cần deploy lại."
+  - q: "Payload và KDIGI CMS khác nhau thế nào về MCP cho AI agent?"
+    a: "Payload có [plugin MCP chính thức](https://payloadcms.com/docs/plugins/mcp): bạn thêm vào config và bật từng collection, từng thao tác theo API key. KDIGI CMS dựng sẵn MCP server với 23 công cụ biên tập (bài, trang, lịch đăng, SEO, media), API key theo người dùng, tôn trọng khóa chỉnh sửa; có từ bản 1.2.0. Xem [AI agent (MCP)](/tinh-nang/ai-agent-mcp)."
 related:
   - /so-sanh/kdigi-cms-vs-strapi
   - /so-sanh/kdigi-cms-vs-directus
@@ -48,6 +50,7 @@ Payload theo README và tài liệu chính thức, kiểm tra 2026-11-03.
 | Soạn thảo | Lexical rich text | Markdown (Milkdown) |
 | SEO, JSON-LD, redirect dựng sẵn | ✗ (tự xây hoặc plugin) | ✓ |
 | Pipeline chuyển từ WordPress | ✗ | ✓ |
+| AI agent (MCP) | Plugin chính thức `@payloadcms/plugin-mcp` (bạn thêm và cấu hình); API key | MCP server dựng sẵn, 23 công cụ biên tập; API key theo người dùng; có từ bản 1.2.0 |
 | Cơ sở dữ liệu | Postgres, MongoDB, SQLite | PostgreSQL |
 | Triển khai | Tùy bạn (Vercel, Cloudflare, Docker…) | Dockerfile, Compose, Coolify có sẵn |
 
@@ -70,6 +73,14 @@ Payload theo README và tài liệu chính thức, kiểm tra 2026-11-03.
 - :database: **Chỉ PostgreSQL** Không dùng MongoDB hay SQLite như Payload thuần.
 - :calendar-clock: **Dự án mới** Bản công khai 1.0.0 ngày 2026-11-03; Payload có cộng đồng lớn hơn.
 :::
+
+## :bot: AI agent và MCP
+
+Payload có plugin chính thức [`@payloadcms/plugin-mcp`](https://payloadcms.com/docs/plugins/mcp), mã nguồn mở nằm trong kho Payload. Bạn thêm plugin vào config, chọn collection/global được mở và tạo API key trong admin để bật từng thao tác (find, create, update, delete) cho từng key. Quy tắc truy cập, hook và multi-tenant của Payload vẫn áp dụng theo người dùng gắn với key; có thể tự thêm tool, prompt, resource riêng.
+
+KDIGI CMS có sẵn một lớp MCP riêng (không cần cấu hình plugin) tại `POST /api/mcp`: 23 công cụ cho bài, trang, lịch đăng, phiên bản, thùng rác, media, SEO audit, cùng hướng dẫn nội dung `kcms://guide/content`. Xác thực bằng API key theo người dùng; agent chạy đúng vai trò và website của người đó, tôn trọng khóa chỉnh sửa trong admin, ghi cần `expectedUpdatedAt`. Kèm CLI `kcms`. Có từ bản 1.2.0. Xem [AI agent (MCP) của KDIGI CMS](/tinh-nang/ai-agent-mcp).
+
+Đánh đổi: Payload thuần cho bạn khung tổng quát để tự thiết kế bộ công cụ cho mọi mô hình dữ liệu; KDIGI CMS cho bộ công cụ biên tập dựng sẵn nhưng chỉ cho mô hình nội dung của nó.
 
 ## :check: Khi nào chọn mỗi bên
 
@@ -106,4 +117,4 @@ Chiều ngược lại cũng khả thi: đây là dự án Payload chuẩn (MIT)
 
 ## :link: Nguồn
 
-Payload, kiểm tra 2026-11-03: [kho mã](https://github.com/payloadcms/payload), [What is Payload](https://payloadcms.com/docs/getting-started/what-is-payload), [Multi-Tenant Plugin](https://payloadcms.com/docs/plugins/multi-tenant), [Database](https://payloadcms.com/docs/database/overview). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [kiến trúc](https://docs.opencms.kdigi.vn/tham-khao/architecture/), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.1.0, 2026-11-03).
+Payload, kiểm tra 2026-11-03: [kho mã](https://github.com/payloadcms/payload), [What is Payload](https://payloadcms.com/docs/getting-started/what-is-payload), [Multi-Tenant Plugin](https://payloadcms.com/docs/plugins/multi-tenant), [Database](https://payloadcms.com/docs/database/overview), [MCP Plugin](https://payloadcms.com/docs/plugins/mcp). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [kiến trúc](https://docs.opencms.kdigi.vn/tham-khao/architecture/), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.2.0, 2026-11-03).

@@ -684,6 +684,68 @@
       "sha256": "75a24e3eaca3705d8042172e7f5197d42f915101a3f527b46ecd2f9af0600a0c"
     },
     {
+      "file": "composed/kdigi-cms-1-2-0-ai-native-mcp-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.2.0: CMS AI-native với máy chủ MCP và CLI kcms",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 97,
+        "titleMode": "block",
+        "lines": 3
+      },
+      "post": {
+        "slug": "kdigi-cms-1-2-0-ai-native-mcp",
+        "id": 31,
+        "updatedAt": "2026-11-03T16:23:16.488Z",
+        "cmsTitle": "KDIGI CMS 1.2.0: CMS AI-native với máy chủ MCP và CLI kcms",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "art",
+          "ref": "public/images/art/phat-hanh-hero.webp",
+          "sha256": "ac5a3e20eb9d016656f30ec0e2cb10aadb0fa88d4085fe0c8a4f849ef8fe2a8d"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T16:23:22.341Z",
+      "layout": "wide",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 44030,
+      "sha256": "13e9096fb8070d5b80b7fc5fba3017d25436436e79a59afe86d574bf66720908"
+    },
+    {
       "file": "composed/llms-txt-la-gi-card-solid.webp",
       "kind": "card",
       "text": {

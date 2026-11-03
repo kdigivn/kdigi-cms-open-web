@@ -19,6 +19,8 @@ faq:
     a: "README Directus không mô tả tenant hay site dựng sẵn; bạn tự thiết kế ranh giới bằng chính sách quyền theo bộ lọc, hoặc chạy nhiều instance. KDIGI CMS có collection Sites và access predicate tường minh."
   - q: "Tôi có phải trả tiền khi dùng Directus không?"
     a: "Theo README Directus, tổ chức dưới 5 triệu USD doanh thu năm và dưới 50 nhân viên dùng miễn phí qua Open Innovation Grant; có tầng Core miễn phí. Tổ chức lớn cần giấy phép thương mại."
+  - q: "Directus và KDIGI CMS khác nhau thế nào về MCP cho AI agent?"
+    a: "Cả hai có MCP server tích hợp. [Directus](https://directus.com/docs/guides/ai/mcp) hỗ trợ OAuth hoặc access token, dùng được từ ChatGPT và Claude.ai web. KDIGI CMS xác thực bằng API key theo người dùng (chưa có OAuth), có 23 công cụ biên tập nội dung, tôn trọng vai trò và khóa chỉnh sửa, kèm CLI kcms; có từ bản 1.2.0. Xem [AI agent (MCP)](/tinh-nang/ai-agent-mcp)."
 related:
   - /so-sanh/kdigi-cms-vs-strapi
   - /so-sanh/kdigi-cms-vs-payload
@@ -35,7 +37,7 @@ Directus bao một CSDL SQL bằng API và Studio, theo giấy phép source-avai
 > - Giấy phép: KDIGI CMS MIT; Directus MSCL 1.0 (source-available).
 > - Directus hỗ trợ nhiều CSDL; KDIGI CMS chỉ PostgreSQL.
 > - KDIGI CMS có đa website, SEO/JSON-LD, Markdown, pipeline WordPress.
-> - Directus có Cloud, MCP server, AI Assistant; KDIGI CMS mới ra 1.0.0.
+> - Cả hai có MCP server tích hợp; Directus còn có Cloud, OAuth và AI Assistant; KDIGI CMS mới ra 1.0.0.
 
 ## :scale: Bảng so sánh
 
@@ -51,7 +53,8 @@ Directus theo README và trang chính thức, kiểm tra 2026-11-03.
 | SEO, JSON-LD, redirect trong lõi | ✓ | ✗ (tự thiết kế) |
 | Pipeline chuyển từ WordPress | ✓ | ✗ (README không nêu) |
 | Phân quyền | 4 vai trò theo site | Chính sách tới cấp trường |
-| AI | AI SEO tùy chọn (DeepSeek) | AI Assistant, MCP server |
+| AI agent (MCP) | MCP server tích hợp sẵn; API key theo người dùng; chưa có OAuth; có từ bản 1.2.0 | MCP server tích hợp (từ v11.12); OAuth hoặc access token |
+| AI trong admin | AI SEO tùy chọn (DeepSeek) | AI Assistant |
 | Dịch vụ quản lý | ✗ | ✓ Directus Cloud |
 
 > **Lưu ý** Request ẩn danh vào API của KDIGI CMS thấy mọi site, trừ khi frontend thêm `where[tenant][equals]=<id>`. Xem [quản lý nhiều website](/tinh-nang/quan-ly-nhieu-website).
@@ -67,6 +70,14 @@ Nhiều bài so sánh cũ ghi Directus dùng BSL 1.1; đã lỗi thời. Theo c�
 :::
 
 > **Lưu ý** Directus không còn là mã nguồn mở theo nghĩa OSI. Nếu MIT là yêu cầu cứng, đọc [giấy phép Directus](https://directus.com/license) và xem [mã nguồn mở của KDIGI CMS](/ma-nguon-mo).
+
+## :bot: AI agent và MCP
+
+Cả hai có MCP server tích hợp sẵn. [Directus](https://directus.com/docs/guides/ai/mcp) (từ v11.12) tắt mặc định, bật trong Settings → AI; AI chạy với quyền của tài khoản kết nối và có công cụ cho cả dữ liệu lẫn schema. [Xác thực](https://directus.com/docs/guides/ai/mcp/installation) bằng OAuth hoặc access token tĩnh; nhờ OAuth, ChatGPT và Claude.ai (web) kết nối được.
+
+KDIGI CMS bật sẵn (đặt `MCP_ENABLED=false` để tắt) tại `POST /api/mcp`, với 23 công cụ riêng cho nội dung: bài, trang, lịch đăng, phiên bản, thùng rác, media, SEO audit. Xác thực bằng API key theo người dùng; agent chạy đúng vai trò và website của người đó, tôn trọng khóa chỉnh sửa trong admin, ghi cần `expectedUpdatedAt`. Kèm CLI `kcms`. Có từ bản 1.2.0. Xem [AI agent (MCP) của KDIGI CMS](/tinh-nang/ai-agent-mcp).
+
+> **Lưu ý** KDIGI CMS chưa hỗ trợ OAuth, nên ChatGPT web và Claude.ai web chưa dùng được; dùng Claude Code, Codex, Cursor, VS Code hoặc cầu nối stdio `kcms mcp`. Nếu cần kết nối từ ứng dụng web ngay, Directus có lợi thế.
 
 ## :check: Khi nào chọn mỗi bên
 
@@ -103,4 +114,4 @@ Không có công cụ nhập tự động, nhưng dữ liệu Directus nằm tro
 
 ## :link: Nguồn
 
-Directus, kiểm tra 2026-11-03: [kho mã](https://github.com/directus/directus), [giấy phép MSCL](https://directus.com/license), [thông báo đổi giấy phép](https://directus.com/resources/directus-v12-license-change) (2026-04-22), [tài liệu](https://directus.com/docs). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), CHANGELOG 1.1.0 (2026-11-03).
+Directus, kiểm tra 2026-11-03: [kho mã](https://github.com/directus/directus), [giấy phép MSCL](https://directus.com/license), [thông báo đổi giấy phép](https://directus.com/resources/directus-v12-license-change) (2026-04-22), [tài liệu](https://directus.com/docs), [MCP server](https://directus.com/docs/guides/ai/mcp), [cài đặt MCP](https://directus.com/docs/guides/ai/mcp/installation). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

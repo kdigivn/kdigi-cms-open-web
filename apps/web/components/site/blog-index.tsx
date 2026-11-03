@@ -12,7 +12,7 @@ import { Container } from "./section"
 
 const TITLE = "Blog KDIGI CMS: hướng dẫn, so sánh CMS và bản phát hành"
 const DESCRIPTION =
-  "Bài viết về KDIGI CMS và CMS headless: so sánh với WordPress, Strapi, Payload, hướng dẫn SEO, JSON-LD, chuyển từ WordPress, tự host và các bản phát hành."
+  "Bài viết về KDIGI CMS, CMS headless AI-native: AI agent qua MCP, so sánh với WordPress, Strapi, Payload, hướng dẫn SEO, JSON-LD, chuyển từ WordPress, tự host."
 
 export function blogIndexMetadata(page: number): Metadata {
   return buildMetadata({

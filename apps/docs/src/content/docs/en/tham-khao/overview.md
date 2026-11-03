@@ -1,10 +1,10 @@
 ---
 title: "KDIGI CMS documentation"
-description: "Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn> · hosted docs:…"
+description: "Reference documentation for KDIGI CMS, an AI-native, open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL): editors work in the admin, frontends read…"
 editUrl: https://github.com/kdigivn/kdigi-cms-open/edit/main/docs/README.md
 ---
 
-Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn> · hosted docs: <https://docs.opencms.kdigi.vn> · live demo: <https://app.opencms.kdigi.vn/admin> (credentials in the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md#try-it-live)). The reference docs are written in English (the [WordPress migration](/en/tham-khao/wordpress-migration/) guides are in Vietnamese); the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.md) is in Vietnamese with an [English version](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md).
+Reference documentation for KDIGI CMS, an AI-native, open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL): editors work in the admin, frontends read REST/GraphQL, and AI agents write and publish through the built-in [MCP server](/en/tham-khao/ai-integration/). Website: <https://opencms.kdigi.vn> · hosted docs: <https://docs.opencms.kdigi.vn> · live demo: <https://app.opencms.kdigi.vn/admin> (credentials in the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md#try-it-live)). The reference docs are written in English (the [WordPress migration](/en/tham-khao/wordpress-migration/) guides are in Vietnamese); the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.md) is in Vietnamese with an [English version](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md).
 
 ## Start here
 
@@ -26,6 +26,7 @@ Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (P
 | [SEO](/en/tham-khao/seo/) | JSON-LD, title/description placeholders, audit, optional AI generation |
 | [Media and storage](/en/tham-khao/media-storage/) | local-disk default, per-site Cloudflare R2, image tools |
 | [WordPress migration](/en/tham-khao/wordpress-migration/) | import an existing WordPress site |
+| [AI integration (MCP & CLI)](/en/tham-khao/ai-integration/) | let Claude Code, Codex, Cursor, VS Code or OMP write and publish content; the `kcms` CLI |
 
 ## Building a frontend / extending
 

@@ -6,10 +6,11 @@
 
 ## Sản phẩm
 
-- Mô tả: hai website công khai của KDIGI CMS (CMS headless đa website mã nguồn mở, MIT) trong một repo pnpm workspace. Repo CMS: https://github.com/kdigivn/kdigi-cms-open.
+- Mô tả: hai website công khai của KDIGI CMS (CMS headless AI-native, đa website, mã nguồn mở MIT) trong một repo pnpm workspace. Repo CMS: https://github.com/kdigivn/kdigi-cms-open.
   - `apps/web` → https://opencms.kdigi.vn: trang giới thiệu (marketing) bằng Next.js, có bản demo trực tuyến, blog và FAQ lấy từ chính KDIGI CMS.
   - `apps/docs` → https://docs.opencms.kdigi.vn: tài liệu bằng Astro Starlight (không đổi nội dung so với trước khi tách).
   - CMS chạy ở https://app.opencms.kdigi.vn (repo riêng); trang chủ đọc nội dung của site `opencms`, tài khoản demo công khai chỉ vào được site `demo`.
+- Định vị: AI-native là thông điệp đầu tiên (hero, value props, section `#ai-agent` trên trang chủ, trang `/tinh-nang/ai-agent-mcp`, hướng dẫn `huong-dan/ai-agent-mcp` ở docs): AI agent làm việc trên CMS qua máy chủ MCP có sẵn (từ 1.2.0) và CLI `kcms`, với đúng quyền người dùng. Tài khoản demo công khai không tạo được API key, nên trang nào nhắc thử MCP đều chỉ sang tự host.
 - Người dùng chính: agency, blogger, doanh nghiệp nhỏ, người đang dùng WordPress muốn chuyển; developer đọc tài liệu API. Đọc chủ yếu trên desktop, một phần mobile.
 - Thị trường/locale: tiếng Việt trước. `apps/docs` có thêm `/en/`; `apps/web` chỉ tiếng Việt (bản tiếng Anh chưa làm, CMS đã có sẵn locale `en`).
 - Phạm vi `apps/web`: website dự án nhiều trang (không phải landing): trang chủ, `/tinh-nang/*`, `/giai-phap/*`, `/so-sanh/*`, `/thuc-hanh-tot/*`, `/chuyen-tu-wordpress`, `/tu-host`, `/demo`, `/ma-nguon-mo`, `/phat-hanh`; blog (`/blog`, `/blog/[slug]`, `/blog/chuyen-muc/[slug]`, `/tac-gia/[slug]`, phân trang, RSS); trang `gioi-thieu`/`dieu-khoan`/`quyen-rieng-tu` từ CMS khi không có tệp; SEO/AIO/GEO (metadata, canonical, OG, JSON-LD, sitemap, robots cho crawler AI, `llms.txt`, `llms-full.txt`, `rss.xml`) và `pnpm --filter web check:seo`.

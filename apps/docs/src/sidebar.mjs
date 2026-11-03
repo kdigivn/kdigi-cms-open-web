@@ -44,6 +44,7 @@ export const topics = [
         page('huong-dan/trien-khai-coolify', 'Triển khai trên Coolify', 'Deploy on Coolify'),
       ]),
       group('Tính năng', 'Features', [
+        page('huong-dan/ai-agent-mcp', 'AI agent và MCP', 'AI agents and MCP'),
         page('huong-dan/nhieu-website', 'Nhiều website', 'Multiple sites'),
         page('huong-dan/soan-thao-markdown', 'Soạn thảo Markdown', 'Markdown editor'),
         page('huong-dan/seo-json-ld', 'SEO và JSON-LD', 'SEO and JSON-LD'),

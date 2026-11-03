@@ -21,6 +21,8 @@ faq:
     a: "Có sẵn mẫu tiêu đề kiểu RankMath, JSON-LD @graph, breadcrumbs, audit và redirect 301 khi đổi slug. Khác WordPress, CMS không render trang: frontend của bạn phải đọc trường seo và xuất thẻ meta."
   - q: "Chi phí thực sự của KDIGI CMS là gì?"
     a: "Giấy phép MIT, không phí bản quyền. Chi phí nằm ở hạ tầng tự host (Node.js và PostgreSQL) và công phát triển frontend. WordPress cũng miễn phí bản quyền; chi phí thường ở hosting, theme/plugin trả phí và bảo trì."
+  - q: "KDIGI CMS và WordPress khác nhau thế nào về AI agent và MCP?"
+    a: "KDIGI CMS có MCP server tích hợp sẵn (23 công cụ cho bài, trang, lịch đăng, media, SEO) với API key theo người dùng, kèm CLI kcms; có từ bản 1.2.0. WordPress có plugin chính thức [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) dựa trên Abilities API, cần các abilities do lõi hoặc plugin đăng ký. Chi tiết: [AI agent (MCP)](/tinh-nang/ai-agent-mcp)."
 related:
   - /chuyen-tu-wordpress
   - /tinh-nang/quan-ly-nhieu-website
@@ -53,6 +55,7 @@ WordPress theo tài liệu chính thức, kiểm tra 2026-11-03. KDIGI CMS theo 
 | GraphQL có sẵn | ✓ | ✗ (qua plugin WPGraphQL) |
 | SEO, JSON-LD không cần plugin | ✓ | ✗ (Yoast, RankMath…) |
 | Nội dung song ngữ `vi` + `en` có sẵn | ✓ | ✗ (qua plugin Polylang, WPML…) |
+| AI agent (MCP) | MCP server tích hợp sẵn; API key theo người dùng; có từ bản 1.2.0 | Plugin chính thức MCP Adapter; Application Password; chỉ lộ abilities được đánh dấu public |
 | Giỏ hàng, thanh toán | ✗ | WooCommerce |
 | Theme và plugin | ✗ | ✓ |
 | Triển khai | Docker Compose, Coolify, VPS | Shared hosting đến WordPress.com |
@@ -66,6 +69,14 @@ WordPress theo tài liệu chính thức, kiểm tra 2026-11-03. KDIGI CMS theo 
 - :layers: **Một kho, nhiều frontend** Mỗi site có domain, menu, mẫu SEO riêng. [Quản lý nhiều website](/tinh-nang/quan-ly-nhieu-website)
 - :shield-check: **Admin tách khỏi site** Frontend công khai không chạy chung ứng dụng với admin. [Tự host](/tu-host)
 :::
+
+## :bot: AI agent và MCP
+
+KDIGI CMS có sẵn máy chủ MCP tại `POST /api/mcp` với 23 công cụ: tìm, đọc, tạo, sửa, lên lịch, xuất bản bài và trang, quản lý media, taxonomy, kiểm tra SEO. Xác thực bằng API key theo từng người dùng; agent chạy đúng vai trò và website của người đó, tôn trọng khóa chỉnh sửa trong admin và phải gửi `expectedUpdatedAt` khi ghi. Kèm CLI `kcms` để làm việc với file Markdown. Tính năng có từ bản 1.2.0. Xem [KDIGI CMS cho AI agent (MCP)](/tinh-nang/ai-agent-mcp).
+
+WordPress cũng có đường chính thức: Abilities API nằm trong lõi từ WordPress 6.9, còn plugin [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) do WordPress.org phát hành (GPL-2.0+) biến các abilities thành công cụ MCP. Adapter chỉ là lớp kết nối: agent làm được gì tùy các abilities mà lõi hoặc plugin đăng ký và đánh dấu công khai. Xác thực dùng Application Password, mọi thao tác chạy theo vai trò của người dùng đó, theo [hướng dẫn cho chủ site](https://github.com/WordPress/mcp-adapter/blob/trunk/docs/getting-started/site-owners.md). Ưu điểm của WordPress là hệ sinh thái plugin có thể tự mở thêm abilities.
+
+> **Lưu ý** KDIGI CMS chưa hỗ trợ OAuth, nên ChatGPT web và Claude.ai web chưa kết nối trực tiếp được; dùng Claude Code, Codex, Cursor, VS Code hoặc cầu nối stdio `kcms mcp`. Tài liệu MCP Adapter ghi nhận hạn chế tương tự với các ứng dụng web này.
 
 ## :check: Khi nào chọn mỗi bên
 
@@ -106,4 +117,4 @@ Pipeline chạy lặp lại được: `WordPress → raw → staged → cổng d
 
 ## :link: Nguồn
 
-WordPress, kiểm tra 2026-11-03: [giấy phép](https://wordpress.org/about/license/), [REST API](https://developer.wordpress.org/rest-api/), [yêu cầu hệ thống](https://wordpress.org/about/requirements/), [Multisite](https://developer.wordpress.org/advanced-administration/multisite/create-network/). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.1.0, 2026-11-03), [tài liệu](https://docs.opencms.kdigi.vn).
+WordPress, kiểm tra 2026-11-03: [giấy phép](https://wordpress.org/about/license/), [REST API](https://developer.wordpress.org/rest-api/), [yêu cầu hệ thống](https://wordpress.org/about/requirements/), [Multisite](https://developer.wordpress.org/advanced-administration/multisite/create-network/), [MCP Adapter (wordpress.org)](https://wordpress.org/plugins/mcp-adapter/), [MCP Adapter (GitHub)](https://github.com/WordPress/mcp-adapter), [hướng dẫn kết nối cho chủ site](https://github.com/WordPress/mcp-adapter/blob/trunk/docs/getting-started/site-owners.md). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.2.0, 2026-11-03), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/).

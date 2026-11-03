@@ -21,6 +21,8 @@ faq:
     a: "Được, nhưng chưa có công cụ nhập tự động. Xuất dữ liệu qua REST API của Strapi, chuyển sang Markdown và nhập bằng REST hoặc Local API của Payload; cần ánh xạ lại content type, media và quan hệ."
   - q: "Strapi hay KDIGI CMS dễ dùng hơn cho người không biết code?"
     a: "Với người biên tập, cả hai đều trực quan. Với người dựng mô hình dữ liệu, Strapi có Content-Type Builder không cần code; KDIGI CMS có mô hình dựng sẵn, đổi cấu trúc cần sửa mã Payload và migration."
+  - q: "Strapi và KDIGI CMS có MCP server cho AI agent không?"
+    a: "Có cả hai. Strapi có [MCP server tích hợp](https://docs.strapi.io/cms/features/strapi-mcp-server) từ 5.47.0, xác thực bằng Admin token. KDIGI CMS có MCP server tích hợp (23 công cụ, API key theo người dùng, tôn trọng vai trò và khóa chỉnh sửa) kèm CLI kcms, có từ bản 1.2.0. Xem [AI agent (MCP)](/tinh-nang/ai-agent-mcp)."
 related:
   - /so-sanh/kdigi-cms-vs-payload
   - /so-sanh/kdigi-cms-vs-directus
@@ -55,6 +57,7 @@ Strapi theo README và tài liệu chính thức, kiểm tra 2026-11-03; số ph
 | Pipeline chuyển từ WordPress | ✓ | ✗ (không thấy trong tài liệu) |
 | Draft/Publish | ✓ | ✓ |
 | Soạn thảo | Markdown (Milkdown) | Rich text |
+| AI agent (MCP) | MCP server tích hợp sẵn; API key theo người dùng; có từ bản 1.2.0 | MCP server tích hợp sẵn (từ 5.47.0); Admin token; công cụ sinh theo content type |
 | Docker chính thức | ✓ | ✗ (tự build, theo README Strapi) |
 | Dịch vụ quản lý | ✗ | ✓ Strapi Cloud |
 | Hệ sinh thái | Nhỏ, dự án mới | Lớn: plugin, template, cộng đồng |
@@ -68,6 +71,14 @@ Strapi theo README và tài liệu chính thức, kiểm tra 2026-11-03; số ph
 - :layers: **Đa website** KDIGI CMS có `sites` làm ranh giới tenant; Strapi cần tự thiết kế. [Quản lý nhiều website](/tinh-nang/quan-ly-nhieu-website)
 - :search: **SEO** Mẫu tiêu đề, JSON-LD `@graph`, audit, redirect có sẵn. [SEO và JSON-LD](/tinh-nang/seo-json-ld)
 :::
+
+## :bot: AI agent và MCP
+
+Cả hai đều có MCP server tích hợp sẵn, không cần plugin bên thứ ba. [Strapi](https://docs.strapi.io/cms/features/strapi-mcp-server) (từ 5.47.0, tính năng miễn phí) bật bằng `mcp.enabled` trong `config/server`, endpoint `/mcp`, xác thực bằng Admin token và chỉ lộ các công cụ mà token được cấp quyền. Công cụ CRUD, publish/unpublish được sinh theo content type của bạn, kèm công cụ thư viện media.
+
+KDIGI CMS có MCP server tại `POST /api/mcp` (23 công cụ cho bài, trang, lịch đăng, phiên bản, thùng rác, media, SEO audit) chạy theo API key của từng người dùng: đúng vai trò và website của người đó, tôn trọng khóa chỉnh sửa trong admin, ghi cần `expectedUpdatedAt`. Kèm CLI `kcms` cho file Markdown và lệnh `kcms setup` cho Claude Code, Codex, Cursor, VS Code. Có từ bản 1.2.0. Xem [AI agent (MCP) của KDIGI CMS](/tinh-nang/ai-agent-mcp).
+
+Khác biệt thực tế: Strapi phản ánh mô hình dữ liệu tự do của bạn; KDIGI CMS có bộ công cụ biên tập dựng sẵn (SEO audit, phiên bản, thùng rác) cho website nội dung.
 
 ## :check: Khi nào chọn mỗi bên
 
@@ -104,4 +115,4 @@ Chưa có công cụ nhập Strapi tự động, nên đây là quy trình thủ
 
 ## :link: Nguồn
 
-Strapi, kiểm tra 2026-11-03: [kho mã](https://github.com/strapi/strapi), [giấy phép](https://github.com/strapi/strapi/blob/main/LICENSE), [cấu hình CSDL](https://docs.strapi.io/cms/configurations/database), [tài liệu](https://docs.strapi.io), [Strapi Cloud](https://strapi.io/cloud). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), CHANGELOG 1.1.0 (2026-11-03).
+Strapi, kiểm tra 2026-11-03: [kho mã](https://github.com/strapi/strapi), [giấy phép](https://github.com/strapi/strapi/blob/main/LICENSE), [cấu hình CSDL](https://docs.strapi.io/cms/configurations/database), [tài liệu](https://docs.strapi.io), [Strapi Cloud](https://strapi.io/cloud), [MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

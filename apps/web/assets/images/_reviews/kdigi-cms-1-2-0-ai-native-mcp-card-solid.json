@@ -1,0 +1,62 @@
+{
+  "name": "kdigi-cms-1-2-0-ai-native-mcp-card-solid",
+  "file": "composed/kdigi-cms-1-2-0-ai-native-mcp-card-solid.webp",
+  "reviews": {
+    "13e9096fb8070d5b80b7fc5fba3017d25436436e79a59afe86d574bf66720908": {
+      "result": "pass",
+      "reviewer": "AI Vision (Claude, omp session)",
+      "reviewed": "2026-11-03T16:23:39.265Z",
+      "viewed": [
+        "full",
+        "384",
+        "191",
+        "2to1"
+      ],
+      "summary": "KDIGI CMS 1.2.0: CMS AI-native với máy chủ MCP và CLI kcms: OK",
+      "checks": {
+        "diacritics": {
+          "pass": true,
+          "note": "Opened all four previews: \"KDIGI CMS 1.2.0: CMS AI-native với máy chủ MCP và CLI kcms\" and eyebrow \"Bản phát hành\" render with correct Vietnamese diacritics; renderer cmap check passed."
+        },
+        "legibility": {
+          "pass": true,
+          "note": "Title 97px, 3 lines (block mode, second clause blue), solid light background, strong contrast, no overlap with the art."
+        },
+        "fit-384": {
+          "pass": true,
+          "note": "Title fully readable in the opened 384 px preview."
+        },
+        "safe-wide": {
+          "pass": true,
+          "note": "Full, 1.91:1 and 2:1 previews opened; logo, chip and title inside the safe zone, nothing cut."
+        },
+        "safe-191": {
+          "pass": true,
+          "note": "1.91:1 crop keeps logo, chip, title and the whole release-box art."
+        },
+        "logo": {
+          "pass": true,
+          "note": "Official KDIGI lockup top-left, undistorted."
+        },
+        "brief": {
+          "pass": true,
+          "note": "Title and eyebrow read from CMS tenant 1 post kdigi-cms-1-2-0-ai-native-mcp; category art phat-hanh-hero matches \"Bản phát hành\"."
+        },
+        "rights": {
+          "pass": true,
+          "note": "Only KDIGI logo, Ferry VN (OFL) and repo hero art; no external photo."
+        },
+        "ab-parity": {
+          "pass": true,
+          "note": "N/A: single solid render."
+        }
+      },
+      "owner": {
+        "status": "approved",
+        "by": "Khoi (owner)",
+        "at": "2026-11-03T16:23:39.431Z",
+        "note": "Bố cục v3 đã duyệt 2026-11-03; render cùng template; chủ site yêu cầu làm luôn bài phát hành 1.2.0"
+      }
+    }
+  }
+}

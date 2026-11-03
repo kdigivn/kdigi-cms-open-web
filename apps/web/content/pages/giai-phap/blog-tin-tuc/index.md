@@ -72,6 +72,8 @@ Collection `posts` có sẵn ba loại bài `blog`, `news`, `guide`, kèm danh m
 
 Chi tiết ở [quy trình biên tập](/tinh-nang/quy-trinh-bien-tap).
 
+> **Mẹo** Cấp cho AI agent (Claude Code, Codex, Cursor…) một tài khoản `author` riêng: agent viết bản nháp, gắn chuyên mục, chấm SEO qua MCP, editor duyệt rồi đăng. Xem [AI agent và MCP](/tinh-nang/ai-agent-mcp).
+
 ## :shield-check: SEO và E-E-A-T
 
 :::check

@@ -37,7 +37,7 @@ export default defineConfig({
     starlight({
       title: { vi: 'KDIGI CMS', en: 'KDIGI CMS' },
       description:
-        'KDIGI CMS: CMS headless đa website mã nguồn mở (MIT). Soạn thảo Markdown, SEO và JSON-LD, thư viện media, phân quyền, chuyển từ WordPress, REST/GraphQL, tự host bằng Docker/Coolify.',
+        'KDIGI CMS: CMS headless AI-native, đa website, mã nguồn mở (MIT). AI agent qua MCP và CLI kcms, soạn thảo Markdown, SEO và JSON-LD, thư viện media, phân quyền, chuyển từ WordPress, REST/GraphQL, tự host bằng Docker/Coolify.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'Tiếng Việt', lang: 'vi' },

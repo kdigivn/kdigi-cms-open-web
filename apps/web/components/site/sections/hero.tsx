@@ -15,12 +15,12 @@ export function Hero() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.25fr)] lg:gap-10">
           <div className="text-center lg:text-left">
-            <p className="eyebrow mb-4">Mã nguồn mở · Giấy phép MIT</p>
+            <p className="eyebrow mb-4">AI-native · Mã nguồn mở · Giấy phép MIT</p>
             <h1 id="hero-title" className="t-display">
-              Một CMS cho tất cả website của bạn
+              Một CMS cho mọi website, cả người và AI cùng làm
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
-              CMS headless mã nguồn mở: nhiều website trong một trang quản trị, soạn bằng Markdown, SEO và JSON-LD có sẵn, tự host bằng Docker.
+              CMS headless AI-native: nhiều website trong một trang quản trị, AI agent viết và đăng bài qua MCP với đúng quyền của bạn, soạn bằng Markdown, SEO và JSON-LD có sẵn, tự host bằng Docker.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
               <ButtonLink href="/#demo" variant="brand" size="lg">

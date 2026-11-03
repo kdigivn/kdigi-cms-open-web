@@ -15,7 +15,7 @@ faq:
   - q: "Nên đọc bài thực hành nào trước?"
     a: "Đang dựng site: cấu trúc nội dung rồi SEO on-page. Chuẩn bị production: bảo mật, sao lưu và nâng cấp. Đã có người dùng thật: hiệu năng và cache."
   - q: "Các hướng dẫn này áp dụng cho phiên bản nào?"
-    a: "Nội dung đối chiếu với tài liệu và CHANGELOG của KDIGI CMS 1.1.0 (2026-11-03). Dùng bản khác thì đọc CHANGELOG giữa hai bản trước khi áp dụng."
+    a: "Nội dung đối chiếu với tài liệu và CHANGELOG của KDIGI CMS 1.2.0 (2026-11-03). Dùng bản khác thì đọc CHANGELOG giữa hai bản trước khi áp dụng."
 related:
   - /tinh-nang/seo-json-ld
   - /chuyen-tu-wordpress
@@ -27,7 +27,7 @@ docs: https://docs.opencms.kdigi.vn/tham-khao/overview/
 Thực hành tốt xoay quanh năm nhóm việc: cấu trúc nội dung, SEO on-page, bảo mật, hiệu năng và sao lưu. KDIGI CMS chỉ là admin và API, nên cache và CDN thuộc về frontend và hạ tầng của bạn.
 
 > **Tóm tắt nhanh**
-> - Năm bài, đối chiếu với CHANGELOG 1.1.0.
+> - Năm bài, đối chiếu với CHANGELOG 1.2.0.
 > - Thứ tự: nội dung → SEO → bảo mật → hiệu năng → sao lưu.
 > - Khó đảo ngược nhất: slug, quy ước URL, vai trò, `PAYLOAD_PUBLIC_SERVER_URL`.
 

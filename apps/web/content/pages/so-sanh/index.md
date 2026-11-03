@@ -30,7 +30,7 @@ KDIGI CMS là headless CMS mã nguồn mở (MIT) quản lý nhiều website, x�
 
 > **Tóm tắt nhanh**
 > - KDIGI CMS = admin + API; frontend do bạn tự làm.
-> - Mạnh: đa website, Markdown, SEO/JSON-LD, chuyển từ WordPress.
+> - Mạnh: đa website, Markdown, SEO/JSON-LD, MCP cho AI agent, chuyển từ WordPress.
 > - Chưa có: giỏ hàng, newsletter, theme; chỉ PostgreSQL.
 > - Bản công khai đầu tiên 1.0.0 ngày 2026-11-03.
 
@@ -44,6 +44,7 @@ KDIGI CMS là headless CMS mã nguồn mở (MIT) quản lý nhiều website, x�
 | Ứng dụng cần framework backend tự do | [Payload](/so-sanh/kdigi-cms-vs-payload) |
 | Newsletter và thuê bao | [Ghost](/so-sanh/kdigi-cms-vs-ghost) |
 | Đã có CSDL SQL, cần API và Studio | [Directus](/so-sanh/kdigi-cms-vs-directus) |
+| AI agent viết và xuất bản nội dung nhiều website, theo vai trò | [KDIGI CMS](/tinh-nang/ai-agent-mcp) |
 | Rời WordPress, chủ yếu bài viết và trang | [KDIGI CMS](/chuyen-tu-wordpress) |
 
 ## :scale: Bảng tổng hợp
@@ -57,6 +58,9 @@ Dữ liệu đối thủ lấy từ tài liệu chính thức, kiểm tra 2026-1
 | SEO trong lõi | ✓ | Plugin | Tự xây | Tự xây | Cơ bản | Tự xây |
 | Giỏ hàng dựng sẵn | ✗ | WooCommerce | ✗ | Template | ✗ | ✗ |
 | Chuyển từ WordPress | ✓ | — | ✗ | ✗ | ✗ | ✗ |
+| AI agent (MCP) | Tích hợp sẵn (từ 1.2.0) | Plugin chính thức | Tích hợp sẵn | Plugin chính thức | CLI chính thức (beta) | Tích hợp sẵn |
+
+Cả sáu đều có đường kết nối AI agent, khác nhau ở chỗ nằm trong lõi hay là plugin/CLI, và cách xác thực. KDIGI CMS có MCP server dựng sẵn, API key theo người dùng, theo vai trò và khóa chỉnh sửa, kèm CLI `kcms`; chưa hỗ trợ OAuth. Xem [KDIGI CMS cho AI agent (MCP)](/tinh-nang/ai-agent-mcp) và từng bài so sánh bên dưới.
 
 ## :eye: Cách chúng tôi so sánh
 
@@ -78,4 +82,4 @@ Dữ liệu đối thủ lấy từ tài liệu chính thức, kiểm tra 2026-1
 
 ## :link: Nguồn
 
-Kiểm tra 2026-11-03: [WordPress](https://wordpress.org/about/license/), [Strapi](https://github.com/strapi/strapi), [Payload](https://github.com/payloadcms/payload), [Ghost](https://github.com/TryGhost/Ghost), [Directus](https://directus.com/license), [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open).
+Kiểm tra 2026-11-03: [WordPress](https://wordpress.org/about/license/), [Strapi](https://github.com/strapi/strapi), [Payload](https://github.com/payloadcms/payload), [Ghost](https://github.com/TryGhost/Ghost), [Directus](https://directus.com/license), [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open). Về MCP: [WordPress MCP Adapter](https://wordpress.org/plugins/mcp-adapter/), [Strapi MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server), [Payload MCP plugin](https://payloadcms.com/docs/plugins/mcp), [Ghost ghst CLI](https://github.com/TryGhost/ghst), [Directus MCP](https://directus.com/docs/guides/ai/mcp), [KDIGI CMS AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/).

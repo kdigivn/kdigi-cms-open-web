@@ -26,4 +26,6 @@ Every account has a **role** and is assigned to one or more sites. Real access i
 
 A super admin creates the user, picks a role and adds the sites that person may work on. An account with several sites gets a site selector in the admin panel.
 
+AI agents and the `kcms` CLI use a user's API key, so they get exactly that user's role and sites, plus extra limits for API-key sessions. See [AI agents and MCP](/en/huong-dan/ai-agent-mcp/).
+
 The detailed per-collection permission table is in the [roles and permissions reference](/en/tham-khao/roles-and-permissions/).

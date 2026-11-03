@@ -6,6 +6,12 @@ const lang = Astro.locals.starlightRoute.locale === 'en' ? 'en' : 'vi';
 const features = {
   vi: [
     {
+      icon: 'bot',
+      title: 'AI agent qua MCP',
+      text: 'Claude Code, Codex, Cursor viết, đăng bài và kiểm tra SEO bằng API key, đúng vai trò của người dùng.',
+      href: '/huong-dan/ai-agent-mcp/',
+    },
+    {
       icon: 'globe',
       title: 'Nhiều website, một CMS',
       text: 'Mỗi website có nội dung, tên miền, thương hiệu và đội ngũ riêng. Thêm site mới ngay trong trang quản trị.',
@@ -53,14 +59,14 @@ const features = {
       text: 'Một lệnh docker compose chạy cả Postgres và ứng dụng. Có site demo để xem thử ngay.',
       href: '/huong-dan/cai-dat-docker/',
     },
-    {
-      icon: 'languages',
-      title: 'Song ngữ Việt và Anh',
-      text: 'Nội dung mặc định tiếng Việt kèm bản tiếng Anh; nhãn quản trị có cả hai ngôn ngữ.',
-      href: '/huong-dan/bat-dau-nhanh/',
-    },
   ],
   en: [
+    {
+      icon: 'bot',
+      title: 'AI agents over MCP',
+      text: 'Claude Code, Codex and Cursor write, publish and SEO-check content with an API key and the user\'s role.',
+      href: '/en/huong-dan/ai-agent-mcp/',
+    },
     {
       icon: 'globe',
       title: 'Many sites, one CMS',
@@ -108,12 +114,6 @@ const features = {
       title: 'Self-host with Docker/Coolify',
       text: 'One docker compose command runs Postgres and the app. A demo site is included.',
       href: '/en/huong-dan/cai-dat-docker/',
-    },
-    {
-      icon: 'languages',
-      title: 'Vietnamese and English',
-      text: 'Vietnamese is the default content language, English is supported; admin labels are bilingual.',
-      href: '/en/huong-dan/bat-dau-nhanh/',
     },
   ],
 } as const;

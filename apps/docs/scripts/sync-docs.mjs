@@ -21,7 +21,8 @@ import path from 'node:path';
 const REPO_URL = 'https://github.com/kdigivn/kdigi-cms-open';
 const BRANCH = 'main';
 const root = process.cwd();
-const sourceDir = path.resolve(process.argv[2] ?? path.join(root, '../kdigi-cms-open/docs'));
+// Chạy trong `apps/docs` (pnpm --filter docs); repo CMS nằm cạnh repo này.
+const sourceDir = path.resolve(process.argv[2] ?? path.join(root, '../../../kdigi-cms-open/docs'));
 const outDir = path.join(root, 'src/content/docs/en/tham-khao');
 const ORDER = [
   'readme',
@@ -36,6 +37,7 @@ const ORDER = [
   'media-storage',
   'rest-api',
   'roles-and-permissions',
+  'ai-integration',
   'admin-theming',
   'wordpress-migration',
   'upgrading',

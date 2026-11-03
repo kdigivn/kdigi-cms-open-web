@@ -23,7 +23,7 @@ related:
 docs: https://docs.opencms.kdigi.vn/tham-khao/overview/
 ---
 
-KDIGI CMS là CMS headless nhiều website, mã nguồn mở MIT. Bốn giải pháp dưới đây dùng chung một nền tảng, khác nhau ở cách thiết lập và giới hạn.
+KDIGI CMS là CMS headless AI-native, nhiều website, mã nguồn mở MIT. Bốn giải pháp dưới đây dùng chung một nền tảng, khác nhau ở cách thiết lập và giới hạn; giải pháp nào cũng có thể giao việc nội dung cho [AI agent qua MCP](/tinh-nang/ai-agent-mcp).
 
 > **Tóm tắt nhanh**
 > - Mỗi giải pháp có thiết lập từng bước.

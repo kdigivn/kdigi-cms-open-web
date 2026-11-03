@@ -19,6 +19,8 @@ faq:
     a: "Tài liệu hosting của Ghost không nêu tính năng quản lý nhiều site trong một bản cài; thực tế thường chạy mỗi site một instance. KDIGI CMS gom nhiều website vào một bản cài, mỗi website là một tenant."
   - q: "Chuyển nội dung từ Ghost sang KDIGI CMS thế nào?"
     a: "Chưa có công cụ nhập Ghost tự động. Xuất bài từ Admin API hoặc tệp xuất JSON, chuyển HTML sang Markdown, tạo site, tác giả, chuyên mục rồi nhập qua REST của KDIGI CMS kèm redirect 301 cho URL cũ."
+  - q: "Ghost có MCP server cho AI agent không?"
+    a: "Ghost có CLI chính thức [ghst](https://github.com/TryGhost/ghst) với chế độ MCP server chạy cục bộ (beta, chưa ổn định), dùng staff access token; chúng tôi không thấy endpoint MCP trong lõi. KDIGI CMS có MCP server tích hợp tại /api/mcp với API key theo người dùng, kèm CLI kcms; có từ bản 1.2.0. Xem [AI agent (MCP)](/tinh-nang/ai-agent-mcp)."
 related:
   - /so-sanh/kdigi-cms-vs-wordpress
   - /giai-phap/blog-tin-tuc
@@ -51,6 +53,7 @@ Ghost theo README và tài liệu chính thức, kiểm tra 2026-11-03.
 | Theme dựng sẵn | ✗ | ✓ |
 | Bình luận | ✓ (reCAPTCHA tùy chọn, có duyệt) | ✓ (cho thành viên) |
 | SEO | Mẫu RankMath, JSON-LD `@graph`, audit | Trường SEO cơ bản cho theme |
+| AI agent (MCP) | MCP server tích hợp sẵn; API key theo người dùng; có từ bản 1.2.0 | CLI chính thức `ghst` có chế độ MCP server (beta, chạy cục bộ, staff token); chúng tôi không thấy MCP trong lõi |
 | Dịch vụ quản lý | ✗ | ✓ Ghost(Pro) |
 | Mở rộng quy mô | Một instance; jobs chạy trên đúng một bản | CDN + cache; không hỗ trợ clustering |
 
@@ -63,6 +66,14 @@ Ghost theo README và tài liệu chính thức, kiểm tra 2026-11-03.
 :::
 
 > **Mẹo** Nếu SEO dựa vào theme Ghost và không cần tùy biến sâu, Ghost cho kết quả nhanh.
+
+## :bot: AI agent và MCP
+
+Ghost không có MCP endpoint tích hợp trong lõi mà chúng tôi tìm thấy. Hướng chính thức là [`ghst`](https://github.com/TryGhost/ghst), CLI của TryGhost (MIT, bản beta, README ghi rõ chưa ổn định) có chế độ MCP server chạy cục bộ qua stdio hoặc HTTP, xác thực bằng staff access token và gọi Admin API. Đã có thêm các MCP server cộng đồng, không do Ghost phát hành.
+
+KDIGI CMS có MCP server nằm ngay trong CMS tại `POST /api/mcp`, 23 công cụ cho bài, trang, lịch đăng, phiên bản, thùng rác, media, SEO audit. Xác thực bằng API key theo người dùng; agent chạy đúng vai trò và website của người đó, tôn trọng khóa chỉnh sửa trong admin, ghi cần `expectedUpdatedAt`. Kèm CLI `kcms`. Có từ bản 1.2.0. Xem [AI agent (MCP) của KDIGI CMS](/tinh-nang/ai-agent-mcp).
+
+> **Lưu ý** Nếu bạn dùng Ghost chủ yếu cho newsletter và thành viên, `ghst` còn có nhóm công cụ cho thành viên, bình luận và thống kê; KDIGI CMS không có các phần đó.
 
 ## :check: Khi nào chọn mỗi bên
 
@@ -99,4 +110,4 @@ Chưa có công cụ nhập Ghost tự động. Nội dung nhập sẽ không ma
 
 ## :link: Nguồn
 
-Ghost, kiểm tra 2026-11-03: [kho mã](https://github.com/TryGhost/Ghost), [Hosting](https://docs.ghost.org/hosting), [Content API](https://docs.ghost.org/content-api), [bảng giá](https://ghost.org/pricing/). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), CHANGELOG 1.1.0 (2026-11-03).
+Ghost, kiểm tra 2026-11-03: [kho mã](https://github.com/TryGhost/Ghost), [Hosting](https://docs.ghost.org/hosting), [Content API](https://docs.ghost.org/content-api), [bảng giá](https://ghost.org/pricing/), [ghst CLI (MCP server mode)](https://github.com/TryGhost/ghst), [thảo luận MCP trên diễn đàn Ghost](https://forum.ghost.org/t/integrating-the-model-context-protocol-mcp-as-a-native-ghost-server/63239). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

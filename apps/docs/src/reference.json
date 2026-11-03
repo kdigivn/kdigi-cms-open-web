@@ -48,6 +48,10 @@
     "title": "Roles and Permissions"
   },
   {
+    "slug": "tham-khao/ai-integration",
+    "title": "AI integration: MCP server and kcms CLI"
+  },
+  {
     "slug": "tham-khao/admin-theming",
     "title": "Admin Theming and Branding"
   },
