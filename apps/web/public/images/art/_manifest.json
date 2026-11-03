@@ -1,0 +1,386 @@
+{
+  "blog-hero": {
+    "file": "blog-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Sổ tay kính mờ, bong bóng thoại xanh và chồng bài viết, đại diện cho blog KDIGI CMS",
+    "bytes": 73214,
+    "sha256": "ab3e2da00aa4b8bdbfcb9dd97f4f565426b536172ff403055040bcc1cb1b81b4",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass open notebook with blank pale text bars, a brand-blue clay speech bubble and a small stack of article cards beside a clay pen. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "5a4a54899c4543b21d0e716a40c0ae944471c79e8e82ecac822815bd4800d3b0",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "chuyen-tu-wordpress-hero": {
+    "file": "chuyen-tu-wordpress-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Tài liệu kính mờ chuyển qua băng chuyền sang khối xanh KDIGI CMS",
+    "bytes": 70900,
+    "sha256": "68ff287c3c81fa69a9354008e53e745479f013d678f588464463c6d7b2d33520",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "(reused render from illustrations-src/raw/scene-migrate.png)",
+      "rawSha256": "cf9dc30f0686da9871a303bfb14ba1b3d674a9a8f40facb48be90df47e47576e",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "demo-hero": {
+    "file": "demo-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Laptop kính mờ với nút phát xanh cạnh chìa khoá, đại diện cho bản demo trực tuyến",
+    "bytes": 66592,
+    "sha256": "c88f79123639b8f125d08eb8c78709a2799cca9cefe474089fd3720d5b6ab780",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it an open frosted-glass laptop with a brand-blue clay play-triangle button glowing on the screen, a small clay key and a small glass user-card beside it. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "afbeca7f74947d23d315f7e4af91ec20fd66f078eca07ed17d7c17d0ce71eeb9",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "giai-phap-agency-hero": {
+    "file": "giai-phap-agency-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Ba cửa sổ website kính mờ cùng nối về một khối xanh, đại diện cho agency quản lý nhiều site khách hàng",
+    "bytes": 75872,
+    "sha256": "fd353f038a3cd3af22bb357b1ddb550a6da9b0c7515ecc6c3c61fc406caff618",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it three small frosted-glass browser-window cards of different sizes in a row, each with a different small clay accent colour, all linked to one brand-blue clay hub cube in front by flat glowing cyan ribbons, and a small deep-navy clay briefcase block beside them. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "920ee5943a53591b51846a315c1aebb3e6b2a3b554a91fd62cc03307a1fed48e",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "giai-phap-blog-tin-tuc-hero": {
+    "file": "giai-phap-blog-tin-tuc-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Chồng thẻ bài viết kính mờ với bút lông và dấu trang xanh, đại diện cho blog và tin tức",
+    "bytes": 71516,
+    "sha256": "e696a0609760bd0b23533696f316d55498368c21dc465c323c1d10d59cbf9f17",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass newspaper-like stack of three article cards with blank pale text bars and one blank pale image tile each, a chunky clay feather-pen and a small brand-blue clay bookmark ribbon. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "060ff3db0be3f38738aae2bf67a111d3efb6b88fcfba92f1a221831117bbc9ec",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "giai-phap-doanh-nghiep-hero": {
+    "file": "giai-phap-doanh-nghiep-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Toà tháp kính mờ ba tầng với mái xanh, đại diện cho website doanh nghiệp",
+    "bytes": 53268,
+    "sha256": "f0bfb49cd34f5754087cdbf386abb04985ce75c3cbed04bc19d0e7983521eff8",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass office-building-like tower block of three stacked chamfered glass slabs with a brand-blue clay roof block, a small clay briefcase and a small glass page card beside it. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "39d74aa633ef839506d58be64cdbfbbed7e2fe0cc1ebb7790f742aafef2b5a1d",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "giai-phap-website-ban-hang-hero": {
+    "file": "giai-phap-website-ban-hang-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Giỏ hàng kính mờ với hộp sản phẩm đất sét và thẻ giá, đại diện cho website bán hàng",
+    "bytes": 62668,
+    "sha256": "d5ef1c3ee62c7aa61d9b074aeca40f0121bdd91ca22cabf6e7572456f5ccd3dc",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass shopping basket with a brand-blue clay handle holding two small clay product boxes (warm white and navy), beside a small glass price-tag tile with a blank pale bar. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "aba0faa159ec603f97e2280f38095bde8c37445820612b1d58f3e273d949281d",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "gioi-thieu-hero": {
+    "file": "gioi-thieu-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Khối xanh trung tâm quanh bốn nhân vật đất sét trừu tượng, đại diện cho đội ngũ KDIGI",
+    "bytes": 59278,
+    "sha256": "98ad4733544884b1c62f410f3b36213df160f0f8128b5824f557c76b57031c12",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a brand-blue clay hub cube with a cyan rim strip, surrounded by four small abstract capsule-bodied pawns with round heads (blue, navy, white, cyan) standing together, no faces, and a small glass lightbulb. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "fde2b63869d4d9a0c1a4dcb12f58d0fea5f004ca2ab9e510f010fd36f0c6191c",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "home-hero": {
+    "file": "home-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Một khối trung tâm xanh nối với ba cửa sổ website kính mờ trên đế đất sét",
+    "bytes": 59160,
+    "sha256": "38131b12a2f60081ad35a6e2b5b7392c6453030b910c9c41b3dc5a52f52a9e41",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "(reused render from illustrations-src/raw/hero-scene.png)",
+      "rawSha256": "1a0e3f7a8a2c34827c6d1ea5fba5271858396b7c57635e230903d6cf61705f44",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "lien-he-hero": {
+    "file": "lien-he-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Phong thư kính mờ với dấu xanh, bong bóng chat và máy bay giấy, đại diện cho liên hệ",
+    "bytes": 57042,
+    "sha256": "590775117f6bfb4d25da2a94a9f0fda71ff48c55c248c5951e64244b9b20f3c4",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass envelope with a brand-blue clay seal, a round glass chat bubble with three blank clay dots beside it, and a small clay paper plane. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "cc789e8a0029418b3a55f8222646c5a7814b7b0832b8a8128552dc10e083097e",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "ma-nguon-mo-hero": {
+    "file": "ma-nguon-mo-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Cây nhánh mã nguồn mở và ổ khoá mở bằng kính mờ trên đế đất sét",
+    "bytes": 59338,
+    "sha256": "e1dcf17cf8b8c75900c24b18a4395eb95f61968a31ce06d168c3f3f9983b0907",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "(reused render from illustrations-src/raw/scene-opensource.png)",
+      "rawSha256": "48bb598ec5874b9f2b29f6241c1ba6fa4e238ac848e2f43059345cae97ea9bff",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "phat-hanh-hero": {
+    "file": "phat-hanh-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Hộp phát hành kính mờ với dải xanh và mũi tên đi lên, đại diện cho các bản phát hành",
+    "bytes": 51870,
+    "sha256": "ac5a3e20eb9d016656f30ec0e2cb10aadb0fa88d4085fe0c8a4f849ef8fe2a8d",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass package box with a brand-blue clay ribbon band, an upward glowing cyan arrow made of three stacked chevron tiles above it, and a small round clay tag. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "f1c022362f1391e5762aa1a5210a0fb6bafe2a3c3c67053d2bc2572123109182",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "so-sanh-hero": {
+    "file": "so-sanh-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Cán cân với một khối xanh và một khối kính mờ, đại diện cho so sánh hệ quản trị nội dung",
+    "bytes": 59420,
+    "sha256": "4d04c5503e3af6fee050159d7274e2ec5e4cafb4c7d592920c225732b90d2a2a",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a balanced clay scale: two frosted-glass pans hanging from a navy clay beam on a warm-white pillar, a brand-blue clay cube on one pan and a pale frosted-glass cube on the other, level and calm. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "ac8f4fb000a04cc0cb2e4957fdb7c6f110fb99568a1b68a6e85d6cd32101df12",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "thuc-hanh-tot-hero": {
+    "file": "thuc-hanh-tot-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Bảng kẹp kính mờ với các dấu tích xanh cạnh chồng sách, đại diện cho thực hành tốt",
+    "bytes": 56124,
+    "sha256": "1a1b9645a3ae0f426cf95dc6c6814c0ba870d1a8ce0d27d1fecfbda57bdb08d9",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass clipboard standing upright with a clay clip and four blank pale rows each with a brand-blue clay check-mark tile, and a small clay book stack beside it. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "9b4ca2f7c27872f3feec844509103202f4d3c0020a6dccfb0b53b87377f5f58e",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-headless-api-hero": {
+    "file": "tinh-nang-headless-api-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Khối xanh nối bằng ống ánh xanh tới trình duyệt, điện thoại và máy tính bảng kính mờ, đại diện cho headless API",
+    "bytes": 66132,
+    "sha256": "416ddd9fa03da3a87c6a58029e4e77b8877d4b50510533d70923b9be52ca45c2",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a brand-blue clay cube with a cyan rim strip connected by flat glowing cyan ribbon pipes to three small frosted-glass screens of different kinds (a wide browser, a tall phone, a small square tablet), each with blank pale bars, plus two small floating clay curly-bracket-free abstract data capsules travelling on the pipes. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "64353e30cdbb3a07c14dd934d56dbe272762d277ba3a191f51faa22427be1605",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-hero": {
+    "file": "tinh-nang-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Lưới các ô kính mờ quanh một ô xanh trung tâm, tượng trưng cho bản đồ tính năng KDIGI CMS",
+    "bytes": 76688,
+    "sha256": "cb937983f372efc5e95bdc362e1901d9b049185c6eaf92538be51a839daa8736",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a 3x3 grid of rounded frosted-glass tiles, one brand-blue clay tile at the centre with a thin glowing cyan rim strip, the others pale glass with different blank pale glyph shapes (no text), joined by flat glowing cyan ribbon rails. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "ec3e5dec549d241a42649231bcf0282e8ae3e05f4460db63e5279821bf4432fb",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-noi-dung-va-cau-truc-hero": {
+    "file": "tinh-nang-noi-dung-va-cau-truc-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Cây nút đất sét và kính mờ cạnh chồng thẻ nội dung, đại diện cho mô hình nội dung và phân loại",
+    "bytes": 56810,
+    "sha256": "75477a2b9fda7ed224537ae2f25f6cfb6e3c546b4373bd53dd68b3822135d229",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a branching tree of five round and square clay nodes (brand-blue root, frosted glass, warm white, navy) joined by flat glowing cyan ribbons, with a small stack of three frosted-glass cards beside it and a small clay tag-shaped tile. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "8cc8d69a9ef2b71239377b3725f326e092bf6d221daf41cf35628df422a8da27",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-phan-quyen-nguoi-dung-hero": {
+    "file": "tinh-nang-phan-quyen-nguoi-dung-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Khiên kính mờ với ổ khoá xanh và bốn nhân vật đất sét trừu tượng, đại diện cho phân quyền người dùng",
+    "bytes": 55830,
+    "sha256": "2e741ffc99fadaa9839a8c964c11a7cc98dc89d0760b9dbd954928ff1095d20e",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass shield with a brand-blue clay keyhole, four small round clay avatar-like pawns (abstract capsule bodies with round heads, brand-blue, navy, warm white, cyan) standing in a row in front of it, and a small clay key. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "4a6af85c5c7342de0136ab9db9f1c0be8f6e5d6b983dce7d9b717b1b061b31e8",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-quan-ly-nhieu-website-hero": {
+    "file": "tinh-nang-quan-ly-nhieu-website-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Một khối trung tâm xanh nối với bốn cửa sổ website kính mờ, quản lý nhiều website trong một cài đặt",
+    "bytes": 60810,
+    "sha256": "f64ffc30f1adb28a842225d1fd37bce528f900180665545a8be885d51cf4c4c8",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it one chunky brand-blue clay hub cube with a cyan rim strip and four frosted-glass browser-window cards of different heights standing around it, each connected to the hub by flat glowing cyan ribbon rails, each card with a different small clay colour accent block (blue, navy, warm white, cyan). The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "4415f84989612f4dfff2b4bc0069bed797f6e10ef291938cef5966586703420f",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-quy-trinh-bien-tap-hero": {
+    "file": "tinh-nang-quy-trinh-bien-tap-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Lịch kính mờ có vài ô tô màu, chồng thẻ và đồng hồ đất sét, đại diện cho quy trình biên tập",
+    "bytes": 67408,
+    "sha256": "1d9cca67a51db979ce66f96c0d2bfc668480ae78097c73364a45a4a38febabc1",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass calendar block with a blank grid of small rounded day cells, three of them filled with brand-blue, cyan and navy clay, a small stack of two frosted-glass cards beside it with a clay check-mark tile, and a small round clay clock. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "e6274bf52e673c60acbed22295391776fa2ff7f19e06b5d592df1fa1b980bcd7",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-seo-json-ld-hero": {
+    "file": "tinh-nang-seo-json-ld-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Kính lúp kính mờ cạnh biểu đồ cột và đồ thị nút, đại diện cho SEO và JSON-LD",
+    "bytes": 61310,
+    "sha256": "8da08e484e75ced923f52c1961b5fa8f8128c654c0c1b3a931bd811871787c32",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass magnifying glass with a brand-blue clay rim, beside a small rising bar chart of five clay bars (blue, cyan, white, navy), and three small round clay nodes joined by flat glowing cyan ribbons like a graph. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "c2e9a5ef0087c925049364d4cb3abc69ccb99ed674e2afa2dc56adf6ed20c9b2",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-thu-vien-media-hero": {
+    "file": "tinh-nang-thu-vien-media-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Thư mục đất sét với các thẻ ảnh kính mờ và nút tải lên xanh, đại diện cho thư viện media",
+    "bytes": 55940,
+    "sha256": "b39eb634d7ce42208e0304ffb14f70a585128b3a2c004220ee237602457aa4b2",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a chunky warm-white clay folder with a frosted-glass tab, three frosted-glass photo tiles with blank pale mountain-and-sun clay shapes leaning out of it, and a small brand-blue clay upload arrow tile. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "2de49cb8f6a5ac19b843ccdfd54d9aac0d673791649ba7b65281de960cf05705",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tinh-nang-trinh-soan-thao-markdown-hero": {
+    "file": "tinh-nang-trinh-soan-thao-markdown-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Tài liệu kính mờ với thanh tiêu đề xanh, bảng và ảnh nhỏ, cạnh một cây bút đất sét, đại diện cho trình soạn thảo Markdown",
+    "bytes": 64048,
+    "sha256": "b25ad958d446f637d0cabba1df0663cb0f89da3c44b9ee7795bfa012c2eccfdb",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly #00B140 with no gradient, no vignette, no texture, no glow on the background and no #00B140 colour cast or reflection on the object. Subject: a rounded-square warm-white clay platform with a smooth flat top; on it a large upright frosted-glass document sheet with blank pale rounded text bars, a brand-blue clay heading bar, a small glass table grid and a small glass image tile on the sheet, a chunky clay pencil leaning on it, and a small floating glass pop-up menu card with four blank rows beside it. The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size. Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+      "rawSha256": "657fca035e0d722163bf6d363370ea04de7f98bd66b1e95ffb2c0065f1fddf28",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  },
+  "tu-host-hero": {
+    "file": "tu-host-hero.webp",
+    "kind": "hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Khối container và cơ sở dữ liệu kính mờ, đại diện cho tự host bằng Docker",
+    "bytes": 59046,
+    "sha256": "1c8ef6608b74c7d841e6559198b41b1b144cab03a0937557a76b32647ea4ae40",
+    "provenance": {
+      "tool": "codex exec (built-in image_gen) codex-cli 0.166.0",
+      "date": "2026-11-03",
+      "prompt": "(reused render from illustrations-src/raw/scene-selfhost.png)",
+      "rawSha256": "724450c8f5307d920a6be10530087baca4a22d49d2b4b76f40933a50fcce15da",
+      "processing": "scripts/art/keyer.py: chroma flood-fill key, despill, soft navy contact shadow, fit, WebP"
+    }
+  }
+}

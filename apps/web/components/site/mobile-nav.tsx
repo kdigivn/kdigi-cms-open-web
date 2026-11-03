@@ -5,12 +5,11 @@ import Link from "next/link"
 import { useEffect, useId, useState } from "react"
 
 import { Button, ButtonLink } from "@/components/ui/button"
+import type { SiteNav } from "@/lib/ia"
 import { DEMO } from "@/lib/site"
 
-import { NAV } from "./nav"
-
-/** Phone menu: a full-width panel under the header. Esc and any link close it; the page behind does not scroll while it is open. */
-export function MobileNav() {
+/** Phone/tablet menu: a full-width panel under the header. Esc and any link close it; the page behind does not scroll while it is open. */
+export function MobileNav({ nav }: { nav: SiteNav }) {
   const [open, setOpen] = useState(false)
   const panelId = useId()
 
@@ -28,7 +27,7 @@ export function MobileNav() {
   }, [open])
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <Button
         variant="ghost"
         size="icon"
@@ -46,12 +45,32 @@ export function MobileNav() {
           className="absolute inset-x-0 top-full z-50 mt-2 max-h-[calc(100dvh-var(--header-h)-24px)] overflow-y-auto rounded-3xl border bg-popover p-3 shadow-lg"
         >
           <ul className="flex flex-col">
-            {NAV.map((item) => (
+            {nav.groups.map((group) => (
+              <li key={group.label} className="py-1">
+                {group.href ? (
+                  <Link href={group.href} onClick={() => setOpen(false)} className="flex min-h-12 items-center rounded-xl px-4 text-base font-semibold hover:bg-accent">
+                    {group.label}
+                  </Link>
+                ) : (
+                  <p className="flex min-h-12 items-center px-4 text-base font-semibold">{group.label}</p>
+                )}
+                <ul>
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <Link href={item.href} onClick={() => setOpen(false)} className="flex min-h-11 items-center rounded-xl pr-4 pl-8 text-[15px] text-muted-foreground hover:bg-accent">
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+            {nav.links.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="flex min-h-12 items-center rounded-xl px-4 text-base font-medium hover:bg-accent"
+                  className="flex min-h-12 items-center rounded-xl px-4 text-base font-semibold hover:bg-accent"
                   {...(item.external ? { rel: "noopener" } : {})}
                 >
                   {item.label}

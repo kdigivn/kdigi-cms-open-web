@@ -1,0 +1,57 @@
+{
+  "name": "redirect-301-la-gi-card-solid",
+  "file": "composed/redirect-301-la-gi-card-solid.webp",
+  "reviews": {
+    "bf75f706897c8dd2053aebc430a31285bb96d52607cce725013a97d40823502f": {
+      "result": "pass",
+      "reviewer": "AI Vision (ImageStudio)",
+      "reviewed": "2026-11-03T09:08:09.026Z",
+      "viewed": [
+        "contact-sheet",
+        "renderer-safe-rects"
+      ],
+      "summary": "Redirect 301 là gì và khi nào cần dùng: OK",
+      "checks": {
+        "diacritics": {
+          "pass": true,
+          "note": "Contact sheet reviewed at 440-600 px: \"Redirect 301 là gì và khi nào cần dùng\" shows correct Vietnamese diacritics; renderer also verified the Ferry VN cmap covers every glyph."
+        },
+        "legibility": {
+          "pass": true,
+          "note": "Title 88px, 2 lines, solid treatment: contrast and line breaks fine, nothing cut."
+        },
+        "fit-384": {
+          "pass": true,
+          "note": "Title still readable in the 384-600 px contact-sheet scale."
+        },
+        "safe-square": {
+          "pass": true,
+          "note": "Renderer asserts panel/title/logo boxes inside safe zone x444-1476,y84-996 (inside the centred 1080 square)."
+        },
+        "safe-191": {
+          "pass": true,
+          "note": "Same safe-zone assertion covers the 1.91:1 crop."
+        },
+        "logo": {
+          "pass": true,
+          "note": "Official KDIGI lockup (blue) at 56 px in the panel footer, undistorted; background K facets abstract, no full K."
+        },
+        "brief": {
+          "pass": true,
+          "note": "Title and eyebrow \"SEO\" read from CMS tenant 1 (source cms); nothing added."
+        },
+        "rights": {
+          "pass": true,
+          "note": "Card kind: only the KDIGI logo and Ferry VN (OFL) are used; no external or AI photo."
+        },
+        "ab-parity": {
+          "pass": true,
+          "note": "Solid and glass variants have identical text and geometry; only the treatment differs."
+        }
+      },
+      "owner": {
+        "status": "pending"
+      }
+    }
+  }
+}

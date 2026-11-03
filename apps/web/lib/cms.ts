@@ -29,7 +29,9 @@ export type Post = {
   updatedAt: string | null
   image: CmsImage | null
   categories: string[]
+  categoryRefs: CategoryRef[]
   author: string | null
+  authorRef: Author | null
   wordCount: number | null
   seoTitle: string | null
   seoDescription: string | null
@@ -73,10 +75,13 @@ export function parsePost(doc: unknown, base: string = CMS_URL): Post | null {
   const title = str(doc.title)
   if (!slug || !title) return null
   const seo = isRecord(doc.seo) ? doc.seo : {}
-  const categories = Array.isArray(doc.categories)
-    ? doc.categories.flatMap((c) => (isRecord(c) && str(c.name) ? [str(c.name) as string] : []))
-    : []
-  const author = isRecord(doc.author) ? str(doc.author.name) : null
+  const categoryDocs = Array.isArray(doc.categories) ? doc.categories.filter(isRecord) : []
+  const categories = categoryDocs.flatMap((c) => (str(c.name) ? [str(c.name) as string] : []))
+  const categoryRefs = categoryDocs.flatMap((c): CategoryRef[] =>
+    str(c.name) && str(c.slug) ? [{ id: String(c.id), name: str(c.name) as string, slug: str(c.slug) as string }] : [],
+  )
+  const authorRef = parseAuthor(doc.author, base)
+  const author = authorRef?.name ?? (isRecord(doc.author) ? str(doc.author.name) : null)
   return {
     id: String(doc.id),
     slug,
@@ -87,7 +92,9 @@ export function parsePost(doc: unknown, base: string = CMS_URL): Post | null {
     updatedAt: str(doc.updatedAt),
     image: parseImage(doc.featuredImage, base),
     categories,
+    categoryRefs,
     author,
+    authorRef,
     wordCount: num(doc.wordCount),
     seoTitle: str(seo.title),
     seoDescription: str(seo.description),
@@ -120,7 +127,7 @@ export async function getFaqGroups(): Promise<FaqGroup[]> {
   return parseFaqGroups(docsOf(await cmsGet("faqs", { "where[tenant][equals]": tenant, limit: "20", depth: "0", locale: "vi" })))
 }
 
-export async function listPosts(limit = 50): Promise<Post[]> {
+export async function listPosts(limit = 200): Promise<Post[]> {
   const tenant = await siteId()
   const docs = docsOf(
     await cmsGet("posts", { "where[tenant][equals]": tenant, sort: "-publishedAt", limit: String(limit), depth: "1", locale: "vi" }),
@@ -151,3 +158,66 @@ export async function getPage(slug: string): Promise<CmsPage | null> {
   const seo = isRecord(doc.seo) ? doc.seo : {}
   return { slug, title, contentHtml: str(doc.content) ?? "", updatedAt: str(doc.updatedAt), seoDescription: str(seo.description) }
 }
+
+export type CategoryRef = { id: string; name: string; slug: string }
+export type Category = CategoryRef & { description: string | null; contentHtml: string; updatedAt: string | null; seoTitle: string | null; seoDescription: string | null }
+export type Author = { id: string; name: string; slug: string; bio: string | null; avatar: CmsImage | null; sameAs: string[]; updatedAt: string | null }
+
+export function parseCategory(doc: unknown): Category | null {
+  if (!isRecord(doc)) return null
+  const name = str(doc.name)
+  const slug = str(doc.slug)
+  if (!name || !slug) return null
+  const seo = isRecord(doc.seo) ? doc.seo : {}
+  return {
+    id: String(doc.id),
+    name,
+    slug,
+    description: str(doc.description),
+    contentHtml: str(doc.content) ?? "",
+    updatedAt: str(doc.updatedAt),
+    seoTitle: str(seo.title),
+    seoDescription: str(seo.description),
+  }
+}
+
+export function parseAuthor(doc: unknown, base: string = CMS_URL): Author | null {
+  if (!isRecord(doc)) return null
+  const name = str(doc.name)
+  const slug = str(doc.slug)
+  if (!name || !slug) return null
+  const sameAs = Array.isArray(doc.sameAs)
+    ? doc.sameAs.flatMap((entry) => (typeof entry === "string" ? [entry] : isRecord(entry) && str(entry.url) ? [str(entry.url) as string] : []))
+    : []
+  return { id: String(doc.id), name, slug, bio: str(doc.bio), avatar: parseImage(doc.avatar, base), sameAs, updatedAt: str(doc.updatedAt) }
+}
+
+/** Categories (`taxonomies` with type=category) of the site. */
+export async function listCategories(): Promise<Category[]> {
+  const tenant = await siteId()
+  const docs = docsOf(
+    await cmsGet("taxonomies", { "where[tenant][equals]": tenant, "where[type][equals]": "category", limit: "100", depth: "0", locale: "vi" }),
+  )
+  return Array.isArray(docs) ? docs.flatMap((doc) => parseCategory(doc) ?? []) : []
+}
+
+export async function listAuthors(): Promise<Author[]> {
+  const tenant = await siteId()
+  const docs = docsOf(await cmsGet("authors", { "where[tenant][equals]": tenant, limit: "100", depth: "1", locale: "vi" }))
+  return Array.isArray(docs) ? docs.flatMap((doc) => parseAuthor(doc) ?? []) : []
+}
+
+/** Posts per page on every blog listing. */
+export const POSTS_PER_PAGE = 12
+
+export type PostPage = { posts: Post[]; page: number; totalPages: number; total: number }
+
+/** Slice a (newest-first) list into a page; `page` is clamped to the valid range. */
+export function paginate(posts: Post[], page: number, perPage: number = POSTS_PER_PAGE): PostPage {
+  const totalPages = Math.max(1, Math.ceil(posts.length / perPage))
+  const current = Math.min(Math.max(1, page), totalPages)
+  return { posts: posts.slice((current - 1) * perPage, current * perPage), page: current, totalPages, total: posts.length }
+}
+
+/** Reading time in whole minutes (Vietnamese ~200 words per minute); null when the CMS has no word count. */
+export const readingMinutes = (post: Post): number | null => (post.wordCount ? Math.max(1, Math.round(post.wordCount / 200)) : null)

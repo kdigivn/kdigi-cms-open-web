@@ -1,0 +1,58 @@
+{
+  "name": "page-tu-host",
+  "file": "composed/page-tu-host.webp",
+  "reviews": {
+    "71ea896e966e70187ab6a3bedde97bc639f0bba4c0b8472e841c1d7f9bac468d": {
+      "result": "pass",
+      "reviewer": "AI Vision (ImageStudio)",
+      "reviewed": "2026-11-03T09:08:08.067Z",
+      "viewed": [
+        "contact-sheet",
+        "renderer-safe-rects",
+        "og-jpeg-sheet"
+      ],
+      "summary": "Tự host KDIGI CMS: Docker Compose, Coolify, VPS: OK",
+      "checks": {
+        "diacritics": {
+          "pass": true,
+          "note": "Contact sheet reviewed at 440-600 px: \"Tự host KDIGI CMS: Docker Compose, Coolify, VPS\" shows correct Vietnamese diacritics; renderer also verified the Ferry VN cmap covers every glyph."
+        },
+        "legibility": {
+          "pass": true,
+          "note": "Title 88px, 3 lines, solid treatment: contrast and line breaks fine, nothing cut."
+        },
+        "fit-384": {
+          "pass": true,
+          "note": "Title still readable in the 384-600 px contact-sheet scale."
+        },
+        "safe-square": {
+          "pass": true,
+          "note": "Renderer asserts panel/title/logo boxes inside safe zone x444-1476,y84-996 (inside the centred 1080 square)."
+        },
+        "safe-191": {
+          "pass": true,
+          "note": "Same safe-zone assertion covers the 1.91:1 crop; public/images/og/*.jpg is that crop and was viewed in the OG contact sheet."
+        },
+        "logo": {
+          "pass": true,
+          "note": "Official KDIGI lockup (blue) at 56 px in the panel footer, undistorted; background K facets abstract, no full K."
+        },
+        "brief": {
+          "pass": true,
+          "note": "Page OG from content/pages/tu-host/index.md (h1); eyebrow \"Tự host\"; no invented claims."
+        },
+        "rights": {
+          "pass": true,
+          "note": "Card kind: only the KDIGI logo and Ferry VN (OFL) are used; no external or AI photo."
+        },
+        "ab-parity": {
+          "pass": true,
+          "note": "Single treatment, not an A/B render."
+        }
+      },
+      "owner": {
+        "status": "pending"
+      }
+    }
+  }
+}

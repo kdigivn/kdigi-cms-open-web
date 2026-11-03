@@ -1,0 +1,4398 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "file": "composed/api-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Headless & API",
+        "title": "API là gì? Giải thích dễ hiểu cho người làm website",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "api-la-gi",
+        "id": 14,
+        "updatedAt": "2026-11-03T09:01:42.735Z",
+        "cmsTitle": "API là gì? Giải thích dễ hiểu cho người làm website",
+        "cmsEyebrow": "Headless & API"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:08.906Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30804,
+      "sha256": "da8cb8e895135687a30f2d126b2d63d4e191686b58464d398f8044cfb998691b"
+    },
+    {
+      "file": "composed/api-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Headless & API",
+        "title": "API là gì? Giải thích dễ hiểu cho người làm website",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "api-la-gi",
+        "id": 14,
+        "updatedAt": "2026-11-03T09:01:42.735Z",
+        "cmsTitle": "API là gì? Giải thích dễ hiểu cho người làm website",
+        "cmsEyebrow": "Headless & API"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:06.196Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29910,
+      "sha256": "7916bbacf3b814ff62894278e00b510d870f5efb5a90a503bcf1dc1ed776f9de"
+    },
+    {
+      "file": "composed/cach-chuyen-wordpress-sang-headless-cms-khong-mat-seo-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "WordPress",
+        "title": "Cách chuyển website WordPress sang headless CMS không mất SEO",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "cach-chuyen-wordpress-sang-headless-cms-khong-mat-seo",
+        "id": 17,
+        "updatedAt": "2026-11-03T09:01:41.010Z",
+        "cmsTitle": "Cách chuyển website WordPress sang headless CMS không mất SEO",
+        "cmsEyebrow": "WordPress"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:52.328Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 37464,
+      "sha256": "d5ad4146dfe1f4787af2ebfd8a07c8565666282bb2d981741ba1b042d0843afb"
+    },
+    {
+      "file": "composed/cach-chuyen-wordpress-sang-headless-cms-khong-mat-seo-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "WordPress",
+        "title": "Cách chuyển website WordPress sang headless CMS không mất SEO",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "cach-chuyen-wordpress-sang-headless-cms-khong-mat-seo",
+        "id": 17,
+        "updatedAt": "2026-11-03T09:01:41.010Z",
+        "cmsTitle": "Cách chuyển website WordPress sang headless CMS không mất SEO",
+        "cmsEyebrow": "WordPress"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:49.539Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 36858,
+      "sha256": "df3ec5eac854031a1f57f27cfc6701af8d7c934189c7c3c2a4f390dfeea36112"
+    },
+    {
+      "file": "composed/chuyen-tu-wordpress-sang-kdigi-cms-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Hướng dẫn",
+        "title": "Chuyển từ WordPress sang KDIGI CMS",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "post": {
+        "slug": "chuyen-tu-wordpress-sang-kdigi-cms",
+        "id": 4,
+        "updatedAt": "2026-11-03T07:23:35.213Z",
+        "cmsTitle": "Chuyển từ WordPress sang KDIGI CMS",
+        "cmsEyebrow": "Hướng dẫn"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:42.141Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 27478,
+      "sha256": "0a84ee74979e26f81ebd04c1fefc3d74243e29b967b072877653ff336d5f3ec1"
+    },
+    {
+      "file": "composed/chuyen-tu-wordpress-sang-kdigi-cms-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Hướng dẫn",
+        "title": "Chuyển từ WordPress sang KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "post": {
+        "slug": "chuyen-tu-wordpress-sang-kdigi-cms",
+        "id": 4,
+        "updatedAt": "2026-11-03T07:23:35.213Z",
+        "cmsTitle": "Chuyển từ WordPress sang KDIGI CMS",
+        "cmsEyebrow": "Hướng dẫn"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:39.565Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 26506,
+      "sha256": "5fc50f60debf6d8a19c28b7b19a3082f9399962ec9fea201f5785b5cfba70082"
+    },
+    {
+      "file": "composed/cms-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "CMS là gì? Hệ thống quản trị nội dung hoạt động thế nào",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "cms-la-gi",
+        "id": 13,
+        "updatedAt": "2026-11-03T09:01:42.379Z",
+        "cmsTitle": "CMS là gì? Hệ thống quản trị nội dung hoạt động thế nào",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:14.493Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32606,
+      "sha256": "3f8954542636664a06ade60c9955025169baa580e24ab448b24c630f86b44074"
+    },
+    {
+      "file": "composed/cms-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "CMS là gì? Hệ thống quản trị nội dung hoạt động thế nào",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "cms-la-gi",
+        "id": 13,
+        "updatedAt": "2026-11-03T09:01:42.379Z",
+        "cmsTitle": "CMS là gì? Hệ thống quản trị nội dung hoạt động thế nào",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:11.772Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31642,
+      "sha256": "cfd3da21ba1939804b9e259d95c7511f0113e7a642620977055f029ea8e80326"
+    },
+    {
+      "file": "composed/core-web-vitals-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Core Web Vitals là gì và cách cải thiện cho website",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "core-web-vitals-la-gi",
+        "id": 24,
+        "updatedAt": "2026-11-03T09:01:43.711Z",
+        "cmsTitle": "Core Web Vitals là gì và cách cải thiện cho website",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:25.513Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30704,
+      "sha256": "01a13cd52b68d963b9cd37e36cf52d1a53e726f27e9ea7bf8f31aabb2a9de279"
+    },
+    {
+      "file": "composed/core-web-vitals-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Core Web Vitals là gì và cách cải thiện cho website",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "core-web-vitals-la-gi",
+        "id": 24,
+        "updatedAt": "2026-11-03T09:01:43.711Z",
+        "cmsTitle": "Core Web Vitals là gì và cách cải thiện cho website",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:22.957Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29370,
+      "sha256": "305e4515784fceb2e7d2fae910aa403d18d4c3d12d47fc82dee7098e95885c24"
+    },
+    {
+      "file": "composed/docker-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Kỹ thuật & Tự host",
+        "title": "Docker là gì? Hướng dẫn Docker cho người làm website",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "docker-la-gi",
+        "id": 27,
+        "updatedAt": "2026-11-03T09:03:02.631Z",
+        "cmsTitle": "Docker là gì? Hướng dẫn Docker cho người làm website",
+        "cmsEyebrow": "Kỹ thuật & Tự host"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:09.182Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32574,
+      "sha256": "e21e370f00455161eb3ea4c5bc97fa1e2e2d4dad817aac81211c876609b7e3a5"
+    },
+    {
+      "file": "composed/docker-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Kỹ thuật & Tự host",
+        "title": "Docker là gì? Hướng dẫn Docker cho người làm website",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "docker-la-gi",
+        "id": 27,
+        "updatedAt": "2026-11-03T09:03:02.631Z",
+        "cmsTitle": "Docker là gì? Hướng dẫn Docker cho người làm website",
+        "cmsEyebrow": "Kỹ thuật & Tự host"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:06.464Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31890,
+      "sha256": "8e3354d578c78562beab032a86505a87471b6511ed1810281c4be483f498e5f8"
+    },
+    {
+      "file": "composed/ghost-vs-wordpress-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Ghost vs WordPress: nền tảng blog nào phù hợp hơn",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "ghost-vs-wordpress",
+        "id": 21,
+        "updatedAt": "2026-11-03T09:00:49.597Z",
+        "cmsTitle": "Ghost vs WordPress: nền tảng blog nào phù hợp hơn",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:30.084Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29916,
+      "sha256": "23b8e26dd49e1f30f1d1c29e7bd836fed2e91e9868f0a4de3141339309323713"
+    },
+    {
+      "file": "composed/ghost-vs-wordpress-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Ghost vs WordPress: nền tảng blog nào phù hợp hơn",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "ghost-vs-wordpress",
+        "id": 21,
+        "updatedAt": "2026-11-03T09:00:49.597Z",
+        "cmsTitle": "Ghost vs WordPress: nền tảng blog nào phù hợp hơn",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:27.248Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31852,
+      "sha256": "c0c0a2f5e43483d51027396bad9cb04e0377d958229a4e8b6602baeca9c19abd"
+    },
+    {
+      "file": "composed/headless-cms-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Headless CMS là gì? So sánh headless CMS và CMS truyền thống",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "headless-cms-la-gi",
+        "id": 10,
+        "updatedAt": "2026-11-03T08:58:56.812Z",
+        "cmsTitle": "Headless CMS là gì? So sánh headless CMS và CMS truyền thống",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:31.223Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35724,
+      "sha256": "1b938417c6313740ae9f5a6ade27f26fcd98aa0f87458be8acc1dca14440dcf8"
+    },
+    {
+      "file": "composed/headless-cms-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Headless CMS là gì? So sánh headless CMS và CMS truyền thống",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "headless-cms-la-gi",
+        "id": 10,
+        "updatedAt": "2026-11-03T08:58:56.812Z",
+        "cmsTitle": "Headless CMS là gì? So sánh headless CMS và CMS truyền thống",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:28.574Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35510,
+      "sha256": "d07786f68e851d137a1deaaea6e79c62e88eac448b4684e30b7b64e4407339b3"
+    },
+    {
+      "file": "composed/huong-dan-lam-seo-website-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Hướng dẫn làm SEO website từ A–Z cho người mới (2026)",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "huong-dan-lam-seo-website",
+        "id": 28,
+        "updatedAt": "2026-11-03T09:04:49.935Z",
+        "cmsTitle": "Hướng dẫn làm SEO website từ A–Z cho người mới (2026)",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:03.678Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32490,
+      "sha256": "70010b22227be28ba44316eff72770c2bc142d132b28b2fbc5b89e79f8f178d5"
+    },
+    {
+      "file": "composed/huong-dan-lam-seo-website-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Hướng dẫn làm SEO website từ A–Z cho người mới (2026)",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "huong-dan-lam-seo-website",
+        "id": 28,
+        "updatedAt": "2026-11-03T09:04:49.935Z",
+        "cmsTitle": "Hướng dẫn làm SEO website từ A–Z cho người mới (2026)",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:01.062Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31460,
+      "sha256": "ae400ab730d0037a5cb95cea229e396f7a3eb64c50b2b5748913e2e130510234"
+    },
+    {
+      "file": "composed/kdigi-cms-1-0-1-sua-loi-chuyen-wordpress-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.0.1: sửa lỗi nhập media khi chuyển từ WordPress",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "kdigi-cms-1-0-1-sua-loi-chuyen-wordpress",
+        "id": 2,
+        "updatedAt": "2026-11-03T07:23:26.810Z",
+        "cmsTitle": "KDIGI CMS 1.0.1: sửa lỗi nhập media khi chuyển từ WordPress",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:53.184Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32252,
+      "sha256": "43614b0b2640adf69f8e21a1a257cc1f16ae230eba1fd7a09e1dffa19c6b2882"
+    },
+    {
+      "file": "composed/kdigi-cms-1-0-1-sua-loi-chuyen-wordpress-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.0.1: sửa lỗi nhập media khi chuyển từ WordPress",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "kdigi-cms-1-0-1-sua-loi-chuyen-wordpress",
+        "id": 2,
+        "updatedAt": "2026-11-03T07:23:26.810Z",
+        "cmsTitle": "KDIGI CMS 1.0.1: sửa lỗi nhập media khi chuyển từ WordPress",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:50.350Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35950,
+      "sha256": "6ba089ad36ef3a92c84a00e30f50cb845d02beacbce69e4f1110355ffd593e44"
+    },
+    {
+      "file": "composed/kdigi-cms-1-1-0-tai-khoan-demo-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.1.0: tài khoản demo công khai, demo:reset và khóa revalidate",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "kdigi-cms-1-1-0-tai-khoan-demo",
+        "id": 3,
+        "updatedAt": "2026-11-03T07:23:31.058Z",
+        "cmsTitle": "KDIGI CMS 1.1.0: tài khoản demo công khai, demo:reset và khóa revalidate",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:47.657Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35448,
+      "sha256": "a954dd42e4c60e90c2d73e27e3e770685c2782964da8d9514a2cb1e0744c6b02"
+    },
+    {
+      "file": "composed/kdigi-cms-1-1-0-tai-khoan-demo-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.1.0: tài khoản demo công khai, demo:reset và khóa revalidate",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "kdigi-cms-1-1-0-tai-khoan-demo",
+        "id": 3,
+        "updatedAt": "2026-11-03T07:23:31.058Z",
+        "cmsTitle": "KDIGI CMS 1.1.0: tài khoản demo công khai, demo:reset và khóa revalidate",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:44.935Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 40232,
+      "sha256": "28fdfa4d68b5fc6f67c9959c260fecff5bef2cb68b0ab3012534fb7bdb00e273"
+    },
+    {
+      "file": "composed/llms-txt-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "llms.txt là gì và cách tối ưu website cho AI (GEO, AIO)",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "llms-txt-la-gi",
+        "id": 18,
+        "updatedAt": "2026-11-03T09:01:41.717Z",
+        "cmsTitle": "llms.txt là gì và cách tối ưu website cho AI (GEO, AIO)",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:46.646Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30910,
+      "sha256": "eb714d78b9d7577d4bdbff940f09ce8570f245222a07679843542dfde96e760c"
+    },
+    {
+      "file": "composed/llms-txt-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "llms.txt là gì và cách tối ưu website cho AI (GEO, AIO)",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "llms-txt-la-gi",
+        "id": 18,
+        "updatedAt": "2026-11-03T09:01:41.717Z",
+        "cmsTitle": "llms.txt là gì và cách tối ưu website cho AI (GEO, AIO)",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:44.072Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29738,
+      "sha256": "b5f1fac2cc623424d88f6b67967e6053c94f0320f866a3f995b94d40e31567ed"
+    },
+    {
+      "file": "composed/markdown-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Kiến thức CMS & Website",
+        "title": "Markdown là gì? Cú pháp Markdown đầy đủ cho người mới",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "markdown-la-gi",
+        "id": 26,
+        "updatedAt": "2026-11-03T09:03:01.938Z",
+        "cmsTitle": "Markdown là gì? Cú pháp Markdown đầy đủ cho người mới",
+        "cmsEyebrow": "Kiến thức CMS & Website"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:14.605Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 34276,
+      "sha256": "2d37e06cab255895838ecef23d260899819261f91b5b3ee6173adbea4fdb67ae"
+    },
+    {
+      "file": "composed/markdown-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Kiến thức CMS & Website",
+        "title": "Markdown là gì? Cú pháp Markdown đầy đủ cho người mới",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "markdown-la-gi",
+        "id": 26,
+        "updatedAt": "2026-11-03T09:03:01.938Z",
+        "cmsTitle": "Markdown là gì? Cú pháp Markdown đầy đủ cho người mới",
+        "cmsEyebrow": "Kiến thức CMS & Website"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:11.975Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33822,
+      "sha256": "359cabc9471e869286c538acb49ffa0e8f7f8ed53defca0c6393d807f353c087"
+    },
+    {
+      "file": "composed/page-chuyen-tu-wordpress.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Chuyển từ WordPress",
+        "title": "Chuyển website từ WordPress sang KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:46.593Z",
+      "page": {
+        "route": "/chuyen-tu-wordpress",
+        "source": "content/pages/chuyen-tu-wordpress/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31718,
+      "sha256": "1f4694c619a439cd861096b727fe81d8a760e70dbc2b32f671244957dd9491c4"
+    },
+    {
+      "file": "composed/page-demo.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Demo trực tuyến",
+        "title": "Dùng thử KDIGI CMS trực tiếp",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:48.987Z",
+      "page": {
+        "route": "/demo",
+        "source": "content/pages/demo/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 23670,
+      "sha256": "db1cc0ce00ea1a846bda2bd92bf63dd013958c91ddd22c1f73d2535659510263"
+    },
+    {
+      "file": "composed/page-giai-phap-agency.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Giải pháp",
+        "title": "Giải pháp KDIGI CMS cho agency",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:51.427Z",
+      "page": {
+        "route": "/giai-phap/agency",
+        "source": "content/pages/giai-phap/agency/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 25770,
+      "sha256": "839b00e39102db30853fe63fbcef0a4ff5b12d34dca9b3a558d2be14ae5fac1d"
+    },
+    {
+      "file": "composed/page-giai-phap-blog-tin-tuc.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Giải pháp",
+        "title": "CMS cho blog và trang tin tức: từ biên tập đến xuất bản",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:53.803Z",
+      "page": {
+        "route": "/giai-phap/blog-tin-tuc",
+        "source": "content/pages/giai-phap/blog-tin-tuc/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32496,
+      "sha256": "cc2f80d390e340b7e19cace26c1ca38763943fb4bfe859d551b07511aad42c95"
+    },
+    {
+      "file": "composed/page-giai-phap-doanh-nghiep.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Giải pháp",
+        "title": "Giải pháp KDIGI CMS cho website doanh nghiệp",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:56.189Z",
+      "page": {
+        "route": "/giai-phap/doanh-nghiep",
+        "source": "content/pages/giai-phap/doanh-nghiep/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 28978,
+      "sha256": "d4f5ef0d0c9a9344abdbcaf14e01c9782fdf711c485c641ab55acf157927226f"
+    },
+    {
+      "file": "composed/page-giai-phap-website-ban-hang.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Giải pháp",
+        "title": "CMS cho website bán hàng dạng danh mục: làm được gì, không làm gì",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:58.580Z",
+      "page": {
+        "route": "/giai-phap/website-ban-hang",
+        "source": "content/pages/giai-phap/website-ban-hang/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 37586,
+      "sha256": "11d75e2808f4151d12ceec772d2df4705856294d654defe427b0f89eaa0abcbb"
+    },
+    {
+      "file": "composed/page-home.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Mã nguồn mở",
+        "title": "KDIGI CMS – hệ thống quản trị nội dung mã nguồn mở, tự host",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:44.212Z",
+      "page": {
+        "route": "/",
+        "source": "content/pages/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33442,
+      "sha256": "ca73935c7f0746dfed7b019728fd8b63a43535c68882b328f3f3d518f652e98c"
+    },
+    {
+      "file": "composed/page-ma-nguon-mo.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Mã nguồn mở",
+        "title": "Mã nguồn mở: giấy phép MIT, kho mã và đóng góp",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:00.992Z",
+      "page": {
+        "route": "/ma-nguon-mo",
+        "source": "content/pages/ma-nguon-mo/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32702,
+      "sha256": "f29da254d9c625ee160ed7e91ad5f2947348b128d9ebc5558c07434e6572c91e"
+    },
+    {
+      "file": "composed/page-phat-hanh.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Phát hành",
+        "title": "Nhật ký phát hành KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:03.503Z",
+      "page": {
+        "route": "/phat-hanh",
+        "source": "content/pages/phat-hanh/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 22692,
+      "sha256": "7bb3402c0c28a06a007dc1bc9f6332ae5bd38d64f72869b4258a8ce96fcffd31"
+    },
+    {
+      "file": "composed/page-so-sanh-kdigi-cms-vs-directus.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "KDIGI CMS vs Directus: dữ liệu thuần hay CMS hoàn chỉnh?",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:08.738Z",
+      "page": {
+        "route": "/so-sanh/kdigi-cms-vs-directus",
+        "source": "content/pages/so-sanh/kdigi-cms-vs-directus/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33156,
+      "sha256": "bc04017e22d29eff0da9cac92263fe3dd04898a1435e86bc94dec55fac7f1781"
+    },
+    {
+      "file": "composed/page-so-sanh-kdigi-cms-vs-ghost.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "KDIGI CMS vs Ghost: so sánh cho blog và newsletter",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:11.499Z",
+      "page": {
+        "route": "/so-sanh/kdigi-cms-vs-ghost",
+        "source": "content/pages/so-sanh/kdigi-cms-vs-ghost/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31618,
+      "sha256": "c5187b03222def1f7c20e0c70b9769cd16522327af4c8c81739da8e00f64e952"
+    },
+    {
+      "file": "composed/page-so-sanh-kdigi-cms-vs-payload.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "KDIGI CMS vs Payload CMS: chọn gì cho dự án Next.js?",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:13.994Z",
+      "page": {
+        "route": "/so-sanh/kdigi-cms-vs-payload",
+        "source": "content/pages/so-sanh/kdigi-cms-vs-payload/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33338,
+      "sha256": "16acd62a21bdfe2cd5ed55485f8edd3729b2e962c3adc45411ce6e5060dd72d6"
+    },
+    {
+      "file": "composed/page-so-sanh-kdigi-cms-vs-strapi.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "KDIGI CMS vs Strapi: so sánh cho developer và agency",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:16.438Z",
+      "page": {
+        "route": "/so-sanh/kdigi-cms-vs-strapi",
+        "source": "content/pages/so-sanh/kdigi-cms-vs-strapi/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33680,
+      "sha256": "1aedb9fa3234d37fe3e849a911c8a23fa9a6185ec887f3dd1e9acced3cda09e4"
+    },
+    {
+      "file": "composed/page-so-sanh-kdigi-cms-vs-wordpress.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "KDIGI CMS vs WordPress: nên chọn cái nào?",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:18.880Z",
+      "page": {
+        "route": "/so-sanh/kdigi-cms-vs-wordpress",
+        "source": "content/pages/so-sanh/kdigi-cms-vs-wordpress/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29396,
+      "sha256": "60dcc5c2f4a1673dae0519b9899cd1bcc441b6c91272139baea902f6633eb82a"
+    },
+    {
+      "file": "composed/page-so-sanh.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh",
+        "title": "So sánh KDIGI CMS với WordPress, Strapi, Payload, Ghost, Directus",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:05.997Z",
+      "page": {
+        "route": "/so-sanh",
+        "source": "content/pages/so-sanh/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35560,
+      "sha256": "bce7c7a669b015ecb57a998bb92f69be8cdd60d4416881305b642184f83421b0"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot-bao-mat-va-phan-quyen.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "Bảo mật và phân quyền khi tự host KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:23.743Z",
+      "page": {
+        "route": "/thuc-hanh-tot/bao-mat-va-phan-quyen",
+        "source": "content/pages/thuc-hanh-tot/bao-mat-va-phan-quyen/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 28080,
+      "sha256": "6855d69ba1770e38e77974123819a7132d24d3c261d6f6171dcbfc249a2ec65b"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot-cau-truc-noi-dung.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "Cấu trúc nội dung và taxonomy: danh mục, thẻ, pillar–cluster",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:26.153Z",
+      "page": {
+        "route": "/thuc-hanh-tot/cau-truc-noi-dung",
+        "source": "content/pages/thuc-hanh-tot/cau-truc-noi-dung/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33556,
+      "sha256": "0961708d0fec6e0dc29d22f571f88d566c085464d5d8f3458503ba73fb449d92"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot-hieu-nang-va-cache.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "Hiệu năng: cache, revalidation và Core Web Vitals",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:28.458Z",
+      "page": {
+        "route": "/thuc-hanh-tot/hieu-nang-va-cache",
+        "source": "content/pages/thuc-hanh-tot/hieu-nang-va-cache/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33328,
+      "sha256": "5e779d01c953792a4e7b749fa09423444b9485717fcdc462a3ac43f6aea96805"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot-sao-luu-va-nang-cap.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "Sao lưu và nâng cấp KDIGI CMS: quy trình không mất dữ liệu",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:30.942Z",
+      "page": {
+        "route": "/thuc-hanh-tot/sao-luu-va-nang-cap",
+        "source": "content/pages/thuc-hanh-tot/sao-luu-va-nang-cap/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 34156,
+      "sha256": "076a385acf401e0291c0f03aab4fd266c9e1c437e8f8115c58af027eeff597ad"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot-seo-onpage.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "SEO on-page với KDIGI CMS: checklist từng bước",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:33.308Z",
+      "page": {
+        "route": "/thuc-hanh-tot/seo-onpage",
+        "source": "content/pages/thuc-hanh-tot/seo-onpage/index.md",
+        "titleFrom": "title"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30542,
+      "sha256": "2d44a28a2c200cd4aa88096c14fd001a9d903c5cfba86a6753b9e9a16593a0f2"
+    },
+    {
+      "file": "composed/page-thuc-hanh-tot.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Thực hành tốt",
+        "title": "Thực hành tốt: SEO, nội dung, bảo mật, hiệu năng",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:21.279Z",
+      "page": {
+        "route": "/thuc-hanh-tot",
+        "source": "content/pages/thuc-hanh-tot/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30584,
+      "sha256": "bbba802c44e27745c6b5eea4f48ea2ab7253a54f9e985accd798808f515ef2ff"
+    },
+    {
+      "file": "composed/page-tinh-nang-headless-api.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Headless API: REST, GraphQL và revalidation cho Next.js",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:38.225Z",
+      "page": {
+        "route": "/tinh-nang/headless-api",
+        "source": "content/pages/tinh-nang/headless-api/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33000,
+      "sha256": "b879ac2baabc5f09b853c5239e01dbaa3c97ab173cdc7c92092658ca1cc0e12b"
+    },
+    {
+      "file": "composed/page-tinh-nang-noi-dung-va-cau-truc.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Nội dung và cấu trúc: trang, bài viết, sản phẩm, taxonomy",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:40.690Z",
+      "page": {
+        "route": "/tinh-nang/noi-dung-va-cau-truc",
+        "source": "content/pages/tinh-nang/noi-dung-va-cau-truc/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 34506,
+      "sha256": "7bf51a8a6839359e0ceac9d96e664c649c65cdaf2d39492b5d3524e2393b1bfe"
+    },
+    {
+      "file": "composed/page-tinh-nang-phan-quyen-nguoi-dung.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Phân quyền người dùng và quy trình duyệt bài",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:43.095Z",
+      "page": {
+        "route": "/tinh-nang/phan-quyen-nguoi-dung",
+        "source": "content/pages/tinh-nang/phan-quyen-nguoi-dung/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 28276,
+      "sha256": "9269dc014156696aff3ca5e4592a6522d2fe69dd0a8cca2a8ddc67032a81cada"
+    },
+    {
+      "file": "composed/page-tinh-nang-quan-ly-nhieu-website.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Quản lý nhiều website trong một hệ thống KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:45.530Z",
+      "page": {
+        "route": "/tinh-nang/quan-ly-nhieu-website",
+        "source": "content/pages/tinh-nang/quan-ly-nhieu-website/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31716,
+      "sha256": "9a5ee632cf57b29d1987a392644e4673bfd74118086069fa41c4ca8db62cd3ba"
+    },
+    {
+      "file": "composed/page-tinh-nang-quy-trinh-bien-tap.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Quy trình biên tập: lịch nội dung, duyệt bài, khôi phục phiên bản",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:47.984Z",
+      "page": {
+        "route": "/tinh-nang/quy-trinh-bien-tap",
+        "source": "content/pages/tinh-nang/quy-trinh-bien-tap/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35612,
+      "sha256": "f46e7ecac62d5581a65d9014f0a5489dfbb569151a8f0127afb35d2feaea4a2f"
+    },
+    {
+      "file": "composed/page-tinh-nang-seo-json-ld.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "SEO on-page và JSON-LD tự động trong KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:50.372Z",
+      "page": {
+        "route": "/tinh-nang/seo-json-ld",
+        "source": "content/pages/tinh-nang/seo-json-ld/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30384,
+      "sha256": "1127c9f6255dfad3e70ee925b54886eaa320e9df3cebaeee8a249bd0d9c4bc88"
+    },
+    {
+      "file": "composed/page-tinh-nang-thu-vien-media.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Thư viện media với thư mục, trình sửa ảnh và lưu trữ R2",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 2,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:52.759Z",
+      "page": {
+        "route": "/tinh-nang/thu-vien-media",
+        "source": "content/pages/tinh-nang/thu-vien-media/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29538,
+      "sha256": "79c7d7e2a7659349b3da0ff9caf93dd325684e97dbd4260ae9bed4a07520398d"
+    },
+    {
+      "file": "composed/page-tinh-nang-trinh-soan-thao-markdown.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Trình soạn thảo Markdown (Milkdown) trong KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:55.181Z",
+      "page": {
+        "route": "/tinh-nang/trinh-soan-thao-markdown",
+        "source": "content/pages/tinh-nang/trinh-soan-thao-markdown/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30608,
+      "sha256": "291b33c72f9aa15e89bdead76098a7edbb1d6af05c85902fef345e718665c6b1"
+    },
+    {
+      "file": "composed/page-tinh-nang.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tính năng",
+        "title": "Tính năng của KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:35.723Z",
+      "page": {
+        "route": "/tinh-nang",
+        "source": "content/pages/tinh-nang/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 20850,
+      "sha256": "e73a57150809ac9130bf7c32ef0fb28d17efde722536aaeead4bf0ddc6357652"
+    },
+    {
+      "file": "composed/page-tu-host.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tự host",
+        "title": "Tự host KDIGI CMS: Docker Compose, Coolify, VPS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "manual",
+        "geometry": 1,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:07:57.535Z",
+      "page": {
+        "route": "/tu-host",
+        "source": "content/pages/tu-host/index.md",
+        "titleFrom": "h1"
+      },
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31214,
+      "sha256": "71ea896e966e70187ab6a3bedde97bc639f0bba4c0b8472e841c1d7f9bac468d"
+    },
+    {
+      "file": "composed/payload-cms-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Payload CMS là gì? Ưu nhược điểm và khi nào nên dùng",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "payload-cms-la-gi",
+        "id": 22,
+        "updatedAt": "2026-11-03T09:00:49.873Z",
+        "cmsTitle": "Payload CMS là gì? Ưu nhược điểm và khi nào nên dùng",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:24.452Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31590,
+      "sha256": "03cee6e5e2497559e6e7bc9ae6e63fe360a18a14135d2642f2f9759ca50a0568"
+    },
+    {
+      "file": "composed/payload-cms-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Payload CMS là gì? Ưu nhược điểm và khi nào nên dùng",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "payload-cms-la-gi",
+        "id": 22,
+        "updatedAt": "2026-11-03T09:00:49.873Z",
+        "cmsTitle": "Payload CMS là gì? Ưu nhược điểm và khi nào nên dùng",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:21.833Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30774,
+      "sha256": "2dbd18797a114897ece504149a423847b02aea249e53e5f1fdb355adc3aa099c"
+    },
+    {
+      "file": "composed/ra-mat-kdigi-cms-1-0-0-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.0.0 ra mắt: CMS headless mã nguồn mở cho nhiều website",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 78,
+        "lines": 4
+      },
+      "post": {
+        "slug": "ra-mat-kdigi-cms-1-0-0",
+        "id": 1,
+        "updatedAt": "2026-11-03T07:23:22.561Z",
+        "cmsTitle": "KDIGI CMS 1.0.0 ra mắt: CMS headless mã nguồn mở cho nhiều website",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:58.623Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33338,
+      "sha256": "61f0468a805e19958cc7cd6f9bd21093d9a11126b472c2cc32902f34bc2c7d02"
+    },
+    {
+      "file": "composed/ra-mat-kdigi-cms-1-0-0-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Bản phát hành",
+        "title": "KDIGI CMS 1.0.0 ra mắt: CMS headless mã nguồn mở cho nhiều website",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 78,
+        "lines": 4
+      },
+      "post": {
+        "slug": "ra-mat-kdigi-cms-1-0-0",
+        "id": 1,
+        "updatedAt": "2026-11-03T07:23:22.561Z",
+        "cmsTitle": "KDIGI CMS 1.0.0 ra mắt: CMS headless mã nguồn mở cho nhiều website",
+        "cmsEyebrow": "Bản phát hành"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:55.896Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 35552,
+      "sha256": "518925e45e91778fbdd8166611dca29c3929a219c95ecd243dd85496c9d0dd9a"
+    },
+    {
+      "file": "composed/redirect-301-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Redirect 301 là gì và khi nào cần dùng",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "post": {
+        "slug": "redirect-301-la-gi",
+        "id": 19,
+        "updatedAt": "2026-11-03T08:59:43.869Z",
+        "cmsTitle": "Redirect 301 là gì và khi nào cần dùng",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:41.211Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 26118,
+      "sha256": "51395ff6385ac47eed99826bef114d5b360e23a1dd59659cb193b29c37cdca78"
+    },
+    {
+      "file": "composed/redirect-301-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Redirect 301 là gì và khi nào cần dùng",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 2
+      },
+      "post": {
+        "slug": "redirect-301-la-gi",
+        "id": 19,
+        "updatedAt": "2026-11-03T08:59:43.869Z",
+        "cmsTitle": "Redirect 301 là gì và khi nào cần dùng",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:38.566Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 24828,
+      "sha256": "bf75f706897c8dd2053aebc430a31285bb96d52607cce725013a97d40823502f"
+    },
+    {
+      "file": "composed/schema-markup-json-ld-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Schema markup và JSON-LD là gì: hướng dẫn cho người mới",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "schema-markup-json-ld-la-gi",
+        "id": 20,
+        "updatedAt": "2026-11-03T08:59:44.267Z",
+        "cmsTitle": "Schema markup và JSON-LD là gì: hướng dẫn cho người mới",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:35.756Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30844,
+      "sha256": "f6ebeeb2aafd09dc277d04541fad26dbce15d38f8471b14c7175b46b266f205a"
+    },
+    {
+      "file": "composed/schema-markup-json-ld-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Schema markup và JSON-LD là gì: hướng dẫn cho người mới",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "schema-markup-json-ld-la-gi",
+        "id": 20,
+        "updatedAt": "2026-11-03T08:59:44.267Z",
+        "cmsTitle": "Schema markup và JSON-LD là gì: hướng dẫn cho người mới",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:32.915Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32346,
+      "sha256": "47621ddb4ad6f36ee940d6f903ce04eb58416fcf63c6aa60577d4f34946979a9"
+    },
+    {
+      "file": "composed/self-host-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tự host",
+        "title": "Self host là gì? Tự host website bằng Docker và VPS",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "self-host-la-gi",
+        "id": 25,
+        "updatedAt": "2026-11-03T09:01:43.962Z",
+        "cmsTitle": "Self host là gì? Tự host website bằng Docker và VPS",
+        "cmsEyebrow": "Tự host"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:20.159Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31032,
+      "sha256": "7161e138ee663bee9f2603a5ab53fd7c08d62c681d92acf55d2205a48ea42464"
+    },
+    {
+      "file": "composed/self-host-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "Tự host",
+        "title": "Self host là gì? Tự host website bằng Docker và VPS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "self-host-la-gi",
+        "id": 25,
+        "updatedAt": "2026-11-03T09:01:43.962Z",
+        "cmsTitle": "Self host là gì? Tự host website bằng Docker và VPS",
+        "cmsEyebrow": "Tự host"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:17.492Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29998,
+      "sha256": "72b2c2043276aeb2771d5750b08122e392624f95192c679ef9464b026d129117"
+    },
+    {
+      "file": "composed/sitemap-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Sitemap là gì? Cách tạo và khai báo sitemap.xml",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "sitemap-la-gi",
+        "id": 29,
+        "updatedAt": "2026-11-03T09:04:50.305Z",
+        "cmsTitle": "Sitemap là gì? Cách tạo và khai báo sitemap.xml",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:05:58.177Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29300,
+      "sha256": "e38df824f6c2631db957fd3113ed3e02d26e690ec89126961a569fc78432d99e"
+    },
+    {
+      "file": "composed/sitemap-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Sitemap là gì? Cách tạo và khai báo sitemap.xml",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "sitemap-la-gi",
+        "id": 29,
+        "updatedAt": "2026-11-03T09:04:50.305Z",
+        "cmsTitle": "Sitemap là gì? Cách tạo và khai báo sitemap.xml",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:05:55.474Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 28364,
+      "sha256": "424ea5f4a0ba0feff0af45a34be5065a0d772b91431834d66f2858cae82aba6e"
+    },
+    {
+      "file": "composed/so-sanh-cms-pho-bien-2026-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "So sánh các CMS phổ biến nhất 2026: WordPress, Strapi, Payload, Ghost, Directus, KDIGI CMS",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 66,
+        "lines": 4
+      },
+      "post": {
+        "slug": "so-sanh-cms-pho-bien-2026",
+        "id": 9,
+        "updatedAt": "2026-11-03T08:58:56.508Z",
+        "cmsTitle": "So sánh các CMS phổ biến nhất 2026: WordPress, Strapi, Payload, Ghost, Directus, KDIGI CMS",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:36.756Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 36882,
+      "sha256": "b4740b7bbf7834d455a2ca343310a6b85cbd00bb1f31e7674ba7f48ecc28d6a9"
+    },
+    {
+      "file": "composed/so-sanh-cms-pho-bien-2026-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "So sánh các CMS phổ biến nhất 2026: WordPress, Strapi, Payload, Ghost, Directus, KDIGI CMS",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 66,
+        "lines": 4
+      },
+      "post": {
+        "slug": "so-sanh-cms-pho-bien-2026",
+        "id": 9,
+        "updatedAt": "2026-11-03T08:58:56.508Z",
+        "cmsTitle": "So sánh các CMS phổ biến nhất 2026: WordPress, Strapi, Payload, Ghost, Directus, KDIGI CMS",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:34.119Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 39930,
+      "sha256": "d0708a9ce78c7eeb55995565756bb09a795fa46c9550a8778bd50b81af6f9f42"
+    },
+    {
+      "file": "composed/strapi-vs-payload-cms-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Strapi vs Payload CMS: nên chọn headless CMS nào",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "strapi-vs-payload-cms",
+        "id": 12,
+        "updatedAt": "2026-11-03T08:58:57.372Z",
+        "cmsTitle": "Strapi vs Payload CMS: nên chọn headless CMS nào",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:20.273Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30294,
+      "sha256": "19fec62bf7ad5be4a68bd6934121b89e29d9f372c533ba0ce83630504506c5c3"
+    },
+    {
+      "file": "composed/strapi-vs-payload-cms-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Strapi vs Payload CMS: nên chọn headless CMS nào",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "strapi-vs-payload-cms",
+        "id": 12,
+        "updatedAt": "2026-11-03T08:58:57.372Z",
+        "cmsTitle": "Strapi vs Payload CMS: nên chọn headless CMS nào",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:17.397Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32098,
+      "sha256": "a25a1b902eae98bb656158cbbe7dec4c773a898d50ce41c9e6d67eee0666f999"
+    },
+    {
+      "file": "composed/tang-traffic-website-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Cách tăng traffic website: 15 cách hiệu quả, bền vững",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "tang-traffic-website",
+        "id": 23,
+        "updatedAt": "2026-11-03T09:01:55.802Z",
+        "cmsTitle": "Cách tăng traffic website: 15 cách hiệu quả, bền vững",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:31.057Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 29960,
+      "sha256": "b6a669d79514e924a641213cbef9568b9fb7ae96f349aeb9d82afd66193ec61a"
+    },
+    {
+      "file": "composed/tang-traffic-website-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Cách tăng traffic website: 15 cách hiệu quả, bền vững",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "tang-traffic-website",
+        "id": 23,
+        "updatedAt": "2026-11-03T09:01:55.802Z",
+        "cmsTitle": "Cách tăng traffic website: 15 cách hiệu quả, bền vững",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:06:28.242Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31722,
+      "sha256": "5b2cf47338f0802d9339ff1152af2fccd2cb6de4a89814a22070bfcb80fb533c"
+    },
+    {
+      "file": "composed/top-cms-ma-nguon-mo-cho-doanh-nghiep-viet-nam-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Top CMS mã nguồn mở tốt nhất cho doanh nghiệp Việt Nam",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "top-cms-ma-nguon-mo-cho-doanh-nghiep-viet-nam",
+        "id": 11,
+        "updatedAt": "2026-11-03T08:58:57.116Z",
+        "cmsTitle": "Top CMS mã nguồn mở tốt nhất cho doanh nghiệp Việt Nam",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:25.778Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 33016,
+      "sha256": "b21e69678c1cea6663b23e93091cd73af038b78a03f36c7ca3b7c50e491e064e"
+    },
+    {
+      "file": "composed/top-cms-ma-nguon-mo-cho-doanh-nghiep-viet-nam-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "So sánh CMS",
+        "title": "Top CMS mã nguồn mở tốt nhất cho doanh nghiệp Việt Nam",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 4
+      },
+      "post": {
+        "slug": "top-cms-ma-nguon-mo-cho-doanh-nghiep-viet-nam",
+        "id": 11,
+        "updatedAt": "2026-11-03T08:58:57.116Z",
+        "cmsTitle": "Top CMS mã nguồn mở tốt nhất cho doanh nghiệp Việt Nam",
+        "cmsEyebrow": "So sánh CMS"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:23.043Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 32548,
+      "sha256": "5cb1eacfec89205ac81d0ab8dd82d7ff12dd1f6bcb00bfc7c068796f2f93b155"
+    },
+    {
+      "file": "composed/website-chuan-seo-la-gi-checklist-2026-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Website chuẩn SEO là gì: checklist 2026",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "website-chuan-seo-la-gi-checklist-2026",
+        "id": 16,
+        "updatedAt": "2026-11-03T09:01:43.480Z",
+        "cmsTitle": "Website chuẩn SEO là gì: checklist 2026",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:57.826Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 26632,
+      "sha256": "1ea766654027ccee35734738bb0f4cb84fbfc234df45604c2a25591639a0491c"
+    },
+    {
+      "file": "composed/website-chuan-seo-la-gi-checklist-2026-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "SEO",
+        "title": "Website chuẩn SEO là gì: checklist 2026",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "website-chuan-seo-la-gi-checklist-2026",
+        "id": 16,
+        "updatedAt": "2026-11-03T09:01:43.480Z",
+        "cmsTitle": "Website chuẩn SEO là gì: checklist 2026",
+        "cmsEyebrow": "SEO"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:01:55.245Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 27620,
+      "sha256": "7438cc90e96c99af07770e82ea3cef9c0940057db2abe484f0c142f4d8d14a7c"
+    },
+    {
+      "file": "composed/wordpress-la-gi-card-glass.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "WordPress",
+        "title": "WordPress là gì? Ưu nhược điểm và khi nào nên thay thế",
+        "treatment": "glass",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "wordpress-la-gi",
+        "id": 15,
+        "updatedAt": "2026-11-03T09:01:43.096Z",
+        "cmsTitle": "WordPress là gì? Ưu nhược điểm và khi nào nên thay thế",
+        "cmsEyebrow": "WordPress"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo-mono.svg",
+          "sha256": "68a0d2beeefd3aeeff5c60f58edcbd34e11cb3341edba69067a4b5d598bd8c7f"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot-mono.svg",
+          "sha256": "3553939ee8b319713e0eeb7475abfe7f64ebd136f8d77922149a4153b59e4079"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:03.395Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 31912,
+      "sha256": "d7e411f38e5bc60a8395f455994ffbc55641ab2bced20fd8f5f45423507d3152"
+    },
+    {
+      "file": "composed/wordpress-la-gi-card-solid.webp",
+      "kind": "card",
+      "text": {
+        "eyebrow": "WordPress",
+        "title": "WordPress là gì? Ưu nhược điểm và khi nào nên thay thế",
+        "treatment": "solid",
+        "footer": "opencms.kdigi.vn",
+        "source": "cms",
+        "geometry": 0,
+        "titleSize": 88,
+        "lines": 3
+      },
+      "post": {
+        "slug": "wordpress-la-gi",
+        "id": 15,
+        "updatedAt": "2026-11-03T09:01:43.096Z",
+        "cmsTitle": "WordPress là gì? Ưu nhược điểm và khi nào nên thay thế",
+        "cmsEyebrow": "WordPress"
+      },
+      "publishable": true,
+      "sources": [
+        {
+          "role": "logo",
+          "ref": "assets/logo/logo.svg",
+          "sha256": "71603ab4fb05654c7ca1d2f5f2644dccc1120265969a2da0b67cdf70f7226364"
+        },
+        {
+          "role": "logo",
+          "ref": "assets/logo/dot.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "geometry",
+          "ref": "assets/logo/mark.svg",
+          "sha256": "3e07945147194a2f88f0ab741a922def61d0a353a216cf9f497eeabd583498f1"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNText-Regular.ttf",
+          "sha256": "6d559554ac4fde62cca08522e163b3804f39a433931cc8a4c344183994c7c03a"
+        },
+        {
+          "role": "font",
+          "ref": "assets/fonts/FerryVNDisplay-Bold.ttf",
+          "sha256": "36c5714f7b57bc057214d0b5722747c8ca27d627afa4d4ac4d9d3e345d1c49ec"
+        }
+      ],
+      "created": "2026-11-03T09:02:00.713Z",
+      "by": "root",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 30966,
+      "sha256": "ba4827372296e8d50e45cbbab1579460227879238d3a7ae0727ad999035be6b5"
+    }
+  ]
+}

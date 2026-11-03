@@ -589,4 +589,49 @@ main#main:focus-visible {
         background: var(--muted);
         font-weight: 600;
     }
+    & .table-scroll {
+        overflow-x: auto;
+        border-radius: 12px;
+    }
+    & .table-scroll table {
+        display: table;
+        min-width: 100%;
+    }
+    & blockquote.callout {
+        border: 1px solid var(--border);
+        border-left-width: 4px;
+        border-radius: 14px;
+        background: var(--card);
+        padding: 0.9em 1.1em;
+        color: var(--foreground);
+    }
+    & blockquote.callout > * + * {
+        margin-top: 0.5em;
+    }
+    & blockquote.callout-keyfacts {
+        border-left-color: var(--primary);
+        background: var(--accent);
+    }
+    & blockquote.callout-tip {
+        border-left-color: #16a34a;
+    }
+    & blockquote.callout-warning {
+        border-left-color: #d97706;
+    }
+    & figure.md-figure {
+        margin-inline: 0;
+    }
+    & figure.md-figure figcaption {
+        margin-top: 0.5em;
+        text-align: center;
+        font-size: 14px;
+        color: var(--muted-foreground);
+    }
+    & img {
+        border: 1px solid var(--border);
+    }
+    & h4 {
+        font-weight: 600;
+        scroll-margin-top: 6rem;
+    }
 }

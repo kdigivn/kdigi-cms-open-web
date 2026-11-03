@@ -1,0 +1,57 @@
+{
+  "name": "website-chuan-seo-la-gi-checklist-2026-card-solid",
+  "file": "composed/website-chuan-seo-la-gi-checklist-2026-card-solid.webp",
+  "reviews": {
+    "7438cc90e96c99af07770e82ea3cef9c0940057db2abe484f0c142f4d8d14a7c": {
+      "result": "pass",
+      "reviewer": "AI Vision (ImageStudio)",
+      "reviewed": "2026-11-03T09:08:11.705Z",
+      "viewed": [
+        "contact-sheet",
+        "renderer-safe-rects"
+      ],
+      "summary": "Website chuẩn SEO là gì: checklist 2026: OK",
+      "checks": {
+        "diacritics": {
+          "pass": true,
+          "note": "Contact sheet reviewed at 440-600 px: \"Website chuẩn SEO là gì: checklist 2026\" shows correct Vietnamese diacritics; renderer also verified the Ferry VN cmap covers every glyph."
+        },
+        "legibility": {
+          "pass": true,
+          "note": "Title 88px, 3 lines, solid treatment: contrast and line breaks fine, nothing cut."
+        },
+        "fit-384": {
+          "pass": true,
+          "note": "Title still readable in the 384-600 px contact-sheet scale."
+        },
+        "safe-square": {
+          "pass": true,
+          "note": "Renderer asserts panel/title/logo boxes inside safe zone x444-1476,y84-996 (inside the centred 1080 square)."
+        },
+        "safe-191": {
+          "pass": true,
+          "note": "Same safe-zone assertion covers the 1.91:1 crop."
+        },
+        "logo": {
+          "pass": true,
+          "note": "Official KDIGI lockup (blue) at 56 px in the panel footer, undistorted; background K facets abstract, no full K."
+        },
+        "brief": {
+          "pass": true,
+          "note": "Title and eyebrow \"SEO\" read from CMS tenant 1 (source cms); nothing added."
+        },
+        "rights": {
+          "pass": true,
+          "note": "Card kind: only the KDIGI logo and Ferry VN (OFL) are used; no external or AI photo."
+        },
+        "ab-parity": {
+          "pass": true,
+          "note": "Solid and glass variants have identical text and geometry; only the treatment differs."
+        }
+      },
+      "owner": {
+        "status": "pending"
+      }
+    }
+  }
+}

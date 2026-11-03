@@ -38,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preload" href="/fonts/ferry-vn/1.0.0/fonts/ferry-vn-display-bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/ferry-vn/1.0.0/fonts/ferry-vn-text-regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="alternate" type="application/rss+xml" title="KDIGI CMS blog" href="/rss.xml" />
         <Script src="/boot.js" strategy="beforeInteractive" />
       </head>
       <body className="min-h-dvh">

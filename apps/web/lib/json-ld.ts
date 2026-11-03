@@ -66,17 +66,27 @@ export const faqPage = (groups: FaqGroup[]): JsonLd => ({
   ),
 })
 
-export const blogPosting = (post: Post): JsonLd => ({
+export const blogPosting = (post: Post, image: string, wordCount?: number | null): JsonLd => ({
   "@type": "BlogPosting",
   "@id": absoluteUrl(`/blog/${post.slug}`) + "#post",
   headline: post.title,
   description: post.seoDescription ?? post.excerpt,
   url: absoluteUrl(`/blog/${post.slug}`),
+  mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),
   inLanguage: "vi-VN",
   datePublished: post.publishedAt ?? undefined,
   dateModified: post.updatedAt ?? post.publishedAt ?? undefined,
-  image: post.image ? [post.image.url] : [absoluteUrl("/opengraph-image")],
-  author: post.author ? { "@type": "Person", name: post.author } : { "@id": ORG_ID },
+  image: [image],
+  ...(wordCount ? { wordCount } : {}),
+  ...(post.categories[0] ? { articleSection: post.categories[0] } : {}),
+  author: post.authorRef
+    ? {
+        "@type": "Person",
+        "@id": `${absoluteUrl(`/tac-gia/${post.authorRef.slug}`)}#person`,
+        name: post.authorRef.name,
+        url: absoluteUrl(`/tac-gia/${post.authorRef.slug}`),
+      }
+    : { "@id": ORG_ID },
   publisher: { "@id": ORG_ID },
   isPartOf: { "@id": WEBSITE_ID },
 })
@@ -87,3 +97,59 @@ export const breadcrumbs = (items: { name: string; path: string }[]): JsonLd => 
 })
 
 export const graph = (...nodes: JsonLd[]): JsonLd => ({ "@context": "https://schema.org", "@graph": nodes })
+
+export const faqPageFromEntries = (entries: { q: string; aText: string }[]): JsonLd => ({
+  "@type": "FAQPage",
+  mainEntity: entries.map((entry) => ({ "@type": "Question", name: entry.q, acceptedAnswer: { "@type": "Answer", text: entry.aText } })),
+})
+
+export type PageLdInput = {
+  route: string
+  title: string
+  description: string
+  schema: "WebPage" | "TechArticle" | "SoftwareApplication" | "CollectionPage" | "AboutPage" | "ContactPage"
+  updated: string
+  published: string | null
+  image: string | null
+  items?: { name: string; path: string }[]
+}
+
+/** Node for a repo page. SoftwareApplication pages describe the product; hubs carry an ItemList of their children; guides are TechArticle. */
+export function pageNode(input: PageLdInput): JsonLd {
+  const url = absoluteUrl(input.route)
+  const common = {
+    "@id": `${url}#webpage`,
+    url,
+    name: input.title,
+    description: input.description,
+    inLanguage: "vi-VN",
+    dateModified: input.updated,
+    datePublished: input.published ?? input.updated,
+    isPartOf: { "@id": WEBSITE_ID },
+    publisher: { "@id": ORG_ID },
+    ...(input.image ? { primaryImageOfPage: { "@type": "ImageObject", url: input.image }, image: input.image } : {}),
+  }
+  if (input.schema === "TechArticle") {
+    return { ...common, "@type": "TechArticle", "@id": `${url}#article`, headline: input.title, author: { "@id": ORG_ID }, mainEntityOfPage: url }
+  }
+  if (input.schema === "SoftwareApplication") return { ...common, "@type": ["WebPage"], about: { "@id": APP_ID } }
+  if (input.schema === "CollectionPage") {
+    return {
+      ...common,
+      "@type": "CollectionPage",
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: (input.items ?? []).map((item, index) => ({ "@type": "ListItem", position: index + 1, url: absoluteUrl(item.path), name: item.name })),
+      },
+    }
+  }
+  return { ...common, "@type": input.schema }
+}
+
+export const person = (name: string, path: string): JsonLd => ({
+  "@type": "Person",
+  "@id": `${absoluteUrl(path)}#person`,
+  name,
+  url: absoluteUrl(path),
+  worksFor: { "@id": ORG_ID },
+})

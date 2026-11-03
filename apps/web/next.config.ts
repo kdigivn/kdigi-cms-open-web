@@ -64,6 +64,8 @@ const config: NextConfig = {
   poweredByHeader: false,
   output: "standalone",
   outputFileTracingRoot: workspaceRoot(),
+  // Pages are read from content/pages at render time (ISR re-renders them on the server) and the OG card reads its fonts from disk.
+  outputFileTracingIncludes: { "/**": ["./content/**/*", "./scripts/og-fonts/*.ttf"] },
   // Old docs URLs arrive with a trailing slash; let the redirect rules below see them as they are.
   skipTrailingSlashRedirect: true,
   async headers() {
@@ -73,6 +75,7 @@ const config: NextConfig = {
     return [
       ...movedToDocs,
       { source: "/sitemap-index.xml", destination: "/sitemap.xml", statusCode: 301 as const },
+      { source: "/blog/rss.xml", destination: "/rss.xml", statusCode: 301 as const },
       { source: "/index.md", destination: `${DOCS_URL}/index.md`, statusCode: 301 as const },
       { source: "/og.png", destination: `${DOCS_URL}/og.png`, statusCode: 301 as const },
     ]

@@ -1,50 +1,19 @@
 import Link from "next/link"
 
 import { KdigiLockup } from "@/components/brand/logo"
-import { DEMO, docsLinks, GITHUB_URL, KDIGI_URL } from "@/lib/site"
+import { getFooterColumns } from "@/lib/ia"
+import { KDIGI_URL } from "@/lib/site"
 
 import { TransparencyToggle } from "./transparency-toggle"
-
-const COLUMNS = [
-  {
-    title: "Sản phẩm",
-    links: [
-      { label: "Tính năng", href: "/#tinh-nang" },
-      { label: "Chuyển từ WordPress", href: "/#wordpress" },
-      { label: "Tự host bằng Docker", href: "/#tu-host" },
-      { label: "Demo trực tuyến", href: "/#demo" },
-    ],
-  },
-  {
-    title: "Tài liệu",
-    links: [
-      { label: "Bắt đầu nhanh", href: docsLinks.quickstart },
-      { label: "REST và GraphQL", href: docsLinks.api },
-      { label: "Triển khai trên Coolify", href: docsLinks.coolify },
-      { label: "Tất cả tài liệu", href: docsLinks.home },
-    ],
-  },
-  {
-    title: "Dự án",
-    links: [
-      { label: "Blog và nhật ký phát hành", href: "/blog" },
-      { label: "Mã nguồn trên GitHub", href: GITHUB_URL },
-      { label: "Giấy phép MIT", href: `${GITHUB_URL}/blob/main/LICENSE` },
-      { label: "Trang quản trị demo", href: DEMO.adminUrl },
-      { label: "Giới thiệu", href: "/gioi-thieu" },
-      { label: "Điều khoản sử dụng", href: "/dieu-khoan" },
-      { label: "Chính sách quyền riêng tư", href: "/quyen-rieng-tu" },
-    ],
-  },
-]
 
 const isExternal = (href: string) => /^https?:\/\//.test(href)
 
 export function Footer() {
+  const COLUMNS = getFooterColumns()
   return (
     <footer className="mt-8 bg-ink text-ink-foreground">
       <div className="mx-auto w-full max-w-[1180px] px-5 py-14 md:px-6">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_repeat(3,1fr)]">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_repeat(4,1fr)]">
           <div>
             <a href={KDIGI_URL} rel="noopener" aria-label="KDIGI, kdigi.vn" className="inline-block rounded-lg">
               <KdigiLockup onDark />

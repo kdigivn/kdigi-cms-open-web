@@ -1,0 +1,588 @@
+{
+ "style": "Premium miniature 3D render in one consistent clay-and-glass style: matte warm-white clay (#F4F0EA) with soft rounded pillow-like extrusions and gentle bevels, frosted translucent milky glass parts with a faint cyan tint that are dense enough that the background never shows through them, chamfered glass blocks and satin blocks like a modern tech icon, brand blue #4767EC and deep navy #0A1020 clay accents, small glowing cyan #22D3EE rim-light strips and inner glow, soft diffused studio light from the upper left with gentle shading and clean subtle reflections, viewed from the same three-quarter isometric angle about 35 degrees above, the object centred with generous empty margin and nothing touching or cropped by the image border, no cast shadow, no ground shadow, no floor, no reflection on the ground, no horizon line, plain seamless flat background of exactly {BG} with no gradient, no vignette, no texture, no glow on the background and no {BG} colour cast or reflection on the object",
+ "scene": "The platform is a clean smooth rounded-square slab like a collectible figurine base with plain continuous side walls, no bumpers, no side pads, no clips, no handles; one thin glowing cyan light strip along a lower edge is allowed; every object on it is clearly readable at small size",
+ "notext": "Absolutely no text, no letters, no numbers, no logos, no trademarks, no watermark, no people.",
+ "bg": "#00B140",
+ "items": [
+  {
+   "key": "tinh-nang-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a 3x3 grid of rounded frosted-glass tiles, one brand-blue clay tile at the centre with a thin glowing cyan rim strip, the others pale glass with different blank pale glyph shapes (no text), joined by flat glowing cyan ribbon rails",
+   "alt": "Lưới các ô kính mờ quanh một ô xanh trung tâm, tượng trưng cho bản đồ tính năng KDIGI CMS"
+  },
+  {
+   "key": "tinh-nang-quan-ly-nhieu-website-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it one chunky brand-blue clay hub cube with a cyan rim strip and four frosted-glass browser-window cards of different heights standing around it, each connected to the hub by flat glowing cyan ribbon rails, each card with a different small clay colour accent block (blue, navy, warm white, cyan)",
+   "alt": "Một khối trung tâm xanh nối với bốn cửa sổ website kính mờ, quản lý nhiều website trong một cài đặt"
+  },
+  {
+   "key": "tinh-nang-trinh-soan-thao-markdown-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a large upright frosted-glass document sheet with blank pale rounded text bars, a brand-blue clay heading bar, a small glass table grid and a small glass image tile on the sheet, a chunky clay pencil leaning on it, and a small floating glass pop-up menu card with four blank rows beside it",
+   "alt": "Tài liệu kính mờ với thanh tiêu đề xanh, bảng và ảnh nhỏ, cạnh một cây bút đất sét, đại diện cho trình soạn thảo Markdown"
+  },
+  {
+   "key": "tinh-nang-seo-json-ld-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass magnifying glass with a brand-blue clay rim, beside a small rising bar chart of five clay bars (blue, cyan, white, navy), and three small round clay nodes joined by flat glowing cyan ribbons like a graph",
+   "alt": "Kính lúp kính mờ cạnh biểu đồ cột và đồ thị nút, đại diện cho SEO và JSON-LD"
+  },
+  {
+   "key": "tinh-nang-thu-vien-media-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky warm-white clay folder with a frosted-glass tab, three frosted-glass photo tiles with blank pale mountain-and-sun clay shapes leaning out of it, and a small brand-blue clay upload arrow tile",
+   "alt": "Thư mục đất sét với các thẻ ảnh kính mờ và nút tải lên xanh, đại diện cho thư viện media"
+  },
+  {
+   "key": "tinh-nang-phan-quyen-nguoi-dung-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass shield with a brand-blue clay keyhole, four small round clay avatar-like pawns (abstract capsule bodies with round heads, brand-blue, navy, warm white, cyan) standing in a row in front of it, and a small clay key",
+   "alt": "Khiên kính mờ với ổ khoá xanh và bốn nhân vật đất sét trừu tượng, đại diện cho phân quyền người dùng"
+  },
+  {
+   "key": "tinh-nang-headless-api-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a brand-blue clay cube with a cyan rim strip connected by flat glowing cyan ribbon pipes to three small frosted-glass screens of different kinds (a wide browser, a tall phone, a small square tablet), each with blank pale bars, plus two small floating clay curly-bracket-free abstract data capsules travelling on the pipes",
+   "alt": "Khối xanh nối bằng ống ánh xanh tới trình duyệt, điện thoại và máy tính bảng kính mờ, đại diện cho headless API"
+  },
+  {
+   "key": "tinh-nang-noi-dung-va-cau-truc-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a branching tree of five round and square clay nodes (brand-blue root, frosted glass, warm white, navy) joined by flat glowing cyan ribbons, with a small stack of three frosted-glass cards beside it and a small clay tag-shaped tile",
+   "alt": "Cây nút đất sét và kính mờ cạnh chồng thẻ nội dung, đại diện cho mô hình nội dung và phân loại"
+  },
+  {
+   "key": "tinh-nang-quy-trinh-bien-tap-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass calendar block with a blank grid of small rounded day cells, three of them filled with brand-blue, cyan and navy clay, a small stack of two frosted-glass cards beside it with a clay check-mark tile, and a small round clay clock",
+   "alt": "Lịch kính mờ có vài ô tô màu, chồng thẻ và đồng hồ đất sét, đại diện cho quy trình biên tập"
+  },
+  {
+   "key": "giai-phap-agency-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it three small frosted-glass browser-window cards of different sizes in a row, each with a different small clay accent colour, all linked to one brand-blue clay hub cube in front by flat glowing cyan ribbons, and a small deep-navy clay briefcase block beside them",
+   "alt": "Ba cửa sổ website kính mờ cùng nối về một khối xanh, đại diện cho agency quản lý nhiều site khách hàng"
+  },
+  {
+   "key": "giai-phap-doanh-nghiep-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass office-building-like tower block of three stacked chamfered glass slabs with a brand-blue clay roof block, a small clay briefcase and a small glass page card beside it",
+   "alt": "Toà tháp kính mờ ba tầng với mái xanh, đại diện cho website doanh nghiệp"
+  },
+  {
+   "key": "giai-phap-blog-tin-tuc-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass newspaper-like stack of three article cards with blank pale text bars and one blank pale image tile each, a chunky clay feather-pen and a small brand-blue clay bookmark ribbon",
+   "alt": "Chồng thẻ bài viết kính mờ với bút lông và dấu trang xanh, đại diện cho blog và tin tức"
+  },
+  {
+   "key": "giai-phap-website-ban-hang-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass shopping basket with a brand-blue clay handle holding two small clay product boxes (warm white and navy), beside a small glass price-tag tile with a blank pale bar",
+   "alt": "Giỏ hàng kính mờ với hộp sản phẩm đất sét và thẻ giá, đại diện cho website bán hàng"
+  },
+  {
+   "key": "so-sanh-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a balanced clay scale: two frosted-glass pans hanging from a navy clay beam on a warm-white pillar, a brand-blue clay cube on one pan and a pale frosted-glass cube on the other, level and calm",
+   "alt": "Cán cân với một khối xanh và một khối kính mờ, đại diện cho so sánh hệ quản trị nội dung"
+  },
+  {
+   "key": "thuc-hanh-tot-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass clipboard standing upright with a clay clip and four blank pale rows each with a brand-blue clay check-mark tile, and a small clay book stack beside it",
+   "alt": "Bảng kẹp kính mờ với các dấu tích xanh cạnh chồng sách, đại diện cho thực hành tốt"
+  },
+  {
+   "key": "demo-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it an open frosted-glass laptop with a brand-blue clay play-triangle button glowing on the screen, a small clay key and a small glass user-card beside it",
+   "alt": "Laptop kính mờ với nút phát xanh cạnh chìa khoá, đại diện cho bản demo trực tuyến"
+  },
+  {
+   "key": "phat-hanh-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass package box with a brand-blue clay ribbon band, an upward glowing cyan arrow made of three stacked chevron tiles above it, and a small round clay tag",
+   "alt": "Hộp phát hành kính mờ với dải xanh và mũi tên đi lên, đại diện cho các bản phát hành"
+  },
+  {
+   "key": "blog-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass open notebook with blank pale text bars, a brand-blue clay speech bubble and a small stack of article cards beside a clay pen",
+   "alt": "Sổ tay kính mờ, bong bóng thoại xanh và chồng bài viết, đại diện cho blog KDIGI CMS"
+  },
+  {
+   "key": "gioi-thieu-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a brand-blue clay hub cube with a cyan rim strip, surrounded by four small abstract capsule-bodied pawns with round heads (blue, navy, white, cyan) standing together, no faces, and a small glass lightbulb",
+   "alt": "Khối xanh trung tâm quanh bốn nhân vật đất sét trừu tượng, đại diện cho đội ngũ KDIGI"
+  },
+  {
+   "key": "lien-he-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky frosted-glass envelope with a brand-blue clay seal, a round glass chat bubble with three blank clay dots beside it, and a small clay paper plane",
+   "alt": "Phong thư kính mờ với dấu xanh, bong bóng chat và máy bay giấy, đại diện cho liên hệ"
+  },
+  {
+   "key": "home-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "(reused render from illustrations-src/raw/hero-scene.png)",
+   "alt": "Một khối trung tâm xanh nối với ba cửa sổ website kính mờ trên đế đất sét",
+   "rawFile": "../../illustrations-src/raw/hero-scene.png"
+  },
+  {
+   "key": "chuyen-tu-wordpress-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "(reused render from illustrations-src/raw/scene-migrate.png)",
+   "alt": "Tài liệu kính mờ chuyển qua băng chuyền sang khối xanh KDIGI CMS",
+   "rawFile": "../../illustrations-src/raw/scene-migrate.png"
+  },
+  {
+   "key": "tu-host-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "(reused render from illustrations-src/raw/scene-selfhost.png)",
+   "alt": "Khối container và cơ sở dữ liệu kính mờ, đại diện cho tự host bằng Docker",
+   "rawFile": "../../illustrations-src/raw/scene-selfhost.png"
+  },
+  {
+   "key": "ma-nguon-mo-hero",
+   "kind": "hero",
+   "size": [
+    1600,
+    1067
+   ],
+   "limit_kb": 200,
+   "shadow": true,
+   "subject": "(reused render from illustrations-src/raw/scene-opensource.png)",
+   "alt": "Cây nhánh mã nguồn mở và ổ khoá mở bằng kính mờ trên đế đất sét",
+   "rawFile": "../../illustrations-src/raw/scene-opensource.png"
+  },
+  {
+   "key": "home-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a single large frosted-glass browser-window card standing upright with a blank pale title bar and blank content bars, a chunky brand-blue clay cube in front of it, and a small stack of two glass document sheets",
+   "alt": "Cửa sổ trình duyệt kính mờ cạnh khối xanh KDIGI CMS và chồng tài liệu"
+  },
+  {
+   "key": "tinh-nang-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it three small frosted-glass feature cards in a row, each with a different small clay emblem (a blue cube, a cyan sphere, a navy cylinder), linked underneath by one flat glowing cyan ribbon",
+   "alt": "Ba thẻ tính năng kính mờ với các biểu tượng khối, nối bằng một dải ánh xanh"
+  },
+  {
+   "key": "tinh-nang-quan-ly-nhieu-website-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it two clay platforms-within-platform: a small brand-blue clay house block and a small navy clay house block side by side, each with a frosted-glass roof panel, joined by a flat glowing cyan ribbon to a small glass globe",
+   "alt": "Hai khối nhà đất sét xanh và navy nối với quả cầu kính, đại diện cho nhiều tên miền một hệ thống"
+  },
+  {
+   "key": "tinh-nang-trinh-soan-thao-markdown-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass pop-up menu card with five blank pale rows, a brand-blue clay slash-shaped bar highlighting the first row, beside a small glass document sheet and a chunky clay clipboard",
+   "alt": "Menu gạch chéo kính mờ cạnh tờ tài liệu và bảng kẹp, đại diện cho slash menu và dán từ Docs"
+  },
+  {
+   "key": "tinh-nang-seo-json-ld-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass document card with three small round clay node dots connected by flat glowing cyan ribbons to a small brand-blue clay cube, and a small clay checklist tile with three check marks",
+   "alt": "Thẻ tài liệu kính mờ nối với các nút dữ liệu có cấu trúc và danh sách kiểm tra, đại diện cho JSON-LD"
+  },
+  {
+   "key": "tinh-nang-thu-vien-media-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass picture frame tile with a blank pale mountain-and-sun clay shape, a clay pencil-and-slider tool tile next to it, and a small round brand-blue clay crop-corner tile",
+   "alt": "Khung ảnh kính mờ cạnh công cụ cắt và chỉnh, đại diện cho trình sửa ảnh trong thư viện media"
+  },
+  {
+   "key": "tinh-nang-phan-quyen-nguoi-dung-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it four small clay pedestal steps of increasing height, each topped with a small capsule-bodied pawn of a different colour (white, cyan, blue, navy), and a small frosted-glass badge tile",
+   "alt": "Bốn bậc đất sét với bốn nhân vật trừu tượng, đại diện cho các vai trò từ tác giả tới super-admin"
+  },
+  {
+   "key": "tinh-nang-headless-api-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a chunky navy clay terminal-like slab with a blank row of pale glass bars and a brand-blue clay cursor block, connected by a flat glowing cyan ribbon to a small frosted-glass browser card",
+   "alt": "Khối giống cửa sổ dòng lệnh navy nối với thẻ trình duyệt kính mờ, đại diện cho phản hồi REST"
+  },
+  {
+   "key": "tinh-nang-noi-dung-va-cau-truc-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a stack of four frosted-glass cards in a staircase arrangement, each with a different small clay emblem, and a small clay folder-tree of two round nodes beside it",
+   "alt": "Chồng bốn thẻ kính mờ xếp bậc cạnh cây thư mục nhỏ, đại diện cho các loại nội dung"
+  },
+  {
+   "key": "tinh-nang-quy-trinh-bien-tap-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it three frosted-glass kanban-like columns of different heights each holding one or two blank rounded cards (one card brand-blue, one navy, one white), and a small round clay check badge",
+   "alt": "Ba cột thẻ kính mờ kiểu bảng công việc với một huy hiệu xanh, đại diện cho luồng nháp đến đăng"
+  },
+  {
+   "key": "giai-phap-agency-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a row of four small frosted-glass site cards in a row of increasing size with a small navy clay briefcase block in front and a brand-blue clay key resting on it",
+   "alt": "Bốn thẻ website kính mờ cạnh cặp tài liệu và chìa khoá, đại diện cho agency quản lý nhiều khách hàng"
+  },
+  {
+   "key": "giai-phap-doanh-nghiep-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass shield card with a brand-blue clay check mark, beside two stacked frosted-glass page cards and a small clay padlock",
+   "alt": "Khiên kính mờ với dấu tích xanh cạnh các trang và ổ khoá, đại diện cho website doanh nghiệp an toàn"
+  },
+  {
+   "key": "giai-phap-blog-tin-tuc-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass calendar block with three filled day cells, a small stack of article cards and a chunky clay feather pen",
+   "alt": "Lịch kính mờ cạnh chồng bài viết và bút lông, đại diện cho lịch đăng bài"
+  },
+  {
+   "key": "giai-phap-website-ban-hang-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it three small clay product boxes of different colours on a glass shelf block, a frosted-glass price-tag tile and a small brand-blue clay cart",
+   "alt": "Kệ kính mờ với ba hộp sản phẩm và xe hàng xanh, đại diện cho website bán hàng"
+  },
+  {
+   "key": "so-sanh-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it two frosted-glass table cards side by side, each with a blank pale grid of cells, one with a brand-blue clay check-mark tile and the other with a navy clay check-mark tile, and a small clay question-mark-free balance tile",
+   "alt": "Hai thẻ bảng kính mờ đặt cạnh nhau, đại diện cho bảng so sánh"
+  },
+  {
+   "key": "thuc-hanh-tot-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass trophy-free achievement ribbon badge with a brand-blue clay star, beside a small stack of three clay books and a clay shield tile",
+   "alt": "Huy hiệu ruy băng kính mờ cạnh chồng sách và khiên, đại diện cho hướng dẫn thực hành tốt"
+  },
+  {
+   "key": "demo-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass user-card tile with a blank round avatar disc and two blank bars, a chunky brand-blue clay key and a small glowing cyan power-button tile",
+   "alt": "Thẻ tài khoản kính mờ cạnh chìa khoá xanh và nút nguồn, đại diện cho tài khoản demo"
+  },
+  {
+   "key": "phat-hanh-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a vertical stack of three frosted-glass release cards of decreasing opacity, the top one brand-blue clay with a cyan rim strip, and a small clay version-tag tile",
+   "alt": "Chồng ba thẻ phát hành kính mờ với thẻ trên cùng xanh, đại diện cho lịch sử phiên bản"
+  },
+  {
+   "key": "blog-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass laptop with a blank pale article layout, a chunky clay coffee cup and a small brand-blue clay bookmark",
+   "alt": "Laptop kính mờ cạnh tách cà phê và dấu trang xanh, đại diện cho đọc blog"
+  },
+  {
+   "key": "gioi-thieu-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a small frosted-glass lightbulb with a brand-blue clay filament, three small round clay nodes joined by cyan ribbons and a small compass-like round tile",
+   "alt": "Bóng đèn kính mờ với ba nút nối nhau và la bàn nhỏ, đại diện cho sứ mệnh KDIGI"
+  },
+  {
+   "key": "lien-he-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass phone-like card with a blank bubble, a chunky clay mailbox with a brand-blue flag and a small clay paper plane",
+   "alt": "Hộp thư đất sét cờ xanh cạnh thẻ điện thoại kính mờ và máy bay giấy, đại diện cho liên hệ"
+  },
+  {
+   "key": "chuyen-tu-wordpress-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass database cylinder on the left, a brand-blue clay cube on the right, and three small glass tiles in the shape of a post, an image and a menu travelling between them on a flat glowing cyan ribbon",
+   "alt": "Xi lanh dữ liệu kính mờ nối với khối xanh qua băng chuyền các thẻ bài viết, ảnh và menu"
+  },
+  {
+   "key": "tu-host-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a navy clay server rack of three stacked chamfered slabs with glowing cyan seams and a small frosted-glass shield tile, plus a small round clay backup-arrow tile",
+   "alt": "Giá máy chủ navy ba tầng với khiên kính và nút sao lưu, đại diện cho tự host và backup"
+  },
+  {
+   "key": "ma-nguon-mo-sec1",
+   "kind": "section",
+   "size": [
+    1200,
+    800
+   ],
+   "limit_kb": 150,
+   "shadow": true,
+   "subject": "a rounded-square warm-white clay platform with a smooth flat top; on it a frosted-glass heart-free open book with a brand-blue clay bookmark, a small round clay merge-node tree of three nodes and a small glass scale tile",
+   "alt": "Cuốn sách mở kính mờ cạnh cây nhánh ba nút, đại diện cho mã nguồn mở và đóng góp"
+  }
+ ]
+}

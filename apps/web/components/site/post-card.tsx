@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import { postCover } from "@/lib/blog"
 import type { Post } from "@/lib/cms"
 
 /** Vietnamese date, fixed time zone so the server render and the browser agree. */
@@ -11,14 +12,15 @@ export function formatDate(iso: string | null): string {
 
 /** Post card used on the homepage and /blog. The cover reserves its 16:9 box, so the grid never shifts. */
 export function PostCard({ post }: { post: Post }) {
+  const cover = postCover(post)
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
       <Link href={`/blog/${post.slug}`} className="flex flex-1 flex-col rounded-2xl">
         <div className="relative aspect-video overflow-hidden bg-secondary">
-          {post.image ? (
+          {cover ? (
             <Image
-              src={post.image.url}
-              alt={post.image.alt}
+              src={cover.url}
+              alt={cover.alt || post.title}
               fill
               unoptimized
               sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
