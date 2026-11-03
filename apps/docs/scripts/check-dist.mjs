@@ -59,6 +59,46 @@ if (problems.length === 0) {
   }
   if (htmlPages.length === 0) problems.push('không tìm thấy trang HTML nào trong dist');
   else console.log(`ok   ${htmlPages.length} trang HTML đều có file .md`);
+
+  // Mọi href nội bộ trong HTML đã build (gồm sidebar, header, nút đổi ngôn ngữ, phân trang) phải trỏ tới
+  // một trang/tệp có trong dist. check-links.mjs chỉ kiểm link trong nội dung, không thấy link do theme sinh ra.
+  const allHtml = [];
+  const walkAll = (dir) => {
+    for (const name of readdirSync(dir)) {
+      const full = path.join(dir, name);
+      if (statSync(full).isDirectory()) {
+        if (!['_astro', 'pagefind'].includes(name)) walkAll(full);
+      } else if (name.endsWith('.html') && full !== path.join(dist, '404.html')) allHtml.push(full); // 404.html: nút đổi ngôn ngữ trỏ /en/404/, vốn cũng là 404
+    }
+  };
+  walkAll(dist);
+  const resolves = (pathname) => {
+    const clean = decodeURIComponent(pathname);
+    const target = path.join(dist, clean);
+    return clean.endsWith('/') ? existsSync(path.join(target, 'index.html')) : existsSync(target) || existsSync(`${target}.html`) || existsSync(path.join(target, 'index.html'));
+  };
+  const broken = new Map();
+  for (const file of allHtml) {
+    const html = readFileSync(file, 'utf8');
+    if (html.includes('http-equiv="refresh"')) continue;
+    const from = `/${path.relative(dist, file).replace(/\\/g, '/').replace(/index\.html$/, '')}`;
+    for (const [, href] of html.matchAll(/\shref="([^"]+)"/g)) {
+      let url;
+      try {
+        url = new URL(href, SITE + from.slice(1));
+      } catch {
+        continue;
+      }
+      if (url.origin !== new URL(SITE).origin || resolves(url.pathname)) continue;
+      if (!broken.has(url.pathname)) broken.set(url.pathname, new Set());
+      broken.get(url.pathname).add(from);
+    }
+  }
+  for (const [target, froms] of broken) {
+    const list = [...froms];
+    problems.push(`link hỏng ${target} ← ${list.length} trang (vd. ${list.slice(0, 2).join(', ')})`);
+  }
+  if (broken.size === 0) console.log(`ok   href nội bộ trong ${allHtml.length} tệp HTML đều tồn tại`);
 }
 
 /**

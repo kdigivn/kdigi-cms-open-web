@@ -30,6 +30,7 @@
 }
 
 .site-title {
+  align-items: center;
   gap: 0.625rem;
   white-space: nowrap;
   text-decoration: none;
@@ -55,7 +56,7 @@
   font-size: 1.0625rem;
   font-weight: 700;
   letter-spacing: -0.015em;
-  line-height: 1.5rem;
+  line-height: 1;
 }
 
 .hd-header__search {

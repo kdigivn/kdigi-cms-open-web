@@ -5,7 +5,7 @@ import starlightSidebarTopics from 'starlight-sidebar-topics';
 import rehypeFigure from './src/plugins/rehype-figure.mjs';
 import rehypeTableScroll from './src/plugins/rehype-table-scroll.mjs';
 import rehypeSearchAlias from './src/plugins/rehype-search-alias.mjs';
-import { topics, referenceHome } from './src/sidebar.mjs';
+import { topics, referenceHome, referenceRedirects } from './src/sidebar.mjs';
 
 const SITE = 'https://docs.opencms.kdigi.vn';
 
@@ -21,8 +21,8 @@ export default defineConfig({
     '/en/api/': '/en/api/rest-graphql/',
     '/tham-khao/': `/en${referenceHome}`,
     '/en/tham-khao/': `/en${referenceHome}`,
-    // Tab "Tham khảo kỹ thuật" ở bản tiếng Việt: nội dung chỉ có tiếng Anh nên chuyển sang `/en/`.
-    [referenceHome]: `/en${referenceHome}`,
+    // Khu "Tham khảo kỹ thuật" chỉ có tiếng Anh: mọi đường dẫn tiếng Việt chuyển sang bản `/en/`.
+    ...referenceRedirects,
   },
   markdown: {
     // GFM đặt tường minh: @astrojs/mdx lấy `markdown.gfm` làm mặc định, và Astro 6.4 không còn điền

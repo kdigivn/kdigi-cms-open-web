@@ -24,6 +24,13 @@ const group = (label, en, items) => ({ label, translations: { en }, items });
 /** Đường dẫn (không tiền tố locale) của trang đầu khu tham khảo. */
 export const referenceHome = `/${reference[0].slug}/`;
 
+/**
+ * Trang tham khảo chỉ có bản tiếng Anh. Link sidebar không mang tiền tố locale (plugin tự thêm `/en`
+ * ở locale tiếng Anh; nếu ghi sẵn `/en/…` sẽ thành `/en/en/…` → 404). Đường dẫn tiếng Việt tương ứng
+ * (sidebar tiếng Việt, nút đổi ngôn ngữ) chuyển hướng sang bản `/en/`.
+ */
+export const referenceRedirects = Object.fromEntries(reference.map(({ slug }) => [`/${slug}/`, `/en/${slug}/`]));
+
 export const topics = [
   {
     label: { vi: 'Hướng dẫn', en: 'Guides' },
@@ -67,8 +74,8 @@ export const topics = [
       group(
         'Tài liệu của repo',
         'Repository docs',
-        // Trang tiếng Anh nằm ở `/en/tham-khao/…`; dùng link thay vì slug để cả hai locale trỏ tới cùng một trang.
-        reference.map(({ slug, title }) => ({ label: title, link: `/en/${slug}/` })),
+        // Không tiền tố locale, xem `referenceRedirects`.
+        reference.map(({ slug, title }) => ({ label: title, link: `/${slug}/` })),
       ),
     ],
   },
