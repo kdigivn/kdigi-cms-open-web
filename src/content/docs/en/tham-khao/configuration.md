@@ -72,7 +72,7 @@ Read by [`docker/entrypoint.sh`](https://github.com/kdigivn/kdigi-cms-open/blob/
 
 ## WordPress migration (optional)
 
-Only used by the importer scripts in `src/importers/` and `src/scripts/`; see [WordPress migration](/en/tham-khao/wordpress-migration/) for the full list and behaviour: `WP_URL`, `WP_AUTH_USER`, `WP_AUTH_PASSWORD`, `WP_UTC_OFFSET`, `GATE_APPROVER`, `KDIGI_LOCAL_DB_HOSTS`, `BACKUP_DIR`.
+Only used by the importer scripts in `src/importers/` and `src/scripts/`; see [WordPress migration](/en/tham-khao/wordpress-migration/) (Vietnamese) for the full list and behaviour: `WP_URL`, `WP_AUTH_USER`, `WP_AUTH_PASSWORD`, `WP_POST_TYPES`, `WP_USER_AGENT`, `WP_UTC_OFFSET`, `GATE_APPROVER`, `KDIGI_LOCAL_DB_HOSTS`, `BACKUP_DIR`.
 
 ## Development and tests only
 

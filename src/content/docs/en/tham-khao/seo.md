@@ -149,7 +149,7 @@ Public paths used in the graph, in breadcrumbs and in redirects come from `src/f
 - `offers` is emitted only when `prices[0].currentPrice > 0`; a missing or zero price logs a warning and omits the offer (no "free" offers). `priceValidUntil` comes from `prices[0].validUntil`; the seller is `{siteUrl}/#organization`.
 - `aggregateRating` is emitted only when the rating is not perfect (`avg < 5`) **and** either `aggregateRatingOverride` is on, or `count >= minReviewsForAggregate` **and** at least one approved local comment exists (`commentCount > 0`). Imported star ratings alone never produce it (`src/lib/jsonld/product.ts`).
 - `FAQPage` entries need both a question and an answer; incomplete ones are dropped, and with none left the node is omitted.
-- `buildProduct` writes `priceCurrency: 'VND'` regardless of the product's `prices[].currency` select. Sites that price in another currency currently get the wrong `priceCurrency` in JSON-LD.
+- `buildProduct` writes `priceCurrency` from the first price row's `prices[].currency` select (default `VND`).
 
 ## OG image cascade
 

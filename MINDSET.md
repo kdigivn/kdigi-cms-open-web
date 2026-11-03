@@ -38,6 +38,6 @@
 | Dòng **Default** trong `khoi-system-design` | Dự án này làm gì | Lý do |
 | --- | --- | --- |
 | Site public: Cloudflare Workers (static assets) | Coolify (VM ở VN), nginx | Hạ tầng KDIGI CMS đã chạy trên Coolify, không thêm tài khoản; site tĩnh nhỏ nên TTFB từ VN vẫn thấp |
-| Làm việc trên `develop`, `main` là release | Một commit khởi tạo trên `main` (và `develop` trỏ cùng commit) | Repo mới công khai, chưa có lịch sử |
+| Làm việc trên `develop`, `main` là release | Chỉ dùng nhánh `main`, commit thẳng | Site tĩnh nhỏ, một người duy trì; Coolify build lại mỗi lần có commit mới trên `main` |
 | Minh hoạ tạo bằng Codex `image_gen` | SVG viết tay (`src/assets/illustrations/`) | Ảnh gọn nhẹ, hai biến thể sáng/tối, không cần quy trình tách nền cho bản đầu |
 | Screenshot hướng dẫn bằng `/ck:agent-browser` | Chưa có screenshot trong bài | Docs mô tả bằng lệnh và cấu hình; thêm khi giao diện quản trị ổn định |

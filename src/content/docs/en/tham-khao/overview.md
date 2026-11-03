@@ -1,10 +1,10 @@
 ---
 title: "KDIGI CMS documentation"
-description: "Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn>. The docs are written…"
+description: "Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn>. The reference docs are…"
 editUrl: https://github.com/kdigivn/kdigi-cms-open/edit/main/docs/README.md
 ---
 
-Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn>. The docs are written in English; the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.md) is in Vietnamese with an [English version](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md).
+Reference documentation for KDIGI CMS, an open-source headless multi-site CMS (Payload 3 + Next.js 15 + PostgreSQL). Website: <https://opencms.kdigi.vn>. The reference docs are written in English (the [WordPress migration](/en/tham-khao/wordpress-migration/) guides are in Vietnamese); the root [README](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.md) is in Vietnamese with an [English version](https://github.com/kdigivn/kdigi-cms-open/blob/main/README.en.md).
 
 ## Start here
 
