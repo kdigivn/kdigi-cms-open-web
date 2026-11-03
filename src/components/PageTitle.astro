@@ -1,0 +1,37 @@
+---
+/**
+ * Tiêu đề bài viết: breadcrumb phía trên, thông báo "đang chờ khớp với bản triển khai"
+ * phía dưới khi trang có `draft_status`, và từ khoá không dấu của tiêu đề cho tìm kiếm.
+ *
+ * - Thông báo `data-pagefind-ignore`: `<main>` có `data-pagefind-body`, nếu không đánh dấu
+ *   thì chuỗi này lọt vào đoạn trích kết quả tìm kiếm.
+ * - Giữ `<h1 id="_top">` của component mặc định (SkipLink trỏ tới id này).
+ */
+import { Icon } from '@astrojs/starlight/components';
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+import Breadcrumb from './Breadcrumb.astro';
+import SearchAlias from './SearchAlias.astro';
+import MarkdownActions from './MarkdownActions.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const isDraft = entry.data.draft_status === 'awaiting-implementation';
+---
+
+<Breadcrumb />
+
+<Default />
+<MarkdownActions />
+<SearchAlias text={entry.data.title} />
+
+{
+  isDraft && (
+    <aside class="hd-draft-notice" data-pagefind-ignore>
+      <Icon name="information" size="1.25rem" />
+      <div>
+        <strong>{Astro.locals.t('hd.draftTitle')}</strong>
+        <p>{Astro.locals.t('hd.draftBody')}</p>
+      </div>
+    </aside>
+  )
+}

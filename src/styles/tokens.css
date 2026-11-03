@@ -1,0 +1,224 @@
+/* Docs — token nền tảng và ánh xạ sang Starlight.
+ *
+ * Phong cách "Tech Blue · Liquid Glass". Đổi giá trị token ở đây khi đổi design.
+ * Quy tắc:
+ *   - Không dùng Tailwind. Mọi biến `--sl-color-*` được ánh xạ tường minh ở đây.
+ *   - Dark là mặc định của Starlight → giá trị dark đặt ở `:root`.
+ *   - Selector light dùng `:root[data-theme='light'], [data-theme='light'] ::backdrop`
+ *     giống Starlight, để cả modal tìm kiếm (render ngoài `:root`) cũng nhận token.
+ *   - CSS để ngoài layer (unlayered) để luôn thắng `@layer starlight.*`.
+ *   - Kính (glass) chỉ ở header và hộp tìm kiếm; bề mặt chứa chữ/bảng/ảnh chụp luôn đặc.
+ */
+
+:root {
+  --hd-font-sans: 'Ferry VN Text', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --hd-font-mono: 'Ferry VN Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sl-font: var(--hd-font-sans);
+  --sl-font-mono: var(--hd-font-mono);
+
+  --hd-radius-card: 22px;
+  --hd-radius-box: 14px;
+  --hd-radius-item: 10px;
+  --hd-radius-pill: 999px;
+
+  /* ------------------------------------------------------------------ dark */
+  --hd-background: #050b1b;
+  --hd-card: #0c1730;
+  --hd-popover: #0f1c3b;
+  --hd-secondary: #13213f;
+  --hd-accent: #16295a;
+  --hd-accent-foreground: #b7cfff;
+  --hd-foreground: #eaf0fc;
+  --hd-muted-foreground: #a3b3d1;
+  --hd-subtle-foreground: #7f91b3;
+  --hd-primary: #6c9cff;
+  --hd-primary-foreground: #06122e;
+  --hd-brand: #38d3f0;
+  --hd-brand-text: #38d3f0;
+  --hd-chart-3: #a78bfa;
+  --hd-border: #243557;
+  --hd-input: #657aa6;
+
+  --hd-success: #4ade80;
+  --hd-success-tint: #0f2e22;
+  --hd-success-ink: #86efac;
+  --hd-warning: #fbbf24;
+  --hd-warning-tint: #33260c;
+  --hd-warning-ink: #fcd34d;
+  --hd-destructive: #ff8a8f;
+  --hd-destructive-tint: #3a1618;
+  --hd-destructive-ink: #fca5a5;
+  --hd-info: #6c9cff;
+  --hd-info-tint: #16295a;
+  --hd-info-ink: #b7cfff;
+
+  --hd-glass-tint: oklch(0.2 0.045 262 / 0.72);
+  --hd-glass-tint-strong: oklch(0.2 0.045 262 / 0.85);
+  --hd-glass-border: oklch(1 0 0 / 0.14);
+  --hd-glass-highlight: oklch(1 0 0 / 0.2);
+  --hd-glass-shadow: 0 8px 32px oklch(0 0 0 / 0.45), 0 1px 2px oklch(0 0 0 / 0.4);
+  --hd-glass-filter: blur(20px) saturate(170%);
+  --hd-backdrop-1: oklch(0.45 0.16 262 / 0.5);
+  --hd-backdrop-2: oklch(0.4 0.09 215 / 0.4);
+
+  --hd-card-shadow: 0 12px 32px -12px oklch(0 0 0 / 0.5);
+  --hd-scrim: oklch(0.1 0.04 262 / 0.62);
+
+  --sl-color-white: var(--hd-foreground);
+  --sl-color-gray-1: #dde5f5;
+  --sl-color-gray-2: #c2cfe8;
+  --sl-color-gray-3: var(--hd-muted-foreground);
+  --sl-color-gray-4: var(--hd-subtle-foreground);
+  --sl-color-gray-5: var(--hd-border);
+  --sl-color-gray-6: var(--hd-secondary);
+  --sl-color-gray-7: var(--hd-popover);
+  --sl-color-black: var(--hd-background);
+
+  --sl-color-bg: var(--hd-background);
+  --sl-color-bg-nav: var(--hd-glass-tint);
+  --sl-color-bg-sidebar: var(--hd-background);
+  --sl-color-bg-inline-code: var(--hd-secondary);
+
+  --sl-color-accent-low: var(--hd-accent);
+  --sl-color-accent: var(--hd-primary);
+  --sl-color-accent-high: var(--hd-accent-foreground);
+
+  --sl-color-text: var(--hd-foreground);
+  --sl-color-text-accent: var(--hd-primary);
+  --sl-color-text-invert: var(--hd-primary-foreground);
+
+  --sl-color-hairline-light: var(--hd-border);
+  --sl-color-hairline: var(--hd-border);
+  --sl-color-hairline-shade: var(--hd-border);
+
+  --sl-color-backdrop-overlay: var(--hd-scrim);
+
+  /* Layout: sidebar 276px, nội dung ~800px (wireframe: 276 / 1fr / 232). */
+  --sl-nav-height: 4rem;
+  --sl-nav-pad-y: 0.5rem;
+  --sl-sidebar-width: 17.25rem;
+  --sl-content-width: 50rem;
+}
+
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+  /* ----------------------------------------------------------------- light */
+  --hd-background: #f3f7fd;
+  --hd-card: #ffffff;
+  --hd-popover: #ffffff;
+  --hd-secondary: #eaf0fa;
+  --hd-accent: #e3ecff;
+  --hd-accent-foreground: #123eae;
+  --hd-foreground: #0a1a3a;
+  --hd-muted-foreground: #46587a;
+  --hd-subtle-foreground: #5b6c8c;
+  --hd-primary: #1b55e0;
+  --hd-primary-foreground: #ffffff;
+  --hd-brand: #0891b2;
+  --hd-brand-text: #0b6b86;
+  --hd-chart-3: #7c5cfa;
+  --hd-border: #d5ddeb;
+  --hd-input: #6f83a6;
+
+  --hd-success: #15803d;
+  --hd-success-tint: #dcfce7;
+  --hd-success-ink: #0f5f2e;
+  --hd-warning: #9a5b00;
+  --hd-warning-tint: #fef3c7;
+  --hd-warning-ink: #7a4700;
+  --hd-destructive: #c2262e;
+  --hd-destructive-tint: #fee2e2;
+  --hd-destructive-ink: #9b1c23;
+  --hd-info: #1b55e0;
+  --hd-info-tint: #e3ecff;
+  --hd-info-ink: #123eae;
+
+  --hd-glass-tint: oklch(1 0 0 / 0.72);
+  --hd-glass-tint-strong: oklch(1 0 0 / 0.85);
+  --hd-glass-border: oklch(1 0 0 / 0.65);
+  --hd-glass-highlight: oklch(1 0 0 / 0.95);
+  --hd-glass-shadow: 0 8px 32px oklch(0.25 0.08 262 / 0.12), 0 1px 2px oklch(0.25 0.08 262 / 0.08);
+  --hd-backdrop-1: oklch(0.72 0.16 262 / 0.55);
+  --hd-backdrop-2: oklch(0.82 0.11 215 / 0.5);
+
+  --hd-card-shadow: 0 1px 2px oklch(0.25 0.08 262 / 0.05), 0 12px 32px -12px oklch(0.25 0.08 262 / 0.1);
+  --hd-scrim: oklch(0.18 0.05 262 / 0.45);
+
+  --sl-color-gray-1: #14264a;
+  --sl-color-gray-2: #2a3c5e;
+  --sl-color-gray-7: var(--hd-background);
+  --sl-color-black: #ffffff;
+
+  --sl-color-bg: var(--hd-background);
+  --sl-color-bg-nav: var(--hd-glass-tint);
+  --sl-color-bg-sidebar: var(--hd-background);
+
+  --sl-color-text-invert: #ffffff;
+}
+
+/* Cùng quy tắc của tokens wireframe: tuỳ chọn hệ điều hành / tương phản / bật tay tắt kính. */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --hd-glass-tint: var(--hd-popover);
+    --hd-glass-tint-strong: var(--hd-popover);
+    --hd-glass-filter: none;
+    --hd-glass-border: var(--hd-border);
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --hd-glass-tint: var(--hd-popover);
+    --hd-glass-tint-strong: var(--hd-popover);
+    --hd-glass-filter: none;
+    --hd-border: var(--hd-input);
+  }
+}
+
+[data-transparency='reduced'] {
+  --hd-glass-tint: var(--hd-popover);
+  --hd-glass-tint-strong: var(--hd-popover);
+  --hd-glass-filter: none;
+  --hd-glass-border: var(--hd-border);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root {
+    --hd-glass-tint: var(--hd-popover);
+    --hd-glass-tint-strong: var(--hd-popover);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: 'calt' 1;
+}
+
+/* Cuộn mượt là chuyển động duy nhất do token thêm vào; tôn trọng lựa chọn của người dùng. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--hd-primary) 80%, white);
+  outline-offset: 2px;
+}
+
+/* Số tiền, mã số, ngày: cột thẳng hàng (class dùng trong bài và bảng). */
+.num {
+  font-family: var(--hd-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "zero" 1;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,33 @@
+---
+/** Bốn bước chạy thử trên máy, theo locale. Lệnh là code nên giữ nguyên ở cả hai ngôn ngữ. */
+const lang = Astro.locals.starlightRoute.locale === 'en' ? 'en' : 'vi';
+const stepLabel = lang === 'en' ? 'Step' : 'Bước';
+const prefix = lang === 'en' ? '/en' : '';
+const steps = {
+  vi: [
+    { title: 'Tải mã nguồn', text: 'Clone repo từ GitHub.', code: 'git clone https://github.com/kdigivn/kdigi-cms-open.git' },
+    { title: 'Chạy bằng Docker', text: 'Postgres và ứng dụng khởi động cùng nhau, kèm site demo.', code: 'SEED_DEMO=true docker compose up --build' },
+    { title: 'Mở trang quản trị', text: 'Tạo tài khoản đầu tiên và xem site demo.', code: 'http://localhost:3000/admin' },
+    { title: 'Nối frontend', text: 'Lấy nội dung qua REST hoặc GraphQL.', code: 'GET /api/posts?where[tenant][equals]=<site-id>' },
+  ],
+  en: [
+    { title: 'Get the code', text: 'Clone the repository from GitHub.', code: 'git clone https://github.com/kdigivn/kdigi-cms-open.git' },
+    { title: 'Run with Docker', text: 'Postgres and the app start together, with a demo site.', code: 'SEED_DEMO=true docker compose up --build' },
+    { title: 'Open the admin panel', text: 'Create the first account and explore the demo site.', code: 'http://localhost:3000/admin' },
+    { title: 'Connect a frontend', text: 'Fetch content over REST or GraphQL.', code: 'GET /api/posts?where[tenant][equals]=<site-id>' },
+  ],
+}[lang];
+---
+
+<div class="hd-steps not-content">
+  {
+    steps.map((step, index) => (
+      <a class="hd-step" href={`${prefix}/huong-dan/bat-dau-nhanh/`}>
+        <span class="hd-step__n num">{stepLabel} {index + 1}</span>
+        <h3>{step.title}</h3>
+        <p>{step.text}</p>
+        <code>{step.code}</code>
+      </a>
+    ))
+  }
+</div>

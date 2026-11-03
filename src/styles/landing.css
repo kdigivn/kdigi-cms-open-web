@@ -1,0 +1,467 @@
+/* Docs — hero và các khối trang chủ (vai trò, bắt đầu nhanh, chủ đề).
+ *
+ * Mọi khối đặt trong `.not-content` để thoát khỏi
+ * style markdown của Starlight (luật `* + *` của `.sl-markdown-content`).
+ * Minh hoạ (`.hd-art`) CHỈ ở hero và thẻ "bắt đầu nhanh" — DESIGN.md §Minh hoạ.
+ */
+
+/* ---------------------------------------------------------- minh hoạ -- */
+
+/* Ảnh nền phẳng JPEG hoà vào bề mặt: light multiply, dark lighten, mép làm mờ. */
+.hd-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(closest-side, #000 60%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 60%, transparent 100%);
+}
+
+.hd-art--dark,
+:root[data-theme='dark'] .hd-art--light {
+  display: none;
+}
+
+:root[data-theme='dark'] .hd-art--dark {
+  display: block;
+  mix-blend-mode: lighten;
+}
+
+@media (forced-colors: active) {
+  .hd-art {
+    mix-blend-mode: normal;
+  }
+}
+
+/* ---------------------------------------------------------------- hero -- */
+
+.hd-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hd-brand-text);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.hd-eyebrow::before {
+  content: '';
+  width: 18px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--hd-brand);
+}
+
+.hd-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+  padding: 3.25rem;
+  overflow: hidden;
+  border: 1px solid var(--hd-border);
+  border-radius: 32px;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--hd-primary) 9%, var(--hd-card)), var(--hd-card) 60%);
+}
+
+.hd-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 70% at 100% 0%, var(--hd-backdrop-2), transparent 70%),
+    radial-gradient(40% 60% at 0% 100%, var(--hd-backdrop-1), transparent 70%);
+  opacity: 0.8;
+}
+
+.hd-hero > * {
+  position: relative;
+}
+
+.hd-hero h1 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.hd-hero__tagline {
+  max-width: 46ch;
+  margin: 0.875rem 0 1.5rem;
+  color: var(--hd-muted-foreground);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.hd-hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: var(--hd-muted-foreground);
+  font-size: 0.84rem;
+}
+
+.hd-hero__chips a {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-pill);
+  background: color-mix(in oklab, var(--hd-card) 80%, transparent);
+  color: inherit;
+  text-decoration: none;
+}
+
+.hd-hero__chips a:hover {
+  border-color: var(--hd-primary);
+  color: var(--hd-primary);
+}
+
+.hd-hero__art {
+  margin: -1.25rem -1.25rem -1.875rem 0;
+}
+
+@media (max-width: 49.99rem) {
+  .hd-hero {
+    grid-template-columns: 1fr;
+    padding: 1.75rem 1.25rem;
+    border-radius: 24px;
+  }
+
+  .hd-hero__art {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------- khối trang chủ -- */
+
+.hd-step h3,
+.hd-banner h3,
+.hd-topic h3 {
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.hd-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.875rem;
+}
+
+.hd-topic {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--hd-border);
+  border-radius: 18px;
+  background: var(--hd-card);
+  color: inherit;
+  text-decoration: none;
+}
+
+.hd-topic:hover {
+  border-color: color-mix(in oklab, var(--hd-primary) 45%, var(--hd-border));
+}
+
+.hd-topic__badge {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 14px;
+  background: var(--hd-accent);
+  color: var(--hd-accent-foreground);
+}
+
+.hd-topic__badge svg {
+  font-size: 1.5rem;
+}
+
+.hd-topic h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-weight: 650;
+  color: var(--hd-foreground);
+}
+
+.hd-topic p {
+  margin: 0;
+  color: var(--hd-muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hd-home-aside {
+  display: flex;
+  gap: 0.875rem;
+  padding: 1.125rem 1.25rem;
+  border: 1px solid color-mix(in oklab, var(--hd-info) 35%, var(--hd-border));
+  border-radius: 16px;
+  background: var(--hd-info-tint);
+  color: var(--hd-info-ink);
+}
+
+.hd-home-aside svg {
+  flex: 0 0 auto;
+  margin-top: 0.125rem;
+}
+
+.hd-home-aside b {
+  display: block;
+  margin-bottom: 0.125rem;
+}
+
+.hd-home-aside p {
+  margin: 0;
+  font-size: 0.906rem;
+  line-height: 1.55;
+}
+
+.hd-home-aside a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------- nút, lệnh, bước, banner -- */
+
+/* Minh hoạ hero là SVG nền trong: không cần hoà trộn/mặt nạ như ảnh JPEG. */
+.hd-hero__art .hd-art {
+  mix-blend-mode: normal;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.hd-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.hd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0 1.375rem;
+  border: 1px solid transparent;
+  border-radius: var(--hd-radius-pill);
+  font-size: 0.97rem;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.hd-btn--primary {
+  background: var(--hd-primary);
+  color: var(--hd-primary-foreground);
+}
+
+.hd-btn--primary:hover {
+  background: color-mix(in oklab, var(--hd-primary) 88%, black);
+}
+
+.hd-btn--secondary {
+  border-color: var(--hd-input);
+  background: var(--hd-card);
+  color: var(--hd-foreground);
+}
+
+.hd-btn--secondary:hover {
+  border-color: var(--hd-primary);
+  color: var(--hd-primary);
+}
+
+.hd-btn svg {
+  flex: 0 0 auto;
+}
+
+.hd-hero__cmd {
+  max-width: 32.5rem;
+  padding: 0.875rem 1.125rem;
+  overflow-x: auto;
+  border-radius: 14px;
+  background: #07112b;
+}
+
+.hd-hero__cmd code {
+  color: #dbe6ff;
+  font-family: var(--hd-font-mono);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.hd-hero__cmd code::before {
+  content: '$ ';
+  color: #6c9cff;
+}
+
+.hd-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.875rem;
+}
+
+.hd-step {
+  display: grid;
+  align-content: start;
+  gap: 0.375rem;
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--hd-border);
+  border-radius: 18px;
+  background: var(--hd-card);
+  color: inherit;
+  text-decoration: none;
+}
+
+.hd-step:hover {
+  border-color: color-mix(in oklab, var(--hd-primary) 45%, var(--hd-border));
+}
+
+.hd-step__n {
+  color: var(--hd-brand-text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hd-step h3 {
+  margin: 0;
+  font-size: 1.0625rem;
+  color: var(--hd-foreground);
+}
+
+.hd-step p {
+  margin: 0 0 0.5rem;
+  color: var(--hd-muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hd-step code {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #07112b;
+  color: #dbe6ff;
+  font-family: var(--hd-font-mono);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.hd-banners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.hd-banner {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 0.625rem;
+  padding: 1.75rem;
+  border: 1px solid var(--hd-border);
+  border-radius: 24px;
+  background: var(--hd-card);
+}
+
+.hd-banner--wp {
+  background: linear-gradient(135deg, color-mix(in oklab, var(--hd-primary) 10%, var(--hd-card)), var(--hd-card) 70%);
+}
+
+.hd-banner h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.25rem;
+  color: var(--hd-foreground);
+}
+
+.hd-banner p {
+  margin: 0 0 0.75rem;
+  color: var(--hd-muted-foreground);
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------------------ chân trang -- */
+
+.hd-sitefooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hd-border);
+  color: var(--hd-muted-foreground);
+  font-size: 0.875rem;
+}
+
+.hd-sitefooter p {
+  margin: 0;
+}
+
+.hd-sitefooter nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.hd-sitefooter a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hd-sitefooter a:hover {
+  color: var(--hd-primary);
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ responsive -- */
+
+.hd-hero__copy {
+  min-width: 0;
+}
+
+@media (max-width: 64rem) {
+  .hd-topic-grid,
+  .hd-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 49.99rem) {
+  .hd-topic-grid,
+  .hd-steps,
+  .hd-banners {
+    grid-template-columns: 1fr;
+  }
+
+  .hd-hero__cmd code {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+@media (forced-colors: active) {
+  .hd-topic,
+  .hd-step,
+  .hd-banner {
+    border: 1px solid CanvasText;
+  }
+
+  .hd-btn {
+    border: 1px solid ButtonText;
+  }
+}

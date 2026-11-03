@@ -1,0 +1,18 @@
+---
+/**
+ * Ghi đè SiteTitle của Starlight: dấu logo (sáng/tối) + tên "KDIGI CMS" bằng chữ của trang.
+ *
+ * Không dùng option `logo` của Starlight vì cần hai biến thể đổi qua `data-theme` (xem chrome.css).
+ * Tên là chữ HTML (không nằm trong SVG) để dùng đúng font tự host và tìm kiếm/đọc màn hình được.
+ */
+import logoLight from '../assets/brand/logo.svg';
+import logoDark from '../assets/brand/logo-dark.svg';
+
+const { siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="site-title sl-flex" translate="no">
+  <img class="hd-logo hd-logo--light" src={logoLight.src} alt="" aria-hidden="true" width="32" height="32" />
+  <img class="hd-logo hd-logo--dark" src={logoDark.src} alt="" aria-hidden="true" width="32" height="32" />
+  <span class="hd-logo__name">KDIGI CMS</span>
+</a>

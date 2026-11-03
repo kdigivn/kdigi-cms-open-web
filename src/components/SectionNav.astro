@@ -1,0 +1,38 @@
+---
+/**
+ * Danh sách khu vực tài liệu (Hướng dẫn · API · Webhook · Nhật ký thay đổi).
+ *
+ * Dữ liệu do plugin `starlight-sidebar-topics` gắn vào `Astro.locals` cho MỌI
+ * trang (`middleware.ts` của plugin), kể cả trang không có sidebar.
+ *
+ * `variant`:
+ *   - `header`  — tab pill trên header, chỉ hiện ≥64rem (xem chrome.css)
+ *   - `sidebar` — danh sách dọc ở đầu sidebar, chỉ hiện <64rem
+ */
+import { Icon } from '@astrojs/starlight/components';
+
+interface Props {
+  variant: 'header' | 'sidebar';
+}
+
+const { variant } = Astro.props;
+const { topics } = Astro.locals.starlightSidebarTopics;
+---
+
+<nav
+  class:list={['hd-section-nav', `hd-section-nav--${variant}`]}
+  aria-label={Astro.locals.t('hd.sectionNav')}
+>
+  <ul>
+    {
+      topics.map((topic) => (
+        <li>
+          <a href={topic.link} aria-current={topic.isCurrent ? 'page' : undefined}>
+            {variant === 'sidebar' && topic.icon && <Icon name={topic.icon} />}
+            <span>{topic.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

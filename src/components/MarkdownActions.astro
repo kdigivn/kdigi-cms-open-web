@@ -1,0 +1,47 @@
+---
+/**
+ * "Sao chép markdown" + "Xem markdown" cho mọi trang (frontend/README.md: copy markdown cho AI).
+ *
+ * Markdown sinh lúc build bởi `src/pages/[...slug].md.ts`: `/` → `/index.md`, `/a/b/` → `/a/b.md`,
+ * `/en/` → `/en.md`. `scripts/check-dist.mjs` kiểm mọi trang HTML có file `.md` tương ứng.
+ * `data-pagefind-ignore`: không để nhãn nút lọt vào đoạn trích kết quả tìm kiếm.
+ */
+const path = Astro.url.pathname.replace(/\/$/, '');
+const href = `${path === '' ? '/index' : path}.md`;
+const t = Astro.locals.t;
+---
+
+<div class="hd-markdown-actions not-content" role="group" aria-label={t('hd.markdownActions')} data-pagefind-ignore>
+  <button
+    type="button"
+    data-copy-markdown={href}
+    data-label={t('hd.copyMarkdown')}
+    data-done={t('hd.copiedMarkdown')}
+    data-failed={t('hd.copyFailed')}
+  >
+    {t('hd.copyMarkdown')}
+  </button>
+  <a href={href} target="_blank" rel="noopener">{t('hd.viewMarkdown')}</a>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy-markdown]').forEach((button) => {
+    const { copyMarkdown: href = '', label = '', done = '', failed = '' } = button.dataset;
+    let timer: number | undefined;
+    button.addEventListener('click', async () => {
+      let result = failed;
+      try {
+        const response = await fetch(href);
+        if (response.ok) {
+          await navigator.clipboard.writeText(await response.text());
+          result = done;
+        }
+      } catch {
+        // Mất mạng hoặc trình duyệt chặn clipboard: nhãn nút báo lỗi thay cho console.
+      }
+      button.textContent = result;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => (button.textContent = label), 1800);
+    });
+  });
+</script>

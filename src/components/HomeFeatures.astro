@@ -1,0 +1,135 @@
+---
+/** Lưới 9 tính năng của trang chủ theo locale (3 cột; dùng bội số của 3). */
+import HdIcon from './HdIcon.astro';
+
+const lang = Astro.locals.starlightRoute.locale === 'en' ? 'en' : 'vi';
+const features = {
+  vi: [
+    {
+      icon: 'globe',
+      title: 'Nhiều website, một CMS',
+      text: 'Mỗi website có nội dung, tên miền, thương hiệu và đội ngũ riêng. Thêm site mới ngay trong trang quản trị.',
+      href: '/huong-dan/nhieu-website/',
+    },
+    {
+      icon: 'pen-line',
+      title: 'Soạn thảo Markdown',
+      text: 'Trình soạn WYSIWYG lưu Markdown thuần, chèn ảnh từ thư viện media, hỗ trợ shortcode.',
+      href: '/huong-dan/soan-thao-markdown/',
+    },
+    {
+      icon: 'search',
+      title: 'SEO và JSON-LD',
+      text: 'Mẫu title/description kiểu RankMath, JSON-LD tự sinh, kiểm tra SEO, gợi ý liên kết nội bộ và redirect.',
+      href: '/huong-dan/seo-json-ld/',
+    },
+    {
+      icon: 'image',
+      title: 'Thư viện media',
+      text: 'Thư mục, chỉnh sửa ảnh, tải ảnh từ URL. Lưu trên Cloudflare R2 hoặc ngay trên đĩa máy chủ.',
+      href: '/huong-dan/thu-vien-media/',
+    },
+    {
+      icon: 'users',
+      title: 'Vai trò và phân quyền',
+      text: 'Super admin, admin, editor, author, giới hạn theo từng website. Mỗi người chỉ thấy phần việc của mình.',
+      href: '/huong-dan/vai-tro-phan-quyen/',
+    },
+    {
+      icon: 'arrow-left-right',
+      title: 'Chuyển từ WordPress',
+      text: 'Nhập bài viết, taxonomy, media, SEO, menu, bình luận và redirect, có bước duyệt trước khi ghi dữ liệu.',
+      href: '/wordpress/di-chuyen-tu-wordpress/',
+    },
+    {
+      icon: 'code-xml',
+      title: 'Headless REST và GraphQL',
+      text: 'Dùng Next.js, Astro hay bất kỳ frontend nào. Nội dung theo từng site, Markdown đã được render sang HTML.',
+      href: '/api/rest-graphql/',
+    },
+    {
+      icon: 'server',
+      title: 'Tự host với Docker/Coolify',
+      text: 'Một lệnh docker compose chạy cả Postgres và ứng dụng. Có site demo để xem thử ngay.',
+      href: '/huong-dan/cai-dat-docker/',
+    },
+    {
+      icon: 'languages',
+      title: 'Song ngữ Việt và Anh',
+      text: 'Nội dung mặc định tiếng Việt kèm bản tiếng Anh; nhãn quản trị có cả hai ngôn ngữ.',
+      href: '/huong-dan/bat-dau-nhanh/',
+    },
+  ],
+  en: [
+    {
+      icon: 'globe',
+      title: 'Many sites, one CMS',
+      text: 'Each site has its own content, domain, branding and team. Add a new site from the admin panel.',
+      href: '/en/huong-dan/nhieu-website/',
+    },
+    {
+      icon: 'pen-line',
+      title: 'Markdown editor',
+      text: 'A WYSIWYG editor that stores plain Markdown, with media-library images and shortcodes.',
+      href: '/en/huong-dan/soan-thao-markdown/',
+    },
+    {
+      icon: 'search',
+      title: 'SEO and JSON-LD',
+      text: 'RankMath-style title/description templates, generated JSON-LD, SEO audit, internal-link suggestions and redirects.',
+      href: '/en/huong-dan/seo-json-ld/',
+    },
+    {
+      icon: 'image',
+      title: 'Media library',
+      text: 'Folders, image editing, import from URL. Store on Cloudflare R2 or right on the server disk.',
+      href: '/en/huong-dan/thu-vien-media/',
+    },
+    {
+      icon: 'users',
+      title: 'Roles and permissions',
+      text: 'Super admin, admin, editor and author, scoped per site. Everyone sees only their own work.',
+      href: '/en/huong-dan/vai-tro-phan-quyen/',
+    },
+    {
+      icon: 'arrow-left-right',
+      title: 'Migrate from WordPress',
+      text: 'Import posts, taxonomies, media, SEO, menus, comments and redirects, with a review gate before anything is written.',
+      href: '/en/wordpress/di-chuyen-tu-wordpress/',
+    },
+    {
+      icon: 'code-xml',
+      title: 'Headless REST and GraphQL',
+      text: 'Use Next.js, Astro or any frontend. Content is scoped per site and Markdown is already rendered to HTML.',
+      href: '/en/api/rest-graphql/',
+    },
+    {
+      icon: 'server',
+      title: 'Self-host with Docker/Coolify',
+      text: 'One docker compose command runs Postgres and the app. A demo site is included.',
+      href: '/en/huong-dan/cai-dat-docker/',
+    },
+    {
+      icon: 'languages',
+      title: 'Vietnamese and English',
+      text: 'Vietnamese is the default content language, English is supported; admin labels are bilingual.',
+      href: '/en/huong-dan/bat-dau-nhanh/',
+    },
+  ],
+} as const;
+const items = features[lang];
+---
+
+<div class="hd-topic-grid not-content">
+  {
+    items.map((feature) => (
+      <a class="hd-topic" href={feature.href}>
+        <span class="hd-topic__badge">
+          <HdIcon name={feature.icon} size={24} />
+        </span>
+        <h3>{feature.title}</h3>
+        <p>{feature.text}</p>
+      </a>
+    ))
+  }
+</div>

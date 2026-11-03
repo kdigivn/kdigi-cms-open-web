@@ -1,0 +1,65 @@
+---
+/**
+ * Hero trang chủ: eyebrow + tiêu đề lớn + mô tả + nút hành động + lệnh chạy thử + minh hoạ bên phải.
+ *
+ * - Minh hoạ chỉ ở hero và phần "Bắt đầu nhanh" (DESIGN.md §Minh hoạ). `alt=""` vì tiêu đề kề bên đã đủ nghĩa.
+ * - Nút lấy từ `hero.actions` trong frontmatter; `heroEyebrow`, `heroCommand`, `heroChips` là trường mở rộng
+ *   của site (schema ở `src/content.config.ts`).
+ */
+import { Icon } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+
+import heroLight from '../assets/illustrations/hero.svg';
+import heroDark from '../assets/illustrations/hero.dark.svg';
+import SearchAlias from './SearchAlias.astro';
+
+const route = Astro.locals.starlightRoute;
+const { title = route.entry.data.title, tagline, actions = [] } = route.entry.data.hero ?? {};
+const chips = route.entry.data.heroChips ?? [];
+const eyebrow = route.entry.data.heroEyebrow;
+const command = route.entry.data.heroCommand;
+---
+
+<SearchAlias text={route.entry.data.title} />
+
+<div class="hd-hero not-content">
+  <div class="hd-hero__copy">
+    {eyebrow && <span class="hd-eyebrow">{eyebrow}</span>}
+    {/* `id="_top"` phải trùng PAGE_TITLE_ID của Starlight: SkipLink trỏ tới id này. */}
+    <h1 id="_top" data-page-title set:html={title} />
+    {tagline && <p class="hd-hero__tagline" set:html={tagline} />}
+    {
+      actions.length > 0 && (
+        <div class="hd-hero__actions">
+          {actions.map((action) => (
+            <a class={`hd-btn hd-btn--${action.variant === 'primary' ? 'primary' : 'secondary'}`} href={action.link}>
+              {action.text}
+              {typeof action.icon === 'string' && <Icon name={action.icon as any} />}
+            </a>
+          ))}
+        </div>
+      )
+    }
+    {
+      command && (
+        <div class="hd-hero__cmd">
+          <code>{command}</code>
+        </div>
+      )
+    }
+    {
+      chips.length > 0 && (
+        <div class="hd-hero__chips">
+          <span>{Astro.locals.t('hd.popularQueries')}</span>
+          {chips.map((chip) => (
+            <a href={chip.href}>{chip.label}</a>
+          ))}
+        </div>
+      )
+    }
+  </div>
+  <div class="hd-hero__art" aria-hidden="true">
+    <Image class="hd-art hd-art--light" src={heroLight} alt="" width={640} loading="eager" />
+    <Image class="hd-art hd-art--dark" src={heroDark} alt="" width={640} loading="eager" />
+  </div>
+</div>

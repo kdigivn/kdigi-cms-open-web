@@ -1,0 +1,325 @@
+/* Docs — header (kính), tìm kiếm (kính), sidebar, điều hướng khu vực.
+ *
+ * Nguyên tắc:
+ *   - Kính CHỈ ở header và hộp tìm kiếm (DESIGN.md §Kính). Sidebar, TOC, nội dung là bề mặt đặc.
+ *   - Nền lấy từ token, KHÔNG hard-code màu trắng, để dark mode tự đúng.
+ *   - CSS ngoài layer nên thắng `@layer starlight.core`.
+ *   - Mốc chia: 64rem. Trên mốc đó tab khu vực nằm ở header; dưới mốc đó tab nằm
+ *     ở đầu sidebar.
+ */
+
+/* ---------------------------------------------------------------- header -- */
+
+.header {
+  background-color: var(--hd-glass-tint);
+  -webkit-backdrop-filter: var(--hd-glass-filter);
+  backdrop-filter: var(--hd-glass-filter);
+  border-bottom: 1px solid var(--hd-glass-border);
+  box-shadow: var(--hd-glass-shadow);
+}
+
+.hd-header {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  height: 100%;
+}
+
+.hd-header .title-wrapper {
+  flex: 0 0 auto;
+}
+
+.site-title {
+  gap: 0.625rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.hd-logo {
+  height: 2rem;
+  width: 2rem;
+  max-width: none;
+}
+
+.hd-logo--dark,
+:root[data-theme='dark'] .hd-logo--light {
+  display: none;
+}
+
+:root[data-theme='dark'] .hd-logo--dark {
+  display: block;
+}
+
+.hd-logo__name {
+  color: var(--hd-foreground);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.5rem;
+}
+
+.hd-header__search {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-inline-start: auto;
+}
+
+.hd-header .right-group {
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Starlight đặt sẵn 7em cho ô chọn ngôn ngữ (style inline); "Tiếng Việt" bằng Ferry VN rộng hơn nên bị cắt. */
+starlight-lang-select label,
+starlight-theme-select label {
+  --sl-select-width: 8.5em !important;
+}
+
+/* ------------------------------------------------------- tab khu vực nav -- */
+
+.hd-section-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hd-section-nav a {
+  text-decoration: none;
+}
+
+/* Mobile-first: tab dọc trong sidebar. */
+.hd-section-nav--header {
+  display: none;
+}
+
+.hd-section-nav--sidebar {
+  display: block;
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--hd-border);
+}
+
+.hd-section-nav--sidebar ul {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hd-section-nav--sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--hd-radius-item);
+  color: var(--hd-foreground);
+  font-size: 0.9rem;
+  line-height: 1.375rem;
+}
+
+.hd-section-nav--sidebar a:hover {
+  background-color: var(--hd-secondary);
+}
+
+.hd-section-nav--sidebar a[aria-current='page'] {
+  background-color: var(--hd-accent);
+  color: var(--hd-accent-foreground);
+  font-weight: 600;
+}
+
+@media (min-width: 64rem) {
+  .hd-section-nav--header {
+    display: block;
+    margin-inline-start: 0.5rem;
+  }
+
+  .hd-section-nav--header a {
+    display: block;
+    padding: 0.4375rem 0.875rem;
+    border-radius: var(--hd-radius-pill);
+    color: var(--hd-muted-foreground);
+    font-size: 0.906rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .hd-section-nav--header a:hover {
+    background-color: color-mix(in oklab, var(--hd-primary) 8%, transparent);
+    color: var(--hd-foreground);
+  }
+
+  .hd-section-nav--header a[aria-current='page'] {
+    background-color: color-mix(in oklab, var(--hd-primary) 12%, transparent);
+    color: var(--hd-accent-foreground);
+    font-weight: 600;
+  }
+
+  .hd-section-nav--sidebar {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------ ô tìm kiếm -- */
+
+@media (min-width: 50rem) {
+  site-search button[data-open-modal] {
+    height: 2.5rem;
+    width: clamp(9rem, 14vw, 13rem);
+    max-width: 100%;
+    padding-inline: 0.875rem 0.5rem;
+    border: 1px solid var(--hd-border);
+    border-radius: var(--hd-radius-pill);
+    background-color: var(--hd-card);
+    color: var(--hd-subtle-foreground);
+    font-size: 0.875rem;
+  }
+
+  site-search button[data-open-modal]:hover {
+    border-color: var(--hd-input);
+    color: var(--hd-foreground);
+  }
+
+  site-search button[data-open-modal] > span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+site-search button[data-open-modal] > kbd,
+.hd-hero__search kbd {
+  font-family: var(--hd-font-mono);
+  font-size: 0.72rem;
+  border: 1px solid var(--hd-border);
+  border-radius: 7px;
+  background-color: var(--hd-secondary);
+  color: var(--hd-muted-foreground);
+}
+
+/* Hộp thoại tìm kiếm: kính đặc hơn (glass-strong) trên nền mờ — theo wireframe "docs-home-search". */
+site-search dialog {
+  border: 1px solid var(--hd-glass-border);
+  border-radius: 1.5rem;
+  background-color: var(--hd-glass-tint-strong);
+  -webkit-backdrop-filter: var(--hd-glass-filter);
+  backdrop-filter: var(--hd-glass-filter);
+  box-shadow: var(--hd-glass-shadow);
+  overflow: hidden;
+}
+
+site-search dialog::backdrop {
+  background-color: var(--hd-scrim);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+site-search .dialog-frame {
+  background-color: transparent;
+}
+
+site-search #starlight__search {
+  --pagefind-ui-border-radius: 12px;
+  --pagefind-ui-font: var(--hd-font-sans);
+}
+
+/* --------------------------------------------------------------- sidebar -- */
+
+.sidebar-pane {
+  background-color: var(--hd-background);
+  border-inline-end: 1px solid var(--hd-border);
+}
+
+.sidebar-content {
+  padding-block: 1.5rem 2.5rem;
+}
+
+#starlight__sidebar ul.top-level a {
+  padding: 0.4375rem 0.625rem;
+  border-radius: var(--hd-radius-item);
+  color: var(--hd-muted-foreground);
+  font-size: 0.906rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#starlight__sidebar ul.top-level a:hover,
+#starlight__sidebar ul.top-level a:focus {
+  background-color: var(--hd-secondary);
+  color: var(--hd-foreground);
+}
+
+#starlight__sidebar ul.top-level a[aria-current='page'],
+#starlight__sidebar ul.top-level a[aria-current='page']:hover,
+#starlight__sidebar ul.top-level a[aria-current='page']:focus {
+  background-color: var(--hd-accent);
+  color: var(--hd-accent-foreground);
+  font-weight: 600;
+}
+
+#starlight__sidebar .top-level > li + li {
+  margin-top: 0.25rem;
+}
+
+/* Nhóm cấp một = tiêu đề in hoa nhỏ, luôn mở (theo wireframe). Nhóm lồng bên trong giữ mũi tên. */
+#starlight__sidebar .top-level > li > details > summary {
+  pointer-events: none;
+  margin-top: 1.375rem;
+  padding: 0 0.625rem;
+  color: var(--hd-subtle-foreground);
+}
+
+#starlight__sidebar .top-level > li:first-child > details > summary {
+  margin-top: 0;
+}
+
+#starlight__sidebar .top-level > li > details > summary .group-label > span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--hd-subtle-foreground);
+}
+
+#starlight__sidebar .top-level > li > details > summary > svg {
+  display: none;
+}
+
+#starlight__sidebar .top-level > li > details > summary:hover {
+  background-color: transparent;
+}
+
+/* Nhóm lồng: mũi tên + vạch trái. */
+#starlight__sidebar details details > summary {
+  padding: 0.4375rem 0.625rem;
+  border-radius: var(--hd-radius-item);
+  color: var(--hd-muted-foreground);
+  font-size: 0.906rem;
+}
+
+#starlight__sidebar details details > summary:hover {
+  background-color: var(--hd-secondary);
+  color: var(--hd-foreground);
+}
+
+#starlight__sidebar details details > summary .group-label > span {
+  font-size: 0.906rem;
+  font-weight: 500;
+  color: inherit;
+}
+
+#starlight__sidebar details details > ul {
+  margin-inline-start: 0.75rem;
+  padding-inline-start: 0.375rem;
+  border-inline-start: 1px solid var(--hd-border);
+}
+
+/* Mobile: menu trượt cũng dùng nền đặc. */
+@media (max-width: 49.99rem) {
+  .sidebar-pane {
+    background-color: var(--hd-background);
+  }
+}

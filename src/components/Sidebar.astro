@@ -1,0 +1,18 @@
+---
+/**
+ * Sidebar override: thêm danh sách khu vực tài liệu ở đầu cây sidebar.
+ *
+ * Chỉ hiện dưới 64rem (tab khu vực trên header đã lo phần desktop) — trên mobile
+ * Starlight render Sidebar trong menu trượt, nên tab khu vực cũng nằm trong menu.
+ *
+ * Lưu ý: plugin `starlight-sidebar-topics` cũng override component này, nhưng
+ * `components` của người dùng được spread SAU nên file này thắng. Đổi lại, phải
+ * tự render danh sách topic (chính là `SectionNav`).
+ */
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+
+import SectionNav from './SectionNav.astro';
+---
+
+<SectionNav variant="sidebar" />
+<Default />

@@ -1,0 +1,40 @@
+---
+/**
+ * Ghi đè Head của Starlight để thêm hai hành vi tăng cường dần (progressive enhancement):
+ *
+ * 1. Bảng rộng (`overflow-x: auto`) là vùng cuộn, mà vùng cuộn không focus được bằng bàn phím
+ *    là lỗi axe `scrollable-region-focusable`. Gắn `tabindex="0"` chỉ cho bảng THỰC SỰ tràn,
+ *    đo tại chỗ, và bỏ đi khi không còn tràn.
+ * 2. Ảnh trong `figure.hd-figure` mở bản đầy đủ ở tab mới khi bấm (ảnh đã qua Astro nên URL
+ *    chỉ biết sau khi build, không dựng được thẻ `<a>` ở bước rehype).
+ */
+import Default from '@astrojs/starlight/components/Head.astro';
+---
+
+<Default><slot /></Default>
+
+<script is:inline>
+  (() => {
+    const sync = () => {
+      const tables = document.querySelectorAll('.sl-markdown-content .hd-table-scroll');
+      for (const table of tables) {
+        const scrolls = table.scrollWidth > table.clientWidth + 1;
+        if (scrolls === table.hasAttribute('tabindex')) continue;
+        if (scrolls) table.setAttribute('tabindex', '0');
+        else table.removeAttribute('tabindex');
+      }
+    };
+    const zoom = () => {
+      document.querySelectorAll('figure.hd-figure img').forEach((img) => {
+        img.addEventListener('click', () => window.open(img.currentSrc || img.src, '_blank', 'noopener'));
+      });
+    };
+    const run = () => {
+      sync();
+      zoom();
+      addEventListener('resize', () => requestAnimationFrame(sync), { passive: true });
+    };
+    if (document.readyState === 'loading') addEventListener('DOMContentLoaded', run);
+    else run();
+  })();
+</script>

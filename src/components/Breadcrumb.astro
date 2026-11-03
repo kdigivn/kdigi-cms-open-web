@@ -1,0 +1,62 @@
+---
+/**
+ * Breadcrumb theo wireframe: "Tài liệu › Bắt đầu › Giới thiệu".
+ *
+ * - "Tài liệu" có icon sách và link về trang chủ; khu vực (tab) chỉ hiện thêm khi không phải
+ *   khu Hướng dẫn (khu đầu tiên, gốc ngầm định).
+ * - Trang gốc của khu vực không phải Hướng dẫn thì ẩn (tab đã nói rõ rồi).
+ * - `data-pagefind-ignore`: `<main>` có `data-pagefind-body`, không đánh dấu thì chuỗi này
+ *   lọt vào đoạn trích kết quả tìm kiếm.
+ * - Nhãn nhóm cha trùng tiêu đề trang (vd nhóm "Hộp thư" chứa trang "Hộp thư") thì bỏ, tránh lặp.
+ */
+import { Icon } from '@astrojs/starlight/components';
+
+import { findTrail } from './lib/page-meta';
+
+const route = Astro.locals.starlightRoute;
+const { topics } = Astro.locals.starlightSidebarTopics;
+const topic = topics.find((item) => item.isCurrent);
+const title = route.entry.data.title;
+
+// `undefined` = không thấy trang trong cây sidebar → không dựng breadcrumb.
+const parentTrail = findTrail(route.sidebar);
+const trail = parentTrail ?? [];
+const labels = trail.at(-1) === title ? trail.slice(0, -1) : trail;
+
+const isFirstTopic = topic === topics[0];
+const currentPath = Astro.url.pathname.replace(/\/?$/, '/');
+const topicPath = topic?.link.replace(/\/?$/, '/');
+const isTopicRoot = !isFirstTopic && topicPath !== undefined && currentPath === topicPath;
+
+const show = topic !== undefined && parentTrail !== undefined && !isTopicRoot;
+---
+
+{
+  show && (
+    <nav class="hd-breadcrumb" aria-label={Astro.locals.t('hd.breadcrumb')} data-pagefind-ignore>
+      <ol>
+        <li>
+          <Icon name="open-book" size="1rem" />
+          {/* Khu đầu tiên trỏ về trang chủ; plugin đã gắn tiền tố locale (`/en/`). */}
+          <a href={topics[0]?.link ?? '/'}>{Astro.locals.t('hd.rootCrumb')}</a>
+        </li>
+        {!isFirstTopic && topic && (
+          <li>
+            <span class="hd-breadcrumb__sep" aria-hidden="true">›</span>
+            <a href={topic.link}>{topic.label}</a>
+          </li>
+        )}
+        {labels.map((label) => (
+          <li>
+            <span class="hd-breadcrumb__sep" aria-hidden="true">›</span>
+            {label}
+          </li>
+        ))}
+        <li>
+          <span class="hd-breadcrumb__sep" aria-hidden="true">›</span>
+          <span aria-current="page">{title}</span>
+        </li>
+      </ol>
+    </nav>
+  )
+}

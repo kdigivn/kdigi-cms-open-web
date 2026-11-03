@@ -1,0 +1,49 @@
+---
+/** Hai banner cuối trang chủ: chuyển từ WordPress và mã nguồn mở (MIT) / GitHub. */
+import { Icon } from '@astrojs/starlight/components';
+
+import HdIcon from './HdIcon.astro';
+
+const lang = Astro.locals.starlightRoute.locale === 'en' ? 'en' : 'vi';
+const copy = {
+  vi: {
+    wpTitle: 'Đang dùng WordPress?',
+    wpText:
+      'Chuyển bài viết, trang, danh mục, thẻ, ảnh, SEO, menu, bình luận và cả redirect sang KDIGI CMS theo từng bước kiểm soát được: chuẩn bị, duyệt, rồi mới nhập.',
+    wpCta: 'Xem cách di chuyển',
+    wpHref: '/wordpress/di-chuyen-tu-wordpress/',
+    ossTitle: 'Mã nguồn mở, giấy phép MIT',
+    ossText:
+      'Dùng cho dự án cá nhân hay thương mại, tự do sửa và triển khai. Góp ý, báo lỗi hoặc gửi pull request trên GitHub. KDIGI CMS do KDIGI duy trì.',
+    ossCta: 'Xem trên GitHub',
+  },
+  en: {
+    wpTitle: 'Coming from WordPress?',
+    wpText:
+      'Move posts, pages, categories, tags, images, SEO data, menus, comments and redirects to KDIGI CMS in controlled steps: prepare, review, then import.',
+    wpCta: 'See the migration guide',
+    wpHref: '/en/wordpress/di-chuyen-tu-wordpress/',
+    ossTitle: 'Open source, MIT licensed',
+    ossText:
+      'Use it for personal or commercial projects, modify it and deploy it freely. Report issues or send pull requests on GitHub. KDIGI CMS is maintained by KDIGI.',
+    ossCta: 'View on GitHub',
+  },
+}[lang];
+---
+
+<div class="hd-banners not-content">
+  <div class="hd-banner hd-banner--wp">
+    <span class="hd-topic__badge"><HdIcon name="arrow-left-right" size={24} /></span>
+    <h3>{copy.wpTitle}</h3>
+    <p>{copy.wpText}</p>
+    <a class="hd-btn hd-btn--primary" href={copy.wpHref}>{copy.wpCta}<HdIcon name="arrow-right" size={18} /></a>
+  </div>
+  <div class="hd-banner hd-banner--oss">
+    <span class="hd-topic__badge"><Icon name="github" size="1.5rem" /></span>
+    <h3>{copy.ossTitle}</h3>
+    <p>{copy.ossText}</p>
+    <a class="hd-btn hd-btn--secondary" href="https://github.com/kdigivn/kdigi-cms-open" rel="noopener">
+      {copy.ossCta}<HdIcon name="arrow-right" size={18} />
+    </a>
+  </div>
+</div>

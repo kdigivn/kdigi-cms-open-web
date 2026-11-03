@@ -1,0 +1,24 @@
+---
+/**
+ * Từ khoá không dấu của tiêu đề trang cho chỉ mục Pagefind (xem src/plugins/rehype-search-alias.mjs:
+ * Pagefind không đổi "đ" thành "d"). Chỉ render khi bản bỏ dấu khác bản gốc.
+ * `data-pagefind-weight` cao để tiêu đề không dấu xếp trên các trang chỉ nhắc đến từ khoá.
+ */
+import { foldVietnamese } from '../plugins/rehype-search-alias.mjs';
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const folded = foldVietnamese(text);
+const differs = folded !== text.toLowerCase();
+---
+
+{
+  differs && (
+    <span hidden class="hd-search-alias" data-pagefind-weight="7">
+      {folded}
+    </span>
+  )
+}

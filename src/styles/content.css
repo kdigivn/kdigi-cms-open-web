@@ -1,0 +1,454 @@
+/* Docs — khung bài viết: tiêu đề, breadcrumb, TOC, aside, bảng, ảnh, code, phân trang.
+ *
+ * Bề mặt bài viết luôn đặc (nền `--hd-background`/`--hd-card`), không kính.
+ * Starlight khai `--sl-text-h*` trong `@layer starlight.base` và tự tăng ở
+ * `@media (min-width: 50em)`; khai báo ngoài layer ở đây thắng cả hai.
+ */
+
+:root {
+  --sl-text-h1: 1.875rem;
+  --sl-text-h2: 1.375rem;
+  --sl-text-h3: 1.125rem;
+  --sl-text-h4: 1rem;
+  --sl-text-h5: 1rem;
+  --sl-line-height: 1.7;
+  --sl-line-height-headings: 1.25;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --sl-text-h1: 2.5rem;
+    --sl-text-h2: 1.75rem;
+    --sl-text-h3: 1.3125rem;
+    --sl-text-h4: 1.125rem;
+  }
+}
+
+/* ---------------------------------------------------------- breadcrumb -- */
+
+.hd-breadcrumb {
+  margin-top: 1rem;
+  font-size: 0.84rem;
+  line-height: 1.375rem;
+}
+
+.hd-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hd-breadcrumb li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  color: var(--hd-subtle-foreground);
+}
+
+.hd-breadcrumb a {
+  color: var(--hd-subtle-foreground);
+  text-decoration: none;
+}
+
+.hd-breadcrumb a:hover {
+  color: var(--hd-primary);
+  text-decoration: underline;
+}
+
+.hd-breadcrumb__sep {
+  color: var(--hd-subtle-foreground);
+}
+
+.hd-breadcrumb li > [aria-current='page'] {
+  color: var(--hd-foreground);
+}
+
+/* ------------------------------------------------------------- tiêu đề -- */
+
+:where(#_top, .sl-markdown-content h1, .sl-markdown-content h2, .sl-markdown-content h3) {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--hd-foreground);
+  text-wrap: balance;
+}
+
+.sl-markdown-content h3 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+/* H2 trong bài cách trên 2.5rem. */
+.sl-markdown-content
+  :not(h1, h2, h3, h4, h5, h6, .sl-heading-wrapper)
+  + .sl-heading-wrapper.level-h2 {
+  margin-top: 2.5rem;
+}
+
+.sl-markdown-content .sl-anchor-link:focus-visible {
+  opacity: 1;
+}
+
+/* Lead: đoạn mở đầu trang to hơn một chút, dịu màu. */
+.sl-markdown-content > p:first-child {
+  color: var(--hd-muted-foreground);
+  font-size: 1.0625rem;
+}
+
+/* ------------------------------------------------------------------ TOC -- */
+
+.right-sidebar-panel #starlight__on-this-page {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--hd-foreground);
+}
+
+.right-sidebar-panel nav > ul {
+  border-inline-start: 2px solid var(--hd-border);
+}
+
+.right-sidebar-panel ul a {
+  padding-block: 0.3125rem;
+  color: var(--hd-muted-foreground);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.right-sidebar-panel ul a:hover {
+  color: var(--hd-foreground);
+}
+
+.right-sidebar-panel ul a[aria-current='true'],
+.right-sidebar-panel ul a[aria-current='true']:hover {
+  color: var(--hd-primary);
+  font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--hd-primary);
+}
+
+.right-sidebar {
+  border-inline-start: 0;
+}
+
+/* --------------------------------------------------------------- aside -- */
+
+.starlight-aside {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--sl-color-asides-border);
+  border-inline-start-width: 1px;
+  border-radius: var(--hd-radius-box);
+  background-color: var(--sl-color-asides-bg);
+  color: var(--hd-foreground);
+}
+
+.starlight-aside--note {
+  --sl-color-asides-bg: var(--hd-info-tint);
+  --sl-color-asides-border: color-mix(in oklab, var(--hd-info) 35%, var(--hd-border));
+  --sl-color-asides-text-accent: var(--hd-info-ink);
+}
+
+.starlight-aside--tip {
+  --sl-color-asides-bg: var(--hd-success-tint);
+  --sl-color-asides-border: color-mix(in oklab, var(--hd-success) 40%, var(--hd-border));
+  --sl-color-asides-text-accent: var(--hd-success-ink);
+}
+
+.starlight-aside--caution {
+  --sl-color-asides-bg: var(--hd-warning-tint);
+  --sl-color-asides-border: color-mix(in oklab, var(--hd-warning) 40%, var(--hd-border));
+  --sl-color-asides-text-accent: var(--hd-warning-ink);
+}
+
+.starlight-aside--danger {
+  --sl-color-asides-bg: var(--hd-destructive-tint);
+  --sl-color-asides-border: color-mix(in oklab, var(--hd-destructive) 40%, var(--hd-border));
+  --sl-color-asides-text-accent: var(--hd-destructive-ink);
+}
+
+/* Thông báo "đang chờ khớp với bản triển khai" dưới tiêu đề trang nháp. */
+.hd-draft-notice {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 0.875rem 1.125rem;
+  border: 1px solid color-mix(in oklab, var(--hd-warning) 40%, var(--hd-border));
+  border-radius: var(--hd-radius-box);
+  background-color: var(--hd-warning-tint);
+  color: var(--hd-warning-ink);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.hd-draft-notice svg {
+  flex: 0 0 auto;
+  margin-top: 0.125rem;
+}
+
+.hd-draft-notice p {
+  margin: 0.125rem 0 0;
+}
+
+/* "Sao chép markdown" · "Xem markdown" dưới tiêu đề (MarkdownActions.astro). */
+.hd-markdown-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.hd-markdown-actions > * {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-pill);
+  background-color: var(--hd-card);
+  color: var(--hd-muted-foreground);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hd-markdown-actions > *:hover {
+  border-color: var(--hd-primary);
+  color: var(--hd-foreground);
+}
+
+/* --------------------------------------------------------------- Steps -- */
+
+.sl-steps {
+  --bullet-size: 1.75rem;
+}
+
+.sl-steps > li::before {
+  color: var(--hd-primary-foreground);
+  background-color: var(--hd-primary);
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.sl-steps > li::after {
+  background-color: var(--hd-border);
+}
+
+/* ---------------------------------------------------------------- bảng -- */
+
+.sl-markdown-content .hd-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-box);
+  background-color: var(--hd-card);
+}
+
+.sl-markdown-content table:not(:where(.not-content *)) {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.sl-markdown-content :is(th, td):not(:where(.not-content *)) {
+  border-bottom: 1px solid var(--hd-border);
+  padding: 0.6875rem 0.875rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
+  padding-inline-start: 0.875rem;
+}
+
+.sl-markdown-content :is(th:last-child, td:last-child):not(:where(.not-content *)) {
+  padding-inline-end: 0.875rem;
+}
+
+.sl-markdown-content tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.sl-markdown-content th:not(:where(.not-content *)) {
+  background-color: var(--hd-secondary);
+  color: var(--hd-muted-foreground);
+  font-size: 0.8125rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------- ảnh và sơ đồ -- */
+
+.sl-markdown-content .hd-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1.25rem 1.75rem;
+}
+
+.sl-markdown-content .hd-figure img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-box);
+  background: var(--hd-card);
+  box-shadow: var(--hd-card-shadow);
+  cursor: zoom-in;
+}
+
+.sl-markdown-content .hd-figure figcaption {
+  max-width: 40rem;
+  color: var(--hd-subtle-foreground);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.sl-markdown-content .starlight-aside .hd-figure figcaption {
+  color: var(--sl-color-asides-text-accent);
+}
+
+/* Sơ đồ Mermaid: giữ cỡ chữ thật, sơ đồ rộng thì cuộn ngang thay vì bị thu nhỏ. */
+.sl-markdown-content .mermaid {
+  position: relative;
+  overflow-x: auto;
+  margin-block: 1rem 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-box);
+  background-color: var(--hd-card);
+  text-align: center;
+}
+
+.sl-markdown-content .mermaid svg {
+  max-width: none;
+  height: auto;
+}
+
+.hd-diagram-zoom {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-item);
+  padding: 0.2rem 0.6rem;
+  background-color: var(--hd-card);
+  color: var(--hd-foreground);
+  font-size: var(--sl-text-xs);
+  cursor: zoom-in;
+}
+
+.hd-diagram-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: var(--hd-scrim);
+}
+
+.hd-diagram-overlay-panel {
+  max-width: 96vw;
+  max-height: 86vh;
+  overflow: auto;
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-box);
+  padding: 1rem;
+  background-color: var(--hd-card);
+}
+
+.hd-diagram-overlay-panel svg {
+  display: block;
+  width: min(92vw, 1600px);
+  max-height: 82vh;
+  height: auto;
+}
+
+.hd-diagram-overlay-close {
+  border: 0;
+  border-radius: var(--hd-radius-item);
+  padding: 0.4rem 0.9rem;
+  background-color: var(--hd-card);
+  color: var(--hd-foreground);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- code -- */
+
+.sl-markdown-content code:not(pre code):not(:where(.not-content *)) {
+  border: 1px solid var(--hd-border);
+  border-radius: 6px;
+  background-color: var(--hd-secondary);
+  color: var(--hd-foreground);
+  font-size: 0.86em;
+}
+
+.sl-markdown-content .expressive-code {
+  margin-block: 1.25rem;
+}
+
+/* ---------------------------------------------------------- link card -- */
+
+.sl-link-card {
+  border: 1px solid var(--hd-border);
+  border-radius: var(--hd-radius-box);
+  background-color: var(--hd-card);
+  box-shadow: none;
+}
+
+.sl-link-card:hover {
+  border-color: color-mix(in oklab, var(--hd-primary) 45%, var(--hd-border));
+  background-color: var(--hd-card);
+}
+
+.sl-link-card .title {
+  color: var(--hd-foreground);
+  font-weight: 650;
+}
+
+/* ----------------------------------------------------------- phân trang -- */
+
+.pagination-links a {
+  border: 1px solid var(--hd-border);
+  border-radius: 16px;
+  background-color: var(--hd-card);
+  box-shadow: none;
+  color: var(--hd-subtle-foreground);
+}
+
+.pagination-links a:hover {
+  border-color: var(--hd-primary);
+}
+
+.pagination-links a > span {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+
+.pagination-links .link-title {
+  color: var(--hd-primary);
+  font-size: 0.97rem;
+  font-weight: 650;
+}
+
+/* ------------------------------------------------------- cuối bài viết -- */
+
+footer .meta:has(> p, > a) {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hd-border);
+  font-size: 0.84rem;
+  color: var(--hd-subtle-foreground);
+}
