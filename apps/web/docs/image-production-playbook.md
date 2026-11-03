@@ -11,7 +11,7 @@ Nguyên tắc:
 5. **Ảnh chụp sản phẩm là chụp thật**, minh hoạ AI không giả làm giao diện sản phẩm, không có chữ trong ảnh AI.
 
 ```
-brief → dựng (card / page) → review AI Vision (full + 384 + vuông + 1.91:1) → chủ site duyệt
+brief → dựng (card / page) → review AI Vision (full + 384 + 1.91:1 + 2:1) → chủ site duyệt
       → (blog) upload CMS + alt → gắn bài → revalidate → kiểm trên trang thật
 ```
 
@@ -26,9 +26,18 @@ brief → dựng (card / page) → review AI Vision (full + 384 + vuông + 1.91:
 
 `page-key` = route đổi `/` thành `-` (`/tinh-nang/seo-json-ld` → `tinh-nang-seo-json-ld`, trang chủ → `home`).
 
-## 2. Vùng an toàn
+## 2. Vùng an toàn (đổi so với khoi.pro)
 
-Một file 1920×1080 được dùng với nhiều khung cắt: thẻ blog 16:9 (~384 px), thẻ nổi bật gần vuông, `og:image`/`twitter:image` (1.91:1, X dùng 2:1), JSON-LD (nguyên file). Vùng an toàn cho chữ và logo: **x 444–1476, y 84–996** (vuông giữa ∩ 1.91:1 ∩ 2:1, lề 24 px). Renderer từ chối dựng nếu panel, tiêu đề hoặc logo vượt vùng này (`safeBox` trong `template.mjs`); `--debug-safe` vẽ ba khung lên ảnh. Hình học nền được tràn ra ngoài.
+Một file 1920×1080 được dùng ở các chỗ sau, **không chỗ nào cắt vuông**:
+
+| Chỗ dùng | Code | Hiển thị |
+| --- | --- | --- |
+| Thẻ bài ở `/blog`, chuyên mục, bài liên quan | `components/site/post-card.tsx` | `aspect-video` + `object-cover`: nguyên khung 16:9 |
+| Đầu bài viết | `app/blog/[slug]/page.tsx` | nguyên khung 16:9 |
+| `og:image` / `twitter:image` | metadata của trang | mạng xã hội cắt giữa: 1.91:1 (1920×1008, y 36–1044) hoặc 2:1 của X (1920×960, y 60–1020) |
+| JSON-LD `BlogPosting.image` | trang bài | nguyên file |
+
+khoi.pro có thẻ nổi bật cắt vuông nên safe zone ở đó gồm khung vuông 1080×1080 (x 444–1476); với site này crop đó **không xảy ra**, và giữ nó chỉ làm chữ co lại thành hộp nhỏ giữa khung trống. Vì vậy `safe.square` trong `_style.json` đặt `null` và vùng an toàn là **1.91:1 ∩ 2:1, lề ngang 72 px + lề trong 24 px: x 96–1824, y 84–996**. Renderer từ chối dựng nếu chip, tiêu đề, logo hoặc tên miền vượt vùng này (`safeBox` trong `template.mjs`); `--debug-safe` vẽ các khung 1.91:1, 2:1 và vùng chữ lên ảnh. Hình học và minh hoạ nền được tràn ra ngoài.
 
 ## 3. Dựng
 
@@ -40,25 +49,28 @@ cd apps/web
 # OG mọi trang (đọc content/pages/**/index.md; giữ chữ nguyên theo h1, tự rơi về title nếu h1 quá dài)
 node scripts/images/compose.mjs page --all
 node scripts/images/compose.mjs page --route tinh-nang/seo-json-ld          # một trang
-node scripts/images/compose.mjs page --route "" --ab                         # home, A/B solid + glass
+node scripts/images/compose.mjs page --route ""                              # trang chủ
 
 # Thumbnail blog từ CMS (title + chuyên mục đầu tiên làm eyebrow)
-node scripts/images/compose.mjs card --ab --name <slug>-card --post <slug>
-node scripts/images/compose.mjs card --name <slug>-card --post <slug> --treatment glass --geometry 1
+node scripts/images/compose.mjs card --name <slug>-card-solid --post <slug> --treatment solid
+node scripts/images/compose.mjs card --ab --name <slug>-card --post <slug>   # A/B solid + glass (không mặc định)
 node scripts/images/compose.mjs card --name <slug>-card --post <slug> --debug-safe
 
 # Lô cho mọi bài đã đăng của tenant 1 (chạy sau khi writer tạo bài)
 curl -s 'https://app.opencms.kdigi.vn/api/posts?where%5Btenant%5D%5Bequals%5D=1&where%5Bstatus%5D%5Bequals%5D=published&limit=100&depth=0' \
   | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>JSON.parse(s).docs.forEach(d=>console.log(d.slug)))" \
-  | while read slug; do node scripts/images/compose.mjs card --name "$slug-card" --post "$slug" || true; done
+  | while read slug; do node scripts/images/compose.mjs card --name "$slug-card-solid" --post "$slug" --treatment solid || true; done
 ```
 
 - Chữ: **Ferry VN** (Display Bold cho tiêu đề, Text Regular cho eyebrow/domain), phủ đủ dấu tiếng Việt. Renderer kiểm cmap của font và từ chối dựng nếu thiếu glyph.
-- Tiêu đề tự co 44–88 px, tối đa 4 dòng. Quá dài thì sửa trong CMS/frontmatter, không cắt tay.
+- Tiêu đề tự co theo mục "Layout mặc định" bên dưới; quá dài thì sửa trong CMS/frontmatter, không cắt tay.
 - `--post` đọc `title` và chuyên mục đầu tiên từ API công khai (tenant 1, bài `published`). Override chữ chỉ khi brief ghi rõ: `--title "..." --reason "brief ngày ..."`.
-- Màu, logo, font, lề, preset hình học: `assets/images/_style.json`. Bảng màu lấy từ logo KDIGI: `#4767EC` (xanh), `#0A1020` (navy), cyan `#22D3EE` cho hình học.
-- Hình học nền là ba mảnh trừu tượng tách từ chữ K của logo (`assets/logo/mark.svg`), cắt quá khung, không bao giờ hiện nguyên chữ K và không thay logo (logo thật luôn ở footer panel).
-- Hai treatment: `solid` (panel trắng xanh, logo xanh) và `glass` (kính mờ tối, logo trắng); `--ab` dựng cả hai cùng chữ.
+- Màu, logo, font, lề: `assets/images/_style.json`. Bảng màu lấy từ logo KDIGI: `#4767EC` (xanh), `#0A1020` (navy), cyan `#22D3EE` cho viền sáng của minh hoạ.
+- Layout mặc định `wide` (toàn khung, nền sáng, không hộp nổi; chủ site chốt): **logo KDIGI góc trên trái** (lockup xanh, cao 64 px, trong vùng an toàn x ≥ 96, y ≥ 84), chip eyebrow ngay trên tiêu đề, tiêu đề căn trái trong cột x 96 → 1180, cỡ lớn nhất vừa khung trong 84–132 px (tối đa 3 dòng; nếu không vừa thì cho phép 4 dòng, xuống tới 72 px), khối chip + tiêu đề cân giữa theo chiều dọc phần còn lại. **Cột phải là minh hoạ Codex theo chuyên mục**, cao vừa cỡ, nguyên vật thể, cân giữa theo chiều dọc, chỉ được tràn nhẹ mép phải (bảng `categoryArt` trong `_style.json`: SEO → `tinh-nang-seo-json-ld-hero`, WordPress → `chuyen-tu-wordpress-hero`, Headless & API → `tinh-nang-headless-api-hero`, Tự host / Kỹ thuật & Tự host → `tu-host-hero`, So sánh CMS → `so-sanh-hero`, Kiến thức CMS / Hướng dẫn → `tinh-nang-hero`, Bản phát hành → `phat-hanh-hero`; SHA-256 của ảnh ghi vào `sources` của manifest). OG trang dùng chính hero của trang (`<page-key>-hero`) nếu có.
+- Không có: hình học chữ K (đã bỏ hẳn), ánh kính mờ, pill tên miền, thứ gì ở góc dưới trái.
+- Không ngắt dòng giữa tên thương hiệu/sản phẩm và cặp số + đơn vị (`white-space: nowrap` trong `template.mjs`, biểu thức `NOBREAK`): `KDIGI CMS` (kể cả số phiên bản), cặp `X vs Y`, `Payload CMS`, `headless CMS`, `Core Web Vitals`, `Docker Compose`, `Next.js`, `JSON-LD`, `llms.txt`, `sitemap.xml`, `WordPress`, `15 cách`… Thêm tên mới bằng cách sửa `NOBREAK`.
+- Bộ co chữ thử hai kiểu ngắt: `block` (xuống dòng sau dấu `:`, vế sau tô xanh) và `inline` (một đoạn liền); giữ `block` nếu ≥ 96 px và ≥ 80% cỡ của `inline`, ngược lại giữ kiểu cho chữ lớn hơn. Cỡ chữ và kiểu ngắt được ghi vào manifest (`text.titleSize`, `text.titleMode`).
+- Treatment mặc định là `solid` (sáng). `glass` (nền navy, logo trắng) vẫn còn trong mã nhưng không dựng mặc định; muốn dựng thì thêm `--treatment glass`. Bố cục cũ có hộp nổi còn dưới `--layout panel`. Dựng một bản sáng: `card --name <slug>-card-solid --post <slug> --treatment solid`.
 
 ## 4. Review AI Vision (bắt buộc)
 
@@ -67,7 +79,7 @@ node scripts/images/compose.mjs review <name>                 # ghi crop vào as
 node scripts/images/compose.mjs review <name> --save review.json   # { summary, checks: { <tiêu chí>: { pass, note } } }
 ```
 
-AI **mở đúng file thành phẩm** (`-full`, `-384`, `-square`, `-191`) rồi trả lời chín tiêu chí: `diacritics`, `legibility`, `fit-384`, `safe-square`, `safe-191`, `logo`, `brief`, `rights`, `ab-parity`. Review khoá theo SHA-256, nên dựng lại thì review cũ tự thành lịch sử. **AI pass không phải sự đồng ý của chủ site.** Quyết định của chủ site: `review <name> --owner approved --by "<tên>" --note "..."`.
+AI **mở đúng file thành phẩm** (`-full`, `-384`, `-191`, `-2to1`) rồi trả lời chín tiêu chí: `diacritics`, `legibility`, `fit-384`, `safe-wide`, `safe-191`, `logo`, `brief`, `rights`, `ab-parity`. Review khoá theo SHA-256, nên dựng lại thì review cũ tự thành lịch sử. **AI pass không phải sự đồng ý của chủ site.** Quyết định của chủ site: `review <name> --owner approved --by "<tên>" --note "..."`.
 
 Với OG từng trang: chủ site duyệt theo lô (ghi `--owner approved` cho từng tên sau khi xem). Chưa duyệt thì `check --strict` báo cảnh báo; `check` thường vẫn xanh.
 

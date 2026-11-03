@@ -38,7 +38,7 @@ const REVIEW_CHECKS = {
   diacritics: "Dấu tiếng Việt và chính tả đúng, khớp CMS/brief",
   legibility: "Tương phản đủ, chữ không tràn, không bị cắt",
   "fit-384": "Đọc được ở ~384 px rộng (thẻ blog)",
-  "safe-square": "Crop vuông 1080×1080 giữ nguyên chữ và logo",
+  "safe-wide": "Vùng an toàn 1.91:1 ∩ 2:1 (x 96–1824, y 84–996): chữ, logo và tên miền không bị cắt ở crop OG và X",
   "safe-191": "Crop 1.91:1 (1200×630, OG) giữ nguyên chữ và logo",
   logo: "Logo đúng luật (màu theo nền, clear space, không méo, đủ cỡ tối thiểu)",
   brief: "Đúng brief: kind, treatment, chủ đề; không có nội dung bịa",
@@ -149,6 +149,7 @@ async function fetchPost(slug, { api, tenant }) {
     eyebrow: cat ? clean(cat.name) : "",
     updatedAt: doc.updatedAt ?? null,
     hasCover: Boolean(doc.featuredImage),
+    categorySlug: cat?.slug ?? "",
   };
 }
 
@@ -270,6 +271,15 @@ function usedRefs(assets, treatment, style) {
   return assets.refs.filter((r) => used.has(r.ref));
 }
 
+/** Category/page art from the existing Codex heroes (public/images/art). `seed` only picks among several candidates. */
+function pickArt(style, keys, seed) {
+  const pool = keys?.length ? keys : style.categoryArt.fallback;
+  const key = pool[[...seed].reduce((a, c) => a + c.charCodeAt(0), 0) % pool.length];
+  const file = join(ROOT, "public/images/art", `${key}.webp`);
+  if (!existsSync(file)) throw new Error(`art missing: ${rel(file)}`);
+  return { key, file, ref: rel(file), sha256: sha256File(file) };
+}
+
 async function renderOne({
   kind,
   name,
@@ -299,6 +309,8 @@ async function renderOne({
     treatment,
     text,
     assets,
+    layout: o.layout,
+    art: o.art ?? null,
     geometry,
     photo: photo ? { file: photo.file, focus } : null,
     debugSafe: Boolean(o["debug-safe"]),
@@ -367,6 +379,8 @@ async function renderOne({
   }
 
   const sources = [];
+  if (o.art && kind === "card" && o.layout !== "panel")
+    sources.push({ role: "art", ref: o.art.ref, sha256: o.art.sha256 });
   if (photo)
     sources.push({
       role: photo.publishable ? "photo" : "test-photo",
@@ -393,6 +407,7 @@ async function renderOne({
       ...(text.reason && { reason: text.reason }),
       ...(kind === "card" && { geometry }),
       titleSize: info.titleSize,
+      titleMode: info.mode,
       lines: info.lines,
     },
     ...(post && {
@@ -434,6 +449,7 @@ async function cmdRender(kind, argv) {
     reason: { type: "string" },
     treatment: { type: "string" },
     ab: { type: "boolean" },
+    layout: { type: "string" },
     geometry: { type: "string" },
     focus: { type: "string" },
     source: { type: "string" },
@@ -510,7 +526,11 @@ async function cmdRender(kind, argv) {
       post,
       photo,
       photoDims,
-      o,
+      o: {
+        ...o,
+        art: kind === "card" ? pickArt(style, style.categoryArt[post?.categorySlug], o.name) : null,
+        extra: { layout: o.layout ?? "wide" },
+      },
       style,
       assets,
     });
@@ -590,6 +610,8 @@ async function renderRoute(route, o, style, assets) {
           photoDims: null,
           o: {
             ...o,
+            art: pickArt(style, [`${key}-hero`, `${section}-hero`].filter((k) => existsSync(join(ROOT, "public/images/art", `${k}.webp`))).slice(0, 1), key),
+            layout: "wide",
             geometry,
             ogOut: o["debug-safe"] ? null : join(OG_DIR, `${key}${o.ab ? `-${treatment}` : ""}.jpg`),
             extra: { page: { route: `/${route}`, source: rel(file), titleFrom: title === fm.title ? "title" : title === fm.h1 ? "h1" : "override" } },
@@ -863,7 +885,7 @@ async function cmdReview(argv) {
       result: failed.length ? "fail" : "pass",
       reviewer: o.reviewer ?? input.reviewer ?? "AI Vision",
       reviewed: new Date().toISOString(),
-      viewed: input.viewed ?? ["full", "384", "square", "191"],
+      viewed: input.viewed ?? ["full", "384", "191", "2to1"],
       summary: input.summary ?? "",
       checks: Object.fromEntries(
         Object.keys(REVIEW_CHECKS).map((k) => [
@@ -910,27 +932,23 @@ async function cmdReview(argv) {
   // Default: review crops.
   const style = readJson(P.style);
   const { width, height } = style.canvas;
-  const sq = style.safe.square;
   const [ow, oh] = style.safe.ogRatio;
   const ogH = Math.round((width * oh) / ow);
+  const [wr, hr] = style.safe.wideRatio;
+  const wideH = Math.round((width * hr) / wr);
   mkdirSync(P.preview, { recursive: true });
   const out = {
     full: join(P.preview, `${name}-full.png`),
     w384: join(P.preview, `${name}-384.png`),
-    square: join(P.preview, `${name}-square.png`),
     og: join(P.preview, `${name}-191.png`),
+    wide: join(P.preview, `${name}-2to1.png`),
   };
   await sharp(file).png().toFile(out.full);
   await sharp(file).resize({ width: 384 }).png().toFile(out.w384);
   await sharp(file)
-    .extract({
-      left: (width - sq) / 2,
-      top: (height - sq) / 2,
-      width: sq,
-      height: sq,
-    })
+    .extract({ left: 0, top: Math.round((height - wideH) / 2), width, height: wideH })
     .png()
-    .toFile(out.square);
+    .toFile(out.wide);
   await sharp(file)
     .extract({
       left: 0,

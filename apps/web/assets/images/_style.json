@@ -29,7 +29,8 @@
     "bold": "assets/fonts/FerryVNDisplay-Bold.ttf"
   },
   "safe": {
-    "square": 1080,
+    "square": null,
+    "sideMargin": 72,
     "ogRatio": [1200, 630],
     "wideRatio": [2, 1],
     "margin": 24
@@ -45,6 +46,21 @@
     "titleMaxLines": 4,
     "titleLineHeight": 1.16,
     "card": { "top": 130, "bottom": 130 },
+    "wide": {
+      "left": 96,
+      "top": 96,
+      "bottom": 96,
+      "textWidth": 1084,
+      "titleMinSize": 84,
+      "titleMinSizeLong": 72,
+      "titleMaxSize": 132,
+      "titleMaxLines": 3,
+      "titleLineHeight": 1.1,
+      "logoHeight": 64,
+      "art": { "width": 900, "right": -100 },
+      "chipGap": 40,
+      "glow": { "left": 1160, "top": 130, "size": 840 }
+    },
     "photo": { "top": 344, "bottom": 96 }
   },
   "treatments": {
@@ -60,7 +76,12 @@
       "rule": "rgba(10, 20, 51, 0.14)",
       "footerInk": "#4C5773",
       "logo": "lockup",
-      "dot": "dot"
+      "dot": "dot",
+      "wideBg": "radial-gradient(1200px 900px at 88% 20%, rgba(71, 103, 236, 0.18), rgba(71, 103, 236, 0) 65%), linear-gradient(135deg, #F5F7FF 0%, #E2E9FF 100%)",
+      "glow": "radial-gradient(circle, rgba(71, 103, 236, 0.22) 0%, rgba(71, 103, 236, 0) 68%)",
+      "sheen": "linear-gradient(115deg, rgba(255,255,255,0) 52%, rgba(255,255,255,0.35) 62%, rgba(255,255,255,0) 72%)",
+      "domainBg": "rgba(255, 255, 255, 0.88)",
+      "domainInk": "#3550C8"
     },
     "glass": {
       "panelBg": "rgba(8, 16, 46, 0.42)",
@@ -74,7 +95,12 @@
       "rule": "rgba(255, 255, 255, 0.3)",
       "footerInk": "#C3CCEA",
       "logo": "lockupMono",
-      "dot": "dotMono"
+      "dot": "dotMono",
+      "wideBg": "radial-gradient(1400px 900px at 82% 8%, rgba(71, 103, 236, 0.5), rgba(71, 103, 236, 0) 62%), linear-gradient(135deg, #0A1020 0%, #101A33 100%)",
+      "glow": "radial-gradient(circle, rgba(34, 211, 238, 0.28) 0%, rgba(71, 103, 236, 0.12) 45%, rgba(71, 103, 236, 0) 70%)",
+      "sheen": "linear-gradient(115deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.10) 60%, rgba(255,255,255,0) 70%)",
+      "domainBg": "rgba(10, 16, 32, 0.78)",
+      "domainInk": "#F1F4F8"
     }
   },
   "card": {
@@ -115,6 +141,18 @@
   "photo": {
     "minWidth": 1920,
     "scrim": "linear-gradient(180deg, rgba(10, 16, 32, 0) 25%, rgba(10, 16, 32, 0.55) 100%)"
+  },
+  "categoryArt": {
+    "fallback": ["tinh-nang-hero"],
+    "seo": ["tinh-nang-seo-json-ld-hero"],
+    "wordpress": ["chuyen-tu-wordpress-hero"],
+    "headless-api": ["tinh-nang-headless-api-hero"],
+    "tu-host": ["tu-host-hero"],
+    "ky-thuat-tu-host": ["tu-host-hero"],
+    "so-sanh-cms": ["so-sanh-hero"],
+    "kien-thuc-cms": ["tinh-nang-hero"],
+    "huong-dan": ["tinh-nang-hero"],
+    "ban-phat-hanh": ["phat-hanh-hero"]
   },
   "webp": { "quality": 80 }
 }

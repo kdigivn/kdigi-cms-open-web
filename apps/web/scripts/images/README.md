@@ -14,7 +14,7 @@ node scripts/images/compose.mjs review <name> [--save review.json | --owner appr
 | File | Role |
 | --- | --- |
 | `compose.mjs` | CLI: `page`, `card`, `photo`, `source`, `check`, `review`; CMS fetch, manifest |
-| `template.mjs` | HTML/CSS of the card, safe zone, K-mark geometry, title fit script |
+| `template.mjs` | HTML/CSS of the card (wide layout, solid by default), safe zone, no-break phrases (`NOBREAK`), title fit script |
 | `chrome.mjs` | Headless Chrome over the DevTools protocol, PNG screenshot |
 | `fonts.mjs` | TrueType `cmap` reader: refuses text the font (Ferry VN) cannot draw |
 

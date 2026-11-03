@@ -2,56 +2,61 @@
   "name": "page-chuyen-tu-wordpress",
   "file": "composed/page-chuyen-tu-wordpress.webp",
   "reviews": {
-    "1f4694c619a439cd861096b727fe81d8a760e70dbc2b32f671244957dd9491c4": {
+    "dfc4385b792e6e0df9ab0ae19450062a2e8b786c226d8777e59a653f46714e7c": {
       "result": "pass",
       "reviewer": "AI Vision (ImageStudio)",
-      "reviewed": "2026-11-03T09:08:03.093Z",
+      "reviewed": "2026-11-03T10:55:17.549Z",
       "viewed": [
-        "contact-sheet",
-        "renderer-safe-rects",
-        "og-jpeg-sheet"
+        "full",
+        "384",
+        "191",
+        "2to1",
+        "approval-sheets"
       ],
       "summary": "Chuyển website từ WordPress sang KDIGI CMS: OK",
       "checks": {
         "diacritics": {
           "pass": true,
-          "note": "Contact sheet reviewed at 440-600 px: \"Chuyển website từ WordPress sang KDIGI CMS\" shows correct Vietnamese diacritics; renderer also verified the Ferry VN cmap covers every glyph."
+          "note": "Opened contact sheet and previews: \"Chuyển website từ WordPress sang KDIGI CMS\" shows correct Vietnamese diacritics; renderer verified the Ferry VN cmap covers every glyph."
         },
         "legibility": {
           "pass": true,
-          "note": "Title 88px, 3 lines, solid treatment: contrast and line breaks fine, nothing cut."
+          "note": "Title 132px, 3 lines, solid: strong contrast, left-aligned, no overlap with the art."
         },
         "fit-384": {
           "pass": true,
-          "note": "Title still readable in the 384-600 px contact-sheet scale."
+          "note": "Title readable in the 384 px preview (opened) and the 380 px approval-sheet scale."
         },
-        "safe-square": {
+        "safe-wide": {
           "pass": true,
-          "note": "Renderer asserts panel/title/logo boxes inside safe zone x444-1476,y84-996 (inside the centred 1080 square)."
+          "note": "Renderer asserts logo, chip and title inside x96-1824,y84-996 (1.91:1 ∩ 2:1 + margins); full, 1.91:1 and 2:1 previews opened, nothing is cut."
         },
         "safe-191": {
           "pass": true,
-          "note": "Same safe-zone assertion covers the 1.91:1 crop; public/images/og/*.jpg is that crop and was viewed in the OG contact sheet."
+          "note": "1.91:1 crop keeps logo, chip, title and the whole art object; public/images/og/*.jpg is that crop."
         },
         "logo": {
           "pass": true,
-          "note": "Official KDIGI lockup (blue) at 56 px in the panel footer, undistorted; background K facets abstract, no full K."
+          "note": "Official KDIGI lockup (blue on light) 64 px top-left inside the safe zone, undistorted; no K-facet geometry and no domain pill in this layout."
         },
         "brief": {
           "pass": true,
-          "note": "Page OG from content/pages/chuyen-tu-wordpress/index.md (h1); eyebrow \"Chuyển từ WordPress\"; no invented claims."
+          "note": "Page OG from content/pages/chuyen-tu-wordpress/index.md (h1); eyebrow \"Chuyển từ WordPress\"; art public/images/art/chuyen-tu-wordpress-hero.webp; no invented claims."
         },
         "rights": {
           "pass": true,
-          "note": "Card kind: only the KDIGI logo and Ferry VN (OFL) are used; no external or AI photo."
+          "note": "Only the KDIGI logo, Ferry VN (OFL) and the repo Codex hero art (public/images/art, sha256 recorded in sources) are used; no external photo."
         },
         "ab-parity": {
           "pass": true,
-          "note": "Single treatment, not an A/B render."
+          "note": "N/A: single light (solid) treatment, not an A/B render."
         }
       },
       "owner": {
-        "status": "pending"
+        "status": "approved",
+        "by": "Khoi (owner)",
+        "at": "2026-11-03T10:55:26.630Z",
+        "note": "Duyệt bố cục v3 qua chat 2026-11-03; render cùng template"
       }
     }
   }

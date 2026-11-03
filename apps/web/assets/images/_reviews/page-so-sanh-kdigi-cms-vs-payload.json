@@ -2,56 +2,61 @@
   "name": "page-so-sanh-kdigi-cms-vs-payload",
   "file": "composed/page-so-sanh-kdigi-cms-vs-payload.webp",
   "reviews": {
-    "16acd62a21bdfe2cd5ed55485f8edd3729b2e962c3adc45411ce6e5060dd72d6": {
+    "8e20ec4a4575a2a43957f6f9be030fb2fdb84ec81d1b3d0b87babab71449385d": {
       "result": "pass",
       "reviewer": "AI Vision (ImageStudio)",
-      "reviewed": "2026-11-03T09:08:04.879Z",
+      "reviewed": "2026-11-03T10:55:19.327Z",
       "viewed": [
-        "contact-sheet",
-        "renderer-safe-rects",
-        "og-jpeg-sheet"
+        "full",
+        "384",
+        "191",
+        "2to1",
+        "approval-sheets"
       ],
       "summary": "KDIGI CMS vs Payload CMS: chọn gì cho dự án Next.js?: OK",
       "checks": {
         "diacritics": {
           "pass": true,
-          "note": "Contact sheet reviewed at 440-600 px: \"KDIGI CMS vs Payload CMS: chọn gì cho dự án Next.js?\" shows correct Vietnamese diacritics; renderer also verified the Ferry VN cmap covers every glyph."
+          "note": "Opened contact sheet and previews: \"KDIGI CMS vs Payload CMS: chọn gì cho dự án Next.js?\" shows correct Vietnamese diacritics; renderer verified the Ferry VN cmap covers every glyph."
         },
         "legibility": {
           "pass": true,
-          "note": "Title 88px, 4 lines, solid treatment: contrast and line breaks fine, nothing cut."
+          "note": "Title 109px, 3 lines, solid: strong contrast, left-aligned, no overlap with the art."
         },
         "fit-384": {
           "pass": true,
-          "note": "Title still readable in the 384-600 px contact-sheet scale."
+          "note": "Title readable in the 384 px preview (opened) and the 380 px approval-sheet scale."
         },
-        "safe-square": {
+        "safe-wide": {
           "pass": true,
-          "note": "Renderer asserts panel/title/logo boxes inside safe zone x444-1476,y84-996 (inside the centred 1080 square)."
+          "note": "Renderer asserts logo, chip and title inside x96-1824,y84-996 (1.91:1 ∩ 2:1 + margins); full, 1.91:1 and 2:1 previews opened, nothing is cut."
         },
         "safe-191": {
           "pass": true,
-          "note": "Same safe-zone assertion covers the 1.91:1 crop; public/images/og/*.jpg is that crop and was viewed in the OG contact sheet."
+          "note": "1.91:1 crop keeps logo, chip, title and the whole art object; public/images/og/*.jpg is that crop."
         },
         "logo": {
           "pass": true,
-          "note": "Official KDIGI lockup (blue) at 56 px in the panel footer, undistorted; background K facets abstract, no full K."
+          "note": "Official KDIGI lockup (blue on light) 64 px top-left inside the safe zone, undistorted; no K-facet geometry and no domain pill in this layout."
         },
         "brief": {
           "pass": true,
-          "note": "Page OG from content/pages/so-sanh/kdigi-cms-vs-payload/index.md (h1); eyebrow \"So sánh\"; no invented claims."
+          "note": "Page OG from content/pages/so-sanh/kdigi-cms-vs-payload/index.md (h1); eyebrow \"So sánh\"; art public/images/art/so-sanh-hero.webp; no invented claims."
         },
         "rights": {
           "pass": true,
-          "note": "Card kind: only the KDIGI logo and Ferry VN (OFL) are used; no external or AI photo."
+          "note": "Only the KDIGI logo, Ferry VN (OFL) and the repo Codex hero art (public/images/art, sha256 recorded in sources) are used; no external photo."
         },
         "ab-parity": {
           "pass": true,
-          "note": "Single treatment, not an A/B render."
+          "note": "N/A: single light (solid) treatment, not an A/B render."
         }
       },
       "owner": {
-        "status": "pending"
+        "status": "approved",
+        "by": "Khoi (owner)",
+        "at": "2026-11-03T10:55:28.393Z",
+        "note": "Duyệt bố cục v3 qua chat 2026-11-03; render cùng template"
       }
     }
   }
