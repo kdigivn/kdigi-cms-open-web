@@ -2,7 +2,9 @@ import { ChevronDown, ChevronRight, ExternalLink } from "lucide-react"
 import Link from "next/link"
 
 import type { Crumb } from "@/lib/ia"
+import { type IconName, pageIcon } from "@/lib/icons"
 import type { Heading } from "@/lib/markdown"
+import { cn } from "@/lib/utils"
 
 import { formatDate } from "./post-card"
 
@@ -84,9 +86,18 @@ export function FaqBlock({ entries }: { entries: FaqRow[] }) {
   )
 }
 
-export type CardItem = { href: string; title: string; description: string }
+export type CardItem = { href: string; title: string; description: string; icon?: IconName | null }
 
-/** Grid of internal links with title + description: hub listings and "Đọc tiếp". */
+/** Soft brand-tinted rounded square holding a page icon. */
+export function IconTile({ name, className }: { name: IconName | null | undefined; className?: string }) {
+  return (
+    <span className={cn("inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/12 text-primary-strong", className)}>
+      {pageIcon(name, "size-5")}
+    </span>
+  )
+}
+
+/** Grid of internal links with icon, title and a short description: hub listings and "Đọc tiếp". */
 export function CardGrid({ items, headingLevel = 3 }: { items: CardItem[]; headingLevel?: 2 | 3 }) {
   const Tag = `h${headingLevel}` as const
   return (
@@ -95,10 +106,13 @@ export function CardGrid({ items, headingLevel = 3 }: { items: CardItem[]; headi
         <li key={item.href}>
           <Link
             href={item.href}
-            className="group flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-shadow hover:shadow-md"
+            className="group flex h-full items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm transition-shadow hover:shadow-md"
           >
-            <Tag className="text-lg leading-snug font-semibold text-foreground group-hover:text-primary-strong">{item.title}</Tag>
-            <p className="mt-2 line-clamp-3 text-[15px] leading-relaxed text-muted-foreground">{item.description}</p>
+            <IconTile name={item.icon} />
+            <div className="min-w-0">
+              <Tag className="text-[17px] leading-snug font-semibold text-foreground group-hover:text-primary-strong">{item.title}</Tag>
+              <p className="mt-1.5 line-clamp-2 text-[14.5px] leading-relaxed text-muted-foreground">{item.description}</p>
+            </div>
           </Link>
         </li>
       ))}

@@ -1,4 +1,4 @@
-import { ArrowRight, Check, X } from "lucide-react"
+import { ArrowRight, Check, CloudDownload, Database, ShieldCheck, WandSparkles, X } from "lucide-react"
 
 import { Illustration } from "@/components/brand/illustration"
 import { ButtonLink } from "@/components/ui/button"
@@ -7,10 +7,10 @@ import { docsLinks } from "@/lib/site"
 import { Container } from "../section"
 
 const STEPS = [
-  { title: "Tải bản chụp", text: "Kéo toàn bộ nội dung từ WordPress qua WPGraphQL hoặc REST API chuẩn, giữ nguyên một bản gốc không sửa." },
-  { title: "Chuẩn hoá", text: "Bài viết, trang, danh mục, thẻ, menu, tác giả và bình luận thành JSON dễ đọc, mỗi tài liệu một tệp." },
-  { title: "Duyệt và khoá", text: "Bạn sửa tay, chạy kiểm tra, rồi khoá dữ liệu. Chưa khoá thì chưa có gì được ghi vào cơ sở dữ liệu." },
-  { title: "Nhập vào CMS", text: "Chạy lại được nhiều lần, có chế độ chạy thử, và tự sao lưu cơ sở dữ liệu trước khi ghi." },
+  { icon: CloudDownload, title: "Tải bản chụp", text: "Kéo nội dung từ WordPress qua WPGraphQL hoặc REST API, giữ một bản gốc không sửa." },
+  { icon: WandSparkles, title: "Chuẩn hoá", text: "Bài viết, trang, danh mục, thẻ, menu, tác giả và bình luận thành JSON dễ đọc." },
+  { icon: ShieldCheck, title: "Duyệt và khoá", text: "Bạn sửa tay, chạy kiểm tra, rồi khoá. Chưa khoá thì chưa ghi gì vào cơ sở dữ liệu." },
+  { icon: Database, title: "Nhập vào CMS", text: "Chạy lại được, có chế độ chạy thử, tự sao lưu cơ sở dữ liệu trước khi ghi." },
 ]
 
 const MOVES = ["Bài viết, trang, danh mục, thẻ", "Ảnh trong thư viện media", "SEO của Yoast và RankMath", "Menu, tác giả, bình luận", "Redirect 301 từ đường dẫn cũ", "Sản phẩm WooCommerce (tuỳ chọn)"]
@@ -27,14 +27,16 @@ export function Migration() {
               Chuyển site WordPress mà không mất bài, ảnh và thứ hạng SEO
             </h2>
             <p className="mt-4 text-[17px] leading-relaxed text-muted-foreground">
-              KDIGI CMS có sẵn quy trình nhập tám giai đoạn cho bất kỳ site WordPress nào. Mỗi bước kiểm soát được, nên bạn xem kết quả trước khi
-              ghi, thay vì cầu may rồi mới dọn lỗi.
+              Quy trình nhập tám giai đoạn cho site WordPress. Bạn xem kết quả trước khi ghi, không phải cầu may rồi dọn lỗi.
             </p>
             <ol className="mt-8 grid gap-4 sm:grid-cols-2">
               {STEPS.map((step, index) => (
                 <li key={step.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
-                  <span className="mb-3 inline-flex size-8 items-center justify-center rounded-full bg-accent text-sm font-semibold text-accent-foreground" aria-hidden="true">
-                    {index + 1}
+                  <span className="mb-3 flex items-center gap-3">
+                    <span className="inline-flex size-10 items-center justify-center rounded-xl bg-primary/12 text-primary-strong">
+                      <step.icon className="size-5" aria-hidden="true" />
+                    </span>
+                    <span className="text-sm font-semibold text-muted-foreground">Bước {index + 1}</span>
                   </span>
                   <h3 className="text-base font-semibold">{step.title}</h3>
                   <p className="mt-1.5 text-[15px] leading-relaxed text-muted-foreground">{step.text}</p>

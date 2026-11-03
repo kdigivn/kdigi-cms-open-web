@@ -24,7 +24,7 @@ export function OpenSource() {
               Mã nguồn công khai trên GitHub, giấy phép MIT
             </h2>
             <p className="mt-4 text-[17px] leading-relaxed text-muted-foreground">
-              Toàn bộ CMS, trình nhập WordPress và tài liệu nằm trong một kho mã. Bạn đọc được cách nó hoạt động trước khi tin nó.
+              CMS, trình nhập WordPress và tài liệu nằm trong một kho mã. Bạn đọc được cách nó hoạt động trước khi tin nó.
             </p>
             <ul className="mt-7 space-y-5">
               {POINTS.map((point) => (

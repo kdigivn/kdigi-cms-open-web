@@ -16,6 +16,8 @@ title: "Tính năng SEO và JSON-LD của KDIGI CMS"      # REQUIRED. Final <tit
 description: "…140-160 ký tự…"                        # REQUIRED. meta description, 140-160 chars, unique.
 h1: "SEO và JSON-LD trong KDIGI CMS"                  # optional (default = title). Exactly one H1 per page: NEVER put `# ` in the body.
 navTitle: "SEO và JSON-LD"                            # optional short label for menus/breadcrumbs/cards (default = h1)
+icon: shield-check                                    # optional page icon (lucide name from lib/icons.ts): hub/related cards, mega menu, H1 badge. Unknown name fails the build
+lead: "Một dòng tóm tắt, tối đa 25 từ."                # optional subtitle under the H1 (larger text); > 25 words fails the build
 primaryKeyword: "cms seo json-ld"                     # optional but expected; check:seo warns if absent from title/H1
 updated: 2026-11-03                                   # REQUIRED YYYY-MM-DD, shown as "Cập nhật lần cuối" + dateModified
 published: 2026-10-20                                 # optional
@@ -45,6 +47,47 @@ draft: true                                           # optional: file is ignore
 - Links: internal links as root paths (`/tinh-nang/seo-json-ld`) — they must resolve (check:seo fails on broken ones). Docs links as full `https://docs.opencms.kdigi.vn/...` URLs. ≥ 3 contextual internal links per page.
 - Raw HTML is NOT allowed (escaped). No JSX/MDX components.
 - Language Vietnamese; every product claim must be verifiable in /root/khoi-workspace/kdigi/kdigi-cms-open.
+
+## Visual blocks and icons (short pages, scannable in 30 s)
+Icons are lucide names from the allowlist in `apps/web/lib/icons.ts` (read it for the full list; unknown names fail the build with the file path). Blocks are fenced by `:::name` … `:::` (own line each, no nesting) and hold ONE bullet list. Raw HTML stays escaped.
+
+```markdown
+## :database: Mô hình nội dung          <- icon badge before the heading; stripped from the id and the TOC
+
+:::cards            <- or `:::cards 2` / `:::cards 3` to force columns (default: 2 for 2 or 4 items, else 3)
+- :layers: **Nhiều website** Một trang quản trị cho mọi site.
+- :shield-check: **Phân quyền** 4 vai trò, giới hạn theo website.
+- :search: **SEO sẵn có** Tiêu đề, mô tả, JSON-LD cho từng bài.
+:::
+
+:::steps            <- numbered timeline; `:icon:` optional, **Title** required
+- :cloud-upload: **Xuất dữ liệu** Chạy lệnh export, nhận file JSON.
+- **Kiểm tra bản nháp** Xem trước trên staging.
+:::
+
+:::stats            <- 2-4 big numbers: **number** then label
+- **25+** bài viết mẫu
+- **4** vai trò phân quyền
+:::
+
+:::check            <- two-column list with check icons
+- Sao lưu trước khi nâng cấp
+- Chạy migrate trên staging
+:::
+
+:::pros-cons        <- first group = green checks, second = muted x
+**Ưu điểm**
+
+- Dữ liệu nằm ở máy chủ của bạn
+
+**Hạn chế**
+
+- Tự vận hành
+:::
+```
+- Card/step items are one paragraph: `:icon:` + `**Title**` + ≤ 20 words (inline Markdown and links allowed; no nested lists or images).
+- Automatic, no syntax: callouts (`> **Lưu ý**`, `**Mẹo**`, `**Cảnh báo**`) get Info / Lightbulb / TriangleAlert icons; `> **Tóm tắt nhanh**` bullets get check icons; a table cell that is exactly `✓` / `✗` / `có` / `không` becomes a check / x icon (with screen-reader text).
+- A mistake (unknown icon, unclosed `:::`, wrong item shape) fails the build with the file path and the line inside the body.
 
 ## Complete example: `content/pages/tinh-nang/seo-json-ld/index.md`
 ```markdown

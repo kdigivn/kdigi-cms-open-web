@@ -20,8 +20,7 @@ export function Hero() {
               Một CMS cho tất cả website của bạn
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
-              KDIGI CMS là CMS headless mã nguồn mở, quản lý nhiều website trong một trang quản trị. Soạn bằng Markdown, SEO và JSON-LD có sẵn,
-              chuyển được từ WordPress và tự host bằng Docker.
+              CMS headless mã nguồn mở: nhiều website trong một trang quản trị, soạn bằng Markdown, SEO và JSON-LD có sẵn, tự host bằng Docker.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
               <ButtonLink href="/#demo" variant="brand" size="lg">

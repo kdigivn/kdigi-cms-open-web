@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, HardDrive, Rocket, Terminal } from "lucide-react"
 
 import { Illustration } from "@/components/brand/illustration"
 import { ButtonLink } from "@/components/ui/button"
@@ -14,9 +14,9 @@ const COMMANDS = [
 ]
 
 const POINTS = [
-  { title: "Một lệnh là chạy", text: "Docker Compose dựng sẵn ứng dụng và PostgreSQL. Cờ SEED_DEMO nạp một site mẫu để bạn có gì đó để xem ngay." },
-  { title: "Triển khai trên Coolify", text: "Có tệp docker-compose.coolify.yml sẵn cho Coolify; chạy trên máy chủ của bạn, dữ liệu nằm ở nhà bạn." },
-  { title: "Không khoá nhà cung cấp", text: "Mã nguồn MIT, dữ liệu trong PostgreSQL, ảnh để ở ổ đĩa hoặc Cloudflare R2 theo từng website." },
+  { icon: Terminal, title: "Một lệnh là chạy", text: "Docker Compose dựng sẵn ứng dụng và PostgreSQL; SEED_DEMO nạp một site mẫu để xem ngay." },
+  { icon: Rocket, title: "Triển khai trên Coolify", text: "Có sẵn docker-compose.coolify.yml; chạy trên máy chủ của bạn." },
+  { icon: HardDrive, title: "Không khoá nhà cung cấp", text: "Mã nguồn MIT, dữ liệu trong PostgreSQL, ảnh ở ổ đĩa hoặc Cloudflare R2." },
 ]
 
 export function SelfHost() {
@@ -58,9 +58,14 @@ export function SelfHost() {
 
             <ul className="mt-6 space-y-4">
               {POINTS.map((point) => (
-                <li key={point.title}>
-                  <h3 className="text-base font-semibold">{point.title}</h3>
-                  <p className="text-[15px] leading-relaxed text-muted-foreground">{point.text}</p>
+                <li key={point.title} className="flex gap-4">
+                  <span className="mt-0.5 inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/12 text-primary-strong">
+                    <point.icon className="size-5" aria-hidden="true" />
+                  </span>
+                  <div>
+                    <h3 className="text-base font-semibold">{point.title}</h3>
+                    <p className="text-[15px] leading-relaxed text-muted-foreground">{point.text}</p>
+                  </div>
                 </li>
               ))}
             </ul>

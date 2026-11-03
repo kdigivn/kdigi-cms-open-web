@@ -3,10 +3,10 @@ import { Boxes, DatabaseZap, FileSearch, Repeat2 } from "lucide-react"
 import { Container } from "../section"
 
 const ITEMS = [
-  { icon: Boxes, title: "Nhiều website, một nơi", text: "Mỗi website là một site riêng với nội dung, người dùng và cấu hình riêng, nhưng chung một trang quản trị." },
-  { icon: FileSearch, title: "SEO có sẵn", text: "Tiêu đề, mô tả, Open Graph và JSON-LD tự sinh theo mẫu, kèm công cụ kiểm tra SEO cho cả site." },
-  { icon: Repeat2, title: "Chuyển từ WordPress", text: "Nhập bài viết, ảnh, SEO, menu và redirect qua quy trình có bước duyệt trước khi ghi." },
-  { icon: DatabaseZap, title: "API cho mọi frontend", text: "REST và GraphQL công khai, nội dung Markdown trả về HTML sạch. Frontend nào cũng gọi được." },
+  { icon: Boxes, title: "Nhiều website, một nơi", text: "Nội dung, người dùng và cấu hình tách theo site, chung một trang quản trị." },
+  { icon: FileSearch, title: "SEO có sẵn", text: "Tiêu đề, mô tả, Open Graph và JSON-LD tự sinh, kèm công cụ kiểm tra SEO." },
+  { icon: Repeat2, title: "Chuyển từ WordPress", text: "Nhập bài, ảnh, SEO, menu và redirect, có bước duyệt trước khi ghi." },
+  { icon: DatabaseZap, title: "API cho mọi frontend", text: "REST và GraphQL công khai, Markdown trả về HTML sạch." },
 ]
 
 /** Four short value props right under the hero. */

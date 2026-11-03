@@ -7,7 +7,7 @@ export function Logo({ className, priority = false }: { className?: string; prio
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)} translate="no">
       <Image src="/brand/kdigi-mark.svg" width={74} height={74} alt="" aria-hidden="true" priority={priority} className="size-8" unoptimized />
-      <span className="font-display text-[19px] font-bold tracking-tight text-foreground">KDIGI CMS</span>
+      <span className="font-display text-[19px] leading-none font-bold tracking-tight text-foreground">KDIGI CMS</span>
     </span>
   )
 }

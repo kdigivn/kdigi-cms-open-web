@@ -1,14 +1,14 @@
 import Image from "next/image"
 
 import { type ContentPage as Page, childPages } from "@/lib/content"
-import { breadcrumbTrail, relatedPages } from "@/lib/ia"
+import { breadcrumbTrail, relatedPages, sectionOf } from "@/lib/ia"
 import { breadcrumbs, faqPageFromEntries, graph, organization, pageNode, softwareApplication, website } from "@/lib/json-ld"
 import { publicImageSize } from "@/lib/markdown"
 import { ogImageFor } from "@/lib/seo"
 
 import { Container } from "./section"
 import { JsonLdScript } from "./json-ld-script"
-import { Breadcrumbs, CardGrid, DocsLink, FaqBlock, Toc, UpdatedLine } from "./page-parts"
+import { Breadcrumbs, CardGrid, DocsLink, FaqBlock, IconTile, Toc, UpdatedLine } from "./page-parts"
 
 type Props = {
   page: Page
@@ -16,7 +16,7 @@ type Props = {
   after?: React.ReactNode
 }
 
-const toCard = (page: Page) => ({ href: page.route, title: page.navTitle, description: page.description })
+const toCard = (page: Page) => ({ href: page.route, title: page.navTitle, description: page.description, icon: page.icon })
 
 /** The single layout for every repo page: breadcrumbs, H1, updated date, hero, TOC, body, hub listing, FAQ, docs link, related, JSON-LD. */
 export function ContentPageView({ page, after }: Props) {
@@ -59,7 +59,14 @@ export function ContentPageView({ page, after }: Props) {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_260px]">
           <article className="min-w-0">
             <header>
+              {page.icon ? (
+                <p className="mb-4 inline-flex items-center gap-2.5 rounded-full bg-primary/10 py-1 pr-4 pl-1 text-[13px] font-semibold text-primary-strong">
+                  <IconTile name={page.icon} className="size-8 rounded-full bg-card" />
+                  {sectionOf(`/${page.route.split("/")[1]}`)?.label ?? "KDIGI CMS"}
+                </p>
+              ) : null}
               <h1 className="t-display !text-[clamp(30px,4.4vw,46px)]">{page.h1}</h1>
+              {page.lead ? <p className="mt-4 text-[clamp(18px,2vw,21px)] leading-relaxed text-muted-foreground">{page.lead}</p> : null}
               <UpdatedLine updated={page.updated} className="mt-3 text-[14px] text-muted-foreground" />
             </header>
             {page.heroImage ? (

@@ -35,6 +35,8 @@ function autoHub(route: string): ContentPage | null {
     description: section.description,
     h1: section.h1,
     navTitle: section.label,
+    icon: null,
+    lead: null,
     primaryKeyword: null,
     updated: childPages(route).map((child) => child.updated).sort().at(-1) ?? "2026-11-03",
     published: null,

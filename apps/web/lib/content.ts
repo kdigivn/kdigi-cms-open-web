@@ -3,6 +3,7 @@ import path from "node:path"
 
 import matter from "gray-matter"
 
+import { type IconName, requireIconName } from "@/lib/icons"
 import { type Heading, htmlToText, renderInline, renderMarkdown } from "@/lib/markdown"
 
 /**
@@ -25,6 +26,10 @@ export type ContentPage = {
   h1: string
   /** Short label for nav, breadcrumbs, cards. Defaults to h1. */
   navTitle: string
+  /** lucide name from lib/icons.ts; shown on cards, mega menu and as the H1 badge. Null = default icon in lists, no badge. */
+  icon: IconName | null
+  /** One-line subtitle under the H1 (≤ 25 words). */
+  lead: string | null
   primaryKeyword: string | null
   updated: string
   published: string | null
@@ -75,8 +80,8 @@ export function routeOfFile(file: string): string {
   return parts.length ? `/${parts.join("/")}` : "/"
 }
 
-function parseFile(file: string): ContentPage | null {
-  const parsed = matter(readFileSync(file, "utf8"))
+export function parseContentSource(file: string, raw: string): ContentPage | null {
+  const parsed = matter(raw)
   const data = parsed.data as Raw
   if (data.draft === true) return null
   const route = routeOfFile(file)
@@ -102,6 +107,10 @@ function parseFile(file: string): ContentPage | null {
   const h1 = asString(data.h1) ?? title
   const heroAlt = asString(data.heroAlt) ?? ""
   if (heroImage && !heroAlt) fail(file, "heroImage requires heroAlt (Vietnamese alt text)")
+  const iconRaw = asString(data.icon)
+  const icon: IconName | null = iconRaw ? requireIconName(iconRaw, `content/pages: ${path.relative(process.cwd(), file)}: frontmatter "icon"`) : null
+  const lead = asString(data.lead)
+  if (lead && lead.split(/\s+/).length > 25) fail(file, `frontmatter "lead" has ${lead.split(/\s+/).length} words, the limit is 25`)
   return {
     route,
     file,
@@ -109,6 +118,8 @@ function parseFile(file: string): ContentPage | null {
     description,
     h1,
     navTitle: asString(data.navTitle) ?? h1,
+    icon,
+    lead,
     primaryKeyword: asString(data.primaryKeyword),
     updated,
     published: data.published === undefined ? null : isoDate(file, data.published, "published"),
@@ -140,7 +151,7 @@ export function getContentPages(): ContentPage[] {
   } catch {
     files = []
   }
-  const pages = files.flatMap((file) => parseFile(file) ?? [])
+  const pages = files.flatMap((file) => parseContentSource(file, readFileSync(file, "utf8")) ?? [])
   const seen = new Set<string>()
   for (const page of pages) {
     if (seen.has(page.route)) fail(page.file, `duplicate route ${page.route}`)

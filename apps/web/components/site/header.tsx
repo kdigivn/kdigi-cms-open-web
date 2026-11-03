@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Logo } from "@/components/brand/logo"
 import { ButtonLink } from "@/components/ui/button"
 import { getSiteNav } from "@/lib/ia"
+import { pageIcon } from "@/lib/icons"
 import { GITHUB_URL } from "@/lib/site"
 
 import { GitHubIcon } from "./icons"
@@ -15,10 +16,11 @@ const linkClass = "rounded-lg px-3 py-2 text-[15px] font-medium text-muted-foreg
 /** Sticky glass header with a CSS-only mega menu (hover and focus-within, no client JS). Entries come from the published pages. */
 export function Header() {
   const nav = getSiteNav()
+  const icons = Object.fromEntries(nav.groups.flatMap((group) => group.items.map((item) => [item.href, pageIcon(item.icon, "size-4")])))
   return (
     <header className="glass sticky top-3 z-40 mx-3 mt-3 h-[calc(var(--header-h)-12px)] rounded-full md:mx-auto md:w-[min(1180px,calc(100%-24px))]">
       <div className="flex h-full items-center gap-2 pr-2 pl-4 md:gap-4 md:pl-5">
-        <Link href="/" aria-label="KDIGI CMS, trang chủ" className="rounded-lg">
+        <Link href="/" aria-label="KDIGI CMS, trang chủ" className="flex shrink-0 items-center rounded-lg">
           <Logo priority />
         </Link>
         <nav aria-label="Chính" className="mx-auto hidden items-center gap-0.5 lg:flex">
@@ -39,9 +41,14 @@ export function Header() {
                 <ul className="grid gap-1 rounded-3xl border border-border bg-popover p-3 shadow-lg sm:grid-cols-2">
                   {group.items.map((item) => (
                     <li key={item.href}>
-                      <Link href={item.href} className="block rounded-xl px-3 py-2.5 hover:bg-accent">
-                        <span className="block text-[15px] font-semibold text-foreground">{item.label}</span>
-                        {item.description ? <span className="mt-0.5 line-clamp-2 block text-[13px] text-muted-foreground">{item.description}</span> : null}
+                      <Link href={item.href} className="flex items-start gap-3 rounded-xl px-3 py-2.5 hover:bg-accent">
+                        <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-primary-strong">
+                          {pageIcon(item.icon, "size-[18px]")}
+                        </span>
+                        <div className="min-w-0">
+                          <span className="block text-[15px] font-semibold text-foreground">{item.label}</span>
+                          {item.description ? <p className="mt-0.5 line-clamp-2 text-[13px] text-muted-foreground">{item.description}</p> : null}
+                        </div>
                       </Link>
                     </li>
                   ))}
@@ -69,7 +76,7 @@ export function Header() {
           <ButtonLink href={nav.cta.href} variant="brand" className="hidden md:inline-flex">
             {nav.cta.label}
           </ButtonLink>
-          <MobileNav nav={nav} />
+          <MobileNav nav={nav} icons={icons} />
         </div>
       </div>
     </header>

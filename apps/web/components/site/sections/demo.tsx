@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, History, Lock, Users } from "lucide-react"
 
 import { Illustration } from "@/components/brand/illustration"
 import { ButtonLink } from "@/components/ui/button"
@@ -8,9 +8,9 @@ import { CopyButton } from "../copy-button"
 import { Container } from "../section"
 
 const RULES = [
-  "Dùng chung cho mọi người, nên đừng nhập dữ liệu riêng tư.",
-  "Chỉ vào được website `demo`; không thấy website khác, không tạo được người dùng, không đổi được mật khẩu.",
-  "Nội dung được đặt lại mỗi đêm, bài bạn viết sẽ không giữ lại.",
+  { icon: Users, text: "Dùng chung cho mọi người, đừng nhập dữ liệu riêng tư." },
+  { icon: Lock, text: "Chỉ vào được website demo; không tạo được người dùng, không đổi được mật khẩu." },
+  { icon: History, text: "Nội dung được đặt lại mỗi đêm, bài bạn viết không được giữ lại." },
 ]
 
 function Credential({ label, value, copyLabel }: { label: string; value: string; copyLabel: string }) {
@@ -38,7 +38,7 @@ export function Demo() {
                 Thử ngay trên bản chạy thật, không cần cài gì
               </h2>
               <p className="mt-4 text-[17px] leading-relaxed text-muted-foreground">
-                Đăng nhập bằng tài khoản biên tập viên dưới đây để viết bài, tải ảnh lên, chỉnh SEO và xem phân quyền hoạt động.
+                Đăng nhập bằng tài khoản biên tập viên dưới đây để viết bài, tải ảnh và chỉnh SEO.
               </p>
 
               <dl className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -53,11 +53,13 @@ export function Demo() {
                 </ButtonLink>
               </div>
 
-              <ul className="mt-6 space-y-2 text-[15px] leading-relaxed text-muted-foreground">
+              <ul className="mt-6 space-y-3 text-[15px] leading-relaxed text-muted-foreground">
                 {RULES.map((rule) => (
-                  <li key={rule} className="flex gap-2.5">
-                    <span aria-hidden="true" className="mt-2.5 size-1.5 shrink-0 rounded-full bg-brand" />
-                    {rule}
+                  <li key={rule.text} className="flex items-start gap-3">
+                    <span className="inline-flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-primary-strong">
+                      <rule.icon className="size-4" aria-hidden="true" />
+                    </span>
+                    <span className="pt-1">{rule.text}</span>
                   </li>
                 ))}
               </ul>

@@ -4,13 +4,16 @@ import path from "node:path"
 import { imageSize } from "image-size"
 import MarkdownIt from "markdown-it"
 
+import { installVisualBlocks } from "@/lib/markdown-blocks"
+
 /**
  * One Markdown pipeline for repo pages (`content/pages/**`) and for CMS HTML post-processing helpers.
  * Output is server-rendered HTML; no client JS.
  *  - headings get stable ids (GitHub-style slug of the Vietnamese text, accents stripped) and are collected for the TOC
  *  - `![alt](/images/...)` gets real width/height from the file (no CLS), lazy loading and `decoding=async`; the first image of a page can opt in to eager via `heroEager`
  *  - tables are wrapped in a horizontal scroll container
- *  - `> **Tóm tắt nhanh**` blockquote -> key-facts box; `> **Lưu ý**` / `**Mẹo**` / `**Cảnh báo**` -> callouts
+ *  - `> **Tóm tắt nhanh**` blockquote -> key-facts box; `> **Lưu ý**` / `**Mẹo**` / `**Cảnh báo**` -> callouts (all with icons)
+ *  - visual blocks (`:::cards`, `:::steps`, `:::stats`, `:::check`, `:::pros-cons`), `## :icon: Heading`, yes/no table cells: see lib/markdown-blocks.ts
  *  - external links get rel="noopener"
  */
 export type Heading = { id: string; text: string; level: 2 | 3 }
@@ -83,6 +86,7 @@ function createMarkdown() {
     const img = `<img src="${md.utils.escapeHtml(src)}" alt="${alt}"${dims} loading="${eager ? "eager" : "lazy"}" decoding="async">`
     return title ? `<figure class="md-figure">${img}<figcaption>${md.utils.escapeHtml(title)}</figcaption></figure>` : img
   }
+  installVisualBlocks(md, "before-headings")
 
   md.core.ruler.push("headings-and-callouts", (state) => {
     const env = state.env as MarkdownEnv
@@ -115,6 +119,7 @@ function createMarkdown() {
     }
     return true
   })
+  installVisualBlocks(md, "after-headings")
 
   return md
 }

@@ -2,14 +2,14 @@
 
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
-import { useEffect, useId, useState } from "react"
+import { type ReactNode, useEffect, useId, useState } from "react"
 
 import { Button, ButtonLink } from "@/components/ui/button"
 import type { SiteNav } from "@/lib/ia"
 import { DEMO } from "@/lib/site"
 
-/** Phone/tablet menu: a full-width panel under the header. Esc and any link close it; the page behind does not scroll while it is open. */
-export function MobileNav({ nav }: { nav: SiteNav }) {
+/** Phone/tablet menu: a full-width panel under the header. Esc and any link close it; the page behind does not scroll while it is open. `icons` are server-rendered page icons keyed by href. */
+export function MobileNav({ nav, icons }: { nav: SiteNav; icons: Record<string, ReactNode> }) {
   const [open, setOpen] = useState(false)
   const panelId = useId()
 
@@ -57,7 +57,8 @@ export function MobileNav({ nav }: { nav: SiteNav }) {
                 <ul>
                   {group.items.map((item) => (
                     <li key={item.href}>
-                      <Link href={item.href} onClick={() => setOpen(false)} className="flex min-h-11 items-center rounded-xl pr-4 pl-8 text-[15px] text-muted-foreground hover:bg-accent">
+                      <Link href={item.href} onClick={() => setOpen(false)} className="flex min-h-11 items-center gap-3 rounded-xl pr-4 pl-6 text-[15px] text-muted-foreground hover:bg-accent">
+                        <span className="inline-flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-primary-strong">{icons[item.href]}</span>
                         {item.label}
                       </Link>
                     </li>

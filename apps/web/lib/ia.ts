@@ -1,4 +1,5 @@
 import { childPages, type ContentPage, getContentPage, getContentPages } from "@/lib/content"
+import { DEFAULT_ICON, type IconName } from "@/lib/icons"
 import { DOCS_URL } from "@/lib/site"
 
 /**
@@ -64,11 +65,11 @@ export const routeExists = (route: string): boolean =>
   CMS_FALLBACK_SLUGS.some((slug) => route === `/${slug}`) ||
   (sectionOf(route) !== undefined && childPages(route).length > 0)
 
-export type NavLink = { label: string; href: string; description?: string; external?: boolean }
+export type NavLink = { label: string; href: string; description?: string; external?: boolean; icon?: IconName }
 export type NavGroup = { label: string; href: string | null; items: NavLink[] }
 export type SiteNav = { groups: NavGroup[]; links: NavLink[]; cta: NavLink }
 
-const pageLink = (page: ContentPage): NavLink => ({ label: page.navTitle, href: page.route, description: page.description })
+const pageLink = (page: ContentPage): NavLink => ({ label: page.navTitle, href: page.route, description: page.description, icon: page.icon ?? DEFAULT_ICON })
 
 function sectionGroup(section: Section): NavGroup | null {
   const items = childPages(section.route).map(pageLink)

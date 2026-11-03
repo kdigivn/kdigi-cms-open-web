@@ -2,6 +2,9 @@
 title: "KDIGI CMS vs Strapi: khác nhau thế nào?"
 description: "So sánh KDIGI CMS và Strapi: mô hình nội dung, editor, API REST/GraphQL, SEO, tự host, giấy phép. Chọn Strapi khi nào và chọn KDIGI CMS khi nào."
 h1: "KDIGI CMS vs Strapi: so sánh cho developer và agency"
+navTitle: "KDIGI CMS vs Strapi"
+icon: boxes
+lead: "Strapi cho bạn công cụ tự dựng content type; KDIGI CMS có sẵn mô hình nội dung, SEO và đa website."
 primaryKeyword: "strapi"
 updated: 2026-11-03
 heroImage: /images/shots/api.webp
@@ -9,15 +12,15 @@ heroAlt: "Phản hồi REST API JSON của KDIGI CMS hiển thị danh sách bà
 schema: TechArticle
 faq:
   - q: "Strapi và KDIGI CMS khác nhau lớn nhất ở điểm nào?"
-    a: "Strapi là nền tảng headless đa dụng: bạn tự thiết kế content type bằng Content-Type Builder. KDIGI CMS là sản phẩm đã đóng gói sẵn cho website nội dung: đa website, Markdown, SEO/JSON-LD, redirect và pipeline chuyển từ WordPress. Strapi linh hoạt hơn về mô hình dữ liệu; KDIGI CMS nhanh hơn để có một hệ biên tập nhiều site."
+    a: "Strapi là nền tảng headless đa dụng, bạn tự dựng content type. KDIGI CMS đóng gói sẵn cho website nội dung: đa website, Markdown, SEO/JSON-LD, redirect, pipeline từ WordPress. Strapi linh hoạt hơn về dữ liệu."
   - q: "Strapi có hỗ trợ đa website (multi-tenant) sẵn không?"
-    a: "Tài liệu Strapi không mô tả khái niệm site hay tenant dựng sẵn; muốn nhiều website bạn thường tự mô hình hóa bằng trường quan hệ cùng policy hoặc middleware tùy biến, hoặc chạy nhiều instance. KDIGI CMS có collection Sites làm ranh giới tenant, với access predicate ép lọc theo site."
+    a: "Tài liệu Strapi không mô tả khái niệm site hay tenant dựng sẵn; thường bạn tự mô hình hóa bằng quan hệ và policy, hoặc chạy nhiều instance. KDIGI CMS có collection Sites làm ranh giới tenant."
   - q: "Giấy phép của Strapi và KDIGI CMS có khác nhau không?"
-    a: "Có. Strapi Community Edition dùng MIT Expat, nhưng phần mã trong thư mục ee/ (Enterprise Edition) thuộc giấy phép riêng. KDIGI CMS dùng MIT cho toàn bộ kho mã. Cả hai đều cho phép tự host; hãy đọc kỹ LICENSE của Strapi nếu cần tính năng Enterprise."
+    a: "Có. Strapi Community Edition dùng MIT Expat, nhưng mã trong thư mục ee/ (Enterprise) theo giấy phép riêng. KDIGI CMS dùng MIT cho toàn bộ kho mã. Hãy đọc LICENSE của Strapi nếu cần tính năng Enterprise."
   - q: "Có thể chuyển từ Strapi sang KDIGI CMS không?"
-    a: "Được, nhưng chưa có công cụ nhập tự động từ Strapi. Cách làm hợp lý là xuất dữ liệu qua REST API của Strapi, chuyển thành JSON theo cấu trúc collection của KDIGI CMS rồi nhập bằng REST hoặc Local API của Payload. Cần ánh xạ lại content type, media và quan hệ."
+    a: "Được, nhưng chưa có công cụ nhập tự động. Xuất dữ liệu qua REST API của Strapi, chuyển sang Markdown và nhập bằng REST hoặc Local API của Payload; cần ánh xạ lại content type, media và quan hệ."
   - q: "Strapi hay KDIGI CMS dễ dùng hơn cho người không biết code?"
-    a: "Với người biên tập, cả hai đều có giao diện quản trị trực quan. Với người dựng mô hình dữ liệu, Strapi có Content-Type Builder kéo thả không cần code. KDIGI CMS có mô hình nội dung dựng sẵn (bài viết, trang, sản phẩm, landing…); thay đổi cấu trúc cần sửa mã Payload và chạy migration."
+    a: "Với người biên tập, cả hai đều trực quan. Với người dựng mô hình dữ liệu, Strapi có Content-Type Builder không cần code; KDIGI CMS có mô hình dựng sẵn, đổi cấu trúc cần sửa mã Payload và migration."
 related:
   - /so-sanh/kdigi-cms-vs-payload
   - /so-sanh/kdigi-cms-vs-directus
@@ -27,120 +30,78 @@ related:
 docs: https://docs.opencms.kdigi.vn/api/rest-graphql/
 ---
 
-Strapi là nền tảng headless CMS đa dụng, nơi bạn tự thiết kế content type; KDIGI CMS là headless CMS đóng gói sẵn cho website nội dung, mạnh ở đa website, SEO và chuyển từ WordPress. Chọn Strapi nếu cần mô hình dữ liệu tự do; chọn KDIGI CMS nếu quản lý nhiều website nội dung bằng Markdown.
+Cả hai là headless CMS mã nguồn mở viết bằng TypeScript/JavaScript, có REST và GraphQL. Chọn Strapi khi cần mô hình dữ liệu tự do; chọn KDIGI CMS khi quản lý nhiều website nội dung bằng Markdown.
 
 > **Tóm tắt nhanh**
-> - **Giống nhau:** cả hai là headless CMS mã nguồn mở viết bằng TypeScript/JavaScript, có admin, REST + GraphQL, quản lý media, đa ngôn ngữ, phân quyền, chạy trên Node.js.
-> - **Khác biệt cốt lõi:** Strapi cho bạn *công cụ dựng content type*; KDIGI CMS cho bạn *mô hình nội dung và quy trình SEO đã dựng sẵn*.
-> - **Đa website:** KDIGI CMS có sẵn collection `sites` làm ranh giới tenant; Strapi không mô tả khái niệm này trong tài liệu.
-> - **Cơ sở dữ liệu:** KDIGI CMS chỉ dùng PostgreSQL; Strapi hỗ trợ SQLite, MySQL, MariaDB, PostgreSQL.
-> - **Giấy phép:** KDIGI CMS: MIT toàn bộ. Strapi: MIT cho Community Edition, thư mục `ee/` theo giấy phép Enterprise.
-> - **Trưởng thành:** Strapi là dự án lớn, đã có cộng đồng và hệ sinh thái plugin; KDIGI CMS mới phát hành bản 1.0.0 ngày 2026-11-03.
+> - Giống nhau: headless, mã nguồn mở, REST + GraphQL, chạy Node.js.
+> - Strapi: Content-Type Builder trực quan, mô hình dữ liệu tự do.
+> - KDIGI CMS: đa website, Markdown, SEO/JSON-LD dựng sẵn.
+> - CSDL: Strapi hỗ trợ 4 loại; KDIGI CMS chỉ PostgreSQL.
+> - Strapi có cộng đồng lớn; KDIGI CMS mới ra bản 1.0.0 (2026-11-03).
 
-## Hai cách tiếp cận khác nhau
+## :scale: Bảng so sánh
 
-**Strapi** định vị là nền tảng để *xây API nội dung*: bạn dùng Content-Type Builder thiết kế cấu trúc, Strapi sinh REST và GraphQL cho từng content type. Nó phục vụ rất nhiều loại dự án, từ website tới ứng dụng di động.
-
-**KDIGI CMS** được xây trên [Payload](/so-sanh/kdigi-cms-vs-payload) và hẹp hơn có chủ đích: mô hình nội dung cố định cho website (trang, bài viết, sản phẩm/dịch vụ, landing, chuyên mục/thẻ, tác giả, menu cây, FAQ, shortcode, redirect, bình luận, đánh giá sao), cộng với phần SEO, media, phân quyền và di chuyển dữ liệu đã dựng sẵn. Nó được tách ra từ một hệ thống đa website đã chạy production.
-
-## Bảng so sánh
-
-Thông tin Strapi lấy từ README và tài liệu chính thức (mục Nguồn, kiểm tra 2026-11-03). Số phiên bản có thể đã đổi, hãy xác nhận trên trang chính thức.
+Strapi theo README và tài liệu chính thức, kiểm tra 2026-11-03; số phiên bản có thể đã đổi.
 
 | Tiêu chí | KDIGI CMS | Strapi |
 | --- | --- | --- |
-| Định vị | CMS đa website, đóng gói sẵn cho nội dung | Headless CMS đa dụng, tự dựng content type |
-| Ngôn ngữ | TypeScript (Payload 3.90, Next.js 15) | TypeScript/JavaScript (Node.js) |
-| Giấy phép | MIT | MIT Expat cho Community Edition; thư mục `ee/` theo giấy phép Enterprise |
+| Định vị | Đóng gói sẵn cho website nội dung | Headless đa dụng |
+| Giấy phép | MIT | MIT Expat (Community); `ee/` giấy phép Enterprise |
 | Cơ sở dữ liệu | PostgreSQL | SQLite, MySQL, MariaDB, PostgreSQL |
-| API | REST + GraphQL (`/api`, `/api/graphql`) | REST + GraphQL (GraphQL là plugin) |
-| Thiết kế mô hình dữ liệu | Collection dựng sẵn; thay đổi bằng mã + migration | Content-Type Builder trực quan |
-| Đa website | Có sẵn: `sites`, trường `tenant`, gán người dùng theo site | Không có khái niệm dựng sẵn trong tài liệu |
-| Soạn thảo | Markdown (Milkdown), API trả HTML đã làm sạch | Trình soạn thảo rich text của Strapi |
-| Draft/Publish | Trạng thái xuất bản, hẹn giờ qua `publishedAt`, lịch sử phiên bản (tối đa 30/bản ghi) | Draft & Publish |
-| Đa ngôn ngữ | `vi` + `en`, có fallback | Internationalization (i18n) |
-| SEO | Mẫu kiểu RankMath, JSON-LD `@graph`, audit, gợi ý link nội bộ, redirect tự động | Qua plugin/tự xây trong content type |
-| Media | Thư viện có thư mục, sửa ảnh, nhập từ URL (chống SSRF); đĩa local hoặc R2 từng site | Media Library; provider upload |
-| Phân quyền | 4 vai trò theo site | Roles & Permissions |
-| Di chuyển từ WordPress | Pipeline có sẵn (8 phase, cổng duyệt, backup) | Không thấy trong tài liệu chính thức |
-| Docker | Có `Dockerfile` và Compose chính thức | Không có image chính thức, tự build (README Strapi) |
-| Bản quản lý (Cloud) | Không có; tự host | Strapi Cloud |
+| Dựng content type bằng giao diện | ✗ (sửa mã + migration) | ✓ |
+| GraphQL không cần plugin | ✓ | ✗ (GraphQL là plugin) |
+| Đa website dựng sẵn | ✓ | ✗ (tài liệu không nêu) |
+| SEO, JSON-LD, redirect trong lõi | ✓ | ✗ (plugin hoặc tự xây) |
+| Pipeline chuyển từ WordPress | ✓ | ✗ (không thấy trong tài liệu) |
+| Draft/Publish | ✓ | ✓ |
+| Soạn thảo | Markdown (Milkdown) | Rich text |
+| Docker chính thức | ✓ | ✗ (tự build, theo README Strapi) |
+| Dịch vụ quản lý | ✗ | ✓ Strapi Cloud |
 | Hệ sinh thái | Nhỏ, dự án mới | Lớn: plugin, template, cộng đồng |
 
-## Mô hình nội dung: tự do hay dựng sẵn
+> **Lưu ý** Request ẩn danh tới KDIGI CMS không tự giới hạn theo site; frontend phải thêm `where[tenant][equals]=<id>`. Xem [Headless API](/tinh-nang/headless-api).
 
-Điểm mạnh lớn nhất của Strapi là **Content-Type Builder**: không cần code, bạn tạo trường, quan hệ và component, rồi API xuất hiện ngay. Nếu dự án của bạn là danh bạ, sự kiện, LMS hay bất cứ thứ gì không phải "website nội dung", đây là ưu thế rõ ràng.
+## :layers: Khác biệt chính
 
-KDIGI CMS đổi sự tự do đó lấy thời gian: bài viết đã có slug, SEO, JSON-LD, chuyên mục, tác giả, FAQ, phiên bản và thùng rác. Thêm collection mới là việc của developer: khai báo trong `src/collections`, đăng ký vào plugin multi-tenant trong `payload.config.ts`, viết access predicate và migration (`pnpm payload migrate:create`). Xem [tài liệu kiến trúc](https://docs.opencms.kdigi.vn/tham-khao/architecture/).
+:::cards 3
+- :boxes: **Mô hình nội dung** Strapi: tự dựng bằng Builder. KDIGI CMS: collection sẵn, thêm mới cần mã và migration.
+- :layers: **Đa website** KDIGI CMS có `sites` làm ranh giới tenant; Strapi cần tự thiết kế. [Quản lý nhiều website](/tinh-nang/quan-ly-nhieu-website)
+- :search: **SEO** Mẫu tiêu đề, JSON-LD `@graph`, audit, redirect có sẵn. [SEO và JSON-LD](/tinh-nang/seo-json-ld)
+:::
 
-## Đa website
+## :check: Khi nào chọn mỗi bên
 
-Nếu bạn là agency hay doanh nghiệp nhiều thương hiệu, đây là khác biệt thực tế nhất. Trong KDIGI CMS mỗi website là một document `sites` với `siteKey`, `domain`, thương hiệu, mẫu SEO, menu, footer, tích hợp GA4/GTM và kho lưu trữ riêng tùy chọn. Nội dung gắn với đúng một site; thêm site không cần triển khai lại.
+### Chọn Strapi khi
 
-Với Strapi, bạn có hai hướng: chạy một instance cho mỗi website, hoặc tự mô hình hóa "site" bằng quan hệ rồi viết policy/middleware ép lọc dữ liệu. Cả hai đều khả thi; chỉ là bạn phải tự thiết kế và tự kiểm thử ranh giới phân quyền.
+:::cards 2
+- :boxes: **Không phải website nội dung thuần** Cần mô hình dữ liệu tùy ý: danh bạ, đặt chỗ, catalog.
+- :wand-sparkles: **Muốn dựng content type trực quan** Đội đã quen hệ sinh thái Strapi.
+- :database: **Cần MySQL, MariaDB hoặc SQLite** Thay vì chỉ PostgreSQL.
+- :cloud-upload: **Muốn dịch vụ quản lý sẵn** Strapi Cloud thay vì tự vận hành.
+:::
 
-Một lưu ý trung thực về KDIGI CMS: request ẩn danh **không** tự giới hạn theo site, frontend phải thêm `where[tenant][equals]=<id>`:
+### Chọn KDIGI CMS khi
 
-```bash
-curl 'https://cms.example.com/api/posts?where[tenant][equals]=1&where[status][equals]=published&locale=vi'
-```
+:::cards 2
+- :layers: **Nhiều website nội dung** Một admin, dữ liệu cách ly theo site.
+- :pen-line: **Viết bằng Markdown** Bài viết, trang, landing, dịch vụ.
+- :search: **Cần SEO sẵn** JSON-LD, redirect, mẫu tiêu đề, ưu tiên thị trường Việt Nam.
+- :server: **Chấp nhận PostgreSQL và tự host** Có cấu hình [Coolify và Docker Compose](/tu-host).
+:::
 
-Xem [quản lý nhiều website](/tinh-nang/quan-ly-nhieu-website) và [Headless API](/tinh-nang/headless-api).
+## :refresh-cw: Chuyển từ Strapi
 
-## SEO và nội dung tiếng Việt
+Chưa có công cụ nhập Strapi tự động, nên đây là quy trình thủ công. Bộ chuyển HTML → Markdown trong `src/importers` có thể tái sử dụng cho bước 3.
 
-KDIGI CMS có sẵn nhóm trường `seo` dùng chung cho trang, bài viết, sản phẩm, landing và chuyên mục: tiêu đề/mô tả có thể để trống để dùng mẫu cấp site (`%title% %sep% %sitename%`), Open Graph, robots, canonical, breadcrumbs và `seo.jsonLd.raw`. Điểm chấm SEO, kiểm tra SEO toàn site, gợi ý liên kết nội bộ, và redirect 301 khi đổi slug nằm trong lõi sản phẩm; bộ chấm điểm được tinh chỉnh cho độ dài nội dung tiếng Việt. AI SEO (DeepSeek) là tùy chọn.
+:::steps
+- :list-checks: **Kiểm kê content type** Ánh xạ: bài viết → `posts`, trang → `pages`, danh mục/thẻ → `taxonomies`, sản phẩm → `products`.
+- :building-2: **Dựng site đích** Tạo document `sites` (`siteKey`, `domain`), gán người dùng.
+- :cloud-upload: **Xuất dữ liệu** Lấy từ REST API của Strapi (kèm `populate`), đổi rich text sang Markdown.
+- :code: **Nhập** Qua REST (API key gắn đúng site, truyền `tenant`) hoặc Local API của Payload.
+- :link: **Media và redirect** Chuyển media, tạo `redirects` 301 cho URL cũ, cập nhật frontend.
+- :gauge: **Kiểm tra SEO** Chạy `GET /api/seo/audit` trước khi đổi DNS.
+:::
 
-Với Strapi, SEO là việc của content type và plugin bạn chọn; bạn có thể xây được tương đương, nhưng đó là công việc thiết kế riêng cho từng dự án. Xem [SEO và JSON-LD](/tinh-nang/seo-json-ld).
+## :link: Nguồn
 
-## Triển khai và vận hành
-
-| | KDIGI CMS | Strapi |
-| --- | --- | --- |
-| Chạy nhanh | `SEED_DEMO=true docker compose up --build` | `npx create-strapi@latest my-project` |
-| Yêu cầu tối thiểu | Docker (Compose); Node.js ≥ 20.9 khi phát triển | Node.js; một trong các CSDL được hỗ trợ |
-| Migration schema | Migration tường minh (`push: false`), tự chạy khi container khởi động | Đồng bộ schema theo content type và file migration |
-| Hosting quản lý | Không | Strapi Cloud |
-
-KDIGI CMS đi kèm cấu hình [Coolify và Docker Compose](/tu-host), healthcheck `/api/health` và tích hợp OpenTelemetry tùy chọn.
-
-## Khi nào chọn Strapi?
-
-1. Dự án **không phải website nội dung thuần**: cần mô hình dữ liệu tùy ý (danh bạ, đặt chỗ, catalog đặc thù).
-2. Đội của bạn muốn **thiết kế content type trực quan** và đã quen hệ sinh thái Strapi.
-3. Bạn cần cơ sở dữ liệu **MySQL/MariaDB/SQLite** thay vì PostgreSQL.
-4. Bạn muốn **dịch vụ quản lý sẵn** (Strapi Cloud) thay vì tự vận hành.
-5. Cần plugin, template và cộng đồng lớn.
-
-## Khi nào chọn KDIGI CMS?
-
-1. Bạn quản lý **nhiều website nội dung** và muốn một admin duy nhất, dữ liệu cách ly theo site.
-2. Nội dung là **bài viết, trang, landing, dịch vụ** và bạn muốn viết bằng **Markdown**.
-3. Bạn cần **SEO/JSON-LD, redirect, mẫu tiêu đề** có sẵn, ưu tiên thị trường Việt Nam.
-4. Bạn đang **rời WordPress** và cần pipeline nhập có kiểm soát.
-5. Bạn chấp nhận PostgreSQL và tự host.
-
-## Lộ trình chuyển từ Strapi sang KDIGI CMS
-
-Chưa có công cụ nhập Strapi tự động trong KDIGI CMS, nên đây là quy trình thủ công nhưng rõ ràng:
-
-1. **Kiểm kê content type** của Strapi và ánh xạ sang collection tương ứng: bài viết → `posts`, trang → `pages`, danh mục/thẻ → `taxonomies`, sản phẩm/dịch vụ → `products`.
-2. **Dựng site đích:** tạo document `sites` (`siteKey`, `domain`), gán người dùng.
-3. **Xuất dữ liệu** từ REST API của Strapi (kèm `populate`), chuyển phần rich text/HTML sang Markdown.
-4. **Nhập** qua REST (có API key của người dùng gắn đúng site, truyền `tenant` rõ ràng) hoặc Local API của Payload.
-5. **Chuyển media,** tạo `redirects` 301 cho URL cũ, rồi cập nhật frontend để gọi API KDIGI CMS.
-6. **Kiểm tra SEO** bằng `GET /api/seo/audit` trước khi đổi DNS.
-
-Phần cấu trúc và bộ chuyển HTML → Markdown dùng chung trong `src/importers` của KDIGI CMS có thể tái sử dụng cho bước 3.
-
-## Nguồn
-
-Kiểm tra ngày 2026-11-03:
-
-- Strapi, kho mã và README: <https://github.com/strapi/strapi>
-- Strapi, giấy phép (MIT Expat và Enterprise `ee/`): <https://github.com/strapi/strapi/blob/main/LICENSE>
-- Strapi Docs, "Database configuration" (SQLite, MySQL, MariaDB, PostgreSQL): <https://docs.strapi.io/cms/configurations/database>
-- Strapi Docs, trang chủ tài liệu: <https://docs.strapi.io>
-- Strapi Cloud: <https://strapi.io/cloud>
-
-KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), CHANGELOG bản 1.1.0 (2026-11-03). Sản phẩm thay đổi theo thời gian; hãy đối chiếu trang chính thức trước khi quyết định.
+Strapi, kiểm tra 2026-11-03: [kho mã](https://github.com/strapi/strapi), [giấy phép](https://github.com/strapi/strapi/blob/main/LICENSE), [cấu hình CSDL](https://docs.strapi.io/cms/configurations/database), [tài liệu](https://docs.strapi.io), [Strapi Cloud](https://strapi.io/cloud). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), CHANGELOG 1.1.0 (2026-11-03).

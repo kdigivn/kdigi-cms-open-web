@@ -2,14 +2,17 @@ import { ArrowRight, Check } from "lucide-react"
 
 import { ButtonLink } from "@/components/ui/button"
 import { getContentPage } from "@/lib/content"
+import type { IconName } from "@/lib/icons"
 import { docsLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
 import { Container } from "../section"
+import { IconTile } from "../page-parts"
 import { Shot, type ShotName } from "../shot"
 
 type Feature = {
   id: string
+  icon: IconName
   eyebrow: string
   title: string
   text: string
@@ -23,9 +26,10 @@ type Feature = {
 const FEATURES: Feature[] = [
   {
     id: "nhieu-website",
+    icon: "boxes",
     eyebrow: "Nhiều website",
     title: "Quản lý nhiều website mà nội dung không lẫn vào nhau",
-    text: "Mỗi website là một site riêng, có tên miền, ngôn ngữ và thương hiệu riêng. Cả đội làm việc trong cùng một trang quản trị.",
+    text: "Mỗi website có tên miền, ngôn ngữ và thương hiệu riêng, cùng một trang quản trị.",
     points: [
       "Nội dung, menu và người dùng tách theo từng site",
       "Mỗi site khai báo tên miền của frontend để CMS báo làm mới khi có thay đổi",
@@ -38,9 +42,10 @@ const FEATURES: Feature[] = [
   },
   {
     id: "soan-thao",
+    icon: "pen-line",
     eyebrow: "Soạn thảo",
     title: "Soạn bài bằng Markdown ngay trong trình quản trị",
-    text: "Trình soạn thảo Milkdown hiển thị kết quả khi bạn gõ. Bài lưu dạng Markdown, API trả về HTML đã làm sạch.",
+    text: "Trình soạn thảo Milkdown hiển thị kết quả khi bạn gõ. API trả về HTML đã làm sạch.",
     points: [
       "Shortcode dùng lại các đoạn nội dung giữa nhiều bài",
       "Bản nháp, lên lịch đăng và lịch sử phiên bản",
@@ -53,9 +58,10 @@ const FEATURES: Feature[] = [
   },
   {
     id: "seo",
+    icon: "search",
     eyebrow: "SEO",
     title: "SEO và JSON-LD có sẵn, không cần cài plugin",
-    text: "Tiêu đề, mô tả và Open Graph sinh theo mẫu bạn đặt. Dữ liệu có cấu trúc JSON-LD được tạo mỗi khi bài lưu.",
+    text: "Tiêu đề, mô tả và Open Graph sinh theo mẫu; JSON-LD được tạo mỗi khi bài lưu.",
     points: [
       "Đổi đường dẫn bài thì CMS tự tạo redirect 301",
       "Ảnh Open Graph lấy từ ảnh đại diện hoặc ảnh mặc định của site",
@@ -68,9 +74,10 @@ const FEATURES: Feature[] = [
   },
   {
     id: "media",
+    icon: "image",
     eyebrow: "Thư viện media",
     title: "Thư viện media gọn gàng, lưu ở nơi bạn chọn",
-    text: "Tải ảnh lên một lần, dùng lại ở mọi bài. Mỗi website chọn nơi lưu riêng.",
+    text: "Tải ảnh lên một lần, dùng ở mọi bài. Mỗi website chọn nơi lưu riêng.",
     points: [
       "Lưu trên ổ đĩa của máy chủ, hoặc Cloudflare R2 theo từng website",
       "Văn bản thay thế (alt) cho từng ảnh",
@@ -83,9 +90,10 @@ const FEATURES: Feature[] = [
   },
   {
     id: "phan-quyen",
+    icon: "shield-check",
     eyebrow: "Phân quyền",
     title: "Phân quyền theo vai trò và theo từng website",
-    text: "Bốn vai trò, mỗi người chỉ thấy và sửa được website được giao.",
+    text: "Bốn vai trò; mỗi người chỉ thấy và sửa website được giao.",
     points: [
       "Super-admin, admin, editor và author với quyền khác nhau",
       "Người dùng gắn với danh sách website; website khác không hiện ra",
@@ -98,9 +106,10 @@ const FEATURES: Feature[] = [
   },
   {
     id: "api",
+    icon: "code",
     eyebrow: "Headless",
     title: "REST và GraphQL cho bất kỳ frontend nào",
-    text: "Website của bạn gọi API công khai, không cần đăng nhập, và chỉ nhận nội dung đã xuất bản.",
+    text: "API công khai, không cần đăng nhập, chỉ trả nội dung đã xuất bản.",
     points: [
       "Lọc theo website, ngôn ngữ, trang và sắp xếp",
       "Nội dung Markdown trả về HTML đã làm sạch",
@@ -142,7 +151,10 @@ export function Features() {
           {FEATURES.map((feature, index) => (
             <article key={feature.id} id={feature.id} className="grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
               <div className={cn(index % 2 === 1 && "lg:order-2")}>
-                <p className="eyebrow mb-3">{feature.eyebrow}</p>
+                <div className="mb-4 flex items-center gap-3">
+                  <IconTile name={feature.icon} className="size-12 rounded-2xl" />
+                  <p className="eyebrow">{feature.eyebrow}</p>
+                </div>
                 <h3 className="font-display text-[26px] leading-tight font-bold tracking-tight md:text-[30px]">{feature.title}</h3>
                 <p className="mt-3 text-[17px] leading-relaxed text-muted-foreground">{feature.text}</p>
                 <ul className="mt-5 space-y-2.5">
