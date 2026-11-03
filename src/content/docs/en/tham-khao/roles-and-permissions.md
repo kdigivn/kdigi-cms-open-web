@@ -114,7 +114,7 @@ Secrets are written through the write-only editors in the Sites form, which call
 
 | Collection | Read (anonymous) | Read (authenticated) | Create | Update | Delete |
 | --- | --- | --- | --- | --- | --- |
-| `users` | none | super-admin all; others own document only | super-admin | super-admin any; others own document | super-admin |
+| `users` | none | super-admin all; others own document only | super-admin | super-admin any; others own document, but `role` and `tenants` are super-admin-only (writes by others are dropped) | super-admin |
 | `sites` | public | public rule; plugin narrows non-super-admin to assigned sites | super-admin | super-admin, admin (plugin narrows to assigned sites); `r2` group super-admin only | super-admin |
 | `media` | public | public | any user with ≥1 site (`hasAnyTenantOrSuperAdmin`) | site-scoped | site-scoped |
 | `payload-folders` | none | site-scoped | `hasAnyTenantOrSuperAdmin` | site-scoped | site-scoped |
@@ -140,7 +140,7 @@ Notes:
 1. A **super-admin** creates the user in Users and picks a `role` (default `editor`).
 2. On the same document the super-admin adds one row per site to the `tenants` array (label "Website" in the admin). The array is added by the multi-tenant plugin; do not redeclare it.
 3. The user then sees only those sites in the admin site selector and in API reads/writes. A user with no rows has no access to any site-scoped document.
-4. Non-super-admins can edit only their own user document (for example to change their password) and cannot change their own `tenants`.
+4. Non-super-admin users can edit their own account (password, API key) but cannot change their own `role` or `tenants`: the `role` field has `access.update` super-admin-only and the plugin's `tenantsArrayField.arrayFieldAccess.update` is super-admin-only (`src/payload.config.ts`). Regression: `src/collections/users-self-escalation.integration.test.ts`.
 
 A site-scoped create through the REST API must carry `tenant` in the body: the field's default comes from the admin `payload-tenant` cookie, which API clients do not have. The plugin validates that the submitted site is one the user is assigned to (super-admins may use any).
 
