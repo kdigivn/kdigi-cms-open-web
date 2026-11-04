@@ -21,6 +21,19 @@ export const DEMO = {
   password: "Demo@2026",
 } as const
 
+/**
+ * Sample websites: the same CMS site (`showcase`) rendered by six frameworks with one shared UI.
+ * Hosted on Cloudflare Workers, noindex; source in the private repo kdigivn/kdigi-cms-showcase.
+ */
+export const SHOWCASE_SITES = [
+  { framework: "Next.js", url: "https://kcms-nextjs.system-efc.workers.dev" },
+  { framework: "Astro", url: "https://kcms-astro.system-efc.workers.dev" },
+  { framework: "SvelteKit", url: "https://kcms-sveltekit.system-efc.workers.dev" },
+  { framework: "Nuxt", url: "https://kcms-nuxt.system-efc.workers.dev" },
+  { framework: "React", url: "https://kcms-react.system-efc.workers.dev" },
+  { framework: "Angular", url: "https://kcms-angular.system-efc.workers.dev" },
+] as const
+
 export const docsLinks = {
   home: DOCS_URL,
   quickstart: `${DOCS_URL}/huong-dan/bat-dau-nhanh/`,

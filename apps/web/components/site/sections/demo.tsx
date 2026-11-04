@@ -2,7 +2,7 @@ import { ArrowUpRight, History, Lock, Users } from "lucide-react"
 
 import { Illustration } from "@/components/brand/illustration"
 import { ButtonLink } from "@/components/ui/button"
-import { DEMO } from "@/lib/site"
+import { DEMO, SHOWCASE_SITES } from "@/lib/site"
 
 import { CopyButton } from "../copy-button"
 import { Container } from "../section"
@@ -63,6 +63,23 @@ export function Demo() {
                   </li>
                 ))}
               </ul>
+
+              <div className="mt-8 border-t border-border pt-6">
+                <h3 className="font-semibold">Website mẫu: sáu framework, cùng một nội dung</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+                  Cùng một site trong KDIGI CMS, đọc qua REST API và dựng bằng sáu framework với giao diện như nhau.
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {SHOWCASE_SITES.map((site) => (
+                    <li key={site.framework}>
+                      <ButtonLink href={site.url} variant="outline" external>
+                        {site.framework}
+                        <ArrowUpRight aria-hidden="true" />
+                      </ButtonLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             <div className="relative mx-auto grid w-full max-w-[420px] place-items-center">

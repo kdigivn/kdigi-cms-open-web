@@ -21,6 +21,8 @@ faq:
     a: "Với vai trò editor: soạn Markdown, tải và sửa ảnh, chỉnh SEO và xem JSON-LD, quản lý menu, FAQ, redirect, lịch nội dung. Tạo site, người dùng và cấu hình lưu trữ thuộc về super-admin."
   - q: "Tôi muốn tự chạy bản demo trên máy mình thì làm thế nào?"
     a: "Clone kdigivn/kdigi-cms-open rồi chạy SEED_DEMO=true docker compose up --build, mở http://localhost:3000/admin và tạo tài khoản đầu tiên (tự động là super-admin)."
+  - q: "Có website mẫu nào dựng từ KDIGI CMS để xem không?"
+    a: "Có sáu website mẫu bằng Next.js, Astro, SvelteKit, Nuxt, React và Angular. Cả sáu đọc cùng một site trong KDIGI CMS qua REST API, giao diện như nhau; danh sách ở mục Website mẫu của trang này."
 related:
   - /tinh-nang
   - /tu-host
@@ -94,6 +96,21 @@ Lệnh `pnpm demo:reset` (bản 1.1.0) làm đúng bốn việc:
 :::
 
 Muốn bật cho site công khai của riêng bạn: [cấu hình tài khoản demo](https://github.com/kdigivn/kdigi-cms-open/blob/main/docs/configuration.md).
+
+## :layout-template: Website mẫu: sáu framework, cùng một nội dung
+
+Sáu website dưới đây cùng đọc site `showcase` trong KDIGI CMS qua REST API công khai, dùng chung một giao diện. Chỉ khác framework dựng trang; sửa bài trong CMS thì cả sáu cập nhật sau vài giây nhờ webhook.
+
+:::cards 3
+- :code: **Next.js** App Router, render trên Cloudflare Workers. [Mở website](https://kcms-nextjs.system-efc.workers.dev).
+- :rocket: **Astro** Astro SSR trên Cloudflare Workers. [Mở website](https://kcms-astro.system-efc.workers.dev).
+- :zap: **SvelteKit** SvelteKit SSR trên Cloudflare Workers. [Mở website](https://kcms-sveltekit.system-efc.workers.dev).
+- :layers: **Nuxt** Nuxt với Nitro trên Cloudflare Workers. [Mở website](https://kcms-nuxt.system-efc.workers.dev).
+- :boxes: **React** React Router, render trên Cloudflare Workers. [Mở website](https://kcms-react.system-efc.workers.dev).
+- :package: **Angular** Angular SSR trên Cloudflare Workers. [Mở website](https://kcms-angular.system-efc.workers.dev).
+:::
+
+Mỗi website có trang chủ, blog, chuyên mục, trang tĩnh, landing page, hai ngôn ngữ `vi`/`en`, redirect 301 và trang 404 lấy từ CMS. Muốn tự dựng website kiểu này: [hướng dẫn API](https://docs.opencms.kdigi.vn/api/rest-graphql/).
 
 ## :terminal: Chạy demo trên máy bạn
 
