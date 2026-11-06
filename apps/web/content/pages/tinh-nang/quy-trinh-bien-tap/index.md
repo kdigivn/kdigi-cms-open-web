@@ -25,7 +25,7 @@ related:
   - /tinh-nang/trinh-soan-thao-markdown
   - /tinh-nang/seo-json-ld
   - /thuc-hanh-tot
-docs: "https://docs.opencms.kdigi.vn/en/tham-khao/collections/"
+docs: "https://docs.cms.kdigi.vn/en/tham-khao/collections/"
 ---
 
 Author gửi bản nháp, editor trở lên duyệt và đăng. Bảng điều khiển cho biết việc cần làm, lịch nội dung giúp lên kế hoạch theo ngày, còn phiên bản và thùng rác giúp không mất bài.

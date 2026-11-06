@@ -1,4 +1,4 @@
-# Art direction — opencms.kdigi.vn
+# Art direction — cms.kdigi.vn
 
 Một phong cách duy nhất cho mọi minh hoạ trên website: **3D clay + kính mờ (frosted glass), góc isometric**, khớp với hero hiện có và với `khoi-design-system/design-system/README.md` ("Minh hoạ 3D clay + glass, render sẵn, không 3D realtime"; tạo bằng Codex `image_gen` qua `codex exec`, nền chroma phẳng rồi tách nền bằng script).
 
@@ -23,7 +23,7 @@ Một phong cách duy nhất cho mọi minh hoạ trên website: **3D clay + kí
 
 - Nên: một góc nhìn (3/4 isometric ~35°), một hướng sáng (trên-trái), thẻ kính để trống (thanh mờ thay chữ), vật thể gắn đúng chủ đề trang.
 - Không: chữ, số, logo, thương hiệu bên thứ ba, người thật, khuôn mặt, UI giả mạo giao diện sản phẩm, ảnh stock, đổ bóng/sàn do model vẽ, chữ K nguyên vẹn, số liệu, biểu tượng giải thưởng.
-- Ảnh chụp sản phẩm thật nằm ở `public/images/shots/` và luôn là chụp màn hình thật từ app.opencms.kdigi.vn, không dùng ảnh AI thay thế.
+- Ảnh chụp sản phẩm thật nằm ở `public/images/shots/` và luôn là chụp màn hình thật từ app.cms.kdigi.vn, không dùng ảnh AI thay thế.
 
 ## Prompt template
 

@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.7
-# docs.opencms.kdigi.vn: static docs site (Astro + Starlight build -> nginx). Build context = repository ROOT
+# docs.cms.kdigi.vn: static docs site (Astro + Starlight build -> nginx). Build context = repository ROOT
 # (pnpm workspace), Dockerfile path = apps/docs/Dockerfile.
 #
 # Coolify: build pack Dockerfile, base directory /, port 80. "Include Source Commit in Build" fills SOURCE_COMMIT (-> /version.txt).

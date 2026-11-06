@@ -25,7 +25,7 @@ related:
   - /tinh-nang/thu-vien-media
   - /tu-host
   - /so-sanh/kdigi-cms-vs-wordpress
-docs: https://docs.opencms.kdigi.vn/huong-dan/nhieu-website/
+docs: https://docs.cms.kdigi.vn/huong-dan/nhieu-website/
 ---
 
 Mỗi website là một document trong collection **Sites** (`siteKey` + `domain`), và mọi nội dung thuộc đúng một site qua trường `tenant`. Một bản cài, một cơ sở dữ liệu phục vụ nhiều frontend.

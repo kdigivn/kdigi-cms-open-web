@@ -25,7 +25,7 @@ related:
   - /tinh-nang/phan-quyen-nguoi-dung
   - /tu-host
   - /thuc-hanh-tot/hieu-nang-va-cache
-docs: "https://docs.opencms.kdigi.vn/huong-dan/thu-vien-media/"
+docs: "https://docs.cms.kdigi.vn/huong-dan/thu-vien-media/"
 ---
 
 Thư viện media lưu ảnh, video và tài liệu theo từng website; mỗi file bắt buộc có `alt`. Mặc định lưu trên đĩa local, mỗi site có thể chuyển sang Cloudflare R2 riêng.
@@ -85,7 +85,7 @@ Endpoint `POST /api/media/from-url` có lớp chống SSRF:
 
 Sao lưu **cả** database và file media. Docker: lưu volume `media_data`; R2: bật versioning hoặc `rclone sync`. Hướng dẫn ở [tự host](/tu-host).
 
-> **Cảnh báo** `docker compose down -v` xóa volume media. Chưa có lệnh di chuyển sẵn từ local sang R2; xem [tài liệu](https://docs.opencms.kdigi.vn/huong-dan/thu-vien-media/).
+> **Cảnh báo** `docker compose down -v` xóa volume media. Chưa có lệnh di chuyển sẵn từ local sang R2; xem [tài liệu](https://docs.cms.kdigi.vn/huong-dan/thu-vien-media/).
 
 ## :list-checks: Thực hành tốt
 

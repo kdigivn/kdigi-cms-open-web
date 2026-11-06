@@ -2,9 +2,9 @@
 
 const trimSlash = (url: string): string => url.replace(/\/+$/, "")
 
-export const SITE_URL = trimSlash(process.env.NEXT_PUBLIC_SITE_URL || "https://opencms.kdigi.vn")
-export const DOCS_URL = trimSlash(process.env.NEXT_PUBLIC_DOCS_URL || "https://docs.opencms.kdigi.vn")
-export const APP_URL = trimSlash(process.env.NEXT_PUBLIC_APP_URL || "https://app.opencms.kdigi.vn")
+export const SITE_URL = trimSlash(process.env.NEXT_PUBLIC_SITE_URL || "https://cms.kdigi.vn")
+export const DOCS_URL = trimSlash(process.env.NEXT_PUBLIC_DOCS_URL || "https://docs.cms.kdigi.vn")
+export const APP_URL = trimSlash(process.env.NEXT_PUBLIC_APP_URL || "https://app.cms.kdigi.vn")
 
 export const GITHUB_URL = "https://github.com/kdigivn/kdigi-cms-open"
 export const KDIGI_URL = "https://kdigi.vn"
@@ -17,7 +17,7 @@ export const SITE_DESCRIPTION =
 /** Public demo account (role editor, can only touch the `demo` site; content is reset nightly). */
 export const DEMO = {
   adminUrl: `${APP_URL}/admin`,
-  email: "demo@opencms.kdigi.vn",
+  email: "demo@cms.kdigi.vn",
   password: "Demo@2026",
 } as const
 

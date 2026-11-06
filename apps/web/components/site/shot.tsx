@@ -12,7 +12,7 @@ export type ShotName = keyof typeof manifest
 export function Shot({
   name,
   alt,
-  url = "app.opencms.kdigi.vn/admin",
+  url = "app.cms.kdigi.vn/admin",
   priority = false,
   sizes,
   className,

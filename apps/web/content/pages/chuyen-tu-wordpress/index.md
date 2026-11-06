@@ -27,7 +27,7 @@ related:
   - /so-sanh/kdigi-cms-vs-wordpress
   - /tinh-nang/seo-json-ld
   - /demo
-docs: https://docs.opencms.kdigi.vn/wordpress/di-chuyen-tu-wordpress/
+docs: https://docs.cms.kdigi.vn/wordpress/di-chuyen-tu-wordpress/
 ---
 
 KDIGI CMS chuyển bài viết, trang, media, menu, SEO Yoast/RankMath và redirect 301 từ mọi site WordPress. Bạn duyệt dữ liệu ở dạng JSON, khóa cổng review rồi mới ghi vào CMS.

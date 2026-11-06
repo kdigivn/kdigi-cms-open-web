@@ -27,7 +27,7 @@ related:
   - /thuc-hanh-tot/cau-truc-noi-dung
   - /chuyen-tu-wordpress
   - /thuc-hanh-tot/hieu-nang-va-cache
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/
 ---
 
 Mẫu tiêu đề và mô tả đặt ở cấp site; từng bài chỉ ghi đè khi cần. Breadcrumb, JSON-LD và redirect khi đổi slug do CMS tự sinh mỗi lần lưu.

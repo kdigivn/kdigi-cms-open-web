@@ -21,7 +21,7 @@ related:
   - /chuyen-tu-wordpress
   - /tu-host
   - /demo
-docs: https://docs.opencms.kdigi.vn/tham-khao/overview/
+docs: https://docs.cms.kdigi.vn/tham-khao/overview/
 ---
 
 Thực hành tốt xoay quanh năm nhóm việc: cấu trúc nội dung, SEO on-page, bảo mật, hiệu năng và sao lưu. KDIGI CMS chỉ là admin và API, nên cache và CDN thuộc về frontend và hạ tầng của bạn.

@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "description": "Documentation website for KDIGI CMS (https://docs.opencms.kdigi.vn), built with Astro Starlight",
+  "description": "Documentation website for KDIGI CMS (https://docs.cms.kdigi.vn), built with Astro Starlight",
   "scripts": {
     "predev": "node scripts/copy-mermaid.mjs",
     "dev": "astro dev",

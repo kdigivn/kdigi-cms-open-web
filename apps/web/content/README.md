@@ -1,4 +1,4 @@
-# opencms.kdigi.vn authoring contract (SiteFrame)
+# cms.kdigi.vn authoring contract (SiteFrame)
 
 Repo: /root/khoi-workspace/kdigi/kdigi-cms-open-web/apps/web. Writers ONLY create/edit files under `apps/web/content/pages/**`. No code edits.
 
@@ -29,7 +29,7 @@ faq:                                                  # optional; rendered visib
   - q: "KDIGI CMS có hỗ trợ JSON-LD không?"
     a: "Có. Mỗi bài có …. Inline Markdown (link, **đậm**, `code`) được phép."
 related: [/tinh-nang/thu-vien-media, /thuc-hanh-tot/seo-on-page]   # optional routes; siblings are auto-added up to 4
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/   # optional docs link button (feature pages SHOULD have it)
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/   # optional docs link button (feature pages SHOULD have it)
 order: 3                                              # optional sort among siblings (hub listing / nav), lower first
 group: "Nội dung"                                     # optional grouping heading inside a hub listing
 draft: true                                           # optional: file is ignored entirely (not routed, not in sitemap)
@@ -44,7 +44,7 @@ draft: true                                           # optional: file is ignore
 - Tables: GFM pipe tables (auto horizontal scroll). Ordered how-to steps: `1. 2. 3.` lists. Code: fenced blocks with a language.
 - Images: `![mô tả tiếng Việt cụ thể](/images/shots/editor.webp "chú thích tùy chọn")` — alt is REQUIRED (empty alt fails the build), file must exist under `public/` (width/height are auto-filled, lazy-loaded). A title string becomes the visible caption.
   - Real product shots: `/images/shots/<name>.webp`; art: `/images/art/<page-key>-hero.webp`, `-sec1.webp`; OG: `/images/og/<key>.jpg`; thumbs `/images/thumbs/…`.
-- Links: internal links as root paths (`/tinh-nang/seo-json-ld`) — they must resolve (check:seo fails on broken ones). Docs links as full `https://docs.opencms.kdigi.vn/...` URLs. ≥ 3 contextual internal links per page.
+- Links: internal links as root paths (`/tinh-nang/seo-json-ld`) — they must resolve (check:seo fails on broken ones). Docs links as full `https://docs.cms.kdigi.vn/...` URLs. ≥ 3 contextual internal links per page.
 - Raw HTML is NOT allowed (escaped). No JSX/MDX components.
 - Language Vietnamese; every product claim must be verifiable in /root/khoi-workspace/kdigi/kdigi-cms-open.
 
@@ -103,9 +103,9 @@ heroAlt: "Tab Trang & SEO của website trong trang quản trị KDIGI CMS"
 schema: TechArticle
 faq:
   - q: "KDIGI CMS có tự sinh JSON-LD không?"
-    a: "Có. Trang xuất bản ra đồ thị JSON-LD (Organization, WebSite, Article…). Chi tiết xem [tài liệu SEO](https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/)."
+    a: "Có. Trang xuất bản ra đồ thị JSON-LD (Organization, WebSite, Article…). Chi tiết xem [tài liệu SEO](https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/)."
 related: [/tinh-nang/headless-api, /thuc-hanh-tot/seo-on-page]
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/
 ---
 
 KDIGI CMS cho phép nhập tiêu đề SEO, mô tả và ảnh OG cho từng bài, rồi tự xuất JSON-LD ra API để website của bạn in vào trang. Bạn không cần plugin SEO riêng.

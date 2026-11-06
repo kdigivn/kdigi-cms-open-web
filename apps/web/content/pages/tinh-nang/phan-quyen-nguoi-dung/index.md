@@ -25,7 +25,7 @@ related:
   - /tinh-nang/headless-api
   - /thuc-hanh-tot/bao-mat-va-phan-quyen
   - /demo
-docs: "https://docs.opencms.kdigi.vn/huong-dan/vai-tro-phan-quyen/"
+docs: "https://docs.cms.kdigi.vn/huong-dan/vai-tro-phan-quyen/"
 ---
 
 Vai trò xếp cộng dồn: `super-admin` > `admin` > `editor` > `author`. Ngoài super-admin, mọi người chỉ truy cập được các website được gán. Ranh giới nằm ở access predicate phía máy chủ.
@@ -105,4 +105,4 @@ Liệt kê email trong `DEMO_ACCOUNT_EMAILS`, cấp vai trò `editor` và một 
 - Mỗi frontend hoặc tích hợp một người dùng và API key riêng
 :::
 
-Xem cách áp dụng ở [bảo mật và phân quyền](/thuc-hanh-tot/bao-mat-va-phan-quyen) hoặc [tài liệu vai trò](https://docs.opencms.kdigi.vn/huong-dan/vai-tro-phan-quyen/).
+Xem cách áp dụng ở [bảo mật và phân quyền](/thuc-hanh-tot/bao-mat-va-phan-quyen) hoặc [tài liệu vai trò](https://docs.cms.kdigi.vn/huong-dan/vai-tro-phan-quyen/).

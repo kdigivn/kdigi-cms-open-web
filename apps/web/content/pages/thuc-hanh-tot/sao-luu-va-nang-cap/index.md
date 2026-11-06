@@ -23,7 +23,7 @@ related:
   - /tinh-nang/thu-vien-media
   - /ma-nguon-mo
   - /phat-hanh
-docs: https://docs.opencms.kdigi.vn/tham-khao/upgrading/
+docs: https://docs.cms.kdigi.vn/tham-khao/upgrading/
 ---
 
 Sao lưu nghĩa là lưu **cả** PostgreSQL và thư mục media cùng thời điểm. Nâng cấp nghĩa là đọc CHANGELOG, sao lưu, cập nhật mã, chạy migration rồi kiểm tra.

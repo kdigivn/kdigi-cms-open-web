@@ -17,7 +17,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const dist = path.join(process.cwd(), 'dist');
-const SITE = 'https://docs.opencms.kdigi.vn/';
+const SITE = 'https://docs.cms.kdigi.vn/';
 const problems = [];
 
 for (const name of ['index.html', '404.html', 'sitemap-index.xml', 'llms.txt', 'robots.txt', 'favicon.svg']) {

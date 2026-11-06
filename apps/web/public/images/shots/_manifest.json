@@ -1,7 +1,7 @@
 {
   "login.webp": {
     "what": "Trang đăng nhập KDIGI CMS",
-    "url": "https://app.opencms.kdigi.vn/admin/login",
+    "url": "https://app.cms.kdigi.vn/admin/login",
     "captured": "2026-11-03",
     "source": "login.png",
     "w": 1920,
@@ -14,7 +14,7 @@
   },
   "dashboard.webp": {
     "what": "Bảng điều khiển: số bài nháp/đã đăng, bài mới cập nhật, kiểm tra SEO",
-    "url": "https://app.opencms.kdigi.vn/admin",
+    "url": "https://app.cms.kdigi.vn/admin",
     "captured": "2026-11-03",
     "source": "dashboard.png",
     "w": 1920,
@@ -27,7 +27,7 @@
   },
   "posts-list.webp": {
     "what": "Danh sách bài viết: tìm kiếm, tab trạng thái, loại, ngày đăng, số bình luận",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts",
     "captured": "2026-11-03",
     "source": "posts-list.png",
     "w": 1920,
@@ -40,7 +40,7 @@
   },
   "sites.webp": {
     "what": "Danh sách website (tenant) của một cài đặt: opencms và demo",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites",
     "captured": "2026-11-03",
     "source": "sites.png",
     "w": 1920,
@@ -53,7 +53,7 @@
   },
   "site-settings.webp": {
     "what": "Cài đặt website, tab Thương hiệu: giao diện, màu, logo, favicon",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites/1",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites/1",
     "captured": "2026-11-03",
     "source": "site-settings.png",
     "w": 1920,
@@ -66,7 +66,7 @@
   },
   "site-seo.webp": {
     "what": "Cài đặt website, tab Trang & SEO: ảnh OG mặc định, danh tính Organization cho JSON-LD",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites/1",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites/1",
     "captured": "2026-11-03",
     "source": "site-seo.png",
     "w": 1920,
@@ -79,7 +79,7 @@
   },
   "editor.webp": {
     "what": "Trình soạn thảo Markdown (Milkdown) với thanh công cụ và thanh bên trạng thái/slug/tác giả",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/:id",
     "captured": "2026-11-03",
     "source": "editor.png",
     "w": 1920,
@@ -92,7 +92,7 @@
   },
   "editor-slash.webp": {
     "what": "Menu gạch chéo / trong trình soạn thảo",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/:id",
     "captured": "2026-11-03",
     "source": "editor-slash.png",
     "w": 1920,
@@ -105,7 +105,7 @@
   },
   "editor-slash-detail.webp": {
     "what": "Chi tiết menu gạch chéo (cắt)",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/:id",
     "captured": "2026-11-03",
     "source": "editor-slash-detail.png",
     "w": 1520,
@@ -118,7 +118,7 @@
   },
   "seo.webp": {
     "what": "Tab SEO của bài: tiêu đề SEO, từ khoá, mô tả, trợ lý AI, điểm SEO/JSON-LD",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/:id",
     "captured": "2026-11-03",
     "source": "seo.png",
     "w": 1920,
@@ -131,7 +131,7 @@
   },
   "media.webp": {
     "what": "Thư viện media dạng lưới: thư mục, tải lên, nhập từ URL, alt",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/media",
+    "url": "https://app.cms.kdigi.vn/admin/collections/media",
     "captured": "2026-11-03",
     "source": "media.png",
     "w": 1920,
@@ -144,7 +144,7 @@
   },
   "roles.webp": {
     "what": "Tài khoản demo: vai trò Editor và site được gán",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/users/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/users/:id",
     "captured": "2026-11-03",
     "source": "roles.png",
     "w": 1920,
@@ -157,7 +157,7 @@
   },
   "users-list.webp": {
     "what": "Danh sách người dùng và vai trò (super-admin)",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/users",
+    "url": "https://app.cms.kdigi.vn/admin/collections/users",
     "captured": "2026-11-03",
     "source": "users-list.png",
     "w": 1920,
@@ -170,7 +170,7 @@
   },
   "api.webp": {
     "what": "Phản hồi REST thật GET /api/posts, rút gọn trường",
-    "url": "https://app.opencms.kdigi.vn/api/posts",
+    "url": "https://app.cms.kdigi.vn/api/posts",
     "captured": "2026-11-03",
     "source": "api.png",
     "w": 1920,
@@ -183,7 +183,7 @@
   },
   "faq.webp": {
     "what": "Bộ câu hỏi thường gặp (FAQ) theo nhóm",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/faqs/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/faqs/:id",
     "captured": "2026-11-03",
     "source": "faq.png",
     "w": 1920,
@@ -196,7 +196,7 @@
   },
   "redirects.webp": {
     "what": "Chuyển hướng 301 (tự tạo khi đổi slug và khi di chuyển WordPress)",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/redirects",
+    "url": "https://app.cms.kdigi.vn/admin/collections/redirects",
     "captured": "2026-11-03",
     "source": "redirects.png",
     "w": 1920,
@@ -209,7 +209,7 @@
   },
   "menu-tree.webp": {
     "what": "Trình dựng cây menu PRIMARY: kéo thả, lồng cấp, nhãn VI/EN",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/menus/:id",
+    "url": "https://app.cms.kdigi.vn/admin/collections/menus/:id",
     "captured": "2026-11-03",
     "source": "menu-tree.png",
     "w": 1920,
@@ -222,7 +222,7 @@
   },
   "versions-restore.webp": {
     "what": "Lịch sử phiên bản bài viết: so sánh khác biệt hai phiên bản và nút khôi phục",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/4/versions",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/4/versions",
     "captured": "2026-11-03",
     "source": "versions-detail.png",
     "w": 1920,
@@ -235,7 +235,7 @@
   },
   "versions-list.webp": {
     "what": "Danh sách phiên bản của bài viết theo thời gian (tối đa 30 phiên bản mỗi tài liệu)",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/4/versions",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/4/versions",
     "captured": "2026-11-03",
     "source": "versions-restore.png",
     "w": 1920,
@@ -248,7 +248,7 @@
   },
   "content-calendar.webp": {
     "what": "Lịch nội dung: lưới tháng/danh sách bài viết, trang, sản phẩm theo ngày đăng",
-    "url": "https://app.opencms.kdigi.vn/admin/content-calendar",
+    "url": "https://app.cms.kdigi.vn/admin/content-calendar",
     "captured": "2026-11-03",
     "source": "content-calendar.png",
     "w": 1920,
@@ -261,7 +261,7 @@
   },
   "pages-list.webp": {
     "what": "Danh sách trang tĩnh: tiêu đề, đường dẫn, trạng thái, ngày xuất bản",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/pages",
+    "url": "https://app.cms.kdigi.vn/admin/collections/pages",
     "captured": "2026-11-03",
     "source": "pages-list.png",
     "w": 1920,
@@ -274,7 +274,7 @@
   },
   "authors-list.webp": {
     "what": "Danh sách tác giả của site",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/authors",
+    "url": "https://app.cms.kdigi.vn/admin/collections/authors",
     "captured": "2026-11-03",
     "source": "authors-list.png",
     "w": 1920,
@@ -287,7 +287,7 @@
   },
   "taxonomies.webp": {
     "what": "Phân loại: chuyên mục và thẻ của site",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/taxonomies",
+    "url": "https://app.cms.kdigi.vn/admin/collections/taxonomies",
     "captured": "2026-11-03",
     "source": "taxonomies.png",
     "w": 1920,
@@ -300,7 +300,7 @@
   },
   "media-lightbox.webp": {
     "what": "Xem ảnh trong thư viện: URL, alt, kích thước, tải về, sửa ảnh và xóa",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/media",
+    "url": "https://app.cms.kdigi.vn/admin/collections/media",
     "captured": "2026-11-03",
     "source": "media-lightbox2.png",
     "w": 1920,
@@ -313,7 +313,7 @@
   },
   "site-settings-system.webp": {
     "what": "Cài đặt site, tab Hệ thống: mã website, tên miền, ngôn ngữ mặc định, lưu trữ R2",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites/1",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites/1",
     "captured": "2026-11-03",
     "source": "site-settings-system.png",
     "w": 1920,
@@ -326,7 +326,7 @@
   },
   "site-settings-contact.webp": {
     "what": "Cài đặt site, tab Liên hệ & Footer: nút liên hệ nổi, biểu tượng đầu trang, địa chỉ chân trang",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites/1",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites/1",
     "captured": "2026-11-03",
     "source": "site-settings-contact.png",
     "w": 1920,
@@ -339,7 +339,7 @@
   },
   "site-settings-integrations.webp": {
     "what": "Cài đặt site, tab Tích hợp: mã GA4, GTM, Clarity và cấu hình PWA",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/sites/1",
+    "url": "https://app.cms.kdigi.vn/admin/collections/sites/1",
     "captured": "2026-11-03",
     "source": "site-settings-integrations.png",
     "w": 1920,
@@ -352,7 +352,7 @@
   },
   "internal-links.webp": {
     "what": "Tab SEO của bài viết: gợi ý liên kết nội bộ và bảng phân tích SEO theo điểm",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/posts/4",
+    "url": "https://app.cms.kdigi.vn/admin/collections/posts/4",
     "captured": "2026-11-03",
     "source": "internal-links.png",
     "w": 1920,
@@ -365,7 +365,7 @@
   },
   "media-from-url-dialog.webp": {
     "what": "Thư viện ảnh: nhập ảnh từ URL kèm alt (nút Dán URL)",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/media",
+    "url": "https://app.cms.kdigi.vn/admin/collections/media",
     "captured": "2026-11-03",
     "source": "media-from-url-dialog.png",
     "w": 1920,
@@ -378,7 +378,7 @@
   },
   "media-image-editor.webp": {
     "what": "Trình sửa ảnh trong thư viện: cắt, xoay, đổi kích thước",
-    "url": "https://app.opencms.kdigi.vn/admin/collections/media",
+    "url": "https://app.cms.kdigi.vn/admin/collections/media",
     "captured": "2026-11-03",
     "source": "media-image-editor2.png",
     "w": 1920,
@@ -391,7 +391,7 @@
   },
   "dashboard-seo-audit.webp": {
     "what": "Bảng điều khiển: thẻ Kiểm tra SEO liệt kê tài liệu cần cải thiện",
-    "url": "https://app.opencms.kdigi.vn/admin",
+    "url": "https://app.cms.kdigi.vn/admin",
     "captured": "2026-11-03",
     "source": "dashboard-seo-audit.png",
     "w": 930,

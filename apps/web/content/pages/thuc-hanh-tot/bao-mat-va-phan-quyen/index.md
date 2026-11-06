@@ -27,7 +27,7 @@ related:
   - /thuc-hanh-tot/sao-luu-va-nang-cap
   - /tinh-nang/quan-ly-nhieu-website
   - /ma-nguon-mo
-docs: https://docs.opencms.kdigi.vn/huong-dan/vai-tro-phan-quyen/
+docs: https://docs.cms.kdigi.vn/huong-dan/vai-tro-phan-quyen/
 ---
 
 Cấu hình đúng khi triển khai, cấp quyền tối thiểu theo vai trò và site, rồi kiểm soát endpoint công khai. Checklist dưới đây có căn cứ từ `SECURITY.md` và tài liệu phân quyền.

@@ -16,8 +16,8 @@ import path from "node:path"
 import process from "node:process"
 import { setTimeout as sleep } from "node:timers/promises"
 
-const SITE_ORIGIN = (process.env.NEXT_PUBLIC_SITE_URL || "https://opencms.kdigi.vn").replace(/\/+$/, "")
-const CMS_ORIGIN = (process.env.NEXT_PUBLIC_APP_URL || "https://app.opencms.kdigi.vn").replace(/\/+$/, "")
+const SITE_ORIGIN = (process.env.NEXT_PUBLIC_SITE_URL || "https://cms.kdigi.vn").replace(/\/+$/, "")
+const CMS_ORIGIN = (process.env.NEXT_PUBLIC_APP_URL || "https://app.cms.kdigi.vn").replace(/\/+$/, "")
 const TITLE_MAX = 60
 const DESC_MIN = 140
 const DESC_MAX = 160

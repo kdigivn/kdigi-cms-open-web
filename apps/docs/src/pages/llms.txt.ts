@@ -18,7 +18,7 @@ function slugsOf(items: SidebarItem[]): string[] {
 }
 
 export const GET: APIRoute = async ({ site }) => {
-  const origin = (site ?? new URL('https://docs.opencms.kdigi.vn')).origin;
+  const origin = (site ?? new URL('https://docs.cms.kdigi.vn')).origin;
   const entries = new Map((await getCollection('docs')).map((entry) => [entry.id, entry]));
 
   const section = (lang: Lang) =>
@@ -39,7 +39,7 @@ export const GET: APIRoute = async ({ site }) => {
     .map((entry) => `- [${entry.data.title}](${origin}/${entry.id}.md): ${entry.data.description ?? ''}`.trimEnd());
   const body = `# KDIGI CMS
 
-> KDIGI CMS is an AI-native, open-source (MIT) headless multi-site CMS built on Payload, Next.js and PostgreSQL: a built-in MCP server and the kcms CLI let AI agents (Claude Code, Codex, Cursor, VS Code, OMP) write, publish and SEO-check content with a user's API key and role; Markdown editor, SEO and JSON-LD, media library, roles, WordPress migration, REST/GraphQL, self-hosted with Docker or Coolify. Website: https://opencms.kdigi.vn · Source: https://github.com/kdigivn/kdigi-cms-open
+> KDIGI CMS is an AI-native, open-source (MIT) headless multi-site CMS built on Payload, Next.js and PostgreSQL: a built-in MCP server and the kcms CLI let AI agents (Claude Code, Codex, Cursor, VS Code, OMP) write, publish and SEO-check content with a user's API key and role; Markdown editor, SEO and JSON-LD, media library, roles, WordPress migration, REST/GraphQL, self-hosted with Docker or Coolify. Website: https://cms.kdigi.vn · Source: https://github.com/kdigivn/kdigi-cms-open
 
 ${section('vi').join('\n\n')}
 ${english.length ? `\n# English\n\n${english.join('\n\n')}\n` : ''}${reference.length ? `\n## Technical reference (English)\n\n${reference.join('\n')}\n` : ''}`;

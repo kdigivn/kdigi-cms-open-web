@@ -21,7 +21,7 @@ faq:
   - q: "Tính năng này có từ phiên bản nào?"
     a: "KDIGI CMS 1.2.0 (2026-11-03). CLI `@kdigi/kcms-cli` cài từ npm. Tài khoản demo công khai không tạo được API key, nên muốn thử MCP hãy [tự host](/tu-host) một bản."
 related: [/tinh-nang/phan-quyen-nguoi-dung, /tinh-nang/quy-trinh-bien-tap, /tinh-nang/seo-json-ld, /tinh-nang/headless-api]
-docs: https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/
+docs: https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/
 ---
 
 KDIGI CMS có sẵn máy chủ MCP tại `/api/mcp`. Công cụ AI như Claude Code, Codex hay Cursor tìm, viết, hẹn giờ, đăng bài và kiểm tra SEO trực tiếp trên CMS, với tư cách người dùng sở hữu API key. Không plugin, không hệ thống đăng nhập thứ hai.
@@ -100,4 +100,4 @@ kcms seo audit
 - CMS không tự giới hạn tần suất; đặt giới hạn ở reverse proxy.
 - Tài khoản demo công khai không tạo được API key; thử MCP trên bản [tự host](/tu-host).
 
-So với các CMS khác: xem [trang so sánh](/so-sanh). Cài đặt từng công cụ AI và xử lý lỗi: [hướng dẫn AI agent và MCP](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/).
+So với các CMS khác: xem [trang so sánh](/so-sanh). Cài đặt từng công cụ AI và xử lý lỗi: [hướng dẫn AI agent và MCP](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/).

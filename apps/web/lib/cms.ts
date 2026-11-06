@@ -10,7 +10,7 @@ export const CMS_TAG = "cms"
 /** Safety net when no webhook arrives: pages and CMS reads refresh at most this late. */
 export const CMS_REVALIDATE_SECONDS = 3600
 
-const CMS_URL = (process.env.CMS_URL || "https://app.opencms.kdigi.vn").replace(/\/+$/, "")
+const CMS_URL = (process.env.CMS_URL || "https://app.cms.kdigi.vn").replace(/\/+$/, "")
 const CMS_SITE_KEY = process.env.CMS_SITE_KEY || "opencms"
 const CMS_TIMEOUT_MS = 10_000
 

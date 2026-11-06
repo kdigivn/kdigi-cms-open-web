@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "description": "Marketing homepage of KDIGI CMS (https://opencms.kdigi.vn), Next.js. FAQs and posts come from the CMS itself.",
+  "description": "Marketing homepage of KDIGI CMS (https://cms.kdigi.vn), Next.js. FAQs and posts come from the CMS itself.",
   "engines": {
     "node": ">=22.12.0"
   },

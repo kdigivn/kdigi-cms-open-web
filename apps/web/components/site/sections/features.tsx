@@ -37,7 +37,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "sites",
     shotAlt: "Danh sách các website trong KDIGI CMS, mỗi website có khoá và tên miền riêng",
-    shotUrl: "app.opencms.kdigi.vn/admin/collections/sites",
+    shotUrl: "app.cms.kdigi.vn/admin/collections/sites",
     docs: { label: "Tìm hiểu nhiều website", href: docsLinks.multiSite },
   },
   {
@@ -53,7 +53,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "editor",
     shotAlt: "Trình soạn thảo Markdown của KDIGI CMS đang mở một bài viết",
-    shotUrl: "app.opencms.kdigi.vn/admin/collections/posts",
+    shotUrl: "app.cms.kdigi.vn/admin/collections/posts",
     docs: { label: "Xem hướng dẫn soạn thảo", href: docsLinks.markdown },
   },
   {
@@ -69,7 +69,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "seo",
     shotAlt: "Thẻ SEO của một bài viết với bản xem trước kết quả tìm kiếm và JSON-LD",
-    shotUrl: "app.opencms.kdigi.vn/admin/collections/posts",
+    shotUrl: "app.cms.kdigi.vn/admin/collections/posts",
     docs: { label: "Xem hướng dẫn SEO", href: docsLinks.seo },
   },
   {
@@ -85,7 +85,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "media",
     shotAlt: "Thư viện media của KDIGI CMS dạng lưới ảnh",
-    shotUrl: "app.opencms.kdigi.vn/admin/collections/media",
+    shotUrl: "app.cms.kdigi.vn/admin/collections/media",
     docs: { label: "Xem hướng dẫn media", href: docsLinks.media },
   },
   {
@@ -101,7 +101,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "roles",
     shotAlt: "Màn hình người dùng với vai trò và danh sách website được phép truy cập",
-    shotUrl: "app.opencms.kdigi.vn/admin/collections/users",
+    shotUrl: "app.cms.kdigi.vn/admin/collections/users",
     docs: { label: "Xem hướng dẫn phân quyền", href: docsLinks.roles },
   },
   {
@@ -117,7 +117,7 @@ const FEATURES: Feature[] = [
     ],
     shot: "api",
     shotAlt: "Phản hồi JSON của API bài viết trong KDIGI CMS",
-    shotUrl: "app.opencms.kdigi.vn/api/posts",
+    shotUrl: "app.cms.kdigi.vn/api/posts",
     docs: { label: "Xem tài liệu API", href: docsLinks.api },
   },
 ]

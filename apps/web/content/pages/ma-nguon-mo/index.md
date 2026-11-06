@@ -27,7 +27,7 @@ related:
   - /demo
   - /so-sanh/kdigi-cms-vs-wordpress
   - /thuc-hanh-tot
-docs: https://docs.opencms.kdigi.vn/
+docs: https://docs.cms.kdigi.vn/
 ---
 
 KDIGI CMS là CMS headless nhiều website, phát hành theo giấy phép MIT (bản quyền 2026 KDIGI). Mã nguồn công khai tại `github.com/kdigivn/kdigi-cms-open`, xây trên Payload 3, Next.js 15 và PostgreSQL.
@@ -62,7 +62,7 @@ KDIGI CMS là CMS headless nhiều website, phát hành theo giấy phép MIT (b
 - :zap: **REST và GraphQL** Cho [frontend tùy chọn](/tinh-nang/headless-api).
 - :refresh-cw: **Chuyển từ WordPress** Pipeline [thô, chuẩn hóa, nhập](/chuyen-tu-wordpress).
 - :server: **Tự host** Docker Compose và Coolify: [hướng dẫn](/tu-host).
-- :book-open: **Tài liệu** Bộ `docs/` đầy đủ tại [docs.opencms.kdigi.vn](https://docs.opencms.kdigi.vn/).
+- :book-open: **Tài liệu** Bộ `docs/` đầy đủ tại [docs.cms.kdigi.vn](https://docs.cms.kdigi.vn/).
 :::
 
 > **Lưu ý** Theo CHANGELOG, mã tách ra từ một hệ thống đã chạy production. Module đặc thù nghiệp vụ, công cụ CDN, pipeline clone và importer một lần cho từng site riêng không được mang sang.
@@ -94,7 +94,7 @@ pnpm test
 pnpm test:integration   # cần PostgreSQL qua DATABASE_URI và PAYLOAD_INTEGRATION=1
 ```
 
-Cài môi trường phát triển: [bắt đầu nhanh](https://docs.opencms.kdigi.vn/huong-dan/bat-dau-nhanh/). Quy ước chính:
+Cài môi trường phát triển: [bắt đầu nhanh](https://docs.cms.kdigi.vn/huong-dan/bat-dau-nhanh/). Quy ước chính:
 
 :::check
 - Mọi collection khai báo `access.*` tường minh

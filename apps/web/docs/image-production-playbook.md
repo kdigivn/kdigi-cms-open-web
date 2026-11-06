@@ -1,11 +1,11 @@
-# Quy trình sản xuất hình ảnh cho opencms.kdigi.vn
+# Quy trình sản xuất hình ảnh cho cms.kdigi.vn
 
 Dành cho đội KDIGI và trợ lý AI. Phạm vi: **ảnh OG từng trang**, **ảnh đại diện bài blog** (`featuredImage` của KDIGI CMS, tenant 1 `opencms`), **minh hoạ Codex** và **ảnh chụp màn hình thật**. Phong cách minh hoạ: [art-direction.md](art-direction.md). Quy trình thumbnail này là bản chuyển thể từ playbook của khoi.pro (cùng renderer), đổi logo, bảng màu, font và nguồn chữ sang KDIGI CMS.
 
 Nguyên tắc:
 
 1. **Brief trước, dựng sau.** Chữ trên ảnh lấy từ nguồn, không gõ tay lại tiêu đề.
-2. **Text từ nguồn thật**: bài blog từ CMS (`https://app.opencms.kdigi.vn/api`, tenant 1); trang từ frontmatter `h1`/`title` của `content/pages/**/index.md`.
+2. **Text từ nguồn thật**: bài blog từ CMS (`https://app.cms.kdigi.vn/api`, tenant 1); trang từ frontmatter `h1`/`title` của `content/pages/**/index.md`.
 3. **Renderer chỉ dựng**; AI mở ảnh thật để review 9 tiêu chí; **chủ site duyệt** trước khi dùng cho bài blog đăng chính thức.
 4. **Mọi thành phẩm có provenance** (nguồn, SHA-256, ai dựng, khi nào) và review gắn với đúng SHA-256.
 5. **Ảnh chụp sản phẩm là chụp thật**, minh hoạ AI không giả làm giao diện sản phẩm, không có chữ trong ảnh AI.
@@ -57,7 +57,7 @@ node scripts/images/compose.mjs card --ab --name <slug>-card --post <slug>   # A
 node scripts/images/compose.mjs card --name <slug>-card --post <slug> --debug-safe
 
 # Lô cho mọi bài đã đăng của tenant 1 (chạy sau khi writer tạo bài)
-curl -s 'https://app.opencms.kdigi.vn/api/posts?where%5Btenant%5D%5Bequals%5D=1&where%5Bstatus%5D%5Bequals%5D=published&limit=100&depth=0' \
+curl -s 'https://app.cms.kdigi.vn/api/posts?where%5Btenant%5D%5Bequals%5D=1&where%5Bstatus%5D%5Bequals%5D=published&limit=100&depth=0' \
   | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>JSON.parse(s).docs.forEach(d=>console.log(d.slug)))" \
   | while read slug; do node scripts/images/compose.mjs card --name "$slug-card-solid" --post "$slug" --treatment solid || true; done
 ```
@@ -92,11 +92,11 @@ node scripts/images/compose.mjs check --strict # cảnh báo (thiếu review, st
 
 ## 6. Upload thumbnail blog lên CMS
 
-1. Vào https://app.opencms.kdigi.vn/admin, chọn website `opencms`, mở **Media**.
+1. Vào https://app.cms.kdigi.vn/admin, chọn website `opencms`, mở **Media**.
 2. Kéo thả đúng file đã duyệt trong `assets/images/composed/` (không dùng "Nhập từ URL" cho ảnh nội bộ).
 3. Điền **Alt** tiếng Việt, ≤ 125 ký tự, không mở đầu bằng "hình ảnh/ảnh". Với `card`, alt là chữ trên thẻ.
 4. Mở bài, chọn media ở **featuredImage**, lưu (kích hoạt revalidate). Trang `/blog/<slug>` dùng ảnh này cho `og:image` và JSON-LD `BlogPosting.image`.
-5. Kiểm: `curl -s https://opencms.kdigi.vn/blog/<slug> | grep -o '<meta property="og:image"[^>]*>'`.
+5. Kiểm: `curl -s https://cms.kdigi.vn/blog/<slug> | grep -o '<meta property="og:image"[^>]*>'`.
 
 ## 7. Minh hoạ Codex
 

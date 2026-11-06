@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "site": "opencms.kdigi.vn",
-  "domain": "opencms.kdigi.vn",
-  "footerText": "opencms.kdigi.vn",
+  "site": "cms.kdigi.vn",
+  "domain": "cms.kdigi.vn",
+  "footerText": "cms.kdigi.vn",
   "eyebrowFallback": "KDIGI CMS",
   "canvas": { "width": 1920, "height": 1080 },
   "colors": {

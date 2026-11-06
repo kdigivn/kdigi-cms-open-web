@@ -29,7 +29,7 @@ related:
   - /tu-host
   - /demo
   - /ma-nguon-mo
-docs: https://docs.opencms.kdigi.vn/
+docs: https://docs.cms.kdigi.vn/
 ---
 
 KDIGI CMS là CMS headless AI-native, mã nguồn mở (MIT): một bản cài quản lý nhiều website, website công khai lấy nội dung qua REST hoặc GraphQL, còn AI agent viết và đăng bài qua máy chủ MCP có sẵn.

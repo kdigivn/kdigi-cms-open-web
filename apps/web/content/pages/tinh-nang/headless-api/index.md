@@ -25,7 +25,7 @@ related:
   - /tinh-nang/quan-ly-nhieu-website
   - /tinh-nang/phan-quyen-nguoi-dung
   - /thuc-hanh-tot/hieu-nang-va-cache
-docs: "https://docs.opencms.kdigi.vn/api/rest-graphql/"
+docs: "https://docs.cms.kdigi.vn/api/rest-graphql/"
 ---
 
 KDIGI CMS chỉ có trang quản trị `/admin` và API. Website là frontend bạn tự chọn: đọc nội dung từng site qua REST, nhận HTML ở khóa `content`, và nhận webhook khi nội dung đổi.
@@ -128,4 +128,4 @@ curl -H 'Authorization: users API-Key <api-key>' \
 - Không để API key lọt vào bundle trình duyệt
 :::
 
-Các collection và trường: xem [nội dung và cấu trúc](/tinh-nang/noi-dung-va-cau-truc). Tài liệu đầy đủ: [REST và GraphQL](https://docs.opencms.kdigi.vn/api/rest-graphql/).
+Các collection và trường: xem [nội dung và cấu trúc](/tinh-nang/noi-dung-va-cau-truc). Tài liệu đầy đủ: [REST và GraphQL](https://docs.cms.kdigi.vn/api/rest-graphql/).

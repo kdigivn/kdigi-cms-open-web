@@ -1,6 +1,6 @@
 ---
 name: KDIGI CMS Open Web
-description: Spec giao diện của site tài liệu KDIGI CMS (docs.opencms.kdigi.vn), dựng trên Astro Starlight, token "Tech Blue · Liquid Glass"; kính chỉ ở header và hộp tìm kiếm. Trang giới thiệu là app khác (apps/web).
+description: Spec giao diện của site tài liệu KDIGI CMS (docs.cms.kdigi.vn), dựng trên Astro Starlight, token "Tech Blue · Liquid Glass"; kính chỉ ở header và hộp tìm kiếm. Trang giới thiệu là app khác (apps/web).
 status: implemented
 ---
 
@@ -142,4 +142,4 @@ Quy tắc viết: đoạn đầu trang là đoạn văn; không H1 trong thân; 
 
 ## 9. Triển khai
 
-Build tĩnh `astro build` → `dist/` → nginx trong Docker (`apps/docs/Dockerfile`, `apps/docs/nginx.conf`, build context là gốc repo), chạy trên Coolify, tên miền `docs.opencms.kdigi.vn`. Pagefind chạy sau build (Starlight tự gọi).
+Build tĩnh `astro build` → `dist/` → nginx trong Docker (`apps/docs/Dockerfile`, `apps/docs/nginx.conf`, build context là gốc repo), chạy trên Coolify, tên miền `docs.cms.kdigi.vn`. Pagefind chạy sau build (Starlight tự gọi).

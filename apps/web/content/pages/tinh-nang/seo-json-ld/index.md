@@ -25,7 +25,7 @@ related:
   - /tinh-nang/headless-api
   - /thuc-hanh-tot/seo-onpage
   - /so-sanh/kdigi-cms-vs-wordpress
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/
 ---
 
 Tiêu đề và mô tả là **mẫu có biến**, giải quyết lúc render; JSON-LD schema.org được tự sinh khi lưu vào `seo.jsonLd.raw`. Bạn không cần plugin SEO riêng.
@@ -103,4 +103,4 @@ Slug tự sinh từ tiêu đề (bỏ dấu, `đ` thành `d`). Đổi slug của
 - **Chạy audit** Định kỳ để tìm tài liệu `noindex` hay canonical hỏng.
 :::
 
-Xem thêm [SEO on-page với KDIGI CMS](/thuc-hanh-tot/seo-onpage), [so sánh với WordPress](/so-sanh/kdigi-cms-vs-wordpress) và [tài liệu SEO](https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/). Soạn bài ở [trình soạn thảo Markdown](/tinh-nang/trinh-soan-thao-markdown); quay lại [tính năng](/tinh-nang).
+Xem thêm [SEO on-page với KDIGI CMS](/thuc-hanh-tot/seo-onpage), [so sánh với WordPress](/so-sanh/kdigi-cms-vs-wordpress) và [tài liệu SEO](https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/). Soạn bài ở [trình soạn thảo Markdown](/tinh-nang/trinh-soan-thao-markdown); quay lại [tính năng](/tinh-nang).

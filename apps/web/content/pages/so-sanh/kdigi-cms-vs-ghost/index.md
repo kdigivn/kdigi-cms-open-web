@@ -27,7 +27,7 @@ related:
   - /tinh-nang/trinh-soan-thao-markdown
   - /tinh-nang/quy-trinh-bien-tap
   - /so-sanh
-docs: https://docs.opencms.kdigi.vn/huong-dan/soan-thao-markdown/
+docs: https://docs.cms.kdigi.vn/huong-dan/soan-thao-markdown/
 ---
 
 Cả hai dùng giấy phép MIT, chạy Node.js và có API. Chọn Ghost để kinh doanh nội dung bằng thuê bao; chọn KDIGI CMS cho nhiều website và frontend riêng.
@@ -110,4 +110,4 @@ Chưa có công cụ nhập Ghost tự động. Nội dung nhập sẽ không ma
 
 ## :link: Nguồn
 
-Ghost, kiểm tra 2026-11-03: [kho mã](https://github.com/TryGhost/Ghost), [Hosting](https://docs.ghost.org/hosting), [Content API](https://docs.ghost.org/content-api), [bảng giá](https://ghost.org/pricing/), [ghst CLI (MCP server mode)](https://github.com/TryGhost/ghst), [thảo luận MCP trên diễn đàn Ghost](https://forum.ghost.org/t/integrating-the-model-context-protocol-mcp-as-a-native-ghost-server/63239). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).
+Ghost, kiểm tra 2026-11-03: [kho mã](https://github.com/TryGhost/Ghost), [Hosting](https://docs.ghost.org/hosting), [Content API](https://docs.ghost.org/content-api), [bảng giá](https://ghost.org/pricing/), [ghst CLI (MCP server mode)](https://github.com/TryGhost/ghst), [thảo luận MCP trên diễn đàn Ghost](https://forum.ghost.org/t/integrating-the-model-context-protocol-mcp-as-a-native-ghost-server/63239). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.cms.kdigi.vn), [tích hợp AI agent](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

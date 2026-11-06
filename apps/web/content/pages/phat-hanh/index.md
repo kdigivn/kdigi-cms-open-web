@@ -25,7 +25,7 @@ related:
   - /chuyen-tu-wordpress
   - /ma-nguon-mo
   - /demo
-docs: https://docs.opencms.kdigi.vn/
+docs: https://docs.cms.kdigi.vn/
 order: 4
 ---
 

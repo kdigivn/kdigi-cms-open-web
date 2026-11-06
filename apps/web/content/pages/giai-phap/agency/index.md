@@ -27,7 +27,7 @@ related:
   - /chuyen-tu-wordpress
   - /tinh-nang/seo-json-ld
   - /tu-host
-docs: https://docs.opencms.kdigi.vn/huong-dan/nhieu-website/
+docs: https://docs.cms.kdigi.vn/huong-dan/nhieu-website/
 ---
 
 Mỗi khách là một document trong collection Sites; nội dung, media, menu và cấu hình SEO gắn với site đó. Agency quản trị tất cả ở một nơi, còn frontend của từng khách vẫn tách riêng.

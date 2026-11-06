@@ -28,7 +28,7 @@ related:
   - /tu-host
   - /tinh-nang/noi-dung-va-cau-truc
   - /thuc-hanh-tot/seo-onpage
-docs: https://docs.opencms.kdigi.vn/tham-khao/deploy/
+docs: https://docs.cms.kdigi.vn/tham-khao/deploy/
 ---
 
 KDIGI CMS là CMS headless cho website công ty có nhiều người biên tập: bạn quản trị nội dung trong admin và dựng giao diện công khai riêng. Giấy phép MIT, tự host bằng Docker Compose hoặc Coolify.

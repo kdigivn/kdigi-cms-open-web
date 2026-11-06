@@ -23,7 +23,7 @@ related:
   - /so-sanh/kdigi-cms-vs-payload
   - /so-sanh/kdigi-cms-vs-ghost
   - /so-sanh/kdigi-cms-vs-directus
-docs: https://docs.opencms.kdigi.vn/tham-khao/overview/
+docs: https://docs.cms.kdigi.vn/tham-khao/overview/
 ---
 
 KDIGI CMS là headless CMS mã nguồn mở (MIT) quản lý nhiều website, xây trên Payload 3 và PostgreSQL. Dưới đây là so sánh với năm lựa chọn phổ biến.
@@ -76,10 +76,10 @@ Cả sáu đều có đường kết nối AI agent, khác nhau ở chỗ nằm 
 :::steps
 - :eye: **Thử demo** Đăng nhập tài khoản công khai tại [demo](/demo).
 - :terminal: **Chạy trên máy bạn** Clone [kdigi-cms-open](https://github.com/kdigivn/kdigi-cms-open), chạy `SEED_DEMO=true docker compose up --build`.
-- :book-open: **Đọc tài liệu** [Tài liệu](https://docs.opencms.kdigi.vn) và [tính năng](/tinh-nang).
+- :book-open: **Đọc tài liệu** [Tài liệu](https://docs.cms.kdigi.vn) và [tính năng](/tinh-nang).
 - :refresh-cw: **Đang dùng WordPress?** Xem [chuyển từ WordPress](/chuyen-tu-wordpress) và [tự host](/tu-host).
 :::
 
 ## :link: Nguồn
 
-Kiểm tra 2026-11-03: [WordPress](https://wordpress.org/about/license/), [Strapi](https://github.com/strapi/strapi), [Payload](https://github.com/payloadcms/payload), [Ghost](https://github.com/TryGhost/Ghost), [Directus](https://directus.com/license), [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open). Về MCP: [WordPress MCP Adapter](https://wordpress.org/plugins/mcp-adapter/), [Strapi MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server), [Payload MCP plugin](https://payloadcms.com/docs/plugins/mcp), [Ghost ghst CLI](https://github.com/TryGhost/ghst), [Directus MCP](https://directus.com/docs/guides/ai/mcp), [KDIGI CMS AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/).
+Kiểm tra 2026-11-03: [WordPress](https://wordpress.org/about/license/), [Strapi](https://github.com/strapi/strapi), [Payload](https://github.com/payloadcms/payload), [Ghost](https://github.com/TryGhost/Ghost), [Directus](https://directus.com/license), [KDIGI CMS](https://github.com/kdigivn/kdigi-cms-open). Về MCP: [WordPress MCP Adapter](https://wordpress.org/plugins/mcp-adapter/), [Strapi MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server), [Payload MCP plugin](https://payloadcms.com/docs/plugins/mcp), [Ghost ghst CLI](https://github.com/TryGhost/ghst), [Directus MCP](https://directus.com/docs/guides/ai/mcp), [KDIGI CMS AI agent](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/).

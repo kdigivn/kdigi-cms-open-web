@@ -27,7 +27,7 @@ related:
   - /thuc-hanh-tot/seo-onpage
   - /tinh-nang/quy-trinh-bien-tap
   - /giai-phap/blog-tin-tuc
-docs: https://docs.opencms.kdigi.vn/tham-khao/collections/
+docs: https://docs.cms.kdigi.vn/tham-khao/collections/
 ---
 
 Dùng `pages` cho nội dung tĩnh, `posts` cho bài có ngày và tác giả, `products` cho sản phẩm/dịch vụ, `landings` cho trang chiến dịch. Chọn đúng từ đầu giúp URL, breadcrumb và JSON-LD nhất quán.

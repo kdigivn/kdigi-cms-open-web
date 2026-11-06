@@ -52,7 +52,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ pat
           {SITE_NAME}
         </div>
         <div style={{ fontFamily: "Display", fontSize: size, lineHeight: 1.18, fontWeight: 700, maxWidth: 1000 }}>{title}</div>
-        <div style={{ fontFamily: "Text", fontSize: 28, color: "#4B5A74" }}>opencms.kdigi.vn</div>
+        <div style={{ fontFamily: "Text", fontSize: 28, color: "#4B5A74" }}>cms.kdigi.vn</div>
       </div>
     ),
     {

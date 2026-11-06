@@ -27,7 +27,7 @@ related:
   - /tinh-nang/thu-vien-media
   - /demo
   - /ma-nguon-mo
-docs: https://docs.opencms.kdigi.vn/huong-dan/cai-dat-docker/
+docs: https://docs.cms.kdigi.vn/huong-dan/cai-dat-docker/
 ---
 
 Clone repo, chạy `docker compose up -d --build` là có server Next.js (admin và API, cổng 3000) cùng PostgreSQL. Có sẵn cấu hình cho Coolify và cách chạy không Docker.
@@ -63,7 +63,7 @@ cd kdigi-cms-open
 SEED_DEMO=true docker compose up --build
 ```
 
-Mở `http://localhost:3000/admin` và tạo người dùng đầu tiên (tự động là `super-admin`). Bỏ `SEED_DEMO=true` để có bản cài trống. Chạy dev có hot reload: [bắt đầu nhanh](https://docs.opencms.kdigi.vn/huong-dan/bat-dau-nhanh/).
+Mở `http://localhost:3000/admin` và tạo người dùng đầu tiên (tự động là `super-admin`). Bỏ `SEED_DEMO=true` để có bản cài trống. Chạy dev có hot reload: [bắt đầu nhanh](https://docs.cms.kdigi.vn/huong-dan/bat-dau-nhanh/).
 
 ## :cloud-upload: Cách 2: VPS với Docker Compose
 
@@ -104,11 +104,11 @@ cms.example.com {
 - **Deploy** Lần đầu áp dụng mọi migration; mở `/admin` và tạo người dùng đầu tiên.
 :::
 
-Các biến tùy chọn và cách sao lưu `db` trong Coolify: [tài liệu Coolify](https://docs.opencms.kdigi.vn/huong-dan/trien-khai-coolify/).
+Các biến tùy chọn và cách sao lưu `db` trong Coolify: [tài liệu Coolify](https://docs.cms.kdigi.vn/huong-dan/trien-khai-coolify/).
 
 ## :settings: Cách 4: không dùng Docker
 
-Cần Node.js ≥ 20.9, pnpm 10 và PostgreSQL. Đặt `DATABASE_URI`, `PAYLOAD_SECRET`, `PAYLOAD_PUBLIC_SERVER_URL`, rồi chạy `pnpm build`, `pnpm migrate`, `pnpm start` dưới systemd hoặc pm2. Chi tiết: [tài liệu triển khai](https://docs.opencms.kdigi.vn/tham-khao/deploy/).
+Cần Node.js ≥ 20.9, pnpm 10 và PostgreSQL. Đặt `DATABASE_URI`, `PAYLOAD_SECRET`, `PAYLOAD_PUBLIC_SERVER_URL`, rồi chạy `pnpm build`, `pnpm migrate`, `pnpm start` dưới systemd hoặc pm2. Chi tiết: [tài liệu triển khai](https://docs.cms.kdigi.vn/tham-khao/deploy/).
 
 ## :list-checks: Sau khi deploy
 

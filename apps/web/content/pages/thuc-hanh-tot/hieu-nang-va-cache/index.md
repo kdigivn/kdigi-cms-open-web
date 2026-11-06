@@ -27,7 +27,7 @@ related:
   - /thuc-hanh-tot/seo-onpage
   - /tu-host
   - /thuc-hanh-tot/sao-luu-va-nang-cap
-docs: https://docs.opencms.kdigi.vn/api/rest-graphql/
+docs: https://docs.cms.kdigi.vn/api/rest-graphql/
 ---
 
 KDIGI CMS chỉ phục vụ admin và API; tốc độ trang công khai phụ thuộc cache ở frontend của bạn. Lưu nội dung xếp một job revalidate và không bao giờ chờ frontend phản hồi.

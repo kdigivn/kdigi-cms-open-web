@@ -7,7 +7,7 @@ import rehypeTableScroll from './src/plugins/rehype-table-scroll.mjs';
 import rehypeSearchAlias from './src/plugins/rehype-search-alias.mjs';
 import { topics, referenceHome, referenceRedirects } from './src/sidebar.mjs';
 
-const SITE = 'https://docs.opencms.kdigi.vn';
+const SITE = 'https://docs.cms.kdigi.vn';
 
 export default defineConfig({
   site: SITE,

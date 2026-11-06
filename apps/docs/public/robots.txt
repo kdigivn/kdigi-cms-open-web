@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.opencms.kdigi.vn/sitemap-index.xml
+Sitemap: https://docs.cms.kdigi.vn/sitemap-index.xml

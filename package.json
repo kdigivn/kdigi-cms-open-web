@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "license": "MIT",
-  "description": "Marketing homepage (apps/web) and documentation (apps/docs) for KDIGI CMS: https://opencms.kdigi.vn and https://docs.opencms.kdigi.vn",
+  "description": "Marketing homepage (apps/web) and documentation (apps/docs) for KDIGI CMS: https://cms.kdigi.vn and https://docs.cms.kdigi.vn",
   "packageManager": "pnpm@10.32.0",
   "scripts": {
     "dev:web": "pnpm --filter web dev",

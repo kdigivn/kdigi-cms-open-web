@@ -12,7 +12,7 @@ heroAlt: "Laptop kính mờ với nút phát màu xanh, minh họa bản demo tr
 schema: WebPage
 faq:
   - q: "Tài khoản demo KDIGI CMS là gì?"
-    a: "Mở https://app.opencms.kdigi.vn/admin, email demo@opencms.kdigi.vn, mật khẩu Demo@2026. Vai trò editor, chỉ thấy site demo. Tài khoản dùng chung nên đừng nhập dữ liệu thật."
+    a: "Mở https://app.cms.kdigi.vn/admin, email demo@cms.kdigi.vn, mật khẩu Demo@2026. Vai trò editor, chỉ thấy site demo. Tài khoản dùng chung nên đừng nhập dữ liệu thật."
   - q: "Tại sao tôi không đổi được mật khẩu của tài khoản demo?"
     a: "Đó là cơ chế bảo vệ có chủ đích. Tài khoản trong DEMO_ACCOUNT_EMAILS không đổi được email, mật khẩu, API key và không tự xóa mình (mã 403), để khách khác không bị khóa."
   - q: "Dữ liệu tôi tạo trong bản demo có được giữ lại không?"
@@ -29,27 +29,27 @@ related:
   - /chuyen-tu-wordpress
   - /ma-nguon-mo
   - /tinh-nang/phan-quyen-nguoi-dung
-docs: https://docs.opencms.kdigi.vn/huong-dan/bat-dau-nhanh/
+docs: https://docs.cms.kdigi.vn/huong-dan/bat-dau-nhanh/
 ---
 
 Mở trang quản trị và đăng nhập bằng tài khoản demo công khai. Bạn có vai trò `editor` trên site `demo`; nội dung được đặt lại lúc 03:00 mỗi đêm.
 
 > **Tóm tắt nhanh**
 >
-> - Địa chỉ: <https://app.opencms.kdigi.vn/admin>
+> - Địa chỉ: <https://app.cms.kdigi.vn/admin>
 > - Vai trò `editor`, chỉ thấy site `demo`.
 > - Không đổi được email, mật khẩu, API key của tài khoản demo.
 > - Nội dung đặt lại lúc **03:00 giờ Việt Nam** mỗi đêm.
 > - Môi trường dùng chung: đừng nhập dữ liệu thật.
 
-[Mở trang đăng nhập demo](https://app.opencms.kdigi.vn/admin) · [Tự cài bản của riêng bạn](/tu-host) · [Xem mã nguồn](/ma-nguon-mo)
+[Mở trang đăng nhập demo](https://app.cms.kdigi.vn/admin) · [Tự cài bản của riêng bạn](/tu-host) · [Xem mã nguồn](/ma-nguon-mo)
 
 ## :key-round: Đăng nhập
 
 | Thông tin | Giá trị |
 | --- | --- |
-| Địa chỉ | `https://app.opencms.kdigi.vn/admin` |
-| Email | `demo@opencms.kdigi.vn` |
+| Địa chỉ | `https://app.cms.kdigi.vn/admin` |
+| Email | `demo@cms.kdigi.vn` |
 | Mật khẩu | `Demo@2026` |
 
 ![Màn hình đăng nhập trang quản trị KDIGI CMS](/images/shots/login.webp)
@@ -110,7 +110,7 @@ Sáu website dưới đây cùng đọc site `showcase` trong KDIGI CMS qua REST
 - :package: **Angular** Angular SSR trên Cloudflare Workers. [Mở website](https://kcms-angular.system-efc.workers.dev).
 :::
 
-Mỗi website có trang chủ, blog, chuyên mục, trang tĩnh, landing page, hai ngôn ngữ `vi`/`en`, redirect 301 và trang 404 lấy từ CMS. Muốn tự dựng website kiểu này: [hướng dẫn API](https://docs.opencms.kdigi.vn/api/rest-graphql/).
+Mỗi website có trang chủ, blog, chuyên mục, trang tĩnh, landing page, hai ngôn ngữ `vi`/`en`, redirect 301 và trang 404 lấy từ CMS. Muốn tự dựng website kiểu này: [hướng dẫn API](https://docs.cms.kdigi.vn/api/rest-graphql/).
 
 ## :terminal: Chạy demo trên máy bạn
 

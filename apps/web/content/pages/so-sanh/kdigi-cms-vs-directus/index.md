@@ -27,7 +27,7 @@ related:
   - /ma-nguon-mo
   - /tinh-nang/phan-quyen-nguoi-dung
   - /so-sanh
-docs: https://docs.opencms.kdigi.vn/huong-dan/vai-tro-phan-quyen/
+docs: https://docs.cms.kdigi.vn/huong-dan/vai-tro-phan-quyen/
 ---
 
 Directus bao một CSDL SQL bằng API và Studio, theo giấy phép source-available. KDIGI CMS là CMS cho website nội dung, giấy phép MIT. Chọn Directus cho lớp dữ liệu đa dụng, KDIGI CMS để vận hành nhiều website.
@@ -101,7 +101,7 @@ KDIGI CMS bật sẵn (đặt `MCP_ENABLED=false` để tắt) tại `POST /api/
 
 ## :refresh-cw: Chuyển từ Directus
 
-Không có công cụ nhập tự động, nhưng dữ liệu Directus nằm trong SQL thông thường. Chi tiết endpoint xem [REST API](https://docs.opencms.kdigi.vn/api/rest-graphql/).
+Không có công cụ nhập tự động, nhưng dữ liệu Directus nằm trong SQL thông thường. Chi tiết endpoint xem [REST API](https://docs.cms.kdigi.vn/api/rest-graphql/).
 
 :::steps
 - :list-checks: **Kiểm kê collection** Ánh xạ: bài viết → `posts`, trang → `pages`, danh mục → `taxonomies`, sản phẩm → `products`.
@@ -114,4 +114,4 @@ Không có công cụ nhập tự động, nhưng dữ liệu Directus nằm tro
 
 ## :link: Nguồn
 
-Directus, kiểm tra 2026-11-03: [kho mã](https://github.com/directus/directus), [giấy phép MSCL](https://directus.com/license), [thông báo đổi giấy phép](https://directus.com/resources/directus-v12-license-change) (2026-04-22), [tài liệu](https://directus.com/docs), [MCP server](https://directus.com/docs/guides/ai/mcp), [cài đặt MCP](https://directus.com/docs/guides/ai/mcp/installation). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).
+Directus, kiểm tra 2026-11-03: [kho mã](https://github.com/directus/directus), [giấy phép MSCL](https://directus.com/license), [thông báo đổi giấy phép](https://directus.com/resources/directus-v12-license-change) (2026-04-22), [tài liệu](https://directus.com/docs), [MCP server](https://directus.com/docs/guides/ai/mcp), [cài đặt MCP](https://directus.com/docs/guides/ai/mcp/installation). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.cms.kdigi.vn), [tích hợp AI agent](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

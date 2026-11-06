@@ -29,7 +29,7 @@ related:
   - /tinh-nang/headless-api
   - /tinh-nang/quan-ly-nhieu-website
   - /so-sanh
-docs: https://docs.opencms.kdigi.vn/api/rest-graphql/
+docs: https://docs.cms.kdigi.vn/api/rest-graphql/
 ---
 
 Cả hai là headless CMS mã nguồn mở viết bằng TypeScript/JavaScript, có REST và GraphQL. Chọn Strapi khi cần mô hình dữ liệu tự do; chọn KDIGI CMS khi quản lý nhiều website nội dung bằng Markdown.
@@ -115,4 +115,4 @@ Chưa có công cụ nhập Strapi tự động, nên đây là quy trình thủ
 
 ## :link: Nguồn
 
-Strapi, kiểm tra 2026-11-03: [kho mã](https://github.com/strapi/strapi), [giấy phép](https://github.com/strapi/strapi/blob/main/LICENSE), [cấu hình CSDL](https://docs.strapi.io/cms/configurations/database), [tài liệu](https://docs.strapi.io), [Strapi Cloud](https://strapi.io/cloud), [MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.opencms.kdigi.vn), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).
+Strapi, kiểm tra 2026-11-03: [kho mã](https://github.com/strapi/strapi), [giấy phép](https://github.com/strapi/strapi/blob/main/LICENSE), [cấu hình CSDL](https://docs.strapi.io/cms/configurations/database), [tài liệu](https://docs.strapi.io), [Strapi Cloud](https://strapi.io/cloud), [MCP server](https://docs.strapi.io/cms/features/strapi-mcp-server). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [tài liệu](https://docs.cms.kdigi.vn), [tích hợp AI agent](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/), CHANGELOG 1.2.0 (2026-11-03).

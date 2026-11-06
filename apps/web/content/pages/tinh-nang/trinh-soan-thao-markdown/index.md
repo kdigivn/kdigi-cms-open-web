@@ -25,7 +25,7 @@ related:
   - /tinh-nang/headless-api
   - /tinh-nang/quy-trinh-bien-tap
   - /chuyen-tu-wordpress
-docs: https://docs.opencms.kdigi.vn/huong-dan/soan-thao-markdown/
+docs: https://docs.cms.kdigi.vn/huong-dan/soan-thao-markdown/
 ---
 
 KDIGI CMS soạn bài bằng Milkdown (lõi Crepe). Nguồn sự thật là Markdown (`contentMd`, CommonMark + GFM); REST trả HTML đã làm sạch ở khóa `content`.
@@ -86,4 +86,4 @@ Cần HTML ngoài REST thì đọc `contentMd` rồi tự render. Xem [Headless 
 - **Lưu và đăng** Qua [quy trình biên tập](/tinh-nang/quy-trinh-bien-tap).
 :::
 
-Chi tiết kỹ thuật: [Soạn thảo Markdown](https://docs.opencms.kdigi.vn/huong-dan/soan-thao-markdown/). Quay lại [tổng hợp tính năng](/tinh-nang).
+Chi tiết kỹ thuật: [Soạn thảo Markdown](https://docs.cms.kdigi.vn/huong-dan/soan-thao-markdown/). Quay lại [tổng hợp tính năng](/tinh-nang).

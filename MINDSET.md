@@ -7,9 +7,9 @@
 ## Sản phẩm
 
 - Mô tả: hai website công khai của KDIGI CMS (CMS headless AI-native, đa website, mã nguồn mở MIT) trong một repo pnpm workspace. Repo CMS: https://github.com/kdigivn/kdigi-cms-open.
-  - `apps/web` → https://opencms.kdigi.vn: trang giới thiệu (marketing) bằng Next.js, có bản demo trực tuyến, blog và FAQ lấy từ chính KDIGI CMS.
-  - `apps/docs` → https://docs.opencms.kdigi.vn: tài liệu bằng Astro Starlight (không đổi nội dung so với trước khi tách).
-  - CMS chạy ở https://app.opencms.kdigi.vn (repo riêng); trang chủ đọc nội dung của site `opencms`, tài khoản demo công khai chỉ vào được site `demo`.
+  - `apps/web` → https://cms.kdigi.vn: trang giới thiệu (marketing) bằng Next.js, có bản demo trực tuyến, blog và FAQ lấy từ chính KDIGI CMS.
+  - `apps/docs` → https://docs.cms.kdigi.vn: tài liệu bằng Astro Starlight (không đổi nội dung so với trước khi tách).
+  - CMS chạy ở https://app.cms.kdigi.vn (repo riêng); trang chủ đọc nội dung của site `opencms`, tài khoản demo công khai chỉ vào được site `demo`.
 - Định vị: AI-native là thông điệp đầu tiên (hero, value props, section `#ai-agent` trên trang chủ, trang `/tinh-nang/ai-agent-mcp`, hướng dẫn `huong-dan/ai-agent-mcp` ở docs): AI agent làm việc trên CMS qua máy chủ MCP có sẵn (từ 1.2.0) và CLI `kcms`, với đúng quyền người dùng. Tài khoản demo công khai không tạo được API key, nên trang nào nhắc thử MCP đều chỉ sang tự host.
 - Người dùng chính: agency, blogger, doanh nghiệp nhỏ, người đang dùng WordPress muốn chuyển; developer đọc tài liệu API. Đọc chủ yếu trên desktop, một phần mobile.
 - Thị trường/locale: tiếng Việt trước. `apps/docs` có thêm `/en/`; `apps/web` chỉ tiếng Việt (bản tiếng Anh chưa làm, CMS đã có sẵn locale `en`).
@@ -43,10 +43,10 @@
 ## Hạ tầng
 
 - Deploy: Coolify (server đặt ở VN), hai app cùng repo, build pack Dockerfile, build context là gốc repo:
-  - `apps/docs/Dockerfile` (cổng 80) → `docs.opencms.kdigi.vn`.
-  - `apps/web/Dockerfile` (cổng 3000, biến `CMS_URL`, `CMS_SITE_KEY`, `REVALIDATE_SECRET`) → `opencms.kdigi.vn`.
+  - `apps/docs/Dockerfile` (cổng 80) → `docs.cms.kdigi.vn`.
+  - `apps/web/Dockerfile` (cổng 3000, biến `CMS_URL`, `CMS_SITE_KEY`, `REVALIDATE_SECRET`) → `cms.kdigi.vn`.
   - Cả hai tự build khi có commit mới trên `main` (webhook GitHub dùng chung), mỗi app chỉ theo đường dẫn của mình (`apps/<app>/**` và các tệp workspace ở gốc).
-- Đường dẫn tài liệu cũ trên `opencms.kdigi.vn` (`/huong-dan`, `/wordpress`, `/tham-khao`, `/en`, `/api/rest-graphql`, `/pagefind`) chuyển 301 sang `docs.opencms.kdigi.vn` (`next.config.ts`).
+- Đường dẫn tài liệu cũ trên `cms.kdigi.vn` (`/huong-dan`, `/wordpress`, `/tham-khao`, `/en`, `/api/rest-graphql`, `/pagefind`) chuyển 301 sang `docs.cms.kdigi.vn` (`next.config.ts`).
 - CI/CD, secrets, monitoring: không có secret trong repo; `REVALIDATE_SECRET` chỉ nằm trong biến môi trường Coolify và CMS. Monitoring bằng Uptime Kuma đặt ngoài repo này.
 
 ## Ngoại lệ so với chuẩn chung

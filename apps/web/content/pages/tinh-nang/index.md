@@ -26,7 +26,7 @@ related:
   - /tinh-nang/seo-json-ld
   - /chuyen-tu-wordpress
   - /so-sanh
-docs: https://docs.opencms.kdigi.vn/
+docs: https://docs.cms.kdigi.vn/
 ---
 
 KDIGI CMS là CMS headless AI-native, mã nguồn mở (MIT): một trang quản trị, API và máy chủ MCP cho nhiều website. Mỗi nhóm tính năng dưới đây có trang riêng, mô tả đúng theo tài liệu mã nguồn.
@@ -95,6 +95,6 @@ Cần so sánh có nguồn dẫn? Xem [trang so sánh](/so-sanh).
 
 :::cards
 - :eye: **Demo trực tuyến** Đăng nhập bằng tài khoản biên tập công khai. [Mở demo](/demo)
-- :book-open: **Tài liệu kỹ thuật** Hướng dẫn chi tiết từng tính năng. [Đọc tài liệu](https://docs.opencms.kdigi.vn/)
+- :book-open: **Tài liệu kỹ thuật** Hướng dẫn chi tiết từng tính năng. [Đọc tài liệu](https://docs.cms.kdigi.vn/)
 - :boxes: **Tổng quan dự án** Quay lại [trang chủ KDIGI CMS](/).
 :::

@@ -14,8 +14,8 @@ function workspaceRoot(): string {
 }
 
 // `||`, not `??`: a Docker build ARG without a value arrives as an empty string and must fall back to the default too.
-const DOCS_URL = (process.env.NEXT_PUBLIC_DOCS_URL || "https://docs.opencms.kdigi.vn").replace(/\/+$/, "")
-const APP_URL = (process.env.NEXT_PUBLIC_APP_URL || "https://app.opencms.kdigi.vn").replace(/\/+$/, "")
+const DOCS_URL = (process.env.NEXT_PUBLIC_DOCS_URL || "https://docs.cms.kdigi.vn").replace(/\/+$/, "")
+const APP_URL = (process.env.NEXT_PUBLIC_APP_URL || "https://app.cms.kdigi.vn").replace(/\/+$/, "")
 
 /**
  * CSP (the "without nonces" policy of the Next.js CSP guide). Pages are static/ISR, so there is no per-request nonce, and the
@@ -49,7 +49,7 @@ const SECURITY_HEADERS = [
 
 /**
  * Before the split, this host served the documentation (Astro Starlight). Those paths now live on the docs host:
- * `docs.opencms.kdigi.vn`. 301 so search engines transfer the old URLs; the path is kept 1:1 (locale prefix `/en/` included).
+ * `docs.cms.kdigi.vn`. 301 so search engines transfer the old URLs; the path is kept 1:1 (locale prefix `/en/` included).
  * `/api/*` here is the app's own routes (health, cms/revalidate); only the former docs page `/api/rest-graphql` moved.
  */
 const MOVED_TO_DOCS = ["/huong-dan", "/wordpress", "/tham-khao", "/pagefind", "/en", "/api/rest-graphql"]

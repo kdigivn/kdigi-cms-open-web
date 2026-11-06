@@ -24,7 +24,7 @@ related:
   - /tinh-nang/trinh-soan-thao-markdown
   - /tinh-nang/phan-quyen-nguoi-dung
   - /chuyen-tu-wordpress
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/
 ---
 
 Collection `posts` có sẵn ba loại bài `blog`, `news`, `guide`, kèm danh mục, thẻ, tác giả và thùng rác. CMS cung cấp trang quản trị và API; website công khai dựng bằng Next.js hoặc Astro.

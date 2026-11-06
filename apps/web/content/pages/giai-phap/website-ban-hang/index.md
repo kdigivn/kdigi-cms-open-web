@@ -24,7 +24,7 @@ related:
   - /tinh-nang/headless-api
   - /chuyen-tu-wordpress
   - /so-sanh/kdigi-cms-vs-wordpress
-docs: https://docs.opencms.kdigi.vn/huong-dan/seo-json-ld/
+docs: https://docs.cms.kdigi.vn/huong-dan/seo-json-ld/
 ---
 
 Collection `products` là trang sản phẩm hoặc dịch vụ tổng quát: nội dung Markdown, một dòng giá, slider ảnh, FAQ, đánh giá sao. Phần mua hàng do frontend hoặc dịch vụ thương mại riêng lo.

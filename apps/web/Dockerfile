@@ -1,10 +1,10 @@
 # syntax=docker/dockerfile:1.7
-# opencms.kdigi.vn: marketing homepage (Next.js standalone output). Build context = repository ROOT (pnpm workspace),
+# cms.kdigi.vn: marketing homepage (Next.js standalone output). Build context = repository ROOT (pnpm workspace),
 # Dockerfile path = apps/web/Dockerfile.
 #
 # Coolify: build pack Dockerfile, base directory /, port 3000, "Include Source Commit in Build" (SOURCE_COMMIT -> /api/health `version`).
 # Environment variables (all are also declared as build ARGs, because the pages are prerendered at build time from the CMS):
-#   CMS_URL            https://app.opencms.kdigi.vn   (the CMS must be reachable while building)
+#   CMS_URL            https://app.cms.kdigi.vn   (the CMS must be reachable while building)
 #   CMS_SITE_KEY       opencms
 #   REVALIDATE_SECRET  shared secret of POST /api/cms/revalidate (runtime only; without it the route answers 503)
 #   NEXT_PUBLIC_SITE_URL / NEXT_PUBLIC_DOCS_URL / NEXT_PUBLIC_APP_URL   (optional, defaults are production hosts)

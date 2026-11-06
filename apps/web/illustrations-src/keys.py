@@ -1,4 +1,4 @@
-"""Single source of truth for the opencms.kdigi.vn illustration set: style lock, per-key subject prompts, ratios, sizes, budgets, alt text.
+"""Single source of truth for the cms.kdigi.vn illustration set: style lock, per-key subject prompts, ratios, sizes, budgets, alt text.
 
 Style lock = the Khoi design system "3D clay + glass" (matte warm-white clay, frosted glass, brand blue, cyan rim) on a flat chroma
 background that process.py keys out. Images are generated with the Codex built-in `image_gen` tool (gen.sh -> `codex exec`).

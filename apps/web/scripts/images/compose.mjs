@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// opencms.kdigi.vn thumbnail + OG renderer. See scripts/images/README.md and docs/image-production-playbook.md.
+// cms.kdigi.vn thumbnail + OG renderer. See scripts/images/README.md and docs/image-production-playbook.md.
 // Renders HTML (template.mjs) with headless Chrome, converts to WebP with sharp, records provenance.
 import { createHash } from "node:crypto";
 import {
@@ -481,7 +481,7 @@ async function cmdRender(kind, argv) {
   let text;
   if (req.post) {
     post = await fetchPost(req.post, {
-      api: o.api ?? process.env.IMAGES_CMS_API ?? "https://app.opencms.kdigi.vn/api",
+      api: o.api ?? process.env.IMAGES_CMS_API ?? "https://app.cms.kdigi.vn/api",
       tenant: o.tenant ?? process.env.IMAGES_CMS_TENANT ?? "1",
     });
     text = {

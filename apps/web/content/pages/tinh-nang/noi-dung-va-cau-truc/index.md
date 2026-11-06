@@ -25,7 +25,7 @@ related:
   - /tinh-nang/seo-json-ld
   - /tinh-nang/headless-api
   - /thuc-hanh-tot/cau-truc-noi-dung
-docs: "https://docs.opencms.kdigi.vn/en/tham-khao/collections/"
+docs: "https://docs.cms.kdigi.vn/en/tham-khao/collections/"
 ---
 
 Nội dung chia thành bốn loại chính, nhóm phân loại và điều hướng, cùng nhóm hỗ trợ. Mọi thứ gắn với một website qua `tenant`; slug duy nhất theo từng site.
@@ -106,4 +106,4 @@ Nội dung có `vi` (mặc định) và `en`; trường thiếu `en` rơi về `
 - Để trống `seo.title` khi mẫu của site đã đủ tốt
 :::
 
-Xem [thực hành cấu trúc nội dung](/thuc-hanh-tot/cau-truc-noi-dung), soạn bài ở [trình soạn thảo Markdown](/tinh-nang/trinh-soan-thao-markdown) và [Collections trên docs](https://docs.opencms.kdigi.vn/en/tham-khao/collections/).
+Xem [thực hành cấu trúc nội dung](/thuc-hanh-tot/cau-truc-noi-dung), soạn bài ở [trình soạn thảo Markdown](/tinh-nang/trinh-soan-thao-markdown) và [Collections trên docs](https://docs.cms.kdigi.vn/en/tham-khao/collections/).

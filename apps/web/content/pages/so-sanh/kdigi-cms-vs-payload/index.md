@@ -27,7 +27,7 @@ related:
   - /tinh-nang/quan-ly-nhieu-website
   - /tinh-nang/seo-json-ld
   - /ma-nguon-mo
-docs: https://docs.opencms.kdigi.vn/tham-khao/architecture/
+docs: https://docs.cms.kdigi.vn/tham-khao/architecture/
 ---
 
 KDIGI CMS không đối đầu với Payload mà được xây trên Payload 3.90. Payload thuần là framework để tự thiết kế; KDIGI CMS là Payload cấu hình sẵn cho website nội dung nhiều site. Cả hai đều dùng MIT.
@@ -57,7 +57,7 @@ Payload theo README và tài liệu chính thức, kiểm tra 2026-11-03.
 ## :sparkles: KDIGI CMS thêm gì lên Payload
 
 :::cards 3
-- :shield-check: **Ranh giới site tường minh** Predicate `tenantScopedRead/Write` là ranh giới bảo mật thật. [Multi-site](https://docs.opencms.kdigi.vn/tham-khao/multi-site/)
+- :shield-check: **Ranh giới site tường minh** Predicate `tenantScopedRead/Write` là ranh giới bảo mật thật. [Multi-site](https://docs.cms.kdigi.vn/tham-khao/multi-site/)
 - :pen-line: **Markdown first** Milkdown, slash menu, shortcode; API trả HTML đã làm sạch. [Trình soạn thảo](/tinh-nang/trinh-soan-thao-markdown)
 - :search: **SEO là một hệ thống** JSON-LD `@graph`, mẫu tiêu đề, audit, gợi ý link nội bộ. [SEO và JSON-LD](/tinh-nang/seo-json-ld)
 - :server: **Vận hành sẵn** Job revalidate có retry, healthcheck `/api/health`.
@@ -117,4 +117,4 @@ Chiều ngược lại cũng khả thi: đây là dự án Payload chuẩn (MIT)
 
 ## :link: Nguồn
 
-Payload, kiểm tra 2026-11-03: [kho mã](https://github.com/payloadcms/payload), [What is Payload](https://payloadcms.com/docs/getting-started/what-is-payload), [Multi-Tenant Plugin](https://payloadcms.com/docs/plugins/multi-tenant), [Database](https://payloadcms.com/docs/database/overview), [MCP Plugin](https://payloadcms.com/docs/plugins/mcp). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [kiến trúc](https://docs.opencms.kdigi.vn/tham-khao/architecture/), [tích hợp AI agent](https://docs.opencms.kdigi.vn/huong-dan/ai-agent-mcp/), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.2.0, 2026-11-03).
+Payload, kiểm tra 2026-11-03: [kho mã](https://github.com/payloadcms/payload), [What is Payload](https://payloadcms.com/docs/getting-started/what-is-payload), [Multi-Tenant Plugin](https://payloadcms.com/docs/plugins/multi-tenant), [Database](https://payloadcms.com/docs/database/overview), [MCP Plugin](https://payloadcms.com/docs/plugins/mcp). KDIGI CMS: [kho mã](https://github.com/kdigivn/kdigi-cms-open), [kiến trúc](https://docs.cms.kdigi.vn/tham-khao/architecture/), [tích hợp AI agent](https://docs.cms.kdigi.vn/huong-dan/ai-agent-mcp/), [CHANGELOG](https://github.com/kdigivn/kdigi-cms-open/blob/main/CHANGELOG.md) (1.2.0, 2026-11-03).
